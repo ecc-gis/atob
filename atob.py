@@ -43,7 +43,7 @@ def parse_args():
     parser.add_argument(
         "--bounds",
         "-b",
-        default="area(id:3600181321)",
+        default="London Borough of Ealing",
         help="The bounding region from which to retrieve data.\n"
         "\t(default: London Borough of Ealing boundaries)",
     )
@@ -73,7 +73,7 @@ def get_data(queryfile, bounds, timeout, verbosity):
     api = overpass.API(timeout=timeout)
 
     newline = "\n"
-    query = f"""{bounds}->.searchArea;
+    query = f"""area[name="{bounds}"]->.searchArea;
 (
 {newline.join(f"    {spec}(area.searchArea);" for spec in queryfile)}
 );
