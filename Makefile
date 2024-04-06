@@ -8,3 +8,8 @@ all: $(JSON)
 
 %.geojson: %.xml
 	osmium export $< -o $@
+
+clean:
+	rm data/*.geojson
+
+.PHONY: clean
