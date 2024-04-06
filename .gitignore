@@ -1,3 +1,7 @@
+# Our output files
+data/*.geojson
+data/*.xml
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
