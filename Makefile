@@ -7,7 +7,7 @@ all: $(JSON)
 	python3 atob.py $< > $@
 
 %.geojson: %.xml
-	osmium export $< -o $@
+	osmium export --overwrite $< -o $@
 
 clean:
 	rm data/*.geojson
