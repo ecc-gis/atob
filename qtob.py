@@ -11,9 +11,10 @@ web_mercator = QgsCoordinateReferenceSystem.fromEpsgId(3857)
 #wgs84 = QgsCoordinateReferenceSystem.fromEpsgId(4326)
 project.setCrs(web_mercator, True)
 
-for json_file in Path("./data").glob("*.geojson"):
+for style_file in Path("./data").glob("*.qml"):
+    json_file=style_file.with_suffix('.geojson')
     vlayer = QgsVectorLayer(str(json_file), json_file.stem, "ogr")
-    vlayer.loadNamedStyle(str(json_file.with_suffix('.qml')))
+    vlayer.loadNamedStyle(str(style_file))
     project.addMapLayer(vlayer)
 
 
