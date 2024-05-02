@@ -17,6 +17,7 @@ for style_file in Path("./data").glob("*.qml"):
     vlayer.loadNamedStyle(str(style_file))
     project.addMapLayer(vlayer)
 
+QgsApplication.processEvents()
 
 project.setCrs(web_mercator, True)
 #iface.mapCanvas().setDestinationCrs(web_mercator)
