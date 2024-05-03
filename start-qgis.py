@@ -11,11 +11,11 @@ project = QgsProject.instance()
 # Sort our sources to order properly.
 # I'm being a bit cheeky by doing sections within a geometry type in reverse
 # alphabetical order, as that is just to get cyleways over highways over
-# railways.
+# railways.  And then we want water polygons over park polygons...
 # But we definitely want polygons at the bottom, lines above, and points above
 # those.
 sources = itertools.chain(
-    sorted(Path("./data").glob("*_polygons.qml"), reverse=True),
+    sorted(Path("./data").glob("*_polygons.qml"), reverse=False),
     sorted(Path("./data").glob("*_lines.qml"), reverse=True),
     sorted(Path("./data").glob("*_points.qml"), reverse=True),
 )
