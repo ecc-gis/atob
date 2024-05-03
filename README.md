@@ -7,7 +7,7 @@ Generating easy-to-print cycle maps of London from OSM data
 * [Osmium](https://osmcode.org/osmium-tool/)
 * [The Python overpass module](https://github.com/mvexel/overpass-api-python-wrapper)
 * [QGIS](https://qgis.org/)
-* The [IBM Plex](https://github.com/IBM/plex/) font (specifically "IBM Plex Sans Condensed SemiBold")
+* The [IBM Plex](https://github.com/IBM/plex/) font (specifically "IBM Plex Sans Condensed")
 
 # Use
 
