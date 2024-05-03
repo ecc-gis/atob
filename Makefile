@@ -3,6 +3,14 @@ POINTS=$(QUERIES:.query=_points.geojson)
 LINES=$(QUERIES:.query=_lines.geojson)
 POLYGONS=$(QUERIES:.query=_polygons.geojson)
 
+map: all
+	qgis --code ./start-qgis.py
+
+# This target may be necessary if the QGIS font-installation code isn't very good.
+fonts/IBMPlexSansCondensed-SemiBold.ttf:
+	@mkdir -p fonts
+	cd fonts; wget -m -nd https://github.com/IBM/plex/raw/master/IBM-Plex-Sans-Condensed/fonts/complete/ttf/IBMPlexSansCondensed-SemiBold.ttf
+
 all: $(POINTS) $(LINES) $(POLYGONS)
 
 %.xml: %.query
@@ -20,4 +28,4 @@ all: $(POINTS) $(LINES) $(POLYGONS)
 clean:
 	rm data/*.geojson
 
-.PHONY: clean
+.PHONY: clean map all
