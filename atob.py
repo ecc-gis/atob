@@ -43,9 +43,10 @@ def parse_args():
     parser.add_argument(
         "--bounds",
         "-b",
-        default="London Borough of Ealing",
+        default=[],
         help="The bounding region from which to retrieve data.\n"
         "\t(default: London Borough of Ealing boundaries)",
+        action='append'
     )
     parser.add_argument(
         "--timeout",
@@ -71,11 +72,13 @@ def get_data(queryfile, bounds, timeout, verbosity):
     import overpass
 
     api = overpass.API(timeout=timeout)
-
     newline = "\n"
-    query = f"""area[name="{bounds}"]->.searchArea;
+    query = f"""
 (
-{newline.join(f"    {spec}(area.searchArea);" for spec in queryfile)}
+{newline.join(f'    area[name="{bound}"];' for bound in set(bounds))}
+)->.searchArea;
+(
+{newline.join(f"    {spec.strip()}(area.searchArea);" for spec in queryfile)}
 );
 (._;>;);
 """
@@ -86,5 +89,7 @@ if __name__ == "__main__":
     import sys
 
     args = parse_args()
+    if not args.bounds:
+        args.bounds = ["London Borough of Ealing"]
 
     print(get_data(args.infile, args.bounds, args.timeout, args.verbose))
