@@ -2,13 +2,26 @@
 
 # Exploratory script to work out QGIS automation.
 
+import itertools
 from pathlib import Path
 from qgis.core import *
 
 project = QgsProject.instance()
 
+# Sort our sources to order properly.
+# I'm being a bit cheeky by doing sections within a geometry type in reverse
+# alphabetical order, as that is just to get cyleways over highways over
+# railways.
+# But we definitely want polygons at the bottom, lines above, and points above
+# those.
+sources = itertools.chain(
+    sorted(Path("./data").glob("*_polygons.qml"), reverse=True),
+    sorted(Path("./data").glob("*_lines.qml"), reverse=True),
+    sorted(Path("./data").glob("*_points.qml"), reverse=True),
+)
+
 # Load only the source/geometry data for which we have automatic styling files
-for style_file in Path("./data").glob("*.qml"):
+for style_file in sources:
     json_file = style_file.with_suffix(".geojson")
     vlayer = QgsVectorLayer(str(json_file), json_file.stem, "ogr")
     vlayer.loadNamedStyle(str(style_file))
