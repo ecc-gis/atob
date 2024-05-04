@@ -9,11 +9,11 @@
       <rule symbol="4" filter="&quot;cycleway&quot;='share_busway' OR &quot;cycleway:right&quot;='share_busway' OR &quot;cycleway:both&quot;='share_busway'" key="{bc74cf67-a5fb-4777-8c2c-c4c66f56923d}" label="On-road cycleway share_busway (right)"/>
       <rule symbol="5" filter="&quot;highway&quot; = 'cycleway' AND (&quot;segregated&quot; = 'no' OR &quot;segregated&quot; IS NULL) " key="{74e9bd2c-be56-482c-92a9-4a4390508706}" label="Shared pavements"/>
       <rule symbol="6" filter="&quot;cycleway&quot; = 'crossing'" checkstate="0" key="{a648caa3-1946-435a-aa44-8c8a6ac0fd74}" label="Cycle crossings"/>
-      <rule symbol="7" filter="(&quot;highway&quot;='primary' OR &quot;highway&quot;='secondary' OR &quot;highway&quot;='tertiary' OR &quot;highway&quot;='trunk') AND &quot;oneway&quot;='yes' AND &quot;junction&quot; IS NOT 'roundabout'" key="{4922f794-5774-4833-a5de-3f9bc4f448ef}" label="Oneway Main Roads"/>
+      <rule symbol="7" filter="(&quot;highway&quot;='primary' OR &quot;highway&quot;='secondary' OR &quot;highway&quot;='tertiary' OR &quot;highway&quot;='trunk') AND &quot;oneway&quot;='yes' AND &quot;junction&quot; IS NOT 'roundabout' AND $length > 35" key="{4922f794-5774-4833-a5de-3f9bc4f448ef}" label="Oneway Main Roads"/>
       <rule symbol="8" filter="&quot;highway&quot;='primary' OR &quot;highway&quot;='secondary' OR &quot;highway&quot;='tertiary' OR &quot;highway&quot;='trunk'" key="{22959800-a6d8-40dd-ae5b-a76983b1a75c}" label="Main Roads"/>
       <rule symbol="9" filter="&quot;highway&quot;='primary_link' OR &quot;highway&quot;='secondary_link' OR &quot;highway&quot;='tertiary_link' OR &quot;highway&quot;='trunk_link'" key="{1b43a758-33f6-49e0-b105-873a412a5841}" label="Main Link Roads"/>
       <rule symbol="10" filter="&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified'" key="{4feac12d-eafe-406e-8282-7d45a95d1b67}" label="Minor Roads"/>
-      <rule symbol="11" filter="(&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified') AND &quot;oneway&quot;='yes' AND (&quot;oneway:bicycle&quot; IS NULL OR &quot;oneway:bicycle&quot;!='no')" key="{ef0cce67-dd3b-4582-9952-a3526989ef28}" label="Oneway Minor Roads"/>
+      <rule symbol="11" filter="(&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified') AND &quot;oneway&quot;='yes' AND (&quot;oneway:bicycle&quot; IS NULL OR &quot;oneway:bicycle&quot;!='no') AND $length > 35" key="{ef0cce67-dd3b-4582-9952-a3526989ef28}" label="Oneway Minor Roads"/>
       <rule symbol="12" filter="(&quot;highway&quot;='footway' OR &quot;highway&quot;='path') AND (&quot;bicycle&quot;='no' OR &quot;bicycle&quot; IS NULL)" key="{73a1d38f-eef1-4d9c-a7f8-e16103eb971d}" label="Footways"/>
       <rule symbol="13" filter="&quot;highway&quot;='service'" key="{477982cf-f94c-44b8-a398-b2bfa4d8cc8c}" label="Service Roads"/>
       <rule symbol="14" filter="(&quot;highway&quot;='footway' OR &quot;highway&quot;='path') AND (&quot;bicycle&quot;='yes' OR &quot;bicycle&quot;='permissive' OR &quot;bicycle&quot;='designated')" key="{a0ab9fc6-882d-4c42-985b-ca74e20b3d3a}" label="Footways allowing cycling"/>
@@ -288,7 +288,7 @@
             <Option value="4" type="QString" name="average_angle_length"/>
             <Option value="3x:0,0,0,0,0,0" type="QString" name="average_angle_map_unit_scale"/>
             <Option value="MM" type="QString" name="average_angle_unit"/>
-            <Option value="50" type="QString" name="interval"/>
+            <Option value="64" type="QString" name="interval"/>
             <Option value="3x:0,0,0,0,0,0" type="QString" name="interval_map_unit_scale"/>
             <Option value="MapUnit" type="QString" name="interval_unit"/>
             <Option value="0" type="QString" name="offset"/>
@@ -330,7 +330,7 @@
                 <Option value="MM" type="QString" name="offset_unit"/>
                 <Option value="204,204,204,255" type="QString" name="outline_color"/>
                 <Option value="solid" type="QString" name="outline_style"/>
-                <Option value="4" type="QString" name="outline_width"/>
+                <Option value="8" type="QString" name="outline_width"/>
                 <Option value="3x:0,0,0,0,0,0" type="QString" name="outline_width_map_unit_scale"/>
                 <Option value="MapUnit" type="QString" name="outline_width_unit"/>
                 <Option value="diameter" type="QString" name="scale_method"/>
@@ -455,7 +455,7 @@
             <Option value="MapUnit" type="QString" name="dash_pattern_offset_unit"/>
             <Option value="0" type="QString" name="draw_inside_polygon"/>
             <Option value="round" type="QString" name="joinstyle"/>
-            <Option value="255,255,255,255" type="QString" name="line_color"/>
+            <Option value="238,238,238,255" type="QString" name="line_color"/>
             <Option value="solid" type="QString" name="line_style"/>
             <Option value="6.72" type="QString" name="line_width"/>
             <Option value="MapUnit" type="QString" name="line_width_unit"/>
@@ -1028,13 +1028,13 @@
                 <Option value="0,0" type="QString" name="offset"/>
                 <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
                 <Option value="MapUnit" type="QString" name="offset_unit"/>
-                <Option value="238,238,238,255" type="QString" name="outline_color"/>
+                <Option value="204,204,204,255" type="QString" name="outline_color"/>
                 <Option value="solid" type="QString" name="outline_style"/>
-                <Option value="4" type="QString" name="outline_width"/>
+                <Option value="8" type="QString" name="outline_width"/>
                 <Option value="3x:0,0,0,0,0,0" type="QString" name="outline_width_map_unit_scale"/>
                 <Option value="MapUnit" type="QString" name="outline_width_unit"/>
                 <Option value="diameter" type="QString" name="scale_method"/>
-                <Option value="16" type="QString" name="size"/>
+                <Option value="20" type="QString" name="size"/>
                 <Option value="3x:0,0,0,0,0,0" type="QString" name="size_map_unit_scale"/>
                 <Option value="MapUnit" type="QString" name="size_unit"/>
                 <Option value="1" type="QString" name="vertical_anchor_point"/>
@@ -1275,8 +1275,8 @@
     </selectionSymbol>
   </selection>
   <labeling type="rule-based">
-    <rules key="{bbac6595-6d58-4cf2-9373-9d1248e0ce1d}">
-      <rule active="0" key="{8708a331-8306-4380-991e-cd2d74813be4}">
+    <rules key="{dce2d409-5d1c-4506-a40e-31acbbd4c666}">
+      <rule active="0" key="{b3d33a71-cade-446b-816b-58451df1ecbf}">
         <settings calloutType="simple">
           <text-style fontStrikeout="0" previewBkgrdColor="255,255,255,255" forcedBold="0" fieldName="name" capitalization="1" fontSize="8" isExpression="0" textColor="50,50,50,255" fontUnderline="0" useSubstitutions="0" fontWordSpacing="0" fontItalic="0" fontWeight="50" fontLetterSpacing="0" textOpacity="1" allowHtml="0" fontFamily="Ubuntu" fontKerning="1" legendString="Aa" multilineHeightUnit="Percentage" fontSizeMapUnitScale="3x:0,0,0,0,0,0" forcedItalic="0" fontSizeUnit="Point" multilineHeight="1" namedStyle="Regular" textOrientation="horizontal" blendMode="0">
             <families/>
@@ -1400,7 +1400,7 @@
           </callout>
         </settings>
       </rule>
-      <rule filter="&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified'" description="Minor Roads" key="{b96923ee-91eb-457d-8189-93116a84d4c6}">
+      <rule filter="&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified'" description="Minor Roads" key="{f6461af8-3fa1-4af4-a465-da4bf10512f5}">
         <settings calloutType="simple">
           <text-style fontStrikeout="0" previewBkgrdColor="255,255,255,255" forcedBold="0" fieldName="name" capitalization="0" fontSize="36" isExpression="0" textColor="50,50,50,255" fontUnderline="0" useSubstitutions="1" fontWordSpacing="0" fontItalic="0" fontWeight="63" fontLetterSpacing="0" textOpacity="1" allowHtml="0" fontFamily="IBM Plex Sans Condensed" fontKerning="1" legendString="Aa" multilineHeightUnit="Percentage" fontSizeMapUnitScale="3x:0,0,0,0,0,0" forcedItalic="0" fontSizeUnit="MapUnit" multilineHeight="1" namedStyle="SemiBold" textOrientation="horizontal" blendMode="0">
             <families/>
@@ -1535,7 +1535,7 @@
           </callout>
         </settings>
       </rule>
-      <rule filter="&quot;highway&quot;='primary' OR &quot;highway&quot;='secondary' OR &quot;highway&quot;='tertiary'" description="Major Roads" key="{ceaac4f3-8aa7-48c1-95d6-8ecf0212bb57}">
+      <rule filter="&quot;highway&quot;='primary' OR &quot;highway&quot;='secondary' OR &quot;highway&quot;='tertiary'" description="Major Roads" key="{7c864823-d687-4eac-9d40-5020745acd53}">
         <settings calloutType="simple">
           <text-style fontStrikeout="0" previewBkgrdColor="255,255,255,255" forcedBold="0" fieldName="name" capitalization="0" fontSize="32" isExpression="0" textColor="50,50,50,255" fontUnderline="0" useSubstitutions="0" fontWordSpacing="0" fontItalic="0" fontWeight="75" fontLetterSpacing="0" textOpacity="1" allowHtml="0" fontFamily="IBM Plex Sans" fontKerning="1" legendString="Aa" multilineHeightUnit="Percentage" fontSizeMapUnitScale="3x:0,0,0,0,0,0" forcedItalic="0" fontSizeUnit="MapUnit" multilineHeight="1" namedStyle="Bold" textOrientation="horizontal" blendMode="0">
             <families/>
