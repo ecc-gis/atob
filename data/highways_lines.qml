@@ -14,7 +14,7 @@
       <rule symbol="9" filter="&quot;highway&quot;='primary_link' OR &quot;highway&quot;='secondary_link' OR &quot;highway&quot;='tertiary_link' OR &quot;highway&quot;='trunk_link'" key="{1b43a758-33f6-49e0-b105-873a412a5841}" label="Main Link Roads"/>
       <rule symbol="10" filter="&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified'" key="{4feac12d-eafe-406e-8282-7d45a95d1b67}" label="Minor Roads"/>
       <rule symbol="11" filter="(&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified') AND &quot;oneway&quot;='yes' AND (&quot;oneway:bicycle&quot; IS NULL OR &quot;oneway:bicycle&quot;!='no') AND $length > 35" key="{ef0cce67-dd3b-4582-9952-a3526989ef28}" label="Oneway Minor Roads"/>
-      <rule symbol="12" filter="(&quot;highway&quot;='footway' OR &quot;highway&quot;='path') AND (&quot;bicycle&quot;='no' OR &quot;bicycle&quot; IS NULL)" key="{73a1d38f-eef1-4d9c-a7f8-e16103eb971d}" label="Footways"/>
+      <rule symbol="12" filter="(&quot;highway&quot;='footway' OR &quot;highway&quot;='path') AND (&quot;bicycle&quot;='no' OR &quot;bicycle&quot;='dismount' OR &quot;bicycle&quot; IS NULL)" key="{73a1d38f-eef1-4d9c-a7f8-e16103eb971d}" label="Footways"/>
       <rule symbol="13" filter="&quot;highway&quot;='service'" key="{477982cf-f94c-44b8-a398-b2bfa4d8cc8c}" label="Service Roads"/>
       <rule symbol="14" filter="(&quot;highway&quot;='footway' OR &quot;highway&quot;='path') AND (&quot;bicycle&quot;='yes' OR &quot;bicycle&quot;='permissive' OR &quot;bicycle&quot;='designated')" key="{a0ab9fc6-882d-4c42-985b-ca74e20b3d3a}" label="Footways allowing cycling"/>
       <rule symbol="15" filter="&quot;traffic_intervention&quot;='modal_filter'" key="{7554b63b-b65d-4f21-969f-a84d6d04a0a1}" label="Modal Filters"/>
@@ -1275,8 +1275,8 @@
     </selectionSymbol>
   </selection>
   <labeling type="rule-based">
-    <rules key="{dce2d409-5d1c-4506-a40e-31acbbd4c666}">
-      <rule active="0" key="{b3d33a71-cade-446b-816b-58451df1ecbf}">
+    <rules key="{f01b9d80-d84b-4976-a0fd-bd4b53fb4016}">
+      <rule active="0" key="{f7343bd4-07f1-4871-9993-cad36abac38a}">
         <settings calloutType="simple">
           <text-style fontStrikeout="0" previewBkgrdColor="255,255,255,255" forcedBold="0" fieldName="name" capitalization="1" fontSize="8" isExpression="0" textColor="50,50,50,255" fontUnderline="0" useSubstitutions="0" fontWordSpacing="0" fontItalic="0" fontWeight="50" fontLetterSpacing="0" textOpacity="1" allowHtml="0" fontFamily="Ubuntu" fontKerning="1" legendString="Aa" multilineHeightUnit="Percentage" fontSizeMapUnitScale="3x:0,0,0,0,0,0" forcedItalic="0" fontSizeUnit="Point" multilineHeight="1" namedStyle="Regular" textOrientation="horizontal" blendMode="0">
             <families/>
@@ -1400,7 +1400,7 @@
           </callout>
         </settings>
       </rule>
-      <rule filter="&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified'" description="Minor Roads" key="{f6461af8-3fa1-4af4-a465-da4bf10512f5}">
+      <rule filter="&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified'" description="Minor Roads" key="{3d566cbb-b6d2-414e-b94f-765ada1e7d7c}">
         <settings calloutType="simple">
           <text-style fontStrikeout="0" previewBkgrdColor="255,255,255,255" forcedBold="0" fieldName="name" capitalization="0" fontSize="36" isExpression="0" textColor="50,50,50,255" fontUnderline="0" useSubstitutions="1" fontWordSpacing="0" fontItalic="0" fontWeight="63" fontLetterSpacing="0" textOpacity="1" allowHtml="0" fontFamily="IBM Plex Sans Condensed" fontKerning="1" legendString="Aa" multilineHeightUnit="Percentage" fontSizeMapUnitScale="3x:0,0,0,0,0,0" forcedItalic="0" fontSizeUnit="MapUnit" multilineHeight="1" namedStyle="SemiBold" textOrientation="horizontal" blendMode="0">
             <families/>
@@ -1535,7 +1535,7 @@
           </callout>
         </settings>
       </rule>
-      <rule filter="&quot;highway&quot;='primary' OR &quot;highway&quot;='secondary' OR &quot;highway&quot;='tertiary'" description="Major Roads" key="{7c864823-d687-4eac-9d40-5020745acd53}">
+      <rule filter="&quot;highway&quot;='primary' OR &quot;highway&quot;='secondary' OR &quot;highway&quot;='tertiary'" description="Major Roads" key="{9f529cad-dbaa-4e0f-911d-bad540804d16}">
         <settings calloutType="simple">
           <text-style fontStrikeout="0" previewBkgrdColor="255,255,255,255" forcedBold="0" fieldName="name" capitalization="0" fontSize="32" isExpression="0" textColor="50,50,50,255" fontUnderline="0" useSubstitutions="0" fontWordSpacing="0" fontItalic="0" fontWeight="75" fontLetterSpacing="0" textOpacity="1" allowHtml="0" fontFamily="IBM Plex Sans" fontKerning="1" legendString="Aa" multilineHeightUnit="Percentage" fontSizeMapUnitScale="3x:0,0,0,0,0,0" forcedItalic="0" fontSizeUnit="MapUnit" multilineHeight="1" namedStyle="Bold" textOrientation="horizontal" blendMode="0">
             <families/>
