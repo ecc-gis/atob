@@ -1,4 +1,5 @@
 nwr["leisure"="park"]
+nwr["leisure"="garden"]
 nwr["landuse"="allotments"]
 nwr["landuse"="cemetery"]
 nwr["leisure"="golf_course"]
