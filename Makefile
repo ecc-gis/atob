@@ -14,7 +14,7 @@ fonts/IBMPlexSansCondensed-SemiBold.ttf:
 all: $(POINTS) $(LINES) $(POLYGONS)
 
 %.xml: %.query
-	python3 atob.py -b "London Borough of Ealing" -b "London Borough of Hounslow" $< > $@
+	python3 atob.py -b "London Borough of Ealing" -b "London Borough of Hounslow" -b "London Borough of Hammersmith and Fulham" -b "London Borough of Richmond upon Thames" $< > $@
 
 %_points.geojson: %.xml
 	osmium export --geometry-types=point --overwrite $< -o $@
