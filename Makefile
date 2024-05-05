@@ -3,8 +3,10 @@ POINTS=$(QUERIES:.query=_points.geojson)
 LINES=$(QUERIES:.query=_lines.geojson)
 POLYGONS=$(QUERIES:.query=_polygons.geojson)
 
+QGIS=$(wildcard /usr/bin/qgis /Applications/QGIS*.app/Contents/MacOS/QGIS)
+
 map: all
-	qgis --code ./start-qgis.py
+	$(word 1, $(QGIS)) --code ./start-qgis.py
 
 # This target may be necessary if the QGIS font-installation code isn't very good.
 fonts/IBMPlexSansCondensed-SemiBold.ttf:
