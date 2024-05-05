@@ -500,10 +500,10 @@
               <Option type="Map">
                 <Option type="QString" value="0" name="angle"/>
                 <Option type="QString" value="round" name="cap_style"/>
-                <Option type="QString" value="255,0,0,255" name="color"/>
+                <Option type="QString" value="204,204,204,255" name="color"/>
                 <Option type="QString" value="1" name="horizontal_anchor_point"/>
                 <Option type="QString" value="round" name="joinstyle"/>
-                <Option type="QString" value="arrowhead" name="name"/>
+                <Option type="QString" value="filled_arrowhead" name="name"/>
                 <Option type="QString" value="0,0" name="offset"/>
                 <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
                 <Option type="QString" value="MM" name="offset_unit"/>
@@ -1223,7 +1223,7 @@
             <Option type="QString" value="collection" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer id="{b4b57414-daf9-47fc-a3d0-975dca1545a5}" pass="3" locked="0" enabled="1" class="MarkerLine">
+        <layer id="{b4b57414-daf9-47fc-a3d0-975dca1545a5}" pass="4" locked="0" enabled="1" class="MarkerLine">
           <Option type="Map">
             <Option type="QString" value="4" name="average_angle_length"/>
             <Option type="QString" value="3x:0,0,0,0,0,0" name="average_angle_map_unit_scale"/>
@@ -1261,10 +1261,10 @@
               <Option type="Map">
                 <Option type="QString" value="0" name="angle"/>
                 <Option type="QString" value="round" name="cap_style"/>
-                <Option type="QString" value="101,134,255,230" name="color"/>
+                <Option type="QString" value="204,204,204,255" name="color"/>
                 <Option type="QString" value="1" name="horizontal_anchor_point"/>
-                <Option type="QString" value="bevel" name="joinstyle"/>
-                <Option type="QString" value="arrowhead" name="name"/>
+                <Option type="QString" value="round" name="joinstyle"/>
+                <Option type="QString" value="filled_arrowhead" name="name"/>
                 <Option type="QString" value="0,0" name="offset"/>
                 <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
                 <Option type="QString" value="MapUnit" name="offset_unit"/>
@@ -1389,7 +1389,7 @@
             </Option>
           </data_defined_properties>
         </layer>
-        <layer id="{6729baee-6caa-4e3a-b45b-ec8c2183ad46}" pass="2" locked="1" enabled="1" class="InterpolatedLine">
+        <layer id="{6729baee-6caa-4e3a-b45b-ec8c2183ad46}" pass="3" locked="1" enabled="1" class="InterpolatedLine">
           <Option type="Map">
             <Option type="Map" name="color_ramp_shader">
               <Option type="int" value="1" name="color_ramp_shader_classification_mode"/>
@@ -1489,8 +1489,8 @@
     </selectionSymbol>
   </selection>
   <labeling type="rule-based">
-    <rules key="{188e3c10-9a4f-43ea-bc1e-8ad8bd0e957f}">
-      <rule active="0" key="{abc401cf-5906-4e77-93bb-0d6884ba2e94}">
+    <rules key="{fe722f81-d5ca-4d9f-8d5e-36b9387a8ea8}">
+      <rule active="0" key="{ca374d4c-c5c3-4fff-b8e1-27758e09aaa2}">
         <settings calloutType="simple">
           <text-style capitalization="1" textOrientation="horizontal" fontKerning="1" fontWeight="50" allowHtml="0" previewBkgrdColor="255,255,255,255" forcedItalic="0" fontStrikeout="0" multilineHeightUnit="Percentage" fontWordSpacing="0" fontLetterSpacing="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" blendMode="0" isExpression="0" fontItalic="0" forcedBold="0" textOpacity="1" namedStyle="Regular" fontSizeUnit="Point" fontSize="8" fontFamily="Ubuntu" useSubstitutions="0" textColor="50,50,50,255" fontUnderline="0" multilineHeight="1" fieldName="name" legendString="Aa">
             <families/>
@@ -1614,7 +1614,7 @@
           </callout>
         </settings>
       </rule>
-      <rule filter="&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified'" description="Minor Roads" key="{ed4b6204-cf21-4993-b816-a8810a1a0343}">
+      <rule filter="&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified'" description="Minor Roads" key="{197ea8da-1fbe-4199-a16e-d5e960764ba5}">
         <settings calloutType="simple">
           <text-style capitalization="0" textOrientation="horizontal" fontKerning="1" fontWeight="63" allowHtml="0" previewBkgrdColor="255,255,255,255" forcedItalic="0" fontStrikeout="0" multilineHeightUnit="Percentage" fontWordSpacing="0" fontLetterSpacing="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" blendMode="0" isExpression="0" fontItalic="0" forcedBold="0" textOpacity="1" namedStyle="SemiBold" fontSizeUnit="MapUnit" fontSize="36" fontFamily="IBM Plex Sans Condensed" useSubstitutions="1" textColor="50,50,50,255" fontUnderline="0" multilineHeight="1" fieldName="name" legendString="Aa">
             <families/>
@@ -1756,7 +1756,7 @@
           </callout>
         </settings>
       </rule>
-      <rule filter="&quot;highway&quot;='primary' OR &quot;highway&quot;='secondary' OR &quot;highway&quot;='tertiary'" description="Major Roads" key="{9a2e4bdf-3b64-4c59-abe3-b06d86592433}">
+      <rule filter="&quot;highway&quot;='primary' OR &quot;highway&quot;='secondary' OR &quot;highway&quot;='tertiary'" description="Major Roads" key="{3de082ae-2fc5-48a6-8f04-a74e1197fe96}">
         <settings calloutType="simple">
           <text-style capitalization="0" textOrientation="horizontal" fontKerning="1" fontWeight="75" allowHtml="0" previewBkgrdColor="255,255,255,255" forcedItalic="0" fontStrikeout="0" multilineHeightUnit="Percentage" fontWordSpacing="0" fontLetterSpacing="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" blendMode="0" isExpression="0" fontItalic="0" forcedBold="0" textOpacity="1" namedStyle="Bold" fontSizeUnit="MapUnit" fontSize="32" fontFamily="IBM Plex Sans" useSubstitutions="0" textColor="50,50,50,255" fontUnderline="0" multilineHeight="1" fieldName="name" legendString="Aa">
             <families/>
