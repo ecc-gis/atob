@@ -95,7 +95,7 @@
             <Option name="line_style" value="solid" type="QString"/>
             <Option name="line_width" value="12" type="QString"/>
             <Option name="line_width_unit" value="MapUnit" type="QString"/>
-            <Option name="offset" value="-24" type="QString"/>
+            <Option name="offset" value="-20" type="QString"/>
             <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
             <Option name="offset_unit" value="MapUnit" type="QString"/>
             <Option name="ring_filter" value="0" type="QString"/>
@@ -1004,7 +1004,7 @@
             <Option name="line_style" value="solid" type="QString"/>
             <Option name="line_width" value="12" type="QString"/>
             <Option name="line_width_unit" value="MapUnit" type="QString"/>
-            <Option name="offset" value="24" type="QString"/>
+            <Option name="offset" value="20" type="QString"/>
             <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
             <Option name="offset_unit" value="MapUnit" type="QString"/>
             <Option name="ring_filter" value="0" type="QString"/>
@@ -1051,7 +1051,7 @@
             <Option name="line_style" value="dash dot dot" type="QString"/>
             <Option name="line_width" value="7" type="QString"/>
             <Option name="line_width_unit" value="MapUnit" type="QString"/>
-            <Option name="offset" value="-24" type="QString"/>
+            <Option name="offset" value="-20" type="QString"/>
             <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
             <Option name="offset_unit" value="MapUnit" type="QString"/>
             <Option name="ring_filter" value="0" type="QString"/>
@@ -1098,7 +1098,7 @@
             <Option name="line_style" value="dash dot dot" type="QString"/>
             <Option name="line_width" value="7" type="QString"/>
             <Option name="line_width_unit" value="MapUnit" type="QString"/>
-            <Option name="offset" value="24" type="QString"/>
+            <Option name="offset" value="20" type="QString"/>
             <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
             <Option name="offset_unit" value="MapUnit" type="QString"/>
             <Option name="ring_filter" value="0" type="QString"/>
@@ -1489,8 +1489,8 @@
     </selectionSymbol>
   </selection>
   <labeling type="rule-based">
-    <rules key="{25e28e4f-243c-4793-946f-ff536f8a7675}">
-      <rule active="0" key="{cff46889-d4d4-443a-84bb-744724aa136f}">
+    <rules key="{b5911ad4-6be7-4efb-92dd-974b0642ee82}">
+      <rule active="0" key="{774b2fac-bdba-4bb7-a5d7-1288eeea560a}">
         <settings calloutType="simple">
           <text-style forcedItalic="0" capitalization="1" fontItalic="0" namedStyle="Regular" previewBkgrdColor="255,255,255,255" fontUnderline="0" fontSizeUnit="Point" fontKerning="1" blendMode="0" fontWeight="50" multilineHeight="1" fontSizeMapUnitScale="3x:0,0,0,0,0,0" isExpression="0" textColor="50,50,50,255" textOpacity="1" fontFamily="Ubuntu" legendString="Aa" multilineHeightUnit="Percentage" fontStrikeout="0" fontSize="8" textOrientation="horizontal" fontLetterSpacing="0" allowHtml="0" fieldName="name" useSubstitutions="0" fontWordSpacing="0" forcedBold="0">
             <families/>
@@ -1614,7 +1614,7 @@
           </callout>
         </settings>
       </rule>
-      <rule key="{522e4416-eef5-485d-adac-2006ea11ed69}" filter="&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified'" description="Minor Roads">
+      <rule key="{30f9f65b-a649-40d7-9b63-5d7d498e16b1}" filter="&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified'" description="Minor Roads">
         <settings calloutType="simple">
           <text-style forcedItalic="0" capitalization="0" fontItalic="0" namedStyle="SemiBold" previewBkgrdColor="255,255,255,255" fontUnderline="0" fontSizeUnit="MapUnit" fontKerning="1" blendMode="0" fontWeight="63" multilineHeight="1" fontSizeMapUnitScale="3x:0,0,0,0,0,0" isExpression="0" textColor="50,50,50,255" textOpacity="1" fontFamily="IBM Plex Sans Condensed" legendString="Aa" multilineHeightUnit="Percentage" fontStrikeout="0" fontSize="36" textOrientation="horizontal" fontLetterSpacing="0" allowHtml="0" fieldName="name" useSubstitutions="1" fontWordSpacing="0" forcedBold="0">
             <families/>
@@ -1756,7 +1756,7 @@
           </callout>
         </settings>
       </rule>
-      <rule key="{bda1a8a7-b3c2-4d6e-bcb6-d47932f73ade}" filter="&quot;highway&quot;='primary' OR &quot;highway&quot;='secondary' OR &quot;highway&quot;='tertiary'" description="Major Roads">
+      <rule key="{53269617-c909-4900-9638-d5ca83f7c19c}" filter="&quot;highway&quot;='primary' OR &quot;highway&quot;='secondary' OR &quot;highway&quot;='tertiary'" description="Major Roads">
         <settings calloutType="simple">
           <text-style forcedItalic="0" capitalization="0" fontItalic="0" namedStyle="Bold" previewBkgrdColor="255,255,255,255" fontUnderline="0" fontSizeUnit="MapUnit" fontKerning="1" blendMode="0" fontWeight="75" multilineHeight="1" fontSizeMapUnitScale="3x:0,0,0,0,0,0" isExpression="0" textColor="50,50,50,255" textOpacity="1" fontFamily="IBM Plex Sans" legendString="Aa" multilineHeightUnit="Percentage" fontStrikeout="0" fontSize="32" textOrientation="horizontal" fontLetterSpacing="0" allowHtml="0" fieldName="name" useSubstitutions="0" fontWordSpacing="0" forcedBold="0">
             <families/>
