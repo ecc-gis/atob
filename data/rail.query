@@ -1,2 +1,5 @@
 nwr["railway"="rail"]
 nwr["railway"="subway"]["tunnel"!="yes"]
+nwr["railway"="platform"]
+nwr["railway"="station"]
+nwr["building"="train_station"]
