@@ -28,6 +28,6 @@ all: $(POINTS) $(LINES) $(POLYGONS)
 	osmium export --geometry-types=polygon --overwrite $< -o $@
 
 clean:
-	rm data/*.geojson
+	rm -f data/*.geojson data/*.xml
 
 .PHONY: clean map all
