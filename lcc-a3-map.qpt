@@ -82,7 +82,7 @@
   </LayoutItem>
   <GuideCollection visible="1"/>
  </PageCollection>
- <LayoutItem id="" frame="false" unitLabel="min" visibility="1" unitType="km" minBarWidth="50" alignment="0" maxBarWidth="150" opacity="1" positionOnPage="-0.15,282.597,mm" templateUuid="{fb4a2edf-4f73-4b1b-a6f2-8f9f30e765f9}" positionLock="false" labelVerticalPlacement="0" uuid="{fb4a2edf-4f73-4b1b-a6f2-8f9f30e765f9}" size="93.4243,23.8818,mm" outlineWidthM="0.3,mm" excludeFromExports="0" numUnitsPerSegment="0.1" labelHorizontalPlacement="0" labelBarSpace="3" segmentSizeMode="1" groupUuid="" numSegmentsLeft="0" subdivisionsHeight="1.5" numSubdivisions="1" numSegments="10" lineCapStyle="square" background="false" mapUuid="{cf5e2761-3bef-46a1-ba3d-18665000bc9f}" style="Single Box" boxContentSpace="1" referencePoint="0" itemRotation="0" height="3" segmentMillimeters="8.01403" lineJoinStyle="miter" blendMode="0" numMapUnitsPerScaleBarUnit="0.2" type="65646" position="-0.15,282.597,mm" outlineWidth="0.3" zValue="6" frameJoinStyle="miter">
+ <LayoutItem id="" frame="false" unitLabel="min" visibility="1" unitType="km" minBarWidth="50" alignment="0" maxBarWidth="150" opacity="1" positionOnPage="6.62866,279.145,mm" templateUuid="{fb4a2edf-4f73-4b1b-a6f2-8f9f30e765f9}" positionLock="false" labelVerticalPlacement="0" uuid="{fb4a2edf-4f73-4b1b-a6f2-8f9f30e765f9}" size="141.508,23.8818,mm" outlineWidthM="0.3,mm" excludeFromExports="0" numUnitsPerSegment="0.1" labelHorizontalPlacement="0" labelBarSpace="3" segmentSizeMode="1" groupUuid="" numSegmentsLeft="0" subdivisionsHeight="1.5" numSubdivisions="1" numSegments="16" lineCapStyle="square" background="false" mapUuid="{cf5e2761-3bef-46a1-ba3d-18665000bc9f}" style="Single Box" boxContentSpace="1" referencePoint="0" itemRotation="0" height="3" segmentMillimeters="8.01403" lineJoinStyle="miter" blendMode="0" numMapUnitsPerScaleBarUnit="0.2" type="65646" position="6.62866,279.145,mm" outlineWidth="0.3" zValue="6" frameJoinStyle="miter">
   <FrameColor green="0" red="0" alpha="255" blue="0"/>
   <BackgroundColor green="255" red="255" alpha="255" blue="255"/>
   <LayoutObject>
@@ -371,7 +371,7 @@
    </symbol>
   </fillSymbol2>
  </LayoutItem>
- <LayoutItem visibility="1" blendMode="0" svgBorderColor="0,0,0,255" frame="false" svgFillColor="152,177,221,255" pictureWidth="14.7155" file="arrows/NorthArrow_02.svg" uuid="{80e94159-18f4-4a77-853f-24a95286c0fa}" mapUuid="{cf5e2761-3bef-46a1-ba3d-18665000bc9f}" positionLock="false" templateUuid="{80e94159-18f4-4a77-853f-24a95286c0fa}" excludeFromExports="0" northOffset="0" frameJoinStyle="miter" referencePoint="0" zValue="5" mode="0" itemRotation="0" resizeMode="0" pictureHeight="23.4" size="21.9908,23.4,mm" positionOnPage="71.2835,247.646,mm" northMode="0" position="71.2835,247.646,mm" type="65640" svgBorderWidth="0.2" id="North Arrow" groupUuid="" outlineWidthM="0.3,mm" background="false" pictureRotation="0" opacity="1" anchorPoint="0">
+ <LayoutItem visibility="1" blendMode="0" svgBorderColor="0,0,0,255" frame="false" svgFillColor="152,177,221,255" pictureWidth="14.7155" file="arrows/NorthArrow_02.svg" uuid="{80e94159-18f4-4a77-853f-24a95286c0fa}" mapUuid="{cf5e2761-3bef-46a1-ba3d-18665000bc9f}" positionLock="false" templateUuid="{80e94159-18f4-4a77-853f-24a95286c0fa}" excludeFromExports="0" northOffset="0" frameJoinStyle="miter" referencePoint="0" zValue="5" mode="0" itemRotation="0" resizeMode="0" pictureHeight="23.4" size="21.9908,23.4,mm" positionOnPage="154.054,270.897,mm" northMode="0" position="154.054,270.897,mm" type="65640" svgBorderWidth="0.2" id="North Arrow" groupUuid="" outlineWidthM="0.3,mm" background="false" pictureRotation="0" opacity="1" anchorPoint="0">
   <FrameColor green="0" red="0" alpha="255" blue="0"/>
   <BackgroundColor green="255" red="255" alpha="255" blue="255"/>
   <LayoutObject>
@@ -387,7 +387,7 @@
    </customproperties>
   </LayoutObject>
  </LayoutItem>
- <LayoutItem visibility="1" blendMode="0" frame="false" uuid="{fc5304ff-2021-4e36-92db-64403b913d46}" mapUuid="" positionLock="false" templateUuid="{fc5304ff-2021-4e36-92db-64403b913d46}" excludeFromExports="0" northOffset="0" frameJoinStyle="miter" referencePoint="4" zValue="4" itemRotation="0" arrowRotation="0" size="100,20.3528,mm" positionOnPage="56.1,14.3764,mm" northMode="0" position="56.1,14.3764,mm" type="65653" id="" groupUuid="" outlineWidthM="0.3,mm" background="false" opacity="1">
+ <LayoutItem visibility="1" blendMode="0" frame="false" uuid="{fc5304ff-2021-4e36-92db-64403b913d46}" mapUuid="" positionLock="false" templateUuid="{fc5304ff-2021-4e36-92db-64403b913d46}" excludeFromExports="0" northOffset="0" frameJoinStyle="miter" referencePoint="4" zValue="4" itemRotation="0" arrowRotation="0" size="100,20.3528,mm" positionOnPage="117.465,257.48,mm" northMode="0" position="117.465,257.48,mm" type="65653" id="" groupUuid="" outlineWidthM="0.3,mm" background="false" opacity="1">
   <FrameColor green="0" red="0" alpha="255" blue="0"/>
   <BackgroundColor green="255" red="255" alpha="255" blue="255"/>
   <LayoutObject>
@@ -436,7 +436,7 @@
    </layer>
   </symbol>
  </LayoutItem>
- <LayoutItem visibility="1" blendMode="0" frame="false" uuid="{92fc548c-db2d-4ead-98b7-a75ac05c7363}" positionLock="false" shapeType="1" templateUuid="{92fc548c-db2d-4ead-98b7-a75ac05c7363}" excludeFromExports="0" frameJoinStyle="miter" referencePoint="0" zValue="3" itemRotation="0" size="112.2,28.7528,mm" positionOnPage="0,0,mm" position="0,0,mm" type="65643" id="" groupUuid="" outlineWidthM="0.3,mm" background="false" opacity="1" cornerRadiusMeasure="0,mm">
+ <LayoutItem visibility="0" blendMode="0" frame="false" uuid="{92fc548c-db2d-4ead-98b7-a75ac05c7363}" positionLock="false" shapeType="1" templateUuid="{92fc548c-db2d-4ead-98b7-a75ac05c7363}" excludeFromExports="0" frameJoinStyle="miter" referencePoint="0" zValue="3" itemRotation="0" size="112.2,28.7528,mm" positionOnPage="0,0,mm" position="0,0,mm" type="65643" id="" groupUuid="" outlineWidthM="0.3,mm" background="false" opacity="1" cornerRadiusMeasure="0,mm">
   <FrameColor green="0" red="0" alpha="255" blue="0"/>
   <BackgroundColor green="255" red="255" alpha="255" blue="255"/>
   <LayoutObject>
@@ -483,7 +483,7 @@
    </layer>
   </symbol>
  </LayoutItem>
- <LayoutItem id="" frame="false" rasterBorder="1" visibility="1" symbolAlignment="1" boxSpace="2" equalColumnWidth="0" opacity="1" title="" positionOnPage="-0.15,245.092,mm" maxSymbolSize="0" splitLayer="0" templateUuid="{45e80192-fd74-4016-a9f6-2eba9b26a02f}" symbolWidth="7" positionLock="false" rasterBorderColor="0,0,0,255" wmsLegendWidth="50" symbolHeight="4" uuid="{45e80192-fd74-4016-a9f6-2eba9b26a02f}" rasterBorderWidth="0" size="93.4243,51.9079,mm" outlineWidthM="0.3,mm" resizeToContents="0" columnSpace="2" excludeFromExports="0" groupUuid="" wmsLegendHeight="25" legendFilterByMap="1" map_uuid="{cf5e2761-3bef-46a1-ba3d-18665000bc9f}" legendFilterByAtlas="1" columnCount="1" background="true" referencePoint="0" minSymbolSize="0" itemRotation="0" wrapChar="" blendMode="0" titleAlignment="1" type="65642" position="-0.15,245.092,mm" zValue="2" frameJoinStyle="miter">
+ <LayoutItem id="" frame="false" rasterBorder="0" visibility="1" symbolAlignment="1" boxSpace="2" equalColumnWidth="0" opacity="1" title="" positionOnPage="-0.15,238.313,mm" maxSymbolSize="12" splitLayer="0" templateUuid="{45e80192-fd74-4016-a9f6-2eba9b26a02f}" symbolWidth="14" positionLock="false" rasterBorderColor="0,0,0,255" wmsLegendWidth="50" symbolHeight="4" uuid="{45e80192-fd74-4016-a9f6-2eba9b26a02f}" rasterBorderWidth="0" size="176.195,58.6866,mm" outlineWidthM="0.3,mm" resizeToContents="0" columnSpace="2" excludeFromExports="0" groupUuid="" wmsLegendHeight="25" legendFilterByMap="1" map_uuid="{cf5e2761-3bef-46a1-ba3d-18665000bc9f}" legendFilterByAtlas="1" columnCount="1" background="true" referencePoint="0" minSymbolSize="0" itemRotation="0" wrapChar="" blendMode="0" titleAlignment="1" type="65642" position="-0.15,238.313,mm" zValue="2" frameJoinStyle="miter">
   <FrameColor green="0" red="0" alpha="255" blue="0"/>
   <BackgroundColor green="255" red="255" alpha="255" blue="255"/>
   <LayoutObject>
@@ -904,6 +904,7 @@
     <customproperties>
      <Option type="Map">
       <Option value="highways_lines" name="cached_name" type="QString"/>
+      <Option value="Steps" name="legend/label-16" type="QString"/>
       <Option value="0,10,15,12,16" name="legend/node-order" type="QString"/>
       <Option value="highways_lines" name="legend/title-label" type="QString"/>
       <Option value="hidden" name="legend/title-style" type="QString"/>
