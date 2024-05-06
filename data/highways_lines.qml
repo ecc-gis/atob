@@ -1046,7 +1046,7 @@
             <layer id="{0495e592-ce8e-47fd-a515-baac20701235}" pass="0" class="SvgMarker" enabled="1" locked="0">
               <Option type="Map">
                 <Option name="angle" type="QString" value="0"/>
-                <Option name="color" type="QString" value="0,0,0,255"/>
+                <Option name="color" type="QString" value="111,111,111,255"/>
                 <Option name="fixedAspectRatio" type="QString" value="0"/>
                 <Option name="horizontal_anchor_point" type="QString" value="1"/>
                 <Option name="name" type="QString" value="transport/barrier_bollard.svg"/>
@@ -1537,8 +1537,8 @@
     </selectionSymbol>
   </selection>
   <labeling type="rule-based">
-    <rules key="{d6073f17-30d3-48e2-9d4b-0ae3aedbca7a}">
-      <rule key="{9c7a9d06-3d15-48d7-824b-71efcbb14f00}" active="0">
+    <rules key="{1dd8e269-1b90-46a0-8972-a5ca91ab29c3}">
+      <rule key="{06d413f9-fae8-483d-8167-10c3e20fdd69}" active="0">
         <settings calloutType="simple">
           <text-style textOpacity="1" allowHtml="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontWordSpacing="0" fontLetterSpacing="0" useSubstitutions="0" fontWeight="50" fontUnderline="0" textColor="50,50,50,255" fieldName="name" forcedBold="0" fontFamily="Ubuntu" legendString="Aa" fontSizeUnit="Point" fontItalic="0" multilineHeightUnit="Percentage" textOrientation="horizontal" forcedItalic="0" namedStyle="Regular" capitalization="1" fontKerning="1" fontSize="8" previewBkgrdColor="255,255,255,255" multilineHeight="1" isExpression="0" blendMode="0" fontStrikeout="0">
             <families/>
@@ -1662,7 +1662,7 @@
           </callout>
         </settings>
       </rule>
-      <rule filter="&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified'" key="{36724dde-16ca-4d8d-a638-7f357d20a018}" description="Minor Roads">
+      <rule filter="&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified'" key="{bde9b686-7265-4463-b859-45affb9e318d}" description="Minor Roads">
         <settings calloutType="simple">
           <text-style textOpacity="1" allowHtml="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontWordSpacing="0" fontLetterSpacing="0" useSubstitutions="1" fontWeight="63" fontUnderline="0" textColor="50,50,50,255" fieldName="name" forcedBold="0" fontFamily="IBM Plex Sans Condensed" legendString="Aa" fontSizeUnit="MapUnit" fontItalic="0" multilineHeightUnit="Percentage" textOrientation="horizontal" forcedItalic="0" namedStyle="SemiBold" capitalization="0" fontKerning="1" fontSize="36" previewBkgrdColor="255,255,255,255" multilineHeight="1" isExpression="0" blendMode="0" fontStrikeout="0">
             <families/>
@@ -1804,7 +1804,7 @@
           </callout>
         </settings>
       </rule>
-      <rule filter="&quot;highway&quot;='primary' OR &quot;highway&quot;='secondary' OR &quot;highway&quot;='tertiary' OR &quot;highway&quot; = 'trunk'" key="{ad64c5b5-7fcf-4744-bb2d-9775c4e4e2fe}" description="Major Roads">
+      <rule filter="&quot;highway&quot;='primary' OR &quot;highway&quot;='secondary' OR &quot;highway&quot;='tertiary' OR &quot;highway&quot; = 'trunk'" key="{95c99d70-9221-43a4-a9d2-9927d18bc3a7}" description="Major Roads">
         <settings calloutType="simple">
           <text-style textOpacity="1" allowHtml="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontWordSpacing="0" fontLetterSpacing="0" useSubstitutions="0" fontWeight="75" fontUnderline="0" textColor="50,50,50,255" fieldName="name" forcedBold="0" fontFamily="IBM Plex Sans" legendString="Aa" fontSizeUnit="MapUnit" fontItalic="0" multilineHeightUnit="Percentage" textOrientation="horizontal" forcedItalic="0" namedStyle="Bold" capitalization="0" fontKerning="1" fontSize="32" previewBkgrdColor="255,255,255,255" multilineHeight="1" isExpression="0" blendMode="0" fontStrikeout="0">
             <families/>
