@@ -15,7 +15,7 @@
       <rule filter="&quot;highway&quot;='secondary' OR &quot;highway&quot;='tertiary' OR &quot;highway&quot;='secondary_link' OR &quot;highway&quot;='tertiary_link' " key="{22959800-a6d8-40dd-ae5b-a76983b1a75c}" label="Main Roads" symbol="10"/>
       <rule filter="&quot;highway&quot;='primary_link' OR &quot;highway&quot;='secondary_link' OR &quot;highway&quot;='tertiary_link' OR &quot;highway&quot;='trunk_link'" key="{1b43a758-33f6-49e0-b105-873a412a5841}" label="Main Link Roads" symbol="11" checkstate="0"/>
       <rule filter="&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified'" key="{2a6bdcf9-c034-4b76-babe-62ccb3ba0f8c}" label="Minor Roads" symbol="12"/>
-      <rule filter="((&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified' OR &quot;highway&quot;='service') AND &quot;access&quot;='no' AND &quot;bicycle&quot;='yes') OR (&quot;highway&quot;='service' AND &quot;bicycle&quot;='yes') OR &quot;motor_vehicle&quot;='destination'" key="{4feac12d-eafe-406e-8282-7d45a95d1b67}" label="Traffic-restricted Roads" symbol="13"/>
+      <rule filter="((&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified' OR &quot;highway&quot;='service') AND &quot;access&quot;='no' AND &quot;bicycle&quot;='yes') OR (&quot;highway&quot;='service' AND (&quot;bicycle&quot;='yes' OR &quot;bicycle&quot;='permissive')) OR &quot;motor_vehicle&quot;='destination'" key="{4feac12d-eafe-406e-8282-7d45a95d1b67}" label="Traffic-restricted Roads" symbol="13"/>
       <rule filter="(&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified') AND &quot;oneway&quot;='yes' AND (&quot;oneway:bicycle&quot; IS NULL OR &quot;oneway:bicycle&quot;!='no') AND $length > 35" key="{ef0cce67-dd3b-4582-9952-a3526989ef28}" label="Oneway Minor Roads" symbol="14"/>
       <rule filter="(&quot;highway&quot;='footway' OR &quot;highway&quot;='path' OR &quot;highway&quot;='pedestrian') AND (&quot;bicycle&quot;='no' OR &quot;bicycle&quot;='dismount' OR &quot;bicycle&quot; IS NULL)" key="{73a1d38f-eef1-4d9c-a7f8-e16103eb971d}" label="Footways" symbol="15"/>
       <rule filter="&quot;highway&quot;='service'" key="{1aabe8e5-86b5-4e99-9913-05b6238f6463}" label="Service Roads" symbol="16"/>
@@ -1537,8 +1537,8 @@
     </selectionSymbol>
   </selection>
   <labeling type="rule-based">
-    <rules key="{eb621cdd-8b6d-4843-a252-9e705f32b00c}">
-      <rule active="0" key="{6394e516-9d8a-4d4e-aeaa-2725921a8bc7}">
+    <rules key="{4717c8d7-80c1-4ffb-92d9-1b1b152ec626}">
+      <rule active="0" key="{4b5e76c9-d058-4d41-8904-164a4705985f}">
         <settings calloutType="simple">
           <text-style fontSize="8" fontStrikeout="0" textOpacity="1" legendString="Aa" multilineHeightUnit="Percentage" blendMode="0" fontSizeUnit="Point" previewBkgrdColor="255,255,255,255" capitalization="1" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontUnderline="0" fontKerning="1" textColor="50,50,50,255" fontWeight="50" isExpression="0" fontItalic="0" namedStyle="Regular" fontLetterSpacing="0" useSubstitutions="0" fontFamily="Ubuntu" fontWordSpacing="0" forcedBold="0" textOrientation="horizontal" allowHtml="0" forcedItalic="0" fieldName="name" multilineHeight="1">
             <families/>
@@ -1662,7 +1662,7 @@
           </callout>
         </settings>
       </rule>
-      <rule filter="&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified'" key="{791e8a25-d818-4ea4-9f2d-2a1c77961554}" description="Minor Roads">
+      <rule filter="&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified'" key="{4911d5ad-ec41-4018-a83a-6ae60a425c15}" description="Minor Roads">
         <settings calloutType="simple">
           <text-style fontSize="36" fontStrikeout="0" textOpacity="1" legendString="Aa" multilineHeightUnit="Percentage" blendMode="0" fontSizeUnit="MapUnit" previewBkgrdColor="255,255,255,255" capitalization="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontUnderline="0" fontKerning="1" textColor="50,50,50,255" fontWeight="63" isExpression="0" fontItalic="0" namedStyle="SemiBold" fontLetterSpacing="0" useSubstitutions="1" fontFamily="IBM Plex Sans Condensed" fontWordSpacing="0" forcedBold="0" textOrientation="horizontal" allowHtml="0" forcedItalic="0" fieldName="name" multilineHeight="1">
             <families/>
@@ -1804,7 +1804,7 @@
           </callout>
         </settings>
       </rule>
-      <rule filter="&quot;highway&quot;='primary' OR &quot;highway&quot;='secondary' OR &quot;highway&quot;='tertiary' OR &quot;highway&quot; = 'trunk'" key="{fbf93c59-b5b6-4bd6-a6c2-37f061cbf42e}" description="Major Roads">
+      <rule filter="&quot;highway&quot;='primary' OR &quot;highway&quot;='secondary' OR &quot;highway&quot;='tertiary' OR &quot;highway&quot; = 'trunk'" key="{37b68773-a767-4a6b-a4f6-1eceb6ee4d89}" description="Major Roads">
         <settings calloutType="simple">
           <text-style fontSize="32" fontStrikeout="0" textOpacity="1" legendString="Aa" multilineHeightUnit="Percentage" blendMode="0" fontSizeUnit="MapUnit" previewBkgrdColor="255,255,255,255" capitalization="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontUnderline="0" fontKerning="1" textColor="50,50,50,255" fontWeight="75" isExpression="0" fontItalic="0" namedStyle="Bold" fontLetterSpacing="0" useSubstitutions="0" fontFamily="IBM Plex Sans" fontWordSpacing="0" forcedBold="0" textOrientation="horizontal" allowHtml="0" forcedItalic="0" fieldName="name" multilineHeight="1">
             <families/>
