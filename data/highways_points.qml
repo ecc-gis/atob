@@ -1,12 +1,13 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis simplifyDrawingTol="1" maxScale="0" hasScaleBasedVisibilityFlag="0" minScale="100000000" symbologyReferenceScale="-1" simplifyLocal="1" version="3.34.4-Prizren" simplifyDrawingHints="0" simplifyMaxScale="1" styleCategories="Symbology|Labeling|Rendering" simplifyAlgorithm="0" labelsEnabled="0">
-  <renderer-v2 symbollevels="0" forceraster="0" type="RuleRenderer" referencescale="-1" enableorderby="0">
+<qgis symbologyReferenceScale="-1" maxScale="0" simplifyLocal="1" labelsEnabled="0" simplifyDrawingHints="0" version="3.34.4-Prizren" simplifyAlgorithm="0" simplifyMaxScale="1" minScale="100000000" styleCategories="Symbology|Labeling|Rendering" simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0">
+  <renderer-v2 forceraster="0" enableorderby="0" type="RuleRenderer" symbollevels="0" referencescale="-1">
     <rules key="{cedfdb50-fd64-4259-8662-ed9c01605183}">
-      <rule filter="&quot;highway&quot;='mini_roundabout'" symbol="0" key="{8dce1bde-557b-4486-bbdd-e2f31dfa8d54}"/>
-      <rule filter="&quot;traffic_intervention&quot;='modal_filter'" symbol="1" key="{975d7d94-51a3-47de-bbd6-acebdbaccc6e}" label="Bollards"/>
+      <rule key="{8dce1bde-557b-4486-bbdd-e2f31dfa8d54}" filter="&quot;highway&quot;='mini_roundabout'" symbol="0"/>
+      <rule key="{975d7d94-51a3-47de-bbd6-acebdbaccc6e}" filter="&quot;traffic_intervention&quot;='modal_filter'" label="Bollards" symbol="1"/>
+      <rule key="{cd97747d-77f8-4cfd-9c9d-20518f7fe75a}" filter="&quot;railway&quot;='level_crossing'" label="Level Crossings" symbol="2"/>
     </rules>
     <symbols>
-      <symbol clip_to_extent="1" type="marker" frame_rate="10" alpha="1" name="0" force_rhr="0" is_animated="0">
+      <symbol force_rhr="0" frame_rate="10" is_animated="0" type="marker" name="0" alpha="1" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
             <Option value="" type="QString" name="name"/>
@@ -14,7 +15,7 @@
             <Option value="collection" type="QString" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleMarker" enabled="1" id="{8a4d2570-1dcc-4a97-9838-f07e80cc7cd9}" pass="0">
+        <layer class="SimpleMarker" enabled="1" locked="0" pass="0" id="{8a4d2570-1dcc-4a97-9838-f07e80cc7cd9}">
           <Option type="Map">
             <Option value="0" type="QString" name="angle"/>
             <Option value="square" type="QString" name="cap_style"/>
@@ -45,7 +46,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" type="marker" frame_rate="10" alpha="1" name="1" force_rhr="0" is_animated="0">
+      <symbol force_rhr="0" frame_rate="10" is_animated="0" type="marker" name="1" alpha="1" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
             <Option value="" type="QString" name="name"/>
@@ -53,7 +54,7 @@
             <Option value="collection" type="QString" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SvgMarker" enabled="1" id="{5cca1607-f2af-47bb-b165-fc16a2801ba4}" pass="0">
+        <layer class="SvgMarker" enabled="1" locked="0" pass="1" id="{5cca1607-f2af-47bb-b165-fc16a2801ba4}">
           <Option type="Map">
             <Option value="0" type="QString" name="angle"/>
             <Option value="111,111,111,255" type="QString" name="color"/>
@@ -83,12 +84,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-    </symbols>
-  </renderer-v2>
-  <selection mode="Default">
-    <selectionColor invalid="1"/>
-    <selectionSymbol>
-      <symbol clip_to_extent="1" type="marker" frame_rate="10" alpha="1" name="" force_rhr="0" is_animated="0">
+      <symbol force_rhr="0" frame_rate="10" is_animated="0" type="marker" name="2" alpha="1" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
             <Option value="" type="QString" name="name"/>
@@ -96,7 +92,50 @@
             <Option value="collection" type="QString" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleMarker" enabled="1" id="{bec56ef1-f712-4645-b88d-9b3e4364563c}" pass="0">
+        <layer class="SvgMarker" enabled="1" locked="0" pass="2" id="{0d39ef63-e38d-46a6-855f-c9d261ac39db}">
+          <Option type="Map">
+            <Option value="0" type="QString" name="angle"/>
+            <Option value="111,111,111,255" type="QString" name="color"/>
+            <Option value="0" type="QString" name="fixedAspectRatio"/>
+            <Option value="1" type="QString" name="horizontal_anchor_point"/>
+            <Option value="transport/barrier_lift_gate.svg" type="QString" name="name"/>
+            <Option value="0,0" type="QString" name="offset"/>
+            <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
+            <Option value="MapUnit" type="QString" name="offset_unit"/>
+            <Option value="35,35,35,255" type="QString" name="outline_color"/>
+            <Option value="0" type="QString" name="outline_width"/>
+            <Option value="3x:0,0,0,0,0,0" type="QString" name="outline_width_map_unit_scale"/>
+            <Option value="MM" type="QString" name="outline_width_unit"/>
+            <Option name="parameters"/>
+            <Option value="diameter" type="QString" name="scale_method"/>
+            <Option value="64" type="QString" name="size"/>
+            <Option value="3x:0,0,0,0,0,0" type="QString" name="size_map_unit_scale"/>
+            <Option value="MapUnit" type="QString" name="size_unit"/>
+            <Option value="1" type="QString" name="vertical_anchor_point"/>
+          </Option>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option value="" type="QString" name="name"/>
+              <Option name="properties"/>
+              <Option value="collection" type="QString" name="type"/>
+            </Option>
+          </data_defined_properties>
+        </layer>
+      </symbol>
+    </symbols>
+  </renderer-v2>
+  <selection mode="Default">
+    <selectionColor invalid="1"/>
+    <selectionSymbol>
+      <symbol force_rhr="0" frame_rate="10" is_animated="0" type="marker" name="" alpha="1" clip_to_extent="1">
+        <data_defined_properties>
+          <Option type="Map">
+            <Option value="" type="QString" name="name"/>
+            <Option name="properties"/>
+            <Option value="collection" type="QString" name="type"/>
+          </Option>
+        </data_defined_properties>
+        <layer class="SimpleMarker" enabled="1" locked="0" pass="0" id="{bec56ef1-f712-4645-b88d-9b3e4364563c}">
           <Option type="Map">
             <Option value="0" type="QString" name="angle"/>
             <Option value="square" type="QString" name="cap_style"/>
