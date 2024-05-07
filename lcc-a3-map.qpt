@@ -82,7 +82,7 @@
   </LayoutItem>
   <GuideCollection visible="1"/>
  </PageCollection>
- <LayoutItem zValue="7" height="3" subdivisionsHeight="1.5" background="false" mapUuid="{da4cfdc6-6248-4a1c-85cb-aa547a5e6025}" type="65646" style="Single Box" unitType="km" minBarWidth="50" numSubdivisions="1" numMapUnitsPerScaleBarUnit="0.2" lineJoinStyle="miter" positionLock="false" maxBarWidth="150" blendMode="0" boxContentSpace="1" numUnitsPerSegment="0.2" visibility="1" templateUuid="{ee35c973-bcc7-4f64-a473-f76ee22272bc}" outlineWidth="0.3" referencePoint="0" excludeFromExports="0" outlineWidthM="0.3,mm" frame="false" alignment="0" labelHorizontalPlacement="0" size="141.508,23.8818,mm" id="" segmentMillimeters="16.0281" labelBarSpace="3" groupUuid="" frameJoinStyle="miter" itemRotation="0" position="3.23933,280.62,mm" labelVerticalPlacement="0" unitLabel="min" numSegmentsLeft="0" numSegments="8" opacity="1" lineCapStyle="square" positionOnPage="3.23933,280.62,mm" uuid="{ee35c973-bcc7-4f64-a473-f76ee22272bc}" segmentSizeMode="0">
+ <LayoutItem zValue="7" height="3" subdivisionsHeight="1.5" background="false" mapUuid="{da4cfdc6-6248-4a1c-85cb-aa547a5e6025}" type="65646" style="Single Box" unitType="km" minBarWidth="50" numSubdivisions="1" numMapUnitsPerScaleBarUnit="0.2" lineJoinStyle="miter" positionLock="false" maxBarWidth="150" blendMode="0" boxContentSpace="1" numUnitsPerSegment="0.2" visibility="1" templateUuid="{ee35c973-bcc7-4f64-a473-f76ee22272bc}" outlineWidth="0.3" referencePoint="0" excludeFromExports="0" outlineWidthM="0.3,mm" frame="false" alignment="0" labelHorizontalPlacement="0" size="150.199,23.8818,mm" id="" segmentMillimeters="16.0281" labelBarSpace="3" groupUuid="" frameJoinStyle="miter" itemRotation="0" position="3.23933,280.62,mm" labelVerticalPlacement="0" unitLabel="min. ride" numSegmentsLeft="0" numSegments="8" opacity="1" lineCapStyle="square" positionOnPage="3.23933,280.62,mm" uuid="{ee35c973-bcc7-4f64-a473-f76ee22272bc}" segmentSizeMode="0">
   <FrameColor green="0" red="0" blue="0" alpha="255"/>
   <BackgroundColor green="255" red="255" blue="255" alpha="255"/>
   <LayoutObject>
@@ -97,11 +97,50 @@
     <Option/>
    </customproperties>
   </LayoutObject>
-  <text-style capitalization="0" forcedBold="0" multilineHeightUnit="Percentage" fontSize="12" fontUnderline="0" fontSizeUnit="Point" textOpacity="1" fontWordSpacing="0" previewBkgrdColor="255,255,255,255" fontWeight="50" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontFamily="Ubuntu" fontStrikeout="0" multilineHeight="1" textOrientation="horizontal" allowHtml="0" fontLetterSpacing="0" fontItalic="0" namedStyle="" fontKerning="1" forcedItalic="0" textColor="0,0,0,255" blendMode="0">
+  <text-style capitalization="0" forcedBold="0" multilineHeightUnit="Percentage" fontSize="12" fontUnderline="0" fontSizeUnit="Point" textOpacity="1" fontWordSpacing="0" previewBkgrdColor="255,255,255,255" fontWeight="63" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontFamily="IBM Plex Sans Condensed" fontStrikeout="0" multilineHeight="1" textOrientation="horizontal" allowHtml="0" fontLetterSpacing="0" fontItalic="0" namedStyle="SemiBold" fontKerning="1" forcedItalic="0" textColor="0,0,0,255" blendMode="0">
    <families/>
    <text-buffer bufferBlendMode="0" bufferDraw="0" bufferJoinStyle="128" bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferOpacity="1" bufferSize="1" bufferColor="255,255,255,255" bufferNoFill="1"/>
    <text-mask maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskJoinStyle="128" maskSize="1.5" maskEnabled="0" maskSizeUnits="MM" maskOpacity="1" maskedSymbolLayers="" maskType="0"/>
    <background shapeType="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetY="0" shapeRadiiY="0" shapeRotation="0" shapeBorderColor="128,128,128,255" shapeBorderWidth="0" shapeRadiiX="0" shapeRotationType="0" shapeBorderWidthUnit="MM" shapeOffsetUnit="MM" shapeSizeX="0" shapeSVGFile="" shapeSizeY="0" shapeBlendMode="0" shapeDraw="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiUnit="MM" shapeOpacity="1" shapeOffsetX="0" shapeSizeType="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeFillColor="255,255,255,255" shapeSizeUnit="MM" shapeJoinStyle="64">
+    <symbol name="markerSymbol" clip_to_extent="1" type="marker" is_animated="0" force_rhr="0" frame_rate="10" alpha="1">
+     <data_defined_properties>
+      <Option type="Map">
+       <Option name="name" type="QString" value=""/>
+       <Option name="properties"/>
+       <Option name="type" type="QString" value="collection"/>
+      </Option>
+     </data_defined_properties>
+     <layer enabled="1" class="SimpleMarker" locked="0" pass="0" id="">
+      <Option type="Map">
+       <Option name="angle" type="QString" value="0"/>
+       <Option name="cap_style" type="QString" value="square"/>
+       <Option name="color" type="QString" value="141,90,153,255"/>
+       <Option name="horizontal_anchor_point" type="QString" value="1"/>
+       <Option name="joinstyle" type="QString" value="bevel"/>
+       <Option name="name" type="QString" value="circle"/>
+       <Option name="offset" type="QString" value="0,0"/>
+       <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+       <Option name="offset_unit" type="QString" value="MM"/>
+       <Option name="outline_color" type="QString" value="35,35,35,255"/>
+       <Option name="outline_style" type="QString" value="solid"/>
+       <Option name="outline_width" type="QString" value="0"/>
+       <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+       <Option name="outline_width_unit" type="QString" value="MM"/>
+       <Option name="scale_method" type="QString" value="diameter"/>
+       <Option name="size" type="QString" value="2"/>
+       <Option name="size_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+       <Option name="size_unit" type="QString" value="MM"/>
+       <Option name="vertical_anchor_point" type="QString" value="1"/>
+      </Option>
+      <data_defined_properties>
+       <Option type="Map">
+        <Option name="name" type="QString" value=""/>
+        <Option name="properties"/>
+        <Option name="type" type="QString" value="collection"/>
+       </Option>
+      </data_defined_properties>
+     </layer>
+    </symbol>
     <symbol name="fillSymbol" clip_to_extent="1" type="fill" is_animated="0" force_rhr="0" frame_rate="10" alpha="1">
      <data_defined_properties>
       <Option type="Map">
@@ -313,7 +352,7 @@
       <Option name="type" type="QString" value="collection"/>
      </Option>
     </data_defined_properties>
-    <layer enabled="1" class="SimpleFill" locked="0" pass="0" id="{522dadc9-6769-459b-ae24-92c5fee5f7f8}">
+    <layer enabled="1" class="SimpleFill" locked="0" pass="0" id="{4f927179-36fa-45cb-814a-aa26b46295d0}">
      <Option type="Map">
       <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
       <Option name="color" type="QString" value="152,177,221,255"/>
@@ -346,7 +385,7 @@
       <Option name="type" type="QString" value="collection"/>
      </Option>
     </data_defined_properties>
-    <layer enabled="1" class="SimpleFill" locked="0" pass="0" id="{d34a8a7e-e4c6-4614-8b75-14aa35ae8ad7}">
+    <layer enabled="1" class="SimpleFill" locked="0" pass="0" id="{f9bc7c3d-6c19-46c1-9c4d-b1989d365007}">
      <Option type="Map">
       <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
       <Option name="color" type="QString" value="255,255,255,255"/>
@@ -358,7 +397,7 @@
       <Option name="outline_style" type="QString" value="no"/>
       <Option name="outline_width" type="QString" value="0.26"/>
       <Option name="outline_width_unit" type="QString" value="MM"/>
-      <Option name="style" type="QString" value="solid"/>
+      <Option name="style" type="QString" value="no"/>
      </Option>
      <data_defined_properties>
       <Option type="Map">
@@ -371,7 +410,7 @@
    </symbol>
   </fillSymbol2>
  </LayoutItem>
- <LayoutItem size="21.9908,23.4,mm" excludeFromExports="0" background="false" pictureWidth="14.7155" itemRotation="0" positionOnPage="101.775,228.531,mm" type="65640" svgBorderColor="0,0,0,255" templateUuid="{b4bea914-95a8-4d20-b878-045d6d5a6b2a}" svgBorderWidth="0.2" mode="0" file="arrows/NorthArrow_02.svg" svgFillColor="227,6,19,255" mapUuid="{da4cfdc6-6248-4a1c-85cb-aa547a5e6025}" uuid="{b4bea914-95a8-4d20-b878-045d6d5a6b2a}" pictureRotation="0" northOffset="0" frame="false" position="101.775,228.531,mm" groupUuid="" opacity="1" frameJoinStyle="miter" positionLock="false" anchorPoint="0" resizeMode="0" visibility="1" zValue="6" outlineWidthM="0.3,mm" id="North Arrow" pictureHeight="23.4" referencePoint="0" northMode="0" blendMode="0">
+ <LayoutItem size="21.9908,23.4,mm" excludeFromExports="0" background="false" pictureWidth="14.7155" itemRotation="0" positionOnPage="107.064,229.341,mm" type="65640" svgBorderColor="0,0,0,255" templateUuid="{b4bea914-95a8-4d20-b878-045d6d5a6b2a}" svgBorderWidth="0.2" mode="0" file="arrows/NorthArrow_02.svg" svgFillColor="227,6,19,255" mapUuid="{da4cfdc6-6248-4a1c-85cb-aa547a5e6025}" uuid="{b4bea914-95a8-4d20-b878-045d6d5a6b2a}" pictureRotation="0" northOffset="0" frame="false" position="107.064,229.341,mm" groupUuid="" opacity="1" frameJoinStyle="miter" positionLock="false" anchorPoint="0" resizeMode="0" visibility="1" zValue="6" outlineWidthM="0.3,mm" id="North Arrow" pictureHeight="23.4" referencePoint="0" northMode="0" blendMode="0">
   <FrameColor green="0" red="0" blue="0" alpha="255"/>
   <BackgroundColor green="255" red="255" blue="255" alpha="255"/>
   <LayoutObject>
@@ -387,7 +426,7 @@
    </customproperties>
   </LayoutObject>
  </LayoutItem>
- <LayoutItem size="100,20.3528,mm" excludeFromExports="0" background="false" itemRotation="0" positionOnPage="92.0792,267,mm" type="65653" templateUuid="{4d3ee71b-1570-4948-8ee1-baf6c031320e}" mapUuid="" uuid="{4d3ee71b-1570-4948-8ee1-baf6c031320e}" northOffset="0" frame="false" position="92.0792,267,mm" groupUuid="" opacity="1" frameJoinStyle="miter" positionLock="false" visibility="1" zValue="5" outlineWidthM="0.3,mm" id="" referencePoint="4" northMode="0" blendMode="0" arrowRotation="0">
+ <LayoutItem size="100,20.3528,mm" excludeFromExports="0" background="false" itemRotation="0" positionOnPage="97.0153,265.738,mm" type="65653" templateUuid="{4d3ee71b-1570-4948-8ee1-baf6c031320e}" mapUuid="" uuid="{4d3ee71b-1570-4948-8ee1-baf6c031320e}" northOffset="0" frame="false" position="97.0153,265.738,mm" groupUuid="" opacity="1" frameJoinStyle="miter" positionLock="false" visibility="1" zValue="5" outlineWidthM="0.3,mm" id="" referencePoint="4" northMode="0" blendMode="0" arrowRotation="0">
   <FrameColor green="0" red="0" blue="0" alpha="255"/>
   <BackgroundColor green="255" red="255" blue="255" alpha="255"/>
   <LayoutObject>
@@ -436,7 +475,7 @@
    </layer>
   </symbol>
  </LayoutItem>
- <LayoutItem zValue="3" rasterBorder="0" boxSpace="2" wrapChar="" legendFilterByAtlas="1" background="false" type="65642" wmsLegendWidth="50" equalColumnWidth="0" positionLock="false" blendMode="0" map_uuid="{da4cfdc6-6248-4a1c-85cb-aa547a5e6025}" symbolWidth="14" splitLayer="0" symbolHeight="4" visibility="1" rasterBorderWidth="0" templateUuid="{22c0c628-f105-41f1-88bc-d5fb02c1a23a}" referencePoint="0" excludeFromExports="0" outlineWidthM="0.3,mm" frame="false" legendFilterByMap="1" size="62.9935,50.5,mm" title="" id="" titleAlignment="1" groupUuid="" frameJoinStyle="miter" itemRotation="0" position="3.23933,225.414,mm" wmsLegendHeight="25" resizeToContents="1" minSymbolSize="0" opacity="1" positionOnPage="3.23933,225.414,mm" rasterBorderColor="0,0,0,255" uuid="{22c0c628-f105-41f1-88bc-d5fb02c1a23a}" maxSymbolSize="0" columnSpace="2" columnCount="1" symbolAlignment="1">
+ <LayoutItem zValue="3" rasterBorder="0" boxSpace="2" wrapChar="" legendFilterByAtlas="1" background="false" type="65642" wmsLegendWidth="50" equalColumnWidth="0" positionLock="false" blendMode="0" map_uuid="{da4cfdc6-6248-4a1c-85cb-aa547a5e6025}" symbolWidth="14" splitLayer="0" symbolHeight="4" visibility="1" rasterBorderWidth="0" templateUuid="{22c0c628-f105-41f1-88bc-d5fb02c1a23a}" referencePoint="0" excludeFromExports="0" outlineWidthM="0.3,mm" frame="false" legendFilterByMap="1" size="63.9359,50.5,mm" title="" id="" titleAlignment="1" groupUuid="" frameJoinStyle="miter" itemRotation="0" position="3.23933,225.414,mm" wmsLegendHeight="25" resizeToContents="1" minSymbolSize="0" opacity="1" positionOnPage="3.23933,225.414,mm" rasterBorderColor="0,0,0,255" uuid="{22c0c628-f105-41f1-88bc-d5fb02c1a23a}" maxSymbolSize="0" columnSpace="2" columnCount="1" symbolAlignment="1">
   <FrameColor green="0" red="0" blue="0" alpha="255"/>
   <BackgroundColor green="255" red="255" blue="255" alpha="255"/>
   <LayoutObject>
@@ -859,6 +898,7 @@
    <layer-tree-layer name="highways_lines" legend_split_behavior="0" checked="Qt::Checked" patch_size="-1,-1" expanded="1" providerKey="ogr" legend_exp="" source="data/highways_lines.geojson" id="highways_lines_bb67464b_7987_4e38_9f0a_e2bc5d08097a">
     <customproperties>
      <Option type="Map">
+      <Option name="cached_name" type="QString" value="highways_lines"/>
       <Option name="legend/label-17" type="QString" value="Bollards"/>
       <Option name="legend/node-order" type="QString" value="0,10,15,12,14,16,17"/>
       <Option name="legend/symbol-size-12" type="QString" value="0,0"/>
@@ -871,7 +911,7 @@
    </custom-order>
   </layer-tree-group>
  </LayoutItem>
- <LayoutItem shapeType="1" size="148.287,71.4359,mm" excludeFromExports="0" background="false" itemRotation="0" positionOnPage="-0.15,225.564,mm" type="65643" templateUuid="{b16d42a5-0c32-4bcb-b550-0fb8dbd97211}" uuid="{b16d42a5-0c32-4bcb-b550-0fb8dbd97211}" frame="false" position="-0.15,225.564,mm" groupUuid="" opacity="1" frameJoinStyle="miter" positionLock="false" cornerRadiusMeasure="0,mm" visibility="1" zValue="2" outlineWidthM="0.3,mm" id="" referencePoint="0" blendMode="0">
+ <LayoutItem shapeType="1" size="153.588,71.4359,mm" excludeFromExports="0" background="false" itemRotation="0" positionOnPage="-0.15,225.564,mm" type="65643" templateUuid="{b16d42a5-0c32-4bcb-b550-0fb8dbd97211}" uuid="{b16d42a5-0c32-4bcb-b550-0fb8dbd97211}" frame="false" position="-0.15,225.564,mm" groupUuid="" opacity="1" frameJoinStyle="miter" positionLock="false" cornerRadiusMeasure="0,mm" visibility="1" zValue="2" outlineWidthM="0.3,mm" id="" referencePoint="0" blendMode="0">
   <FrameColor green="0" red="0" blue="0" alpha="255"/>
   <BackgroundColor green="255" red="255" blue="255" alpha="255"/>
   <LayoutObject>
