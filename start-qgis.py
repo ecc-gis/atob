@@ -14,20 +14,28 @@ project = QgsProject.instance()
 # railways.  And then we want water polygons over park polygons...
 # But we definitely want polygons at the bottom, lines above, and points above
 # those.
-data=Path("./data")
+data = Path("./data")
 
 sources = set(data.glob("*_*.qml"))
-sorted_sources=[]
-for filename in ('parks_polygons.qml', 'water_lines.qml', 'water_polygons.qml', 'rail_polygons.qml', 'rail_lines.qml', 'rail_points.qml', 'highways_lines.qml', 'highways_points.qml', 'cycleroutes_lines.qml'):
+sorted_sources = []
+for filename in (
+    "parks_polygons.qml",
+    "water_lines.qml",
+    "water_polygons.qml",
+    "rail_polygons.qml",
+    "rail_lines.qml",
+    "rail_points.qml",
+    "highways_lines.qml",
+    "highways_points.qml",
+    "cycleroutes_lines.qml",
+):
     try:
-        sources.remove(data/filename)
-        sorted_sources.append(data/filename)
+        sources.remove(data / filename)
+        sorted_sources.append(data / filename)
     except KeyError:
         pass
 
 sorted_sources.extend(sources)
-
-
 
 
 # Load only the source/geometry data for which we have automatic styling files
