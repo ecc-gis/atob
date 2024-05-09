@@ -14,6 +14,7 @@
       <rule filter="((&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified' OR &quot;highway&quot;='service') AND &quot;access&quot;='no' AND &quot;bicycle&quot;='yes') OR (&quot;highway&quot;='service' AND (&quot;bicycle&quot;='yes' OR &quot;bicycle&quot;='permissive')) OR &quot;motor_vehicle&quot;='destination'" symbol="9" label="Traffic-restricted Roads" key="{4feac12d-eafe-406e-8282-7d45a95d1b67}"/>
       <rule filter="(&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified') AND &quot;oneway&quot;='yes' AND (&quot;oneway:bicycle&quot; IS NULL OR &quot;oneway:bicycle&quot;!='no') AND $length > 35" symbol="10" label="Oneway Minor Roads" key="{ef0cce67-dd3b-4582-9952-a3526989ef28}"/>
       <rule filter="((&quot;highway&quot;='footway' OR &quot;highway&quot;='path' OR &quot;highway&quot; = 'pedestrian') AND (&quot;towpath&quot; != 'yes' OR &quot;towpath&quot; IS NULL) AND (&quot;bicycle&quot;='yes' OR &quot;bicycle&quot;='permissive' OR &quot;bicycle&quot;='designated')) OR (&quot;highway&quot;='cycleway' AND &quot;segregated&quot;='no')" symbol="11" label="Footways allowing cycling" key="{a0ab9fc6-882d-4c42-985b-ca74e20b3d3a}"/>
+      <rule filter="&quot;traffic_intervention&quot;='modal_filter'" symbol="12" label="Bollards" key="{986a234f-c15e-40d9-9a6d-c6d140d2b7c0}"/>
     </rules>
     <symbols>
       <symbol frame_rate="10" name="0" alpha="1" clip_to_extent="1" is_animated="0" force_rhr="0" type="line">
@@ -656,6 +657,80 @@
               <Option name="type" value="collection" type="QString"/>
             </Option>
           </data_defined_properties>
+        </layer>
+      </symbol>
+      <symbol frame_rate="10" name="12" alpha="1" clip_to_extent="1" is_animated="0" force_rhr="0" type="line">
+        <data_defined_properties>
+          <Option type="Map">
+            <Option name="name" value="" type="QString"/>
+            <Option name="properties"/>
+            <Option name="type" value="collection" type="QString"/>
+          </Option>
+        </data_defined_properties>
+        <layer class="MarkerLine" enabled="1" pass="5" locked="0" id="{65ad76c4-b26f-420c-9524-d1be07f77e75}">
+          <Option type="Map">
+            <Option name="average_angle_length" value="4" type="QString"/>
+            <Option name="average_angle_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+            <Option name="average_angle_unit" value="MM" type="QString"/>
+            <Option name="interval" value="30" type="QString"/>
+            <Option name="interval_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+            <Option name="interval_unit" value="MapUnit" type="QString"/>
+            <Option name="offset" value="0" type="QString"/>
+            <Option name="offset_along_line" value="0" type="QString"/>
+            <Option name="offset_along_line_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+            <Option name="offset_along_line_unit" value="MM" type="QString"/>
+            <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+            <Option name="offset_unit" value="MM" type="QString"/>
+            <Option name="place_on_every_part" value="true" type="bool"/>
+            <Option name="placements" value="Interval" type="QString"/>
+            <Option name="ring_filter" value="0" type="QString"/>
+            <Option name="rotate" value="1" type="QString"/>
+          </Option>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option name="name" value="" type="QString"/>
+              <Option name="properties"/>
+              <Option name="type" value="collection" type="QString"/>
+            </Option>
+          </data_defined_properties>
+          <symbol frame_rate="10" name="@12@0" alpha="1" clip_to_extent="1" is_animated="0" force_rhr="0" type="marker">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option name="name" value="" type="QString"/>
+                <Option name="properties"/>
+                <Option name="type" value="collection" type="QString"/>
+              </Option>
+            </data_defined_properties>
+            <layer class="SvgMarker" enabled="1" pass="0" locked="0" id="{79bb17b4-862f-4425-bdfd-95416011b063}">
+              <Option type="Map">
+                <Option name="angle" value="0" type="QString"/>
+                <Option name="color" value="111,111,111,255" type="QString"/>
+                <Option name="fixedAspectRatio" value="0" type="QString"/>
+                <Option name="horizontal_anchor_point" value="1" type="QString"/>
+                <Option name="name" value="transport/barrier_bollard.svg" type="QString"/>
+                <Option name="offset" value="0,0" type="QString"/>
+                <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+                <Option name="offset_unit" value="MM" type="QString"/>
+                <Option name="outline_color" value="250,237,0,255" type="QString"/>
+                <Option name="outline_width" value="1" type="QString"/>
+                <Option name="outline_width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+                <Option name="outline_width_unit" value="MapUnit" type="QString"/>
+                <Option name="parameters"/>
+                <Option name="scale_method" value="diameter" type="QString"/>
+                <Option name="size" value="40" type="QString"/>
+                <Option name="size_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+                <Option name="size_unit" value="MapUnit" type="QString"/>
+                <Option name="vertical_anchor_point" value="1" type="QString"/>
+              </Option>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" value="" type="QString"/>
+                  <Option name="properties"/>
+                  <Option name="type" value="collection" type="QString"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
         </layer>
       </symbol>
       <symbol frame_rate="10" name="2" alpha="1" clip_to_extent="1" is_animated="0" force_rhr="0" type="line">
@@ -1507,8 +1582,8 @@
     </selectionSymbol>
   </selection>
   <labeling type="rule-based">
-    <rules key="{75e29514-4b57-48ca-96df-bf35d655e109}">
-      <rule key="{aa048c5a-9318-40e2-b014-05d466703e66}" active="0">
+    <rules key="{59b05a0a-4805-4cdf-8913-69e351f1714f}">
+      <rule key="{b5bbff8a-28f9-4186-b53c-534d63b5fe2e}" active="0">
         <settings calloutType="simple">
           <text-style fieldName="name" textColor="50,50,50,255" fontWeight="50" allowHtml="0" fontStrikeout="0" blendMode="0" capitalization="1" forcedBold="0" multilineHeightUnit="Percentage" previewBkgrdColor="255,255,255,255" fontFamily="Ubuntu" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontSizeUnit="Point" namedStyle="Regular" fontWordSpacing="0" fontKerning="1" textOpacity="1" multilineHeight="1" fontItalic="0" useSubstitutions="0" fontUnderline="0" fontLetterSpacing="0" textOrientation="horizontal" isExpression="0" fontSize="8" forcedItalic="0" legendString="Aa">
             <families/>
@@ -1632,7 +1707,7 @@
           </callout>
         </settings>
       </rule>
-      <rule filter="&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified'" description="Minor Roads" key="{149d7c24-6e6a-43f7-be36-b78c49f387b6}" active="0">
+      <rule filter="&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified'" description="Minor Roads" key="{a7174e6c-bfde-40a0-b712-c8eb2b27b0bf}" active="0">
         <settings calloutType="simple">
           <text-style fieldName="name" textColor="50,50,50,255" fontWeight="63" allowHtml="0" fontStrikeout="0" blendMode="0" capitalization="0" forcedBold="0" multilineHeightUnit="Percentage" previewBkgrdColor="255,255,255,255" fontFamily="IBM Plex Sans Condensed" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontSizeUnit="MapUnit" namedStyle="SemiBold" fontWordSpacing="0" fontKerning="1" textOpacity="1" multilineHeight="1" fontItalic="0" useSubstitutions="1" fontUnderline="0" fontLetterSpacing="0" textOrientation="horizontal" isExpression="0" fontSize="36" forcedItalic="0" legendString="Aa">
             <families/>
@@ -1774,7 +1849,7 @@
           </callout>
         </settings>
       </rule>
-      <rule filter="&quot;highway&quot;='primary' OR &quot;highway&quot;='secondary' OR &quot;highway&quot;='tertiary'" description="Major Roads" key="{269f133c-fb13-43b7-b855-b00721d31da5}" active="0">
+      <rule filter="&quot;highway&quot;='primary' OR &quot;highway&quot;='secondary' OR &quot;highway&quot;='tertiary'" description="Major Roads" key="{83228ba7-aaa1-43a5-9fb1-49bae21fa6ea}" active="0">
         <settings calloutType="simple">
           <text-style fieldName="name" textColor="50,50,50,255" fontWeight="75" allowHtml="0" fontStrikeout="0" blendMode="0" capitalization="0" forcedBold="0" multilineHeightUnit="Percentage" previewBkgrdColor="255,255,255,255" fontFamily="IBM Plex Sans" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontSizeUnit="MapUnit" namedStyle="Bold" fontWordSpacing="0" fontKerning="1" textOpacity="1" multilineHeight="1" fontItalic="0" useSubstitutions="0" fontUnderline="0" fontLetterSpacing="0" textOrientation="horizontal" isExpression="0" fontSize="32" forcedItalic="0" legendString="Aa">
             <families/>
