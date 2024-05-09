@@ -1,1 +1,1 @@
-nwr["route"="bicycle"]
+nwr["route"="bicycle"]["state"!="proposed"]
