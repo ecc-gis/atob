@@ -11,7 +11,7 @@
       <rule key="{2e768673-e0ec-4581-b870-31a0be83f0fa}" description="Specific A roads we allow because they're weird situations (mostly residential roads that happen to be on the old Roman routes that made the first A-road alignments)" symbol="6" filter="(&quot;highway&quot;='primary' OR &quot;highway&quot;='trunk' OR &quot;highway&quot;='primary_link' OR &quot;highway&quot;='trunk_link') AND &quot;maxspeed&quot;='20 mph' AND &quot;ref&quot;='A3000'" label="A Roads"/>
       <rule key="{22959800-a6d8-40dd-ae5b-a76983b1a75c}" symbol="7" filter="(&quot;highway&quot;='secondary' OR &quot;highway&quot;='tertiary' OR &quot;highway&quot;='secondary_link' OR &quot;highway&quot;='tertiary_link' ) AND &quot;maxspeed&quot;='20 mph'" label="Main Roads" checkstate="0"/>
       <rule key="{2a6bdcf9-c034-4b76-babe-62ccb3ba0f8c}" symbol="8" filter="&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified'" label="Minor Roads"/>
-      <rule key="{4feac12d-eafe-406e-8282-7d45a95d1b67}" symbol="9" filter="((&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified' OR &quot;highway&quot;='service') AND &quot;access&quot;='no' AND &quot;bicycle&quot;='yes') OR (&quot;highway&quot;='service' AND (&quot;bicycle&quot;='yes' OR &quot;bicycle&quot;='permissive')) OR &quot;motor_vehicle&quot;='destination'" label="Traffic-restricted Roads"/>
+      <rule key="{4feac12d-eafe-406e-8282-7d45a95d1b67}" symbol="9" filter="(&quot;highway&quot; IN ('residential','unclassified','service') AND &quot;bicycle&quot;IN('yes','permissive','designated')) OR &quot;motor_vehicle&quot;='destination'" label="Traffic-restricted Roads"/>
       <rule key="{ef0cce67-dd3b-4582-9952-a3526989ef28}" symbol="10" filter="(&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified') AND &quot;oneway&quot;='yes' AND (&quot;oneway:bicycle&quot; IS NULL OR &quot;oneway:bicycle&quot;!='no') AND $length > 35" label="Oneway Minor Roads"/>
       <rule key="{a0ab9fc6-882d-4c42-985b-ca74e20b3d3a}" symbol="11" filter="&quot;highway&quot; IN ('footway','path','pedestrian') &#xa;AND &#xa;(&quot;towpath&quot; != 'yes' OR &quot;towpath&quot; IS NULL) &#xa;AND &#xa;(&quot;surface&quot; NOT IN ('unpaved', 'fine_gravel', 'gravel', 'mud') OR &quot;surface&quot; IS NULL)&#xa;AND &#xa;&quot;bicycle&quot; IN ('yes','permissive','designated')&#xa;OR &#xa;(&quot;highway&quot;='cycleway' AND &quot;segregated&quot;='no')" label="Footways allowing cycling"/>
       <rule key="{986a234f-c15e-40d9-9a6d-c6d140d2b7c0}" symbol="12" filter="&quot;traffic_intervention&quot;='modal_filter'" label="Bollards"/>
@@ -1488,6 +1488,44 @@
             <Option value="collection" name="type" type="QString"/>
           </Option>
         </data_defined_properties>
+        <layer pass="0" locked="0" id="{be4be87a-4f3f-4fc8-9cca-09c06debc568}" class="SimpleLine" enabled="1">
+          <Option type="Map">
+            <Option value="0" name="align_dash_pattern" type="QString"/>
+            <Option value="square" name="capstyle" type="QString"/>
+            <Option value="5;2" name="customdash" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="customdash_map_unit_scale" type="QString"/>
+            <Option value="MM" name="customdash_unit" type="QString"/>
+            <Option value="0" name="dash_pattern_offset" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="dash_pattern_offset_map_unit_scale" type="QString"/>
+            <Option value="MM" name="dash_pattern_offset_unit" type="QString"/>
+            <Option value="0" name="draw_inside_polygon" type="QString"/>
+            <Option value="bevel" name="joinstyle" type="QString"/>
+            <Option value="250,237,0,255" name="line_color" type="QString"/>
+            <Option value="solid" name="line_style" type="QString"/>
+            <Option value="12" name="line_width" type="QString"/>
+            <Option value="MapUnit" name="line_width_unit" type="QString"/>
+            <Option value="0" name="offset" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
+            <Option value="MM" name="offset_unit" type="QString"/>
+            <Option value="0" name="ring_filter" type="QString"/>
+            <Option value="0" name="trim_distance_end" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="trim_distance_end_map_unit_scale" type="QString"/>
+            <Option value="MM" name="trim_distance_end_unit" type="QString"/>
+            <Option value="0" name="trim_distance_start" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="trim_distance_start_map_unit_scale" type="QString"/>
+            <Option value="MM" name="trim_distance_start_unit" type="QString"/>
+            <Option value="0" name="tweak_dash_pattern_on_corners" type="QString"/>
+            <Option value="0" name="use_custom_dash" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" name="width_map_unit_scale" type="QString"/>
+          </Option>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option value="" name="name" type="QString"/>
+              <Option name="properties"/>
+              <Option value="collection" name="type" type="QString"/>
+            </Option>
+          </data_defined_properties>
+        </layer>
         <layer pass="4" locked="0" id="{32dc70e7-7f24-4507-b15a-9b4709f9a403}" class="SimpleLine" enabled="1">
           <Option type="Map">
             <Option value="0" name="align_dash_pattern" type="QString"/>
@@ -1582,8 +1620,8 @@
     </selectionSymbol>
   </selection>
   <labeling type="rule-based">
-    <rules key="{251a7cbc-208d-4656-bed0-69d892fa3f40}">
-      <rule active="0" key="{c86423c9-4cd0-4113-a0a5-c1769bb16ba9}">
+    <rules key="{60b2b8ed-d500-42cd-a083-c130787ab2dd}">
+      <rule active="0" key="{8215d2c5-ce50-4c56-b8d7-7522e7c433e5}">
         <settings calloutType="simple">
           <text-style fontLetterSpacing="0" fontSize="8" forcedItalic="0" fontSizeUnit="Point" isExpression="0" previewBkgrdColor="255,255,255,255" fontWeight="50" textOrientation="horizontal" forcedBold="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontItalic="0" multilineHeight="1" textOpacity="1" fontStrikeout="0" capitalization="1" multilineHeightUnit="Percentage" fontWordSpacing="0" fontUnderline="0" blendMode="0" useSubstitutions="0" allowHtml="0" legendString="Aa" fontKerning="1" fontFamily="Ubuntu" textColor="50,50,50,255" namedStyle="Regular" fieldName="name">
             <families/>
@@ -1707,7 +1745,7 @@
           </callout>
         </settings>
       </rule>
-      <rule active="0" key="{547656df-0ae0-4aa8-b908-f182e4ee0637}" description="Minor Roads" filter="&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified'">
+      <rule active="0" key="{8ffde7da-6e95-4d4d-8bf1-ea6bd537b5ec}" description="Minor Roads" filter="&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified'">
         <settings calloutType="simple">
           <text-style fontLetterSpacing="0" fontSize="36" forcedItalic="0" fontSizeUnit="MapUnit" isExpression="0" previewBkgrdColor="255,255,255,255" fontWeight="63" textOrientation="horizontal" forcedBold="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontItalic="0" multilineHeight="1" textOpacity="1" fontStrikeout="0" capitalization="0" multilineHeightUnit="Percentage" fontWordSpacing="0" fontUnderline="0" blendMode="0" useSubstitutions="1" allowHtml="0" legendString="Aa" fontKerning="1" fontFamily="IBM Plex Sans Condensed" textColor="50,50,50,255" namedStyle="SemiBold" fieldName="name">
             <families/>
@@ -1849,7 +1887,7 @@
           </callout>
         </settings>
       </rule>
-      <rule active="0" key="{f5aef6cd-1710-44d4-913b-0138ea70ef89}" description="Major Roads" filter="&quot;highway&quot;='primary' OR &quot;highway&quot;='secondary' OR &quot;highway&quot;='tertiary'">
+      <rule active="0" key="{1179eac7-da5f-404f-a8e2-06078bc6a366}" description="Major Roads" filter="&quot;highway&quot;='primary' OR &quot;highway&quot;='secondary' OR &quot;highway&quot;='tertiary'">
         <settings calloutType="simple">
           <text-style fontLetterSpacing="0" fontSize="32" forcedItalic="0" fontSizeUnit="MapUnit" isExpression="0" previewBkgrdColor="255,255,255,255" fontWeight="75" textOrientation="horizontal" forcedBold="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontItalic="0" multilineHeight="1" textOpacity="1" fontStrikeout="0" capitalization="0" multilineHeightUnit="Percentage" fontWordSpacing="0" fontUnderline="0" blendMode="0" useSubstitutions="0" allowHtml="0" legendString="Aa" fontKerning="1" fontFamily="IBM Plex Sans" textColor="50,50,50,255" namedStyle="Bold" fieldName="name">
             <families/>
