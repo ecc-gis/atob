@@ -27,8 +27,8 @@
             <Option type="QString" name="joinstyle" value="bevel"/>
             <Option type="QString" name="line_color" value="102,193,191,255"/>
             <Option type="QString" name="line_style" value="solid"/>
-            <Option type="QString" name="line_width" value="0.26"/>
-            <Option type="QString" name="line_width_unit" value="MM"/>
+            <Option type="QString" name="line_width" value="4"/>
+            <Option type="QString" name="line_width_unit" value="MapUnit"/>
             <Option type="QString" name="offset" value="0"/>
             <Option type="QString" name="offset_map_unit_scale" value="3x:0,0,0,0,0,0"/>
             <Option type="QString" name="offset_unit" value="MM"/>
