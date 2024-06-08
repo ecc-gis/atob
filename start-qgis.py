@@ -19,6 +19,7 @@ data = Path("./data")
 sources = set(data.glob("*_*.qml"))
 sorted_sources = []
 for filename in (
+    "amenities_polygons.qml",
     "parks_polygons.qml",
     "water_lines.qml",
     "water_polygons.qml",
