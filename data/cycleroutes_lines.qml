@@ -3,10 +3,10 @@
   <renderer-v2 type="RuleRenderer" referencescale="-1" symbollevels="0" forceraster="0" enableorderby="0">
     <rules key="{afd5331e-2cff-4a95-8eb5-ca056dd4f921}">
       <rule label="Cycleways" filter="&quot;highway&quot; = 'cycleway' AND (&quot;segregated&quot; != 'no' OR &quot;segregated&quot; IS NULL)" key="{133a39f4-64f0-4da1-8730-512c63abc0ff}" symbol="0"/>
-      <rule label="On-road cycleway tracks (left)" filter="&quot;cycleway:lane&quot;='track' OR &quot;cycleway:left:lane&quot;='track' OR &quot;cycleway:both:lane&quot;='track' OR &quot;cycleway:lane&quot;='exclusive' OR &quot;cycleway:left:lane&quot;='exclusive' OR &quot;cycleway:both:lane&quot;='exclusive'" key="{716d4d00-00f7-4d28-92a5-626f1f46c9ac}" symbol="1"/>
-      <rule label="On-road cycleway tracks (right)" filter="&quot;cycleway:lane&quot;='track' OR &quot;cycleway:right:lane&quot;='track' OR &quot;cycleway:both:lane&quot;='track' OR &quot;cycleway:lane&quot;='exclusive' OR &quot;cycleway:right:lane&quot;='exclusive' OR &quot;cycleway:both:lane&quot;='exclusive'" key="{27b6775d-4510-4f54-a70b-706c579de851}" symbol="2"/>
-      <rule label="On-road cycleway share_busway (left)" filter="&quot;cycleway&quot;='share_busway' OR &quot;cycleway:left&quot;='share_busway' OR &quot;cycleway:both&quot;='share_busway'" key="{b9bd333e-5c63-4478-a0bb-7dd063360584}" symbol="3"/>
-      <rule label="On-road cycleway share_busway (right)" filter="&quot;cycleway&quot;='share_busway' OR &quot;cycleway:right&quot;='share_busway' OR &quot;cycleway:both&quot;='share_busway' or &quot;oneway:bicycle&quot;='no'" key="{bc74cf67-a5fb-4777-8c2c-c4c66f56923d}" symbol="4"/>
+      <rule label="On-road cycleway tracks (left)" filter="&quot;cycleway&quot;='track' OR &quot;cycleway:lane&quot;='track' OR &quot;cycleway:left&quot;='track' OR &quot;cycleway:left:lane&quot;='track' OR &quot;cycleway:both:lane&quot;='track' " key="{716d4d00-00f7-4d28-92a5-626f1f46c9ac}" symbol="1"/>
+      <rule label="On-road cycleway tracks (right)" filter="&quot;cycleway&quot;='track' OR &quot;cycleway:lane&quot;='track' OR &quot;cycleway:right&quot;='track' OR &quot;cycleway:right:lane&quot;='track' OR &quot;cycleway:both:lane&quot;='track' " key="{27b6775d-4510-4f54-a70b-706c579de851}" symbol="2"/>
+      <rule label="On-road cycleway share_busway (left)" filter="&quot;cycleway&quot;='share_busway' OR &quot;cycleway:left&quot;='share_busway' OR &quot;cycleway:both&quot;='share_busway' OR &quot;cycleway:lane&quot;='exclusive' OR &quot;cycleway:left:lane&quot;='exclusive' OR &quot;cycleway:both:lane&quot;='exclusive'" key="{b9bd333e-5c63-4478-a0bb-7dd063360584}" symbol="3"/>
+      <rule label="On-road cycleway share_busway (right)" filter="&quot;cycleway&quot;='share_busway' OR &quot;cycleway:right&quot;='share_busway' OR &quot;cycleway:both&quot;='share_busway' OR &quot;oneway:bicycle&quot;='no' OR &quot;cycleway:lane&quot;='exclusive' OR &quot;cycleway:right:lane&quot;='exclusive' OR &quot;cycleway:both:lane&quot;='exclusive'" key="{bc74cf67-a5fb-4777-8c2c-c4c66f56923d}" symbol="4"/>
       <rule label="Oneway Main Roads" filter="(&quot;highway&quot;='primary' OR &quot;highway&quot;='secondary' OR &quot;highway&quot;='tertiary' OR &quot;highway&quot;='trunk') AND &quot;oneway&quot;='yes' AND &quot;junction&quot; IS NOT 'roundabout' AND (&quot;dual_carriageway&quot; != 'yes' OR &quot;dual_carriageway&quot; IS NULL) AND $length > 35" key="{4922f794-5774-4833-a5de-3f9bc4f448ef}" symbol="5"/>
       <rule label="A Roads" filter="(&quot;highway&quot;='primary' OR &quot;highway&quot;='trunk' OR &quot;highway&quot;='primary_link' OR &quot;highway&quot;='trunk_link') AND &quot;maxspeed&quot;='20 mph' AND &quot;ref&quot;='A3000'" key="{2e768673-e0ec-4581-b870-31a0be83f0fa}" symbol="6" description="Specific A roads we allow because they're weird situations (mostly residential roads that happen to be on the old Roman routes that made the first A-road alignments)"/>
       <rule label="Main Roads" filter="(&quot;highway&quot;='secondary' OR &quot;highway&quot;='tertiary' OR &quot;highway&quot;='secondary_link' OR &quot;highway&quot;='tertiary_link' ) AND &quot;maxspeed&quot;='20 mph'" key="{22959800-a6d8-40dd-ae5b-a76983b1a75c}" symbol="7" checkstate="0"/>
@@ -1620,8 +1620,8 @@
     </selectionSymbol>
   </selection>
   <labeling type="rule-based">
-    <rules key="{253c51a1-538e-4a50-9443-2bbe2ab6f26b}">
-      <rule active="0" key="{399621d4-120b-46b9-a039-5d851302e031}">
+    <rules key="{57cab1df-2883-474d-95f1-002aa47f9339}">
+      <rule active="0" key="{4f217c1e-7170-40ed-961d-41e34ec97802}">
         <settings calloutType="simple">
           <text-style useSubstitutions="0" fontWordSpacing="0" fontStrikeout="0" forcedItalic="0" previewBkgrdColor="255,255,255,255" legendString="Aa" fontItalic="0" fontWeight="50" isExpression="0" forcedBold="0" fontUnderline="0" fontLetterSpacing="0" namedStyle="Regular" fontSize="8" multilineHeightUnit="Percentage" fontSizeMapUnitScale="3x:0,0,0,0,0,0" multilineHeight="1" blendMode="0" fontFamily="Ubuntu" fontSizeUnit="Point" textOrientation="horizontal" textOpacity="1" capitalization="1" fieldName="name" textColor="50,50,50,255" fontKerning="1" allowHtml="0">
             <families/>
@@ -1745,7 +1745,7 @@
           </callout>
         </settings>
       </rule>
-      <rule filter="&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified'" active="0" key="{00d59427-4420-45c8-bc09-1546d93ee1e1}" description="Minor Roads">
+      <rule filter="&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified'" active="0" key="{8ac7eba7-bb2b-447c-8d7a-34d190729e1c}" description="Minor Roads">
         <settings calloutType="simple">
           <text-style useSubstitutions="1" fontWordSpacing="0" fontStrikeout="0" forcedItalic="0" previewBkgrdColor="255,255,255,255" legendString="Aa" fontItalic="0" fontWeight="63" isExpression="0" forcedBold="0" fontUnderline="0" fontLetterSpacing="0" namedStyle="SemiBold" fontSize="36" multilineHeightUnit="Percentage" fontSizeMapUnitScale="3x:0,0,0,0,0,0" multilineHeight="1" blendMode="0" fontFamily="IBM Plex Sans Condensed" fontSizeUnit="MapUnit" textOrientation="horizontal" textOpacity="1" capitalization="0" fieldName="name" textColor="50,50,50,255" fontKerning="1" allowHtml="0">
             <families/>
@@ -1887,7 +1887,7 @@
           </callout>
         </settings>
       </rule>
-      <rule filter="&quot;highway&quot;='primary' OR &quot;highway&quot;='secondary' OR &quot;highway&quot;='tertiary'" active="0" key="{5b384f51-15c3-4eb2-b80a-8d70bb0e0c19}" description="Major Roads">
+      <rule filter="&quot;highway&quot;='primary' OR &quot;highway&quot;='secondary' OR &quot;highway&quot;='tertiary'" active="0" key="{b072b9eb-da42-4749-9047-72ce75bfaddb}" description="Major Roads">
         <settings calloutType="simple">
           <text-style useSubstitutions="0" fontWordSpacing="0" fontStrikeout="0" forcedItalic="0" previewBkgrdColor="255,255,255,255" legendString="Aa" fontItalic="0" fontWeight="75" isExpression="0" forcedBold="0" fontUnderline="0" fontLetterSpacing="0" namedStyle="Bold" fontSize="32" multilineHeightUnit="Percentage" fontSizeMapUnitScale="3x:0,0,0,0,0,0" multilineHeight="1" blendMode="0" fontFamily="IBM Plex Sans" fontSizeUnit="MapUnit" textOrientation="horizontal" textOpacity="1" capitalization="0" fieldName="name" textColor="50,50,50,255" fontKerning="1" allowHtml="0">
             <families/>

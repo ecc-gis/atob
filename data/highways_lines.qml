@@ -1,29 +1,29 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis simplifyDrawingTol="1" version="3.34.4-Prizren" styleCategories="Symbology|Labeling|Fields|Rendering" symbologyReferenceScale="-1" simplifyAlgorithm="0" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" minScale="0" simplifyLocal="1" maxScale="0" labelsEnabled="1" simplifyMaxScale="1">
-  <renderer-v2 enableorderby="0" type="RuleRenderer" forceraster="0" symbollevels="0" referencescale="-1">
+<qgis maxScale="0" simplifyLocal="1" simplifyAlgorithm="0" simplifyDrawingHints="1" styleCategories="Symbology|Labeling|Fields|Rendering" hasScaleBasedVisibilityFlag="0" symbologyReferenceScale="-1" labelsEnabled="1" simplifyMaxScale="1" minScale="0" version="3.34.4-Prizren" simplifyDrawingTol="1">
+  <renderer-v2 type="RuleRenderer" referencescale="-1" symbollevels="0" forceraster="0" enableorderby="0">
     <rules key="{afd5331e-2cff-4a95-8eb5-ca056dd4f921}">
-      <rule key="{133a39f4-64f0-4da1-8730-512c63abc0ff}" filter="&quot;highway&quot; = 'cycleway' AND (&quot;segregated&quot; != 'no' OR &quot;segregated&quot; IS NULL)" symbol="0" label="Cycleways"/>
-      <rule key="{716d4d00-00f7-4d28-92a5-626f1f46c9ac}" filter="&quot;cycleway:lane&quot;='track' OR &quot;cycleway:left:lane&quot;='track' OR &quot;cycleway:both:lane&quot;='track' OR &quot;cycleway:lane&quot;='exclusive' OR &quot;cycleway:left:lane&quot;='exclusive' OR &quot;cycleway:both:lane&quot;='exclusive'" symbol="1" label="On-road cycleway tracks (left)"/>
-      <rule key="{27b6775d-4510-4f54-a70b-706c579de851}" filter="&quot;cycleway:lane&quot;='track' OR &quot;cycleway:right:lane&quot;='track' OR &quot;cycleway:both:lane&quot;='track' OR &quot;cycleway:lane&quot;='exclusive' OR &quot;cycleway:right:lane&quot;='exclusive' OR &quot;cycleway:both:lane&quot;='exclusive'" symbol="2" label="On-road cycleway tracks (right)"/>
-      <rule key="{b9bd333e-5c63-4478-a0bb-7dd063360584}" filter="&quot;cycleway&quot;='share_busway' OR &quot;cycleway:left&quot;='share_busway' OR &quot;cycleway:both&quot;='share_busway'" symbol="3" label="On-road cycleway share_busway (left)"/>
-      <rule key="{bc74cf67-a5fb-4777-8c2c-c4c66f56923d}" filter="&quot;cycleway&quot;='share_busway' OR &quot;cycleway:right&quot;='share_busway' OR &quot;cycleway:both&quot;='share_busway' OR &quot;cycleway&quot;='opposite' OR &quot;oneway:bicycle&quot;='no'" symbol="4" label="On-road cycleway share_busway (right)"/>
-      <rule key="{4922f794-5774-4833-a5de-3f9bc4f448ef}" filter="(&quot;highway&quot;='primary' OR &quot;highway&quot;='secondary' OR &quot;highway&quot;='tertiary' OR &quot;highway&quot;='trunk') AND &quot;oneway&quot;='yes' AND &quot;junction&quot; IS NOT 'roundabout' AND (&quot;dual_carriageway&quot; != 'yes' OR &quot;dual_carriageway&quot; IS NULL) AND $length > 35" symbol="5" label="One-Way"/>
-      <rule key="{eb379c12-05ec-4216-b3b1-68d26ce60975}" filter="&quot;highway&quot;='motorway' OR &quot;highway&quot;='motorway_link' " symbol="6" label="motorways"/>
-      <rule key="{2e768673-e0ec-4581-b870-31a0be83f0fa}" filter="&quot;highway&quot;='primary' OR &quot;highway&quot;='trunk' OR &quot;highway&quot;='primary_link' OR &quot;highway&quot;='trunk_link'" symbol="7" label="A Roads"/>
-      <rule key="{22959800-a6d8-40dd-ae5b-a76983b1a75c}" filter="&quot;highway&quot;='secondary' OR &quot;highway&quot;='tertiary' OR &quot;highway&quot;='secondary_link' OR &quot;highway&quot;='tertiary_link' " symbol="8" label="Main Roads"/>
-      <rule key="{2a6bdcf9-c034-4b76-babe-62ccb3ba0f8c}" filter="&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified'" symbol="9" label="Minor Roads"/>
-      <rule key="{4feac12d-eafe-406e-8282-7d45a95d1b67}" filter="(&quot;highway&quot; IN ('residential','unclassified','service') AND &quot;access&quot;='no' AND &quot;bicycle&quot; IN ('yes','permissive','designated')) OR (&quot;highway&quot;='service' AND &quot;bicycle&quot; IN('yes','permissive','designated')) OR &quot;motor_vehicle&quot;='destination' OR &quot;highway&quot;='living_street'" symbol="10" label="Mixed with limited traffic"/>
-      <rule key="{ef0cce67-dd3b-4582-9952-a3526989ef28}" filter="(&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified') AND &quot;oneway&quot;='yes' AND (&quot;oneway:bicycle&quot; IS NULL OR &quot;oneway:bicycle&quot;!='no') AND $length > 35" symbol="11" label="Oneway Minor Roads"/>
-      <rule key="{543b5a3a-0f06-45b3-bbb8-35a5b976051e}" filter="(&quot;highway&quot;='footway' OR &quot;highway&quot;='path' OR &quot;highway&quot;='pedestrian') AND (&quot;bicycle&quot;='no' OR &quot;bicycle&quot;='dismount' OR &quot;bicycle&quot; IS NULL)" symbol="12" label="Footways"/>
-      <rule key="{73a1d38f-eef1-4d9c-a7f8-e16103eb971d}" filter="&quot;crossing&quot; IN ('traffic_signals','zebra') OR &quot;crossing_ref&quot; IN ('zebra','parallel','toucan','pelican')" symbol="13" checkstate="0" label="Zebras"/>
-      <rule key="{1aabe8e5-86b5-4e99-9913-05b6238f6463}" filter="&quot;highway&quot; in ('service','living_street')" symbol="14" label="Service Roads"/>
-      <rule key="{477982cf-f94c-44b8-a398-b2bfa4d8cc8c}" filter="&quot;bridge&quot; = 'yes' AND (&quot;highway&quot;='footway' OR &quot;highway&quot;='path') AND (&quot;footway&quot; != 'sidewalk' OR &quot;footway&quot; IS NULL) AND (&quot;bicycle&quot;='no' OR &quot;bicycle&quot;='dismount' OR &quot;bicycle&quot; IS NULL)" symbol="15" label="Footbridges"/>
-      <rule key="{a0ab9fc6-882d-4c42-985b-ca74e20b3d3a}" filter="(&quot;highway&quot; IN ('footway','path','pedestrian') AND (&quot;bicycle&quot;='yes' OR &quot;bicycle&quot;='permissive' OR &quot;bicycle&quot;='designated')) OR (&quot;highway&quot;='cycleway' AND &quot;segregated&quot;='no') OR &quot;crossing_ref&quot;='toucan'" symbol="16" label="Mixed with pedestrians"/>
-      <rule key="{1c77121f-6dfa-4e3c-85c7-e2f715c3403b}" filter="&quot;highway&quot;='steps'" symbol="17" label="Steps"/>
-      <rule key="{b107362d-1ca2-44d6-9a31-b7a06e4da99a}" filter="&quot;traffic_intervention&quot;='modal_filter'" symbol="18" label="Barriered"/>
+      <rule label="Cycleways" filter="&quot;highway&quot; = 'cycleway' AND (&quot;segregated&quot; != 'no' OR &quot;segregated&quot; IS NULL)" key="{133a39f4-64f0-4da1-8730-512c63abc0ff}" symbol="0"/>
+      <rule label="On-road cycleway tracks (left)" filter="&quot;cycleway&quot;='track' OR &quot;cycleway:lane&quot;='track' OR &quot;cycleway:left&quot;='track' OR &quot;cycleway:left:lane&quot;='track' OR &quot;cycleway:both:lane&quot;='track'" key="{716d4d00-00f7-4d28-92a5-626f1f46c9ac}" symbol="1"/>
+      <rule label="On-road cycleway tracks (right)" filter="&quot;cycleway&quot;='track' OR &quot;cycleway:lane&quot;='track' OR &quot;cycleway:right&quot;='track' OR &quot;cycleway:right:lane&quot;='track' OR &quot;cycleway:both:lane&quot;='track' " key="{27b6775d-4510-4f54-a70b-706c579de851}" symbol="2"/>
+      <rule label="On-road cycleway share_busway (left)" filter="&quot;cycleway&quot;='share_busway' OR &quot;cycleway:left&quot;='share_busway' OR &quot;cycleway:both&quot;='share_busway'   OR &quot;cycleway:lane&quot;='exclusive' OR &quot;cycleway:left:lane&quot;='exclusive' OR &quot;cycleway:both:lane&quot;='exclusive'" key="{b9bd333e-5c63-4478-a0bb-7dd063360584}" symbol="3"/>
+      <rule label="On-road cycleway share_busway (right)" filter="&quot;cycleway&quot;='share_busway' OR &quot;cycleway:right&quot;='share_busway' OR &quot;cycleway:both&quot;='share_busway' OR &quot;oneway:bicycle&quot;='no' OR &quot;cycleway:lane&quot;='exclusive' OR &quot;cycleway:right:lane&quot;='exclusive' OR &quot;cycleway:both:lane&quot;='exclusive'" key="{bc74cf67-a5fb-4777-8c2c-c4c66f56923d}" symbol="4"/>
+      <rule label="One-Way" filter="(&quot;highway&quot;='primary' OR &quot;highway&quot;='secondary' OR &quot;highway&quot;='tertiary' OR &quot;highway&quot;='trunk') AND &quot;oneway&quot;='yes' AND &quot;junction&quot; IS NOT 'roundabout' AND (&quot;dual_carriageway&quot; != 'yes' OR &quot;dual_carriageway&quot; IS NULL) AND $length > 35" key="{4922f794-5774-4833-a5de-3f9bc4f448ef}" symbol="5"/>
+      <rule label="motorways" filter="&quot;highway&quot;='motorway' OR &quot;highway&quot;='motorway_link' " key="{eb379c12-05ec-4216-b3b1-68d26ce60975}" symbol="6"/>
+      <rule label="A Roads" filter="&quot;highway&quot;='primary' OR &quot;highway&quot;='trunk' OR &quot;highway&quot;='primary_link' OR &quot;highway&quot;='trunk_link'" key="{2e768673-e0ec-4581-b870-31a0be83f0fa}" symbol="7"/>
+      <rule label="Main Roads" filter="&quot;highway&quot;='secondary' OR &quot;highway&quot;='tertiary' OR &quot;highway&quot;='secondary_link' OR &quot;highway&quot;='tertiary_link' " key="{22959800-a6d8-40dd-ae5b-a76983b1a75c}" symbol="8"/>
+      <rule label="Minor Roads" filter="&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified'" key="{2a6bdcf9-c034-4b76-babe-62ccb3ba0f8c}" symbol="9"/>
+      <rule label="Mixed with limited traffic" filter="(&quot;highway&quot; IN ('residential','unclassified','service') AND &quot;access&quot;='no' AND &quot;bicycle&quot; IN ('yes','permissive','designated')) OR (&quot;highway&quot;='service' AND &quot;bicycle&quot; IN('yes','permissive','designated')) OR &quot;motor_vehicle&quot;='destination' OR &quot;highway&quot;='living_street'" key="{4feac12d-eafe-406e-8282-7d45a95d1b67}" symbol="10"/>
+      <rule label="Oneway Minor Roads" filter="(&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified') AND &quot;oneway&quot;='yes' AND (&quot;oneway:bicycle&quot; IS NULL OR &quot;oneway:bicycle&quot;!='no') AND $length > 35" key="{ef0cce67-dd3b-4582-9952-a3526989ef28}" symbol="11"/>
+      <rule label="Footways" filter="(&quot;highway&quot;='footway' OR &quot;highway&quot;='path' OR &quot;highway&quot;='pedestrian') AND (&quot;bicycle&quot;='no' OR &quot;bicycle&quot;='dismount' OR &quot;bicycle&quot; IS NULL)" key="{543b5a3a-0f06-45b3-bbb8-35a5b976051e}" symbol="12"/>
+      <rule label="Zebras" filter="&quot;crossing&quot; IN ('traffic_signals','zebra') OR &quot;crossing_ref&quot; IN ('zebra','parallel','toucan','pelican')" key="{73a1d38f-eef1-4d9c-a7f8-e16103eb971d}" symbol="13" checkstate="0"/>
+      <rule label="Service Roads" filter="&quot;highway&quot; in ('service','living_street')" key="{1aabe8e5-86b5-4e99-9913-05b6238f6463}" symbol="14"/>
+      <rule label="Footbridges" filter="&quot;bridge&quot; = 'yes' AND (&quot;highway&quot;='footway' OR &quot;highway&quot;='path') AND (&quot;footway&quot; != 'sidewalk' OR &quot;footway&quot; IS NULL) AND (&quot;bicycle&quot;='no' OR &quot;bicycle&quot;='dismount' OR &quot;bicycle&quot; IS NULL)" key="{477982cf-f94c-44b8-a398-b2bfa4d8cc8c}" symbol="15"/>
+      <rule label="Mixed with pedestrians" filter="(&quot;highway&quot; IN ('footway','path','pedestrian') AND (&quot;bicycle&quot;='yes' OR &quot;bicycle&quot;='permissive' OR &quot;bicycle&quot;='designated')) OR (&quot;highway&quot;='cycleway' AND &quot;segregated&quot;='no') OR &quot;crossing_ref&quot;='toucan'" key="{a0ab9fc6-882d-4c42-985b-ca74e20b3d3a}" symbol="16"/>
+      <rule label="Steps" filter="&quot;highway&quot;='steps'" key="{1c77121f-6dfa-4e3c-85c7-e2f715c3403b}" symbol="17"/>
+      <rule label="Barriered" filter="&quot;traffic_intervention&quot;='modal_filter'" key="{b107362d-1ca2-44d6-9a31-b7a06e4da99a}" symbol="18"/>
     </rules>
     <symbols>
-      <symbol force_rhr="0" type="line" is_animated="0" frame_rate="10" name="0" clip_to_extent="1" alpha="1">
+      <symbol alpha="1" type="line" name="0" force_rhr="0" frame_rate="10" is_animated="0" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" name="name" value=""/>
@@ -31,7 +31,7 @@
             <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer pass="4" enabled="1" id="{bf20e065-f66b-4d26-be4e-bdc51409d2e2}" class="SimpleLine" locked="0">
+        <layer pass="4" id="{bf20e065-f66b-4d26-be4e-bdc51409d2e2}" enabled="1" class="SimpleLine" locked="0">
           <Option type="Map">
             <Option type="QString" name="align_dash_pattern" value="0"/>
             <Option type="QString" name="capstyle" value="round"/>
@@ -70,7 +70,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol force_rhr="0" type="line" is_animated="0" frame_rate="10" name="1" clip_to_extent="1" alpha="1">
+      <symbol alpha="1" type="line" name="1" force_rhr="0" frame_rate="10" is_animated="0" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" name="name" value=""/>
@@ -78,7 +78,7 @@
             <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer pass="4" enabled="1" id="{57303e8f-5b2e-4ce6-ae45-76a624f961af}" class="SimpleLine" locked="0">
+        <layer pass="4" id="{57303e8f-5b2e-4ce6-ae45-76a624f961af}" enabled="1" class="SimpleLine" locked="0">
           <Option type="Map">
             <Option type="QString" name="align_dash_pattern" value="0"/>
             <Option type="QString" name="capstyle" value="flat"/>
@@ -117,7 +117,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol force_rhr="0" type="line" is_animated="0" frame_rate="10" name="10" clip_to_extent="1" alpha="1">
+      <symbol alpha="1" type="line" name="10" force_rhr="0" frame_rate="10" is_animated="0" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" name="name" value=""/>
@@ -125,7 +125,7 @@
             <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer pass="4" enabled="1" id="{32dc70e7-7f24-4507-b15a-9b4709f9a403}" class="SimpleLine" locked="0">
+        <layer pass="4" id="{32dc70e7-7f24-4507-b15a-9b4709f9a403}" enabled="1" class="SimpleLine" locked="0">
           <Option type="Map">
             <Option type="QString" name="align_dash_pattern" value="0"/>
             <Option type="QString" name="capstyle" value="flat"/>
@@ -164,7 +164,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol force_rhr="0" type="line" is_animated="0" frame_rate="10" name="11" clip_to_extent="1" alpha="1">
+      <symbol alpha="1" type="line" name="11" force_rhr="0" frame_rate="10" is_animated="0" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" name="name" value=""/>
@@ -172,7 +172,7 @@
             <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer pass="0" enabled="1" id="{125e3fab-0029-4dc9-a6af-98e11127b76f}" class="SimpleLine" locked="0">
+        <layer pass="0" id="{125e3fab-0029-4dc9-a6af-98e11127b76f}" enabled="1" class="SimpleLine" locked="0">
           <Option type="Map">
             <Option type="QString" name="align_dash_pattern" value="0"/>
             <Option type="QString" name="capstyle" value="round"/>
@@ -210,7 +210,7 @@
             </Option>
           </data_defined_properties>
         </layer>
-        <layer pass="1" enabled="1" id="{79b107d3-24f3-4623-868d-573e2e680fd1}" class="SimpleLine" locked="0">
+        <layer pass="1" id="{79b107d3-24f3-4623-868d-573e2e680fd1}" enabled="1" class="SimpleLine" locked="0">
           <Option type="Map">
             <Option type="QString" name="align_dash_pattern" value="0"/>
             <Option type="QString" name="capstyle" value="round"/>
@@ -248,7 +248,7 @@
             </Option>
           </data_defined_properties>
         </layer>
-        <layer pass="3" enabled="1" id="{8e9ae916-6129-4d75-985c-3f9494e4cd71}" class="MarkerLine" locked="0">
+        <layer pass="3" id="{8e9ae916-6129-4d75-985c-3f9494e4cd71}" enabled="1" class="MarkerLine" locked="0">
           <Option type="Map">
             <Option type="QString" name="average_angle_length" value="4"/>
             <Option type="QString" name="average_angle_map_unit_scale" value="3x:0,0,0,0,0,0"/>
@@ -274,7 +274,7 @@
               <Option type="QString" name="type" value="collection"/>
             </Option>
           </data_defined_properties>
-          <symbol force_rhr="0" type="marker" is_animated="0" frame_rate="10" name="@11@2" clip_to_extent="1" alpha="1">
+          <symbol alpha="1" type="marker" name="@11@2" force_rhr="0" frame_rate="10" is_animated="0" clip_to_extent="1">
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" name="name" value=""/>
@@ -282,7 +282,7 @@
                 <Option type="QString" name="type" value="collection"/>
               </Option>
             </data_defined_properties>
-            <layer pass="0" enabled="1" id="{bc42c1cf-dbe4-4b02-96dc-621f1ebefc2d}" class="SimpleMarker" locked="0">
+            <layer pass="0" id="{bc42c1cf-dbe4-4b02-96dc-621f1ebefc2d}" enabled="1" class="SimpleMarker" locked="0">
               <Option type="Map">
                 <Option type="QString" name="angle" value="0"/>
                 <Option type="QString" name="cap_style" value="round"/>
@@ -315,7 +315,7 @@
           </symbol>
         </layer>
       </symbol>
-      <symbol force_rhr="0" type="line" is_animated="0" frame_rate="10" name="12" clip_to_extent="1" alpha="0.75">
+      <symbol alpha="0.75" type="line" name="12" force_rhr="0" frame_rate="10" is_animated="0" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" name="name" value=""/>
@@ -323,7 +323,7 @@
             <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer pass="0" enabled="1" id="{8496253a-8bdb-41f4-b378-53dee8462139}" class="SimpleLine" locked="0">
+        <layer pass="0" id="{8496253a-8bdb-41f4-b378-53dee8462139}" enabled="1" class="SimpleLine" locked="0">
           <Option type="Map">
             <Option type="QString" name="align_dash_pattern" value="1"/>
             <Option type="QString" name="capstyle" value="flat"/>
@@ -362,7 +362,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol force_rhr="0" type="line" is_animated="0" frame_rate="10" name="13" clip_to_extent="1" alpha="0.75">
+      <symbol alpha="0.75" type="line" name="13" force_rhr="0" frame_rate="10" is_animated="0" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" name="name" value=""/>
@@ -370,7 +370,7 @@
             <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer pass="4" enabled="1" id="{8496253a-8bdb-41f4-b378-53dee8462139}" class="SimpleLine" locked="0">
+        <layer pass="4" id="{8496253a-8bdb-41f4-b378-53dee8462139}" enabled="1" class="SimpleLine" locked="0">
           <Option type="Map">
             <Option type="QString" name="align_dash_pattern" value="1"/>
             <Option type="QString" name="capstyle" value="flat"/>
@@ -409,7 +409,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol force_rhr="0" type="line" is_animated="0" frame_rate="10" name="14" clip_to_extent="1" alpha="1">
+      <symbol alpha="1" type="line" name="14" force_rhr="0" frame_rate="10" is_animated="0" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" name="name" value=""/>
@@ -417,7 +417,7 @@
             <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer pass="0" enabled="1" id="{e3a622fc-a773-437d-9760-07fe17616b2f}" class="SimpleLine" locked="0">
+        <layer pass="0" id="{e3a622fc-a773-437d-9760-07fe17616b2f}" enabled="1" class="SimpleLine" locked="0">
           <Option type="Map">
             <Option type="QString" name="align_dash_pattern" value="0"/>
             <Option type="QString" name="capstyle" value="round"/>
@@ -455,7 +455,7 @@
             </Option>
           </data_defined_properties>
         </layer>
-        <layer pass="1" enabled="1" id="{fa3f17c9-5e66-4032-9d94-5090481a4213}" class="SimpleLine" locked="0">
+        <layer pass="1" id="{fa3f17c9-5e66-4032-9d94-5090481a4213}" enabled="1" class="SimpleLine" locked="0">
           <Option type="Map">
             <Option type="QString" name="align_dash_pattern" value="0"/>
             <Option type="QString" name="capstyle" value="round"/>
@@ -494,7 +494,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol force_rhr="0" type="line" is_animated="0" frame_rate="10" name="15" clip_to_extent="1" alpha="1">
+      <symbol alpha="1" type="line" name="15" force_rhr="0" frame_rate="10" is_animated="0" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" name="name" value=""/>
@@ -502,7 +502,7 @@
             <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer pass="4" enabled="1" id="{e3a622fc-a773-437d-9760-07fe17616b2f}" class="SimpleLine" locked="0">
+        <layer pass="4" id="{e3a622fc-a773-437d-9760-07fe17616b2f}" enabled="1" class="SimpleLine" locked="0">
           <Option type="Map">
             <Option type="QString" name="align_dash_pattern" value="0"/>
             <Option type="QString" name="capstyle" value="round"/>
@@ -540,7 +540,7 @@
             </Option>
           </data_defined_properties>
         </layer>
-        <layer pass="6" enabled="1" id="{fa3f17c9-5e66-4032-9d94-5090481a4213}" class="SimpleLine" locked="0">
+        <layer pass="6" id="{fa3f17c9-5e66-4032-9d94-5090481a4213}" enabled="1" class="SimpleLine" locked="0">
           <Option type="Map">
             <Option type="QString" name="align_dash_pattern" value="1"/>
             <Option type="QString" name="capstyle" value="round"/>
@@ -578,7 +578,7 @@
             </Option>
           </data_defined_properties>
         </layer>
-        <layer pass="6" enabled="1" id="{02c8f64a-f518-4e77-b5ff-6113af33e285}" class="SimpleLine" locked="0">
+        <layer pass="6" id="{02c8f64a-f518-4e77-b5ff-6113af33e285}" enabled="1" class="SimpleLine" locked="0">
           <Option type="Map">
             <Option type="QString" name="align_dash_pattern" value="0"/>
             <Option type="QString" name="capstyle" value="flat"/>
@@ -617,7 +617,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol force_rhr="0" type="line" is_animated="0" frame_rate="10" name="16" clip_to_extent="1" alpha="1">
+      <symbol alpha="1" type="line" name="16" force_rhr="0" frame_rate="10" is_animated="0" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" name="name" value=""/>
@@ -625,7 +625,7 @@
             <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer pass="4" enabled="1" id="{4cb1a795-4ca3-4d6b-8f9a-9b46f0d86158}" class="SimpleLine" locked="0">
+        <layer pass="4" id="{4cb1a795-4ca3-4d6b-8f9a-9b46f0d86158}" enabled="1" class="SimpleLine" locked="0">
           <Option type="Map">
             <Option type="QString" name="align_dash_pattern" value="0"/>
             <Option type="QString" name="capstyle" value="flat"/>
@@ -664,7 +664,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol force_rhr="0" type="line" is_animated="0" frame_rate="10" name="17" clip_to_extent="1" alpha="1">
+      <symbol alpha="1" type="line" name="17" force_rhr="0" frame_rate="10" is_animated="0" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" name="name" value=""/>
@@ -672,7 +672,7 @@
             <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer pass="5" enabled="1" id="{58e1aed0-b702-4ebd-9309-e5913003f236}" class="SimpleLine" locked="0">
+        <layer pass="5" id="{58e1aed0-b702-4ebd-9309-e5913003f236}" enabled="1" class="SimpleLine" locked="0">
           <Option type="Map">
             <Option type="QString" name="align_dash_pattern" value="0"/>
             <Option type="QString" name="capstyle" value="square"/>
@@ -710,7 +710,7 @@
             </Option>
           </data_defined_properties>
         </layer>
-        <layer pass="6" enabled="1" id="{2d5b580a-773a-4175-9c29-daf4543ae146}" class="SimpleLine" locked="0">
+        <layer pass="6" id="{2d5b580a-773a-4175-9c29-daf4543ae146}" enabled="1" class="SimpleLine" locked="0">
           <Option type="Map">
             <Option type="QString" name="align_dash_pattern" value="0"/>
             <Option type="QString" name="capstyle" value="flat"/>
@@ -749,7 +749,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol force_rhr="0" type="line" is_animated="0" frame_rate="10" name="18" clip_to_extent="1" alpha="1">
+      <symbol alpha="1" type="line" name="18" force_rhr="0" frame_rate="10" is_animated="0" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" name="name" value=""/>
@@ -757,7 +757,7 @@
             <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer pass="5" enabled="1" id="{8fb64057-0281-4797-aa83-ff747318d43a}" class="MarkerLine" locked="0">
+        <layer pass="5" id="{8fb64057-0281-4797-aa83-ff747318d43a}" enabled="1" class="MarkerLine" locked="0">
           <Option type="Map">
             <Option type="QString" name="average_angle_length" value="4"/>
             <Option type="QString" name="average_angle_map_unit_scale" value="3x:0,0,0,0,0,0"/>
@@ -783,7 +783,7 @@
               <Option type="QString" name="type" value="collection"/>
             </Option>
           </data_defined_properties>
-          <symbol force_rhr="0" type="marker" is_animated="0" frame_rate="10" name="@18@0" clip_to_extent="1" alpha="1">
+          <symbol alpha="1" type="marker" name="@18@0" force_rhr="0" frame_rate="10" is_animated="0" clip_to_extent="1">
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" name="name" value=""/>
@@ -791,7 +791,7 @@
                 <Option type="QString" name="type" value="collection"/>
               </Option>
             </data_defined_properties>
-            <layer pass="0" enabled="1" id="{0495e592-ce8e-47fd-a515-baac20701235}" class="SvgMarker" locked="0">
+            <layer pass="0" id="{0495e592-ce8e-47fd-a515-baac20701235}" enabled="1" class="SvgMarker" locked="0">
               <Option type="Map">
                 <Option type="QString" name="angle" value="0"/>
                 <Option type="QString" name="color" value="111,111,111,255"/>
@@ -823,7 +823,7 @@
           </symbol>
         </layer>
       </symbol>
-      <symbol force_rhr="0" type="line" is_animated="0" frame_rate="10" name="2" clip_to_extent="1" alpha="1">
+      <symbol alpha="1" type="line" name="2" force_rhr="0" frame_rate="10" is_animated="0" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" name="name" value=""/>
@@ -831,7 +831,7 @@
             <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer pass="4" enabled="1" id="{f70f97df-1db4-4f7c-9750-4e16856b91ab}" class="SimpleLine" locked="0">
+        <layer pass="4" id="{f70f97df-1db4-4f7c-9750-4e16856b91ab}" enabled="1" class="SimpleLine" locked="0">
           <Option type="Map">
             <Option type="QString" name="align_dash_pattern" value="0"/>
             <Option type="QString" name="capstyle" value="flat"/>
@@ -870,7 +870,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol force_rhr="0" type="line" is_animated="0" frame_rate="10" name="3" clip_to_extent="1" alpha="1">
+      <symbol alpha="1" type="line" name="3" force_rhr="0" frame_rate="10" is_animated="0" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" name="name" value=""/>
@@ -878,7 +878,7 @@
             <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer pass="4" enabled="1" id="{f1176bfa-8242-4a28-b5ce-fc0db3269f1e}" class="SimpleLine" locked="0">
+        <layer pass="4" id="{f1176bfa-8242-4a28-b5ce-fc0db3269f1e}" enabled="1" class="SimpleLine" locked="0">
           <Option type="Map">
             <Option type="QString" name="align_dash_pattern" value="0"/>
             <Option type="QString" name="capstyle" value="flat"/>
@@ -917,7 +917,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol force_rhr="0" type="line" is_animated="0" frame_rate="10" name="4" clip_to_extent="1" alpha="1">
+      <symbol alpha="1" type="line" name="4" force_rhr="0" frame_rate="10" is_animated="0" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" name="name" value=""/>
@@ -925,7 +925,7 @@
             <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer pass="4" enabled="1" id="{700a4df1-e2db-49db-86ee-12801bce7527}" class="SimpleLine" locked="0">
+        <layer pass="4" id="{700a4df1-e2db-49db-86ee-12801bce7527}" enabled="1" class="SimpleLine" locked="0">
           <Option type="Map">
             <Option type="QString" name="align_dash_pattern" value="0"/>
             <Option type="QString" name="capstyle" value="flat"/>
@@ -964,7 +964,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol force_rhr="0" type="line" is_animated="0" frame_rate="10" name="5" clip_to_extent="1" alpha="1">
+      <symbol alpha="1" type="line" name="5" force_rhr="0" frame_rate="10" is_animated="0" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" name="name" value=""/>
@@ -972,7 +972,7 @@
             <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer pass="4" enabled="1" id="{b4b57414-daf9-47fc-a3d0-975dca1545a5}" class="MarkerLine" locked="0">
+        <layer pass="4" id="{b4b57414-daf9-47fc-a3d0-975dca1545a5}" enabled="1" class="MarkerLine" locked="0">
           <Option type="Map">
             <Option type="QString" name="average_angle_length" value="4"/>
             <Option type="QString" name="average_angle_map_unit_scale" value="3x:0,0,0,0,0,0"/>
@@ -998,7 +998,7 @@
               <Option type="QString" name="type" value="collection"/>
             </Option>
           </data_defined_properties>
-          <symbol force_rhr="0" type="marker" is_animated="0" frame_rate="10" name="@5@0" clip_to_extent="1" alpha="1">
+          <symbol alpha="1" type="marker" name="@5@0" force_rhr="0" frame_rate="10" is_animated="0" clip_to_extent="1">
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" name="name" value=""/>
@@ -1006,7 +1006,7 @@
                 <Option type="QString" name="type" value="collection"/>
               </Option>
             </data_defined_properties>
-            <layer pass="0" enabled="1" id="{717edfb9-a943-4302-9759-6151b170c40d}" class="SimpleMarker" locked="0">
+            <layer pass="0" id="{717edfb9-a943-4302-9759-6151b170c40d}" enabled="1" class="SimpleMarker" locked="0">
               <Option type="Map">
                 <Option type="QString" name="angle" value="0"/>
                 <Option type="QString" name="cap_style" value="round"/>
@@ -1039,7 +1039,7 @@
           </symbol>
         </layer>
       </symbol>
-      <symbol force_rhr="0" type="line" is_animated="0" frame_rate="10" name="6" clip_to_extent="1" alpha="1">
+      <symbol alpha="1" type="line" name="6" force_rhr="0" frame_rate="10" is_animated="0" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" name="name" value=""/>
@@ -1047,7 +1047,7 @@
             <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer pass="0" enabled="1" id="{3138a76c-3fb7-4e61-8ecc-dcec026d9bcd}" class="InterpolatedLine" locked="1">
+        <layer pass="0" id="{3138a76c-3fb7-4e61-8ecc-dcec026d9bcd}" enabled="1" class="InterpolatedLine" locked="1">
           <Option type="Map">
             <Option type="Map" name="color_ramp_shader">
               <Option type="int" name="color_ramp_shader_classification_mode" value="1"/>
@@ -1092,7 +1092,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol force_rhr="0" type="line" is_animated="0" frame_rate="10" name="7" clip_to_extent="1" alpha="1">
+      <symbol alpha="1" type="line" name="7" force_rhr="0" frame_rate="10" is_animated="0" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" name="name" value=""/>
@@ -1100,7 +1100,7 @@
             <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer pass="0" enabled="1" id="{640d14bd-cabb-4621-94bd-989883585e6b}" class="SimpleLine" locked="0">
+        <layer pass="0" id="{640d14bd-cabb-4621-94bd-989883585e6b}" enabled="1" class="SimpleLine" locked="0">
           <Option type="Map">
             <Option type="QString" name="align_dash_pattern" value="0"/>
             <Option type="QString" name="capstyle" value="round"/>
@@ -1138,7 +1138,7 @@
             </Option>
           </data_defined_properties>
         </layer>
-        <layer pass="3" enabled="1" id="{6729baee-6caa-4e3a-b45b-ec8c2183ad46}" class="InterpolatedLine" locked="1">
+        <layer pass="3" id="{6729baee-6caa-4e3a-b45b-ec8c2183ad46}" enabled="1" class="InterpolatedLine" locked="1">
           <Option type="Map">
             <Option type="Map" name="color_ramp_shader">
               <Option type="int" name="color_ramp_shader_classification_mode" value="1"/>
@@ -1183,7 +1183,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol force_rhr="0" type="line" is_animated="0" frame_rate="10" name="8" clip_to_extent="1" alpha="1">
+      <symbol alpha="1" type="line" name="8" force_rhr="0" frame_rate="10" is_animated="0" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" name="name" value=""/>
@@ -1191,7 +1191,7 @@
             <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer pass="0" enabled="1" id="{640d14bd-cabb-4621-94bd-989883585e6b}" class="SimpleLine" locked="0">
+        <layer pass="0" id="{640d14bd-cabb-4621-94bd-989883585e6b}" enabled="1" class="SimpleLine" locked="0">
           <Option type="Map">
             <Option type="QString" name="align_dash_pattern" value="0"/>
             <Option type="QString" name="capstyle" value="round"/>
@@ -1229,7 +1229,7 @@
             </Option>
           </data_defined_properties>
         </layer>
-        <layer pass="2" enabled="1" id="{f41a5772-1a26-4375-92cd-74a7cc9c9ac6}" class="InterpolatedLine" locked="1">
+        <layer pass="2" id="{f41a5772-1a26-4375-92cd-74a7cc9c9ac6}" enabled="1" class="InterpolatedLine" locked="1">
           <Option type="Map">
             <Option type="Map" name="color_ramp_shader">
               <Option type="int" name="color_ramp_shader_classification_mode" value="1"/>
@@ -1274,7 +1274,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol force_rhr="0" type="line" is_animated="0" frame_rate="10" name="9" clip_to_extent="1" alpha="1">
+      <symbol alpha="1" type="line" name="9" force_rhr="0" frame_rate="10" is_animated="0" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" name="name" value=""/>
@@ -1282,7 +1282,7 @@
             <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer pass="0" enabled="1" id="{1ef8b393-e11a-458b-bc21-7c81d696d9d1}" class="InterpolatedLine" locked="1">
+        <layer pass="0" id="{1ef8b393-e11a-458b-bc21-7c81d696d9d1}" enabled="1" class="InterpolatedLine" locked="1">
           <Option type="Map">
             <Option type="Map" name="color_ramp_shader">
               <Option type="int" name="color_ramp_shader_classification_mode" value="1"/>
@@ -1313,7 +1313,7 @@
             </Option>
           </data_defined_properties>
         </layer>
-        <layer pass="1" enabled="1" id="{bae06944-64ab-4c1a-9506-3f80371d64ad}" class="InterpolatedLine" locked="1">
+        <layer pass="1" id="{bae06944-64ab-4c1a-9506-3f80371d64ad}" enabled="1" class="InterpolatedLine" locked="1">
           <Option type="Map">
             <Option type="Map" name="color_ramp_shader">
               <Option type="int" name="color_ramp_shader_classification_mode" value="1"/>
@@ -1363,7 +1363,7 @@
   <selection mode="Default">
     <selectionColor invalid="1"/>
     <selectionSymbol>
-      <symbol force_rhr="0" type="line" is_animated="0" frame_rate="10" name="" clip_to_extent="1" alpha="1">
+      <symbol alpha="1" type="line" name="" force_rhr="0" frame_rate="10" is_animated="0" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" name="name" value=""/>
@@ -1371,7 +1371,7 @@
             <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer pass="0" enabled="1" id="{e7eaac07-f8a3-47b0-ab70-76cb0609c7ad}" class="SimpleLine" locked="0">
+        <layer pass="0" id="{e7eaac07-f8a3-47b0-ab70-76cb0609c7ad}" enabled="1" class="SimpleLine" locked="0">
           <Option type="Map">
             <Option type="QString" name="align_dash_pattern" value="0"/>
             <Option type="QString" name="capstyle" value="square"/>
@@ -1413,15 +1413,15 @@
     </selectionSymbol>
   </selection>
   <labeling type="rule-based">
-    <rules key="{07f6bbcb-b546-4203-a845-7fb858162450}">
-      <rule key="{bb68fbd5-4b44-4cda-ae0f-bb16ffe7158e}" active="0">
+    <rules key="{3bfccf62-2593-4e73-b68b-70f04af606cf}">
+      <rule active="0" key="{19f66dc2-1a8d-49cd-a036-a6bb450df074}">
         <settings calloutType="simple">
-          <text-style textColor="50,50,50,255" forcedItalic="0" fontWordSpacing="0" namedStyle="Regular" fontLetterSpacing="0" capitalization="1" fontSizeUnit="Point" fontSizeMapUnitScale="3x:0,0,0,0,0,0" multilineHeightUnit="Percentage" blendMode="0" useSubstitutions="0" fontStrikeout="0" isExpression="0" fontFamily="Ubuntu" allowHtml="0" fontUnderline="0" fontSize="8" textOrientation="horizontal" fontItalic="0" multilineHeight="1" textOpacity="1" forcedBold="0" fontKerning="1" fontWeight="50" previewBkgrdColor="255,255,255,255" fieldName="name" legendString="Aa">
+          <text-style useSubstitutions="0" fontWordSpacing="0" fontStrikeout="0" forcedItalic="0" previewBkgrdColor="255,255,255,255" legendString="Aa" fontItalic="0" fontWeight="50" isExpression="0" forcedBold="0" fontUnderline="0" fontLetterSpacing="0" namedStyle="Regular" fontSize="8" multilineHeightUnit="Percentage" fontSizeMapUnitScale="3x:0,0,0,0,0,0" multilineHeight="1" blendMode="0" fontFamily="Ubuntu" fontSizeUnit="Point" textOrientation="horizontal" textOpacity="1" capitalization="1" fieldName="name" textColor="50,50,50,255" fontKerning="1" allowHtml="0">
             <families/>
-            <text-buffer bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferBlendMode="0" bufferColor="250,250,250,255" bufferSize="1" bufferDraw="0" bufferJoinStyle="128" bufferNoFill="1" bufferOpacity="1"/>
-            <text-mask maskSizeUnits="MM" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskEnabled="0" maskJoinStyle="128" maskType="0" maskSize="0" maskOpacity="1" maskedSymbolLayers=""/>
-            <background shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeType="0" shapeOffsetUnit="Point" shapeType="0" shapeBorderWidth="0" shapeRotation="0" shapeOffsetY="0" shapeDraw="0" shapeSVGFile="" shapeRadiiX="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiUnit="Point" shapeFillColor="255,255,255,255" shapeSizeY="0" shapeBorderWidthUnit="Point" shapeSizeUnit="Point" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderColor="128,128,128,255" shapeOffsetX="0" shapeOpacity="1" shapeJoinStyle="64" shapeRadiiY="0" shapeBlendMode="0" shapeSizeX="0" shapeRotationType="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0">
-              <symbol force_rhr="0" type="marker" is_animated="0" frame_rate="10" name="markerSymbol" clip_to_extent="1" alpha="1">
+            <text-buffer bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferJoinStyle="128" bufferOpacity="1" bufferSizeUnits="MM" bufferDraw="0" bufferSize="1" bufferNoFill="1" bufferBlendMode="0" bufferColor="250,250,250,255"/>
+            <text-mask maskOpacity="1" maskJoinStyle="128" maskType="0" maskEnabled="0" maskedSymbolLayers="" maskSizeUnits="MM" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskSize="0"/>
+            <background shapeRadiiX="0" shapeRotation="0" shapeSizeY="0" shapeBorderWidth="0" shapeSizeType="0" shapeJoinStyle="64" shapeType="0" shapeSizeX="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetY="0" shapeBorderColor="128,128,128,255" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeBlendMode="0" shapeOffsetUnit="Point" shapeRotationType="0" shapeRadiiUnit="Point" shapeFillColor="255,255,255,255" shapeRadiiY="0" shapeBorderWidthUnit="Point" shapeOpacity="1" shapeDraw="0" shapeSVGFile="" shapeOffsetX="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeUnit="Point" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0">
+              <symbol alpha="1" type="marker" name="markerSymbol" force_rhr="0" frame_rate="10" is_animated="0" clip_to_extent="1">
                 <data_defined_properties>
                   <Option type="Map">
                     <Option type="QString" name="name" value=""/>
@@ -1429,7 +1429,7 @@
                     <Option type="QString" name="type" value="collection"/>
                   </Option>
                 </data_defined_properties>
-                <layer pass="0" enabled="1" id="" class="SimpleMarker" locked="0">
+                <layer pass="0" id="" enabled="1" class="SimpleMarker" locked="0">
                   <Option type="Map">
                     <Option type="QString" name="angle" value="0"/>
                     <Option type="QString" name="cap_style" value="square"/>
@@ -1460,7 +1460,7 @@
                   </data_defined_properties>
                 </layer>
               </symbol>
-              <symbol force_rhr="0" type="fill" is_animated="0" frame_rate="10" name="fillSymbol" clip_to_extent="1" alpha="1">
+              <symbol alpha="1" type="fill" name="fillSymbol" force_rhr="0" frame_rate="10" is_animated="0" clip_to_extent="1">
                 <data_defined_properties>
                   <Option type="Map">
                     <Option type="QString" name="name" value=""/>
@@ -1468,7 +1468,7 @@
                     <Option type="QString" name="type" value="collection"/>
                   </Option>
                 </data_defined_properties>
-                <layer pass="0" enabled="1" id="" class="SimpleFill" locked="0">
+                <layer pass="0" id="" enabled="1" class="SimpleFill" locked="0">
                   <Option type="Map">
                     <Option type="QString" name="border_width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
                     <Option type="QString" name="color" value="255,255,255,255"/>
@@ -1492,7 +1492,7 @@
                 </layer>
               </symbol>
             </background>
-            <shadow shadowOffsetGlobal="1" shadowBlendMode="6" shadowOffsetDist="1" shadowOffsetUnit="MM" shadowUnder="0" shadowRadiusAlphaOnly="0" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetAngle="135" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowScale="100" shadowRadiusUnit="MM" shadowDraw="0" shadowRadius="1.5" shadowOpacity="0.69999999999999996" shadowColor="0,0,0,255"/>
+            <shadow shadowRadiusUnit="MM" shadowScale="100" shadowBlendMode="6" shadowRadius="1.5" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetUnit="MM" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowColor="0,0,0,255" shadowOffsetGlobal="1" shadowOffsetAngle="135" shadowOffsetDist="1" shadowOpacity="0.69999999999999996" shadowDraw="0" shadowUnder="0" shadowRadiusAlphaOnly="0"/>
             <dd_properties>
               <Option type="Map">
                 <Option type="QString" name="name" value=""/>
@@ -1502,9 +1502,9 @@
             </dd_properties>
             <substitutions/>
           </text-style>
-          <text-format useMaxLineLengthForAutoWrap="1" reverseDirectionSymbol="0" placeDirectionSymbol="0" formatNumbers="0" plussign="0" leftDirectionSymbol="&lt;" decimals="3" addDirectionSymbol="0" rightDirectionSymbol=">" multilineAlign="0" autoWrapLength="0" wrapChar=""/>
-          <placement dist="0" maxCurvedCharAngleIn="24" geometryGenerator="" xOffset="0" centroidWhole="0" offsetUnits="MM" lineAnchorPercent="0.5" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" yOffset="0" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" placement="3" preserveRotation="1" lineAnchorType="0" maxCurvedCharAngleOut="-25" rotationUnit="AngleDegrees" placementFlags="9" geometryGeneratorEnabled="0" repeatDistanceUnits="MM" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" repeatDistance="0" rotationAngle="0" layerType="LineGeometry" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" distUnits="MM" polygonPlacementFlags="2" overrunDistanceUnit="MM" centroidInside="0" geometryGeneratorType="PointGeometry" quadOffset="4" lineAnchorTextPoint="FollowPlacement" overlapHandling="PreventOverlap" overrunDistance="0" lineAnchorClipping="0" priority="5" offsetType="0" allowDegraded="0" fitInPolygonOnly="0" distMapUnitScale="3x:0,0,0,0,0,0"/>
-          <rendering scaleVisibility="0" scaleMax="0" mergeLines="0" obstacleType="1" fontMinPixelSize="3" drawLabels="1" obstacleFactor="1" scaleMin="0" obstacle="1" maxNumLabels="2000" unplacedVisibility="0" zIndex="0" limitNumLabels="0" fontMaxPixelSize="10000" labelPerPart="0" minFeatureSize="0" fontLimitPixelSize="0" upsidedownLabels="0"/>
+          <text-format addDirectionSymbol="0" autoWrapLength="0" rightDirectionSymbol=">" placeDirectionSymbol="0" decimals="3" multilineAlign="0" leftDirectionSymbol="&lt;" wrapChar="" useMaxLineLengthForAutoWrap="1" reverseDirectionSymbol="0" formatNumbers="0" plussign="0"/>
+          <placement preserveRotation="1" overrunDistanceUnit="MM" dist="0" geometryGeneratorType="PointGeometry" maxCurvedCharAngleOut="-25" yOffset="0" overlapHandling="PreventOverlap" priority="5" polygonPlacementFlags="2" centroidInside="0" lineAnchorType="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" lineAnchorPercent="0.5" repeatDistanceUnits="MM" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" repeatDistance="0" overrunDistance="0" distMapUnitScale="3x:0,0,0,0,0,0" lineAnchorTextPoint="FollowPlacement" distUnits="MM" geometryGeneratorEnabled="0" quadOffset="4" offsetUnits="MM" xOffset="0" fitInPolygonOnly="0" centroidWhole="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" geometryGenerator="" lineAnchorClipping="0" rotationUnit="AngleDegrees" placement="3" rotationAngle="0" offsetType="0" layerType="LineGeometry" placementFlags="9" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" allowDegraded="0" maxCurvedCharAngleIn="24"/>
+          <rendering minFeatureSize="0" obstacleType="1" maxNumLabels="2000" labelPerPart="0" fontMaxPixelSize="10000" fontLimitPixelSize="0" scaleVisibility="0" mergeLines="0" drawLabels="1" obstacleFactor="1" obstacle="1" upsidedownLabels="0" scaleMin="0" fontMinPixelSize="3" unplacedVisibility="0" scaleMax="0" zIndex="0" limitNumLabels="0"/>
           <dd_properties>
             <Option type="Map">
               <Option type="QString" name="name" value=""/>
@@ -1524,7 +1524,7 @@
               <Option type="bool" name="drawToAllParts" value="false"/>
               <Option type="QString" name="enabled" value="0"/>
               <Option type="QString" name="labelAnchorPoint" value="point_on_exterior"/>
-              <Option type="QString" name="lineSymbol" value="&lt;symbol force_rhr=&quot;0&quot; type=&quot;line&quot; is_animated=&quot;0&quot; frame_rate=&quot;10&quot; name=&quot;symbol&quot; clip_to_extent=&quot;1&quot; alpha=&quot;1&quot;>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; name=&quot;name&quot; value=&quot;&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;type&quot; value=&quot;collection&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;layer pass=&quot;0&quot; enabled=&quot;1&quot; id=&quot;{f17fa1f2-c0d2-4f4b-b637-7550eb232a2f}&quot; class=&quot;SimpleLine&quot; locked=&quot;0&quot;>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; name=&quot;align_dash_pattern&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;capstyle&quot; value=&quot;square&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;customdash&quot; value=&quot;5;2&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;customdash_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;customdash_unit&quot; value=&quot;MM&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;dash_pattern_offset&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;dash_pattern_offset_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;dash_pattern_offset_unit&quot; value=&quot;MM&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;draw_inside_polygon&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;joinstyle&quot; value=&quot;bevel&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;line_color&quot; value=&quot;60,60,60,255&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;line_style&quot; value=&quot;solid&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;line_width&quot; value=&quot;0.3&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;line_width_unit&quot; value=&quot;MM&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;offset&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;offset_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;offset_unit&quot; value=&quot;MM&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;ring_filter&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;trim_distance_end&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;trim_distance_end_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;trim_distance_end_unit&quot; value=&quot;MM&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;trim_distance_start&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;trim_distance_start_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;trim_distance_start_unit&quot; value=&quot;MM&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;tweak_dash_pattern_on_corners&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;use_custom_dash&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;width_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;/Option>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; name=&quot;name&quot; value=&quot;&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;type&quot; value=&quot;collection&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>"/>
+              <Option type="QString" name="lineSymbol" value="&lt;symbol alpha=&quot;1&quot; type=&quot;line&quot; name=&quot;symbol&quot; force_rhr=&quot;0&quot; frame_rate=&quot;10&quot; is_animated=&quot;0&quot; clip_to_extent=&quot;1&quot;>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; name=&quot;name&quot; value=&quot;&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;type&quot; value=&quot;collection&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;layer pass=&quot;0&quot; id=&quot;{f17fa1f2-c0d2-4f4b-b637-7550eb232a2f}&quot; enabled=&quot;1&quot; class=&quot;SimpleLine&quot; locked=&quot;0&quot;>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; name=&quot;align_dash_pattern&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;capstyle&quot; value=&quot;square&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;customdash&quot; value=&quot;5;2&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;customdash_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;customdash_unit&quot; value=&quot;MM&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;dash_pattern_offset&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;dash_pattern_offset_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;dash_pattern_offset_unit&quot; value=&quot;MM&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;draw_inside_polygon&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;joinstyle&quot; value=&quot;bevel&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;line_color&quot; value=&quot;60,60,60,255&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;line_style&quot; value=&quot;solid&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;line_width&quot; value=&quot;0.3&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;line_width_unit&quot; value=&quot;MM&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;offset&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;offset_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;offset_unit&quot; value=&quot;MM&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;ring_filter&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;trim_distance_end&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;trim_distance_end_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;trim_distance_end_unit&quot; value=&quot;MM&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;trim_distance_start&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;trim_distance_start_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;trim_distance_start_unit&quot; value=&quot;MM&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;tweak_dash_pattern_on_corners&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;use_custom_dash&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;width_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;/Option>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; name=&quot;name&quot; value=&quot;&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;type&quot; value=&quot;collection&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>"/>
               <Option type="double" name="minLength" value="0"/>
               <Option type="QString" name="minLengthMapUnitScale" value="3x:0,0,0,0,0,0"/>
               <Option type="QString" name="minLengthUnit" value="MM"/>
@@ -1538,14 +1538,14 @@
           </callout>
         </settings>
       </rule>
-      <rule key="{d5cc2b9a-73f6-47c4-b5e4-da2a2587a9a7}" filter="&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified'" description="Minor Roads">
+      <rule filter="&quot;highway&quot;='residential' OR &quot;highway&quot;='unclassified'" key="{807eab49-a7d5-4eb8-8057-e2457e67b892}" description="Minor Roads">
         <settings calloutType="simple">
-          <text-style textColor="50,50,50,255" forcedItalic="0" fontWordSpacing="0" namedStyle="Text" fontLetterSpacing="0" capitalization="0" fontSizeUnit="MapUnit" fontSizeMapUnitScale="3x:0,0,0,0,0,0" multilineHeightUnit="Percentage" blendMode="0" useSubstitutions="1" fontStrikeout="0" isExpression="0" fontFamily="IBM Plex Sans Condensed" allowHtml="0" fontUnderline="0" fontSize="36" textOrientation="horizontal" fontItalic="0" multilineHeight="1" textOpacity="1" forcedBold="0" fontKerning="1" fontWeight="53" previewBkgrdColor="255,255,255,255" fieldName="name" legendString="Aa">
+          <text-style useSubstitutions="1" fontWordSpacing="0" fontStrikeout="0" forcedItalic="0" previewBkgrdColor="255,255,255,255" legendString="Aa" fontItalic="0" fontWeight="53" isExpression="0" forcedBold="0" fontUnderline="0" fontLetterSpacing="0" namedStyle="Text" fontSize="36" multilineHeightUnit="Percentage" fontSizeMapUnitScale="3x:0,0,0,0,0,0" multilineHeight="1" blendMode="0" fontFamily="IBM Plex Sans Condensed" fontSizeUnit="MapUnit" textOrientation="horizontal" textOpacity="1" capitalization="0" fieldName="name" textColor="50,50,50,255" fontKerning="1" allowHtml="0">
             <families/>
-            <text-buffer bufferSizeUnits="MapUnit" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferBlendMode="0" bufferColor="238,238,238,255" bufferSize="8" bufferDraw="1" bufferJoinStyle="128" bufferNoFill="0" bufferOpacity="1"/>
-            <text-mask maskSizeUnits="MM" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskEnabled="0" maskJoinStyle="128" maskType="0" maskSize="0" maskOpacity="1" maskedSymbolLayers=""/>
-            <background shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeType="0" shapeOffsetUnit="Point" shapeType="0" shapeBorderWidth="0" shapeRotation="0" shapeOffsetY="0" shapeDraw="0" shapeSVGFile="" shapeRadiiX="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiUnit="Point" shapeFillColor="255,255,255,255" shapeSizeY="0" shapeBorderWidthUnit="Point" shapeSizeUnit="Point" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderColor="128,128,128,255" shapeOffsetX="0" shapeOpacity="1" shapeJoinStyle="64" shapeRadiiY="0" shapeBlendMode="0" shapeSizeX="0" shapeRotationType="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0">
-              <symbol force_rhr="0" type="marker" is_animated="0" frame_rate="10" name="markerSymbol" clip_to_extent="1" alpha="1">
+            <text-buffer bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferJoinStyle="128" bufferOpacity="1" bufferSizeUnits="MapUnit" bufferDraw="1" bufferSize="8" bufferNoFill="0" bufferBlendMode="0" bufferColor="238,238,238,255"/>
+            <text-mask maskOpacity="1" maskJoinStyle="128" maskType="0" maskEnabled="0" maskedSymbolLayers="" maskSizeUnits="MM" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskSize="0"/>
+            <background shapeRadiiX="0" shapeRotation="0" shapeSizeY="0" shapeBorderWidth="0" shapeSizeType="0" shapeJoinStyle="64" shapeType="0" shapeSizeX="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetY="0" shapeBorderColor="128,128,128,255" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeBlendMode="0" shapeOffsetUnit="Point" shapeRotationType="0" shapeRadiiUnit="Point" shapeFillColor="255,255,255,255" shapeRadiiY="0" shapeBorderWidthUnit="Point" shapeOpacity="1" shapeDraw="0" shapeSVGFile="" shapeOffsetX="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeUnit="Point" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0">
+              <symbol alpha="1" type="marker" name="markerSymbol" force_rhr="0" frame_rate="10" is_animated="0" clip_to_extent="1">
                 <data_defined_properties>
                   <Option type="Map">
                     <Option type="QString" name="name" value=""/>
@@ -1553,7 +1553,7 @@
                     <Option type="QString" name="type" value="collection"/>
                   </Option>
                 </data_defined_properties>
-                <layer pass="0" enabled="1" id="" class="SimpleMarker" locked="0">
+                <layer pass="0" id="" enabled="1" class="SimpleMarker" locked="0">
                   <Option type="Map">
                     <Option type="QString" name="angle" value="0"/>
                     <Option type="QString" name="cap_style" value="square"/>
@@ -1584,7 +1584,7 @@
                   </data_defined_properties>
                 </layer>
               </symbol>
-              <symbol force_rhr="0" type="fill" is_animated="0" frame_rate="10" name="fillSymbol" clip_to_extent="1" alpha="1">
+              <symbol alpha="1" type="fill" name="fillSymbol" force_rhr="0" frame_rate="10" is_animated="0" clip_to_extent="1">
                 <data_defined_properties>
                   <Option type="Map">
                     <Option type="QString" name="name" value=""/>
@@ -1592,7 +1592,7 @@
                     <Option type="QString" name="type" value="collection"/>
                   </Option>
                 </data_defined_properties>
-                <layer pass="0" enabled="1" id="" class="SimpleFill" locked="0">
+                <layer pass="0" id="" enabled="1" class="SimpleFill" locked="0">
                   <Option type="Map">
                     <Option type="QString" name="border_width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
                     <Option type="QString" name="color" value="255,255,255,255"/>
@@ -1616,7 +1616,7 @@
                 </layer>
               </symbol>
             </background>
-            <shadow shadowOffsetGlobal="1" shadowBlendMode="6" shadowOffsetDist="1" shadowOffsetUnit="MM" shadowUnder="0" shadowRadiusAlphaOnly="0" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetAngle="135" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowScale="100" shadowRadiusUnit="MM" shadowDraw="0" shadowRadius="1.5" shadowOpacity="0.69999999999999996" shadowColor="0,0,0,255"/>
+            <shadow shadowRadiusUnit="MM" shadowScale="100" shadowBlendMode="6" shadowRadius="1.5" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetUnit="MM" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowColor="0,0,0,255" shadowOffsetGlobal="1" shadowOffsetAngle="135" shadowOffsetDist="1" shadowOpacity="0.69999999999999996" shadowDraw="0" shadowUnder="0" shadowRadiusAlphaOnly="0"/>
             <dd_properties>
               <Option type="Map">
                 <Option type="QString" name="name" value=""/>
@@ -1625,28 +1625,28 @@
               </Option>
             </dd_properties>
             <substitutions>
-              <replacement caseSensitive="0" match="Road" replace="Rd" wholeWord="1"/>
-              <replacement caseSensitive="0" match="Boulevard" replace="Blvd" wholeWord="1"/>
-              <replacement caseSensitive="0" match="Close" replace="Cls" wholeWord="1"/>
-              <replacement caseSensitive="0" match="Avenue" replace="Av" wholeWord="1"/>
-              <replacement caseSensitive="0" match="Court" replace="Ct" wholeWord="1"/>
-              <replacement caseSensitive="0" match="Crescent" replace="Cr" wholeWord="1"/>
-              <replacement caseSensitive="0" match="Saint" replace="St." wholeWord="1"/>
-              <replacement caseSensitive="0" match="Street" replace="St" wholeWord="1"/>
-              <replacement caseSensitive="0" match="Gardens" replace="Gdns" wholeWord="1"/>
-              <replacement caseSensitive="0" match="Terrace" replace="Ter" wholeWord="1"/>
-              <replacement caseSensitive="0" match="Lane" replace="Ln" wholeWord="1"/>
-              <replacement caseSensitive="0" match="North" replace="N" wholeWord="1"/>
-              <replacement caseSensitive="0" match="South" replace="S" wholeWord="1"/>
-              <replacement caseSensitive="0" match="East" replace="E" wholeWord="1"/>
-              <replacement caseSensitive="0" match="West" replace="W" wholeWord="1"/>
-              <replacement caseSensitive="0" match="Park" replace="Pk" wholeWord="1"/>
-              <replacement caseSensitive="0" match="Place" replace="Pl" wholeWord="1"/>
+              <replacement wholeWord="1" caseSensitive="0" replace="Rd" match="Road"/>
+              <replacement wholeWord="1" caseSensitive="0" replace="Blvd" match="Boulevard"/>
+              <replacement wholeWord="1" caseSensitive="0" replace="Cls" match="Close"/>
+              <replacement wholeWord="1" caseSensitive="0" replace="Av" match="Avenue"/>
+              <replacement wholeWord="1" caseSensitive="0" replace="Ct" match="Court"/>
+              <replacement wholeWord="1" caseSensitive="0" replace="Cr" match="Crescent"/>
+              <replacement wholeWord="1" caseSensitive="0" replace="St." match="Saint"/>
+              <replacement wholeWord="1" caseSensitive="0" replace="St" match="Street"/>
+              <replacement wholeWord="1" caseSensitive="0" replace="Gdns" match="Gardens"/>
+              <replacement wholeWord="1" caseSensitive="0" replace="Ter" match="Terrace"/>
+              <replacement wholeWord="1" caseSensitive="0" replace="Ln" match="Lane"/>
+              <replacement wholeWord="1" caseSensitive="0" replace="N" match="North"/>
+              <replacement wholeWord="1" caseSensitive="0" replace="S" match="South"/>
+              <replacement wholeWord="1" caseSensitive="0" replace="E" match="East"/>
+              <replacement wholeWord="1" caseSensitive="0" replace="W" match="West"/>
+              <replacement wholeWord="1" caseSensitive="0" replace="Pk" match="Park"/>
+              <replacement wholeWord="1" caseSensitive="0" replace="Pl" match="Place"/>
             </substitutions>
           </text-style>
-          <text-format useMaxLineLengthForAutoWrap="1" reverseDirectionSymbol="0" placeDirectionSymbol="0" formatNumbers="0" plussign="0" leftDirectionSymbol="&lt;" decimals="3" addDirectionSymbol="0" rightDirectionSymbol=">" multilineAlign="0" autoWrapLength="0" wrapChar=""/>
-          <placement dist="0" maxCurvedCharAngleIn="25" geometryGenerator="" xOffset="0" centroidWhole="0" offsetUnits="MM" lineAnchorPercent="0.5" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" yOffset="0" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" placement="3" preserveRotation="1" lineAnchorType="0" maxCurvedCharAngleOut="-25" rotationUnit="AngleDegrees" placementFlags="9" geometryGeneratorEnabled="0" repeatDistanceUnits="MM" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" repeatDistance="0" rotationAngle="0" layerType="LineGeometry" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" distUnits="MM" polygonPlacementFlags="2" overrunDistanceUnit="MapUnit" centroidInside="0" geometryGeneratorType="PointGeometry" quadOffset="4" lineAnchorTextPoint="FollowPlacement" overlapHandling="AllowOverlapIfRequired" overrunDistance="0" lineAnchorClipping="1" priority="8" offsetType="0" allowDegraded="0" fitInPolygonOnly="0" distMapUnitScale="3x:0,0,0,0,0,0"/>
-          <rendering scaleVisibility="0" scaleMax="0" mergeLines="0" obstacleType="1" fontMinPixelSize="3" drawLabels="1" obstacleFactor="1" scaleMin="0" obstacle="1" maxNumLabels="2000" unplacedVisibility="0" zIndex="0" limitNumLabels="0" fontMaxPixelSize="10000" labelPerPart="0" minFeatureSize="0" fontLimitPixelSize="0" upsidedownLabels="0"/>
+          <text-format addDirectionSymbol="0" autoWrapLength="0" rightDirectionSymbol=">" placeDirectionSymbol="0" decimals="3" multilineAlign="0" leftDirectionSymbol="&lt;" wrapChar="" useMaxLineLengthForAutoWrap="1" reverseDirectionSymbol="0" formatNumbers="0" plussign="0"/>
+          <placement preserveRotation="1" overrunDistanceUnit="MapUnit" dist="0" geometryGeneratorType="PointGeometry" maxCurvedCharAngleOut="-25" yOffset="0" overlapHandling="AllowOverlapIfRequired" priority="8" polygonPlacementFlags="2" centroidInside="0" lineAnchorType="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" lineAnchorPercent="0.5" repeatDistanceUnits="MM" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" repeatDistance="0" overrunDistance="0" distMapUnitScale="3x:0,0,0,0,0,0" lineAnchorTextPoint="FollowPlacement" distUnits="MM" geometryGeneratorEnabled="0" quadOffset="4" offsetUnits="MM" xOffset="0" fitInPolygonOnly="0" centroidWhole="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" geometryGenerator="" lineAnchorClipping="1" rotationUnit="AngleDegrees" placement="3" rotationAngle="0" offsetType="0" layerType="LineGeometry" placementFlags="9" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" allowDegraded="0" maxCurvedCharAngleIn="25"/>
+          <rendering minFeatureSize="0" obstacleType="1" maxNumLabels="2000" labelPerPart="0" fontMaxPixelSize="10000" fontLimitPixelSize="0" scaleVisibility="0" mergeLines="0" drawLabels="1" obstacleFactor="1" obstacle="1" upsidedownLabels="0" scaleMin="0" fontMinPixelSize="3" unplacedVisibility="0" scaleMax="0" zIndex="0" limitNumLabels="0"/>
           <dd_properties>
             <Option type="Map">
               <Option type="QString" name="name" value=""/>
@@ -1666,7 +1666,7 @@
               <Option type="bool" name="drawToAllParts" value="false"/>
               <Option type="QString" name="enabled" value="0"/>
               <Option type="QString" name="labelAnchorPoint" value="point_on_exterior"/>
-              <Option type="QString" name="lineSymbol" value="&lt;symbol force_rhr=&quot;0&quot; type=&quot;line&quot; is_animated=&quot;0&quot; frame_rate=&quot;10&quot; name=&quot;symbol&quot; clip_to_extent=&quot;1&quot; alpha=&quot;1&quot;>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; name=&quot;name&quot; value=&quot;&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;type&quot; value=&quot;collection&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;layer pass=&quot;0&quot; enabled=&quot;1&quot; id=&quot;{779fb026-b731-4573-ac52-936a863d3a63}&quot; class=&quot;SimpleLine&quot; locked=&quot;0&quot;>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; name=&quot;align_dash_pattern&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;capstyle&quot; value=&quot;square&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;customdash&quot; value=&quot;5;2&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;customdash_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;customdash_unit&quot; value=&quot;MM&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;dash_pattern_offset&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;dash_pattern_offset_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;dash_pattern_offset_unit&quot; value=&quot;MM&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;draw_inside_polygon&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;joinstyle&quot; value=&quot;bevel&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;line_color&quot; value=&quot;60,60,60,255&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;line_style&quot; value=&quot;solid&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;line_width&quot; value=&quot;0.3&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;line_width_unit&quot; value=&quot;MM&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;offset&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;offset_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;offset_unit&quot; value=&quot;MM&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;ring_filter&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;trim_distance_end&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;trim_distance_end_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;trim_distance_end_unit&quot; value=&quot;MM&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;trim_distance_start&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;trim_distance_start_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;trim_distance_start_unit&quot; value=&quot;MM&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;tweak_dash_pattern_on_corners&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;use_custom_dash&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;width_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;/Option>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; name=&quot;name&quot; value=&quot;&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;type&quot; value=&quot;collection&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>"/>
+              <Option type="QString" name="lineSymbol" value="&lt;symbol alpha=&quot;1&quot; type=&quot;line&quot; name=&quot;symbol&quot; force_rhr=&quot;0&quot; frame_rate=&quot;10&quot; is_animated=&quot;0&quot; clip_to_extent=&quot;1&quot;>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; name=&quot;name&quot; value=&quot;&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;type&quot; value=&quot;collection&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;layer pass=&quot;0&quot; id=&quot;{779fb026-b731-4573-ac52-936a863d3a63}&quot; enabled=&quot;1&quot; class=&quot;SimpleLine&quot; locked=&quot;0&quot;>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; name=&quot;align_dash_pattern&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;capstyle&quot; value=&quot;square&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;customdash&quot; value=&quot;5;2&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;customdash_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;customdash_unit&quot; value=&quot;MM&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;dash_pattern_offset&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;dash_pattern_offset_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;dash_pattern_offset_unit&quot; value=&quot;MM&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;draw_inside_polygon&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;joinstyle&quot; value=&quot;bevel&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;line_color&quot; value=&quot;60,60,60,255&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;line_style&quot; value=&quot;solid&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;line_width&quot; value=&quot;0.3&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;line_width_unit&quot; value=&quot;MM&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;offset&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;offset_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;offset_unit&quot; value=&quot;MM&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;ring_filter&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;trim_distance_end&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;trim_distance_end_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;trim_distance_end_unit&quot; value=&quot;MM&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;trim_distance_start&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;trim_distance_start_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;trim_distance_start_unit&quot; value=&quot;MM&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;tweak_dash_pattern_on_corners&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;use_custom_dash&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;width_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;/Option>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; name=&quot;name&quot; value=&quot;&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;type&quot; value=&quot;collection&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>"/>
               <Option type="double" name="minLength" value="0"/>
               <Option type="QString" name="minLengthMapUnitScale" value="3x:0,0,0,0,0,0"/>
               <Option type="QString" name="minLengthUnit" value="MM"/>
@@ -1680,14 +1680,14 @@
           </callout>
         </settings>
       </rule>
-      <rule key="{7516fb31-504f-4fc6-993c-3c4412e816c7}" filter="&quot;highway&quot;='primary' OR &quot;highway&quot;='secondary' OR &quot;highway&quot;='tertiary' OR &quot;highway&quot; = 'trunk'" description="Major Roads">
+      <rule filter="&quot;highway&quot;='primary' OR &quot;highway&quot;='secondary' OR &quot;highway&quot;='tertiary' OR &quot;highway&quot; = 'trunk'" key="{2bb66ee9-63db-48ad-9b1a-0230240dc9b4}" description="Major Roads">
         <settings calloutType="simple">
-          <text-style textColor="50,50,50,255" forcedItalic="0" fontWordSpacing="0" namedStyle="Bold" fontLetterSpacing="0" capitalization="0" fontSizeUnit="MapUnit" fontSizeMapUnitScale="3x:0,0,0,0,0,0" multilineHeightUnit="Percentage" blendMode="0" useSubstitutions="0" fontStrikeout="0" isExpression="0" fontFamily="IBM Plex Sans" allowHtml="0" fontUnderline="0" fontSize="32" textOrientation="horizontal" fontItalic="0" multilineHeight="1" textOpacity="1" forcedBold="0" fontKerning="1" fontWeight="75" previewBkgrdColor="255,255,255,255" fieldName="name" legendString="Aa">
+          <text-style useSubstitutions="0" fontWordSpacing="0" fontStrikeout="0" forcedItalic="0" previewBkgrdColor="255,255,255,255" legendString="Aa" fontItalic="0" fontWeight="75" isExpression="0" forcedBold="0" fontUnderline="0" fontLetterSpacing="0" namedStyle="Bold" fontSize="32" multilineHeightUnit="Percentage" fontSizeMapUnitScale="3x:0,0,0,0,0,0" multilineHeight="1" blendMode="0" fontFamily="IBM Plex Sans" fontSizeUnit="MapUnit" textOrientation="horizontal" textOpacity="1" capitalization="0" fieldName="name" textColor="50,50,50,255" fontKerning="1" allowHtml="0">
             <families/>
-            <text-buffer bufferSizeUnits="MapUnit" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferBlendMode="0" bufferColor="238,238,238,255" bufferSize="8" bufferDraw="1" bufferJoinStyle="128" bufferNoFill="0" bufferOpacity="1"/>
-            <text-mask maskSizeUnits="MapUnit" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskEnabled="1" maskJoinStyle="128" maskType="0" maskSize="2" maskOpacity="1" maskedSymbolLayers=""/>
-            <background shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeType="0" shapeOffsetUnit="Point" shapeType="0" shapeBorderWidth="0" shapeRotation="0" shapeOffsetY="0" shapeDraw="0" shapeSVGFile="" shapeRadiiX="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiUnit="Point" shapeFillColor="255,255,255,255" shapeSizeY="0" shapeBorderWidthUnit="Point" shapeSizeUnit="Point" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderColor="128,128,128,255" shapeOffsetX="0" shapeOpacity="1" shapeJoinStyle="64" shapeRadiiY="0" shapeBlendMode="0" shapeSizeX="0" shapeRotationType="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0">
-              <symbol force_rhr="0" type="marker" is_animated="0" frame_rate="10" name="markerSymbol" clip_to_extent="1" alpha="1">
+            <text-buffer bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferJoinStyle="128" bufferOpacity="1" bufferSizeUnits="MapUnit" bufferDraw="1" bufferSize="8" bufferNoFill="0" bufferBlendMode="0" bufferColor="238,238,238,255"/>
+            <text-mask maskOpacity="1" maskJoinStyle="128" maskType="0" maskEnabled="1" maskedSymbolLayers="" maskSizeUnits="MapUnit" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskSize="2"/>
+            <background shapeRadiiX="0" shapeRotation="0" shapeSizeY="0" shapeBorderWidth="0" shapeSizeType="0" shapeJoinStyle="64" shapeType="0" shapeSizeX="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetY="0" shapeBorderColor="128,128,128,255" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeBlendMode="0" shapeOffsetUnit="Point" shapeRotationType="0" shapeRadiiUnit="Point" shapeFillColor="255,255,255,255" shapeRadiiY="0" shapeBorderWidthUnit="Point" shapeOpacity="1" shapeDraw="0" shapeSVGFile="" shapeOffsetX="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeUnit="Point" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0">
+              <symbol alpha="1" type="marker" name="markerSymbol" force_rhr="0" frame_rate="10" is_animated="0" clip_to_extent="1">
                 <data_defined_properties>
                   <Option type="Map">
                     <Option type="QString" name="name" value=""/>
@@ -1695,7 +1695,7 @@
                     <Option type="QString" name="type" value="collection"/>
                   </Option>
                 </data_defined_properties>
-                <layer pass="0" enabled="1" id="" class="SimpleMarker" locked="0">
+                <layer pass="0" id="" enabled="1" class="SimpleMarker" locked="0">
                   <Option type="Map">
                     <Option type="QString" name="angle" value="0"/>
                     <Option type="QString" name="cap_style" value="square"/>
@@ -1726,7 +1726,7 @@
                   </data_defined_properties>
                 </layer>
               </symbol>
-              <symbol force_rhr="0" type="fill" is_animated="0" frame_rate="10" name="fillSymbol" clip_to_extent="1" alpha="1">
+              <symbol alpha="1" type="fill" name="fillSymbol" force_rhr="0" frame_rate="10" is_animated="0" clip_to_extent="1">
                 <data_defined_properties>
                   <Option type="Map">
                     <Option type="QString" name="name" value=""/>
@@ -1734,7 +1734,7 @@
                     <Option type="QString" name="type" value="collection"/>
                   </Option>
                 </data_defined_properties>
-                <layer pass="0" enabled="1" id="" class="SimpleFill" locked="0">
+                <layer pass="0" id="" enabled="1" class="SimpleFill" locked="0">
                   <Option type="Map">
                     <Option type="QString" name="border_width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
                     <Option type="QString" name="color" value="255,255,255,255"/>
@@ -1758,7 +1758,7 @@
                 </layer>
               </symbol>
             </background>
-            <shadow shadowOffsetGlobal="1" shadowBlendMode="6" shadowOffsetDist="1" shadowOffsetUnit="MM" shadowUnder="0" shadowRadiusAlphaOnly="0" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetAngle="135" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowScale="100" shadowRadiusUnit="MM" shadowDraw="0" shadowRadius="1.5" shadowOpacity="0.69999999999999996" shadowColor="0,0,0,255"/>
+            <shadow shadowRadiusUnit="MM" shadowScale="100" shadowBlendMode="6" shadowRadius="1.5" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetUnit="MM" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowColor="0,0,0,255" shadowOffsetGlobal="1" shadowOffsetAngle="135" shadowOffsetDist="1" shadowOpacity="0.69999999999999996" shadowDraw="0" shadowUnder="0" shadowRadiusAlphaOnly="0"/>
             <dd_properties>
               <Option type="Map">
                 <Option type="QString" name="name" value=""/>
@@ -1768,9 +1768,9 @@
             </dd_properties>
             <substitutions/>
           </text-style>
-          <text-format useMaxLineLengthForAutoWrap="1" reverseDirectionSymbol="0" placeDirectionSymbol="0" formatNumbers="0" plussign="0" leftDirectionSymbol="&lt;" decimals="3" addDirectionSymbol="0" rightDirectionSymbol=">" multilineAlign="0" autoWrapLength="0" wrapChar=""/>
-          <placement dist="0" maxCurvedCharAngleIn="34" geometryGenerator="" xOffset="0" centroidWhole="0" offsetUnits="MM" lineAnchorPercent="0.5" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" yOffset="0" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" placement="3" preserveRotation="1" lineAnchorType="0" maxCurvedCharAngleOut="-34" rotationUnit="AngleDegrees" placementFlags="9" geometryGeneratorEnabled="0" repeatDistanceUnits="MapUnit" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" repeatDistance="0" rotationAngle="0" layerType="LineGeometry" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" distUnits="MM" polygonPlacementFlags="2" overrunDistanceUnit="MapUnit" centroidInside="0" geometryGeneratorType="PointGeometry" quadOffset="4" lineAnchorTextPoint="FollowPlacement" overlapHandling="PreventOverlap" overrunDistance="0" lineAnchorClipping="0" priority="9" offsetType="0" allowDegraded="0" fitInPolygonOnly="0" distMapUnitScale="3x:0,0,0,0,0,0"/>
-          <rendering scaleVisibility="0" scaleMax="0" mergeLines="0" obstacleType="1" fontMinPixelSize="3" drawLabels="1" obstacleFactor="1" scaleMin="0" obstacle="0" maxNumLabels="2000" unplacedVisibility="0" zIndex="0" limitNumLabels="0" fontMaxPixelSize="10000" labelPerPart="0" minFeatureSize="0" fontLimitPixelSize="0" upsidedownLabels="0"/>
+          <text-format addDirectionSymbol="0" autoWrapLength="0" rightDirectionSymbol=">" placeDirectionSymbol="0" decimals="3" multilineAlign="0" leftDirectionSymbol="&lt;" wrapChar="" useMaxLineLengthForAutoWrap="1" reverseDirectionSymbol="0" formatNumbers="0" plussign="0"/>
+          <placement preserveRotation="1" overrunDistanceUnit="MapUnit" dist="0" geometryGeneratorType="PointGeometry" maxCurvedCharAngleOut="-34" yOffset="0" overlapHandling="PreventOverlap" priority="9" polygonPlacementFlags="2" centroidInside="0" lineAnchorType="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" lineAnchorPercent="0.5" repeatDistanceUnits="MapUnit" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" repeatDistance="0" overrunDistance="0" distMapUnitScale="3x:0,0,0,0,0,0" lineAnchorTextPoint="FollowPlacement" distUnits="MM" geometryGeneratorEnabled="0" quadOffset="4" offsetUnits="MM" xOffset="0" fitInPolygonOnly="0" centroidWhole="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" geometryGenerator="" lineAnchorClipping="0" rotationUnit="AngleDegrees" placement="3" rotationAngle="0" offsetType="0" layerType="LineGeometry" placementFlags="9" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" allowDegraded="0" maxCurvedCharAngleIn="34"/>
+          <rendering minFeatureSize="0" obstacleType="1" maxNumLabels="2000" labelPerPart="0" fontMaxPixelSize="10000" fontLimitPixelSize="0" scaleVisibility="0" mergeLines="0" drawLabels="1" obstacleFactor="1" obstacle="0" upsidedownLabels="0" scaleMin="0" fontMinPixelSize="3" unplacedVisibility="0" scaleMax="0" zIndex="0" limitNumLabels="0"/>
           <dd_properties>
             <Option type="Map">
               <Option type="QString" name="name" value=""/>
@@ -1790,7 +1790,7 @@
               <Option type="bool" name="drawToAllParts" value="false"/>
               <Option type="QString" name="enabled" value="0"/>
               <Option type="QString" name="labelAnchorPoint" value="point_on_exterior"/>
-              <Option type="QString" name="lineSymbol" value="&lt;symbol force_rhr=&quot;0&quot; type=&quot;line&quot; is_animated=&quot;0&quot; frame_rate=&quot;10&quot; name=&quot;symbol&quot; clip_to_extent=&quot;1&quot; alpha=&quot;1&quot;>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; name=&quot;name&quot; value=&quot;&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;type&quot; value=&quot;collection&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;layer pass=&quot;0&quot; enabled=&quot;1&quot; id=&quot;{45187c4c-8767-4958-b3fa-e359b80df158}&quot; class=&quot;SimpleLine&quot; locked=&quot;0&quot;>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; name=&quot;align_dash_pattern&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;capstyle&quot; value=&quot;square&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;customdash&quot; value=&quot;5;2&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;customdash_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;customdash_unit&quot; value=&quot;MM&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;dash_pattern_offset&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;dash_pattern_offset_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;dash_pattern_offset_unit&quot; value=&quot;MM&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;draw_inside_polygon&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;joinstyle&quot; value=&quot;bevel&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;line_color&quot; value=&quot;60,60,60,255&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;line_style&quot; value=&quot;solid&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;line_width&quot; value=&quot;0.3&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;line_width_unit&quot; value=&quot;MM&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;offset&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;offset_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;offset_unit&quot; value=&quot;MM&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;ring_filter&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;trim_distance_end&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;trim_distance_end_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;trim_distance_end_unit&quot; value=&quot;MM&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;trim_distance_start&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;trim_distance_start_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;trim_distance_start_unit&quot; value=&quot;MM&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;tweak_dash_pattern_on_corners&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;use_custom_dash&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;width_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;/Option>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; name=&quot;name&quot; value=&quot;&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;type&quot; value=&quot;collection&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>"/>
+              <Option type="QString" name="lineSymbol" value="&lt;symbol alpha=&quot;1&quot; type=&quot;line&quot; name=&quot;symbol&quot; force_rhr=&quot;0&quot; frame_rate=&quot;10&quot; is_animated=&quot;0&quot; clip_to_extent=&quot;1&quot;>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; name=&quot;name&quot; value=&quot;&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;type&quot; value=&quot;collection&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;layer pass=&quot;0&quot; id=&quot;{45187c4c-8767-4958-b3fa-e359b80df158}&quot; enabled=&quot;1&quot; class=&quot;SimpleLine&quot; locked=&quot;0&quot;>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; name=&quot;align_dash_pattern&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;capstyle&quot; value=&quot;square&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;customdash&quot; value=&quot;5;2&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;customdash_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;customdash_unit&quot; value=&quot;MM&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;dash_pattern_offset&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;dash_pattern_offset_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;dash_pattern_offset_unit&quot; value=&quot;MM&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;draw_inside_polygon&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;joinstyle&quot; value=&quot;bevel&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;line_color&quot; value=&quot;60,60,60,255&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;line_style&quot; value=&quot;solid&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;line_width&quot; value=&quot;0.3&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;line_width_unit&quot; value=&quot;MM&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;offset&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;offset_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;offset_unit&quot; value=&quot;MM&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;ring_filter&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;trim_distance_end&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;trim_distance_end_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;trim_distance_end_unit&quot; value=&quot;MM&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;trim_distance_start&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;trim_distance_start_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;trim_distance_start_unit&quot; value=&quot;MM&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;tweak_dash_pattern_on_corners&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;use_custom_dash&quot; value=&quot;0&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;width_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;/Option>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; name=&quot;name&quot; value=&quot;&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; name=&quot;type&quot; value=&quot;collection&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>"/>
               <Option type="double" name="minLength" value="0"/>
               <Option type="QString" name="minLengthMapUnitScale" value="3x:0,0,0,0,0,0"/>
               <Option type="QString" name="minLengthUnit" value="MM"/>
@@ -2360,2754 +2360,2754 @@
     <field name="wikipedia" configurationFlags="NoFlag"/>
   </fieldConfiguration>
   <aliases>
-    <alias field="FIXME" index="0" name=""/>
-    <alias field="HE_ref" index="1" name=""/>
-    <alias field="WARNING" index="2" name=""/>
-    <alias field="access" index="3" name=""/>
-    <alias field="access:conditional" index="4" name=""/>
-    <alias field="access:lanes:backward" index="5" name=""/>
-    <alias field="access:note" index="6" name=""/>
-    <alias field="access:source" index="7" name=""/>
-    <alias field="access:survey:date" index="8" name=""/>
-    <alias field="active_traffic_management" index="9" name=""/>
-    <alias field="addr:city" index="10" name=""/>
-    <alias field="addr:housename" index="11" name=""/>
-    <alias field="addr:housenumber" index="12" name=""/>
-    <alias field="addr:interpolation" index="13" name=""/>
-    <alias field="addr:postcode" index="14" name=""/>
-    <alias field="addr:street" index="15" name=""/>
-    <alias field="aeroway" index="16" name=""/>
-    <alias field="agricultural" index="17" name=""/>
-    <alias field="airside" index="18" name=""/>
-    <alias field="alt_name" index="19" name=""/>
-    <alias field="alt_name:en" index="20" name=""/>
-    <alias field="amenity" index="21" name=""/>
-    <alias field="area" index="22" name=""/>
-    <alias field="barrier" index="23" name=""/>
-    <alias field="bench" index="24" name=""/>
-    <alias field="bicycle" index="25" name=""/>
-    <alias field="bicycle:conditional" index="26" name=""/>
-    <alias field="bicycle:lanes" index="27" name=""/>
-    <alias field="bicycle:lanes:forward" index="28" name=""/>
-    <alias field="bin" index="29" name=""/>
-    <alias field="bing" index="30" name=""/>
-    <alias field="bollard" index="31" name=""/>
-    <alias field="borough" index="32" name=""/>
-    <alias field="bridge" index="33" name=""/>
-    <alias field="bridge:alt_name" index="34" name=""/>
-    <alias field="bridge:alt_name:wikidata" index="35" name=""/>
-    <alias field="bridge:movable" index="36" name=""/>
-    <alias field="bridge:name" index="37" name=""/>
-    <alias field="bridge:name:wikidata" index="38" name=""/>
-    <alias field="bridge:ref" index="39" name=""/>
-    <alias field="bridge:structure" index="40" name=""/>
-    <alias field="bridge_ref" index="41" name=""/>
-    <alias field="building" index="42" name=""/>
-    <alias field="building:levels" index="43" name=""/>
-    <alias field="bus" index="44" name=""/>
-    <alias field="bus:lanes" index="45" name=""/>
-    <alias field="bus:lanes:backward" index="46" name=""/>
-    <alias field="bus:lanes:forward" index="47" name=""/>
-    <alias field="bus_bay" index="48" name=""/>
-    <alias field="busway" index="49" name=""/>
-    <alias field="busway:both" index="50" name=""/>
-    <alias field="busway:conditional" index="51" name=""/>
-    <alias field="busway:left" index="52" name=""/>
-    <alias field="busway:right" index="53" name=""/>
-    <alias field="button_operated" index="54" name=""/>
-    <alias field="car" index="55" name=""/>
-    <alias field="carriageway_ref" index="56" name=""/>
-    <alias field="caution" index="57" name=""/>
-    <alias field="cesspit" index="58" name=""/>
-    <alias field="change" index="59" name=""/>
-    <alias field="change:lanes" index="60" name=""/>
-    <alias field="changing_table" index="61" name=""/>
-    <alias field="charge" index="62" name=""/>
-    <alias field="check_date" index="63" name=""/>
-    <alias field="check_date:cycleway" index="64" name=""/>
-    <alias field="check_date:cycleway:surface" index="65" name=""/>
-    <alias field="check_date:handrail" index="66" name=""/>
-    <alias field="check_date:lit" index="67" name=""/>
-    <alias field="check_date:ramp" index="68" name=""/>
-    <alias field="check_date:sidewalk" index="69" name=""/>
-    <alias field="check_date:sidewalk:surface" index="70" name=""/>
-    <alias field="check_date:smoothness" index="71" name=""/>
-    <alias field="check_date:surface" index="72" name=""/>
-    <alias field="check_date:tactile_paving" index="73" name=""/>
-    <alias field="coach" index="74" name=""/>
-    <alias field="colour" index="75" name=""/>
-    <alias field="complete" index="76" name=""/>
-    <alias field="construction" index="77" name=""/>
-    <alias field="construction_contract_name" index="78" name=""/>
-    <alias field="construction_method" index="79" name=""/>
-    <alias field="contact:phone" index="80" name=""/>
-    <alias field="conveying" index="81" name=""/>
-    <alias field="cover" index="82" name=""/>
-    <alias field="covered" index="83" name=""/>
-    <alias field="created_by" index="84" name=""/>
-    <alias field="crossing" index="85" name=""/>
-    <alias field="crossing:continuous" index="86" name=""/>
-    <alias field="crossing:island" index="87" name=""/>
-    <alias field="crossing:markings" index="88" name=""/>
-    <alias field="crossing:signals" index="89" name=""/>
-    <alias field="crossing_ref" index="90" name=""/>
-    <alias field="cutline" index="91" name=""/>
-    <alias field="cutting" index="92" name=""/>
-    <alias field="cycle_network" index="93" name=""/>
-    <alias field="cyclestreets_id" index="94" name=""/>
-    <alias field="cycleway" index="95" name=""/>
-    <alias field="cycleway:both" index="96" name=""/>
-    <alias field="cycleway:both:lane" index="97" name=""/>
-    <alias field="cycleway:both:oneway" index="98" name=""/>
-    <alias field="cycleway:conditional" index="99" name=""/>
-    <alias field="cycleway:lane" index="100" name=""/>
-    <alias field="cycleway:lanes" index="101" name=""/>
-    <alias field="cycleway:left" index="102" name=""/>
-    <alias field="cycleway:left:doorzone" index="103" name=""/>
-    <alias field="cycleway:left:lane" index="104" name=""/>
-    <alias field="cycleway:left:oneway" index="105" name=""/>
-    <alias field="cycleway:left:segregated" index="106" name=""/>
-    <alias field="cycleway:left:track" index="107" name=""/>
-    <alias field="cycleway:left:width" index="108" name=""/>
-    <alias field="cycleway:note" index="109" name=""/>
-    <alias field="cycleway:right" index="110" name=""/>
-    <alias field="cycleway:right:buffer" index="111" name=""/>
-    <alias field="cycleway:right:lane" index="112" name=""/>
-    <alias field="cycleway:right:oneway" index="113" name=""/>
-    <alias field="cycleway:right:separation:left" index="114" name=""/>
-    <alias field="cycleway:right:separation:right" index="115" name=""/>
-    <alias field="cycleway:right:track" index="116" name=""/>
-    <alias field="cycleway:right:width" index="117" name=""/>
-    <alias field="cycleway:segregated" index="118" name=""/>
-    <alias field="cycleway:surface" index="119" name=""/>
-    <alias field="cycleway:width" index="120" name=""/>
-    <alias field="delivery" index="121" name=""/>
-    <alias field="departures_board" index="122" name=""/>
-    <alias field="description" index="123" name=""/>
-    <alias field="designation" index="124" name=""/>
-    <alias field="destination" index="125" name=""/>
-    <alias field="destination:backward" index="126" name=""/>
-    <alias field="destination:forward" index="127" name=""/>
-    <alias field="destination:lanes" index="128" name=""/>
-    <alias field="destination:lanes:forward" index="129" name=""/>
-    <alias field="destination:ref" index="130" name=""/>
-    <alias field="destination:ref:forward" index="131" name=""/>
-    <alias field="destination:ref:lanes" index="132" name=""/>
-    <alias field="destination:ref:lanes:forward" index="133" name=""/>
-    <alias field="destination:ref:to" index="134" name=""/>
-    <alias field="destination:ref:to:lanes" index="135" name=""/>
-    <alias field="destination:symbol" index="136" name=""/>
-    <alias field="destination:symbol:lanes" index="137" name=""/>
-    <alias field="diameter" index="138" name=""/>
-    <alias field="direction" index="139" name=""/>
-    <alias field="disabled" index="140" name=""/>
-    <alias field="disused" index="141" name=""/>
-    <alias field="disused:bicycle" index="142" name=""/>
-    <alias field="disused:bus" index="143" name=""/>
-    <alias field="disused:dual_carriageway" index="144" name=""/>
-    <alias field="disused:foot" index="145" name=""/>
-    <alias field="disused:highway" index="146" name=""/>
-    <alias field="disused:lanes" index="147" name=""/>
-    <alias field="disused:oneway" index="148" name=""/>
-    <alias field="disused:ref" index="149" name=""/>
-    <alias field="disused:tunnel" index="150" name=""/>
-    <alias field="dog" index="151" name=""/>
-    <alias field="driving_side" index="152" name=""/>
-    <alias field="dual_carriageway" index="153" name=""/>
-    <alias field="ele" index="154" name=""/>
-    <alias field="electrified" index="155" name=""/>
-    <alias field="embankment" index="156" name=""/>
-    <alias field="emergency" index="157" name=""/>
-    <alias field="entrance" index="158" name=""/>
-    <alias field="est_width" index="159" name=""/>
-    <alias field="expressway" index="160" name=""/>
-    <alias field="fee" index="161" name=""/>
-    <alias field="fence_type" index="162" name=""/>
-    <alias field="fixme" index="163" name=""/>
-    <alias field="flood_prone" index="164" name=""/>
-    <alias field="foot" index="165" name=""/>
-    <alias field="footway" index="166" name=""/>
-    <alias field="footway:surface" index="167" name=""/>
-    <alias field="ford" index="168" name=""/>
-    <alias field="funeral_vehicles" index="169" name=""/>
-    <alias field="gated" index="170" name=""/>
-    <alias field="golf" index="171" name=""/>
-    <alias field="golf_cart" index="172" name=""/>
-    <alias field="goods" index="173" name=""/>
-    <alias field="handrail" index="174" name=""/>
-    <alias field="handrail:center" index="175" name=""/>
-    <alias field="handrail:left" index="176" name=""/>
-    <alias field="handrail:right" index="177" name=""/>
-    <alias field="hazard" index="178" name=""/>
-    <alias field="he:inscription_date" index="179" name=""/>
-    <alias field="height" index="180" name=""/>
-    <alias field="heritage" index="181" name=""/>
-    <alias field="heritage:operator" index="182" name=""/>
-    <alias field="heritage:operator:wikidata" index="183" name=""/>
-    <alias field="heritage:website" index="184" name=""/>
-    <alias field="hgv" index="185" name=""/>
-    <alias field="hgv:note" index="186" name=""/>
-    <alias field="highway" index="187" name=""/>
-    <alias field="highway_1" index="188" name=""/>
-    <alias field="highway_authority_ref" index="189" name=""/>
-    <alias field="highways_england:area" index="190" name=""/>
-    <alias field="historic" index="191" name=""/>
-    <alias field="historic:highway" index="192" name=""/>
-    <alias field="horse" index="193" name=""/>
-    <alias field="horse_scale" index="194" name=""/>
-    <alias field="hour_off" index="195" name=""/>
-    <alias field="hour_on" index="196" name=""/>
-    <alias field="hov" index="197" name=""/>
-    <alias field="image" index="198" name=""/>
-    <alias field="incline" index="199" name=""/>
-    <alias field="incorrect_name" index="200" name=""/>
-    <alias field="indoor" index="201" name=""/>
-    <alias field="informal" index="202" name=""/>
-    <alias field="int_name" index="203" name=""/>
-    <alias field="internal_diameter" index="204" name=""/>
-    <alias field="internet_access" index="205" name=""/>
-    <alias field="is_in" index="206" name=""/>
-    <alias field="is_in:borough" index="207" name=""/>
-    <alias field="is_in:district" index="208" name=""/>
-    <alias field="is_in:suburb" index="209" name=""/>
-    <alias field="is_sidepath" index="210" name=""/>
-    <alias field="is_sidepath:of:name" index="211" name=""/>
-    <alias field="junction" index="212" name=""/>
-    <alias field="junction:ref" index="213" name=""/>
-    <alias field="kerb" index="214" name=""/>
-    <alias field="landuse" index="215" name=""/>
-    <alias field="lane_markings" index="216" name=""/>
-    <alias field="lane_markings:backward" index="217" name=""/>
-    <alias field="lane_markings:forward" index="218" name=""/>
-    <alias field="lanes" index="219" name=""/>
-    <alias field="lanes:backward" index="220" name=""/>
-    <alias field="lanes:bus" index="221" name=""/>
-    <alias field="lanes:bus:forward" index="222" name=""/>
-    <alias field="lanes:forward" index="223" name=""/>
-    <alias field="lanes:left" index="224" name=""/>
-    <alias field="lanes:psv" index="225" name=""/>
-    <alias field="lanes:psv:backward" index="226" name=""/>
-    <alias field="lanes:psv:backward:right" index="227" name=""/>
-    <alias field="lanes:psv:forward" index="228" name=""/>
-    <alias field="layer" index="229" name=""/>
-    <alias field="lcn" index="230" name=""/>
-    <alias field="leisure" index="231" name=""/>
-    <alias field="length" index="232" name=""/>
-    <alias field="level" index="233" name=""/>
-    <alias field="level:ref" index="234" name=""/>
-    <alias field="listed_status" index="235" name=""/>
-    <alias field="lit" index="236" name=""/>
-    <alias field="lit:note" index="237" name=""/>
-    <alias field="loc_name" index="238" name=""/>
-    <alias field="loc_ref" index="239" name=""/>
-    <alias field="locals" index="240" name=""/>
-    <alias field="location" index="241" name=""/>
-    <alias field="long_vehicles" index="242" name=""/>
-    <alias field="man_made" index="243" name=""/>
-    <alias field="marked" index="244" name=""/>
-    <alias field="material" index="245" name=""/>
-    <alias field="maxaxleload" index="246" name=""/>
-    <alias field="maxgcweightrating:goods" index="247" name=""/>
-    <alias field="maxgcweightrating:hgv" index="248" name=""/>
-    <alias field="maxgcweightrating:hgv:conditional" index="249" name=""/>
-    <alias field="maxgcwrating:hgv" index="250" name=""/>
-    <alias field="maxheight" index="251" name=""/>
-    <alias field="maxheight:imperial" index="252" name=""/>
-    <alias field="maxheight:note" index="253" name=""/>
-    <alias field="maxheight:physical" index="254" name=""/>
-    <alias field="maxheight:signed" index="255" name=""/>
-    <alias field="maxspeed" index="256" name=""/>
-    <alias field="maxspeed:advisory" index="257" name=""/>
-    <alias field="maxspeed:backward" index="258" name=""/>
-    <alias field="maxspeed:bicycle" index="259" name=""/>
-    <alias field="maxspeed:enforcement" index="260" name=""/>
-    <alias field="maxspeed:forward" index="261" name=""/>
-    <alias field="maxspeed:lanes" index="262" name=""/>
-    <alias field="maxspeed:proposed" index="263" name=""/>
-    <alias field="maxspeed:type" index="264" name=""/>
-    <alias field="maxspeed:variable" index="265" name=""/>
-    <alias field="maxweight" index="266" name=""/>
-    <alias field="maxweight:conditional" index="267" name=""/>
-    <alias field="maxweight:hgv" index="268" name=""/>
-    <alias field="maxweight:hgv:conditional" index="269" name=""/>
-    <alias field="maxweight:signed" index="270" name=""/>
-    <alias field="maxweightrating" index="271" name=""/>
-    <alias field="maxweightrating:hgv" index="272" name=""/>
-    <alias field="maxweightrating:hgv:conditional" index="273" name=""/>
-    <alias field="maxwidth" index="274" name=""/>
-    <alias field="mkgmap:flare-check" index="275" name=""/>
-    <alias field="mooring" index="276" name=""/>
-    <alias field="motor_vehicle" index="277" name=""/>
-    <alias field="motor_vehicle:backward" index="278" name=""/>
-    <alias field="motor_vehicle:conditional" index="279" name=""/>
-    <alias field="motor_vehicle:lanes" index="280" name=""/>
-    <alias field="motorcar" index="281" name=""/>
-    <alias field="motorcycle" index="282" name=""/>
-    <alias field="motorroad" index="283" name=""/>
-    <alias field="motorway" index="284" name=""/>
-    <alias field="mtb:scale" index="285" name=""/>
-    <alias field="mtb:scale:imba" index="286" name=""/>
-    <alias field="name" index="287" name=""/>
-    <alias field="name:cy" index="288" name=""/>
-    <alias field="name:en" index="289" name=""/>
-    <alias field="name:left" index="290" name=""/>
-    <alias field="name:note" index="291" name=""/>
-    <alias field="name:right" index="292" name=""/>
-    <alias field="name:ru" index="293" name=""/>
-    <alias field="name:signed" index="294" name=""/>
-    <alias field="name:source" index="295" name=""/>
-    <alias field="name:survey:date" index="296" name=""/>
-    <alias field="narrow" index="297" name=""/>
-    <alias field="national_highways:area" index="298" name=""/>
-    <alias field="natural" index="299" name=""/>
-    <alias field="noexit" index="300" name=""/>
-    <alias field="noname" index="301" name=""/>
-    <alias field="not:junction" index="302" name=""/>
-    <alias field="not:name" index="303" name=""/>
-    <alias field="note" index="304" name=""/>
-    <alias field="note:access" index="305" name=""/>
-    <alias field="note:alt_name" index="306" name=""/>
-    <alias field="note:covid19" index="307" name=""/>
-    <alias field="note:cycle" index="308" name=""/>
-    <alias field="note:cycleway" index="309" name=""/>
-    <alias field="note:designation" index="310" name=""/>
-    <alias field="note:lcn" index="311" name=""/>
-    <alias field="note:lit" index="312" name=""/>
-    <alias field="note:name" index="313" name=""/>
-    <alias field="obstacle" index="314" name=""/>
-    <alias field="office" index="315" name=""/>
-    <alias field="official_ref" index="316" name=""/>
-    <alias field="old_name" index="317" name=""/>
-    <alias field="old_ref" index="318" name=""/>
-    <alias field="oneway" index="319" name=""/>
-    <alias field="oneway:bicycle" index="320" name=""/>
-    <alias field="oneway:bus" index="321" name=""/>
-    <alias field="oneway:emergency" index="322" name=""/>
-    <alias field="oneway:foot" index="323" name=""/>
-    <alias field="oneway:horse" index="324" name=""/>
-    <alias field="oneway:psv" index="325" name=""/>
-    <alias field="oneway_type" index="326" name=""/>
-    <alias field="opening_date" index="327" name=""/>
-    <alias field="opening_hours" index="328" name=""/>
-    <alias field="operator" index="329" name=""/>
-    <alias field="operator:type" index="330" name=""/>
-    <alias field="operator:wikidata" index="331" name=""/>
-    <alias field="osmc:symbol" index="332" name=""/>
-    <alias field="overtaking" index="333" name=""/>
-    <alias field="overtaking:motor_vehicle" index="334" name=""/>
-    <alias field="ownership" index="335" name=""/>
-    <alias field="parking" index="336" name=""/>
-    <alias field="parking:both" index="337" name=""/>
-    <alias field="parking:both:access" index="338" name=""/>
-    <alias field="parking:both:authentication:ticket:conditional" index="339" name=""/>
-    <alias field="parking:both:markings" index="340" name=""/>
-    <alias field="parking:both:orientation" index="341" name=""/>
-    <alias field="parking:both:restriction" index="342" name=""/>
-    <alias field="parking:both:restriction:conditional" index="343" name=""/>
-    <alias field="parking:both:restriction:reason" index="344" name=""/>
-    <alias field="parking:both:zone" index="345" name=""/>
-    <alias field="parking:both:zone:residents" index="346" name=""/>
-    <alias field="parking:condition:both" index="347" name=""/>
-    <alias field="parking:lane" index="348" name=""/>
-    <alias field="parking:lane:both" index="349" name=""/>
-    <alias field="parking:lane:both:parallel" index="350" name=""/>
-    <alias field="parking:lane:left" index="351" name=""/>
-    <alias field="parking:lane:right" index="352" name=""/>
-    <alias field="parking:lane:right:parallel" index="353" name=""/>
-    <alias field="parking:left" index="354" name=""/>
-    <alias field="parking:left:access" index="355" name=""/>
-    <alias field="parking:left:bus" index="356" name=""/>
-    <alias field="parking:left:markings" index="357" name=""/>
-    <alias field="parking:left:orientation" index="358" name=""/>
-    <alias field="parking:left:restriction" index="359" name=""/>
-    <alias field="parking:left:restriction:reason" index="360" name=""/>
-    <alias field="parking:left:zone" index="361" name=""/>
-    <alias field="parking:right" index="362" name=""/>
-    <alias field="parking:right:access" index="363" name=""/>
-    <alias field="parking:right:capacity" index="364" name=""/>
-    <alias field="parking:right:fee" index="365" name=""/>
-    <alias field="parking:right:fee:conditional" index="366" name=""/>
-    <alias field="parking:right:markings" index="367" name=""/>
-    <alias field="parking:right:orientation" index="368" name=""/>
-    <alias field="parking:right:restriction" index="369" name=""/>
-    <alias field="parking:right:restriction:reason" index="370" name=""/>
-    <alias field="parking:right:zone" index="371" name=""/>
-    <alias field="passing_places" index="372" name=""/>
-    <alias field="path" index="373" name=""/>
-    <alias field="paved" index="374" name=""/>
-    <alias field="paving_stones:material" index="375" name=""/>
-    <alias field="place" index="376" name=""/>
-    <alias field="placement" index="377" name=""/>
-    <alias field="placement:backward" index="378" name=""/>
-    <alias field="platform_lift" index="379" name=""/>
-    <alias field="police" index="380" name=""/>
-    <alias field="postal_code" index="381" name=""/>
-    <alias field="presumed_designation" index="382" name=""/>
-    <alias field="priority" index="383" name=""/>
-    <alias field="proposed" index="384" name=""/>
-    <alias field="proposed:bicycle" index="385" name=""/>
-    <alias field="proposed:cycleway" index="386" name=""/>
-    <alias field="proposed:cycleway:left" index="387" name=""/>
-    <alias field="proposed:cycleway:left:oneway" index="388" name=""/>
-    <alias field="proposed:cycleway:right" index="389" name=""/>
-    <alias field="proposed:cycleway:right:oneway" index="390" name=""/>
-    <alias field="proposed:foot" index="391" name=""/>
-    <alias field="proposed:footway" index="392" name=""/>
-    <alias field="proposed:highway" index="393" name=""/>
-    <alias field="proposed:maxspeed" index="394" name=""/>
-    <alias field="proposed:oneway" index="395" name=""/>
-    <alias field="proposed:oneway:bicycle" index="396" name=""/>
-    <alias field="proposed:segregated" index="397" name=""/>
-    <alias field="proposed:traffic_intervention" index="398" name=""/>
-    <alias field="prow_ref" index="399" name=""/>
-    <alias field="psv" index="400" name=""/>
-    <alias field="psv:lanes" index="401" name=""/>
-    <alias field="psv:lanes:backward" index="402" name=""/>
-    <alias field="psv:lanes:forward" index="403" name=""/>
-    <alias field="psv:right" index="404" name=""/>
-    <alias field="public_transport" index="405" name=""/>
-    <alias field="railing" index="406" name=""/>
-    <alias field="ramp" index="407" name=""/>
-    <alias field="ramp:bicycle" index="408" name=""/>
-    <alias field="ramp:wheelchair" index="409" name=""/>
-    <alias field="rcn" index="410" name=""/>
-    <alias field="ref" index="411" name=""/>
-    <alias field="ref:22406366" index="412" name=""/>
-    <alias field="ref:GB:nhle" index="413" name=""/>
-    <alias field="ref:GB:tflcid" index="414" name=""/>
-    <alias field="ref:GB:uprn" index="415" name=""/>
-    <alias field="ref:GB:usrn" index="416" name=""/>
-    <alias field="ref:he" index="417" name=""/>
-    <alias field="ref:source" index="418" name=""/>
-    <alias field="ref:tfl" index="419" name=""/>
-    <alias field="repair" index="420" name=""/>
-    <alias field="roof:colour" index="421" name=""/>
-    <alias field="roof:shape" index="422" name=""/>
-    <alias field="roundabout" index="423" name=""/>
-    <alias field="route" index="424" name=""/>
-    <alias field="segregated" index="425" name=""/>
-    <alias field="separation:left" index="426" name=""/>
-    <alias field="separation:right" index="427" name=""/>
-    <alias field="service" index="428" name=""/>
-    <alias field="service_1" index="429" name=""/>
-    <alias field="shelter" index="430" name=""/>
-    <alias field="shelter_type" index="431" name=""/>
-    <alias field="shop" index="432" name=""/>
-    <alias field="short_name" index="433" name=""/>
-    <alias field="shoulder" index="434" name=""/>
-    <alias field="shower" index="435" name=""/>
-    <alias field="sidewalk" index="436" name=""/>
-    <alias field="sidewalk:both" index="437" name=""/>
-    <alias field="sidewalk:both:surface" index="438" name=""/>
-    <alias field="sidewalk:left" index="439" name=""/>
-    <alias field="sidewalk:left:surface" index="440" name=""/>
-    <alias field="sidewalk:left:wheelchair" index="441" name=""/>
-    <alias field="sidewalk:note" index="442" name=""/>
-    <alias field="sidewalk:right" index="443" name=""/>
-    <alias field="sidewalk:right:surface" index="444" name=""/>
-    <alias field="sign_information" index="445" name=""/>
-    <alias field="signed:ref" index="446" name=""/>
-    <alias field="sloped_curb" index="447" name=""/>
-    <alias field="smoothness" index="448" name=""/>
-    <alias field="smoothness:date" index="449" name=""/>
-    <alias field="source" index="450" name=""/>
-    <alias field="source:access" index="451" name=""/>
-    <alias field="source:alt_name" index="452" name=""/>
-    <alias field="source:bicycle" index="453" name=""/>
-    <alias field="source:bing" index="454" name=""/>
-    <alias field="source:cycleway" index="455" name=""/>
-    <alias field="source:designation" index="456" name=""/>
-    <alias field="source:destination" index="457" name=""/>
-    <alias field="source:geometry" index="458" name=""/>
-    <alias field="source:hgv" index="459" name=""/>
-    <alias field="source:highway" index="460" name=""/>
-    <alias field="source:lanes" index="461" name=""/>
-    <alias field="source:lcn" index="462" name=""/>
-    <alias field="source:lit" index="463" name=""/>
-    <alias field="source:maxheight" index="464" name=""/>
-    <alias field="source:maxspeed" index="465" name=""/>
-    <alias field="source:maxweight" index="466" name=""/>
-    <alias field="source:maxweightrating" index="467" name=""/>
-    <alias field="source:maxweightrating:hgv" index="468" name=""/>
-    <alias field="source:maxwidth" index="469" name=""/>
-    <alias field="source:name" index="470" name=""/>
-    <alias field="source:not:name" index="471" name=""/>
-    <alias field="source:old_name" index="472" name=""/>
-    <alias field="source:oneway" index="473" name=""/>
-    <alias field="source:oneway:bicycle" index="474" name=""/>
-    <alias field="source:postal_code" index="475" name=""/>
-    <alias field="source:proposed:oneway" index="476" name=""/>
-    <alias field="source:prow_ref" index="477" name=""/>
-    <alias field="source:rcn" index="478" name=""/>
-    <alias field="source:ref" index="479" name=""/>
-    <alias field="source:track" index="480" name=""/>
-    <alias field="source:traffic_intervention" index="481" name=""/>
-    <alias field="source:width" index="482" name=""/>
-    <alias field="source_ref" index="483" name=""/>
-    <alias field="source_ref:name" index="484" name=""/>
-    <alias field="source_ref:ref" index="485" name=""/>
-    <alias field="stairs:endline" index="486" name=""/>
-    <alias field="stairs:startline" index="487" name=""/>
-    <alias field="start_date" index="488" name=""/>
-    <alias field="state" index="489" name=""/>
-    <alias field="step_count" index="490" name=""/>
-    <alias field="steps" index="491" name=""/>
-    <alias field="stile" index="492" name=""/>
-    <alias field="surface" index="493" name=""/>
-    <alias field="surface:colour" index="494" name=""/>
-    <alias field="surface:note" index="495" name=""/>
-    <alias field="survey:date" index="496" name=""/>
-    <alias field="surveying_authority" index="497" name=""/>
-    <alias field="tactile_paving" index="498" name=""/>
-    <alias field="taxi" index="499" name=""/>
-    <alias field="temporary:highway" index="500" name=""/>
-    <alias field="toilets" index="501" name=""/>
-    <alias field="toilets:wheelchair" index="502" name=""/>
-    <alias field="toll" index="503" name=""/>
-    <alias field="tourism" index="504" name=""/>
-    <alias field="towpath" index="505" name=""/>
-    <alias field="tracktype" index="506" name=""/>
-    <alias field="traffic_calming" index="507" name=""/>
-    <alias field="traffic_calming:check_date" index="508" name=""/>
-    <alias field="traffic_intervention" index="509" name=""/>
-    <alias field="traffic_signals" index="510" name=""/>
-    <alias field="traffic_signals:direction" index="511" name=""/>
-    <alias field="traffic_signals:sound" index="512" name=""/>
-    <alias field="traffic_signals:vibration" index="513" name=""/>
-    <alias field="trail_visibility" index="514" name=""/>
-    <alias field="tree_lined" index="515" name=""/>
-    <alias field="tunnel" index="516" name=""/>
-    <alias field="tunnel:name" index="517" name=""/>
-    <alias field="tunnel:short_name" index="518" name=""/>
-    <alias field="turn" index="519" name=""/>
-    <alias field="turn:lanes" index="520" name=""/>
-    <alias field="turn:lanes:backward" index="521" name=""/>
-    <alias field="turn:lanes:forward" index="522" name=""/>
-    <alias field="unsigned" index="523" name=""/>
-    <alias field="validate" index="524" name=""/>
-    <alias field="vehicle" index="525" name=""/>
-    <alias field="vehicle:lanes" index="526" name=""/>
-    <alias field="vehicle:lanes:forward" index="527" name=""/>
-    <alias field="verge" index="528" name=""/>
-    <alias field="verge:left" index="529" name=""/>
-    <alias field="verge:right" index="530" name=""/>
-    <alias field="virtual" index="531" name=""/>
-    <alias field="was:bicycle" index="532" name=""/>
-    <alias field="was:covered" index="533" name=""/>
-    <alias field="was:cycleway:left" index="534" name=""/>
-    <alias field="was:cycleway:right" index="535" name=""/>
-    <alias field="was:highway" index="536" name=""/>
-    <alias field="was:lanes" index="537" name=""/>
-    <alias field="was:oneway" index="538" name=""/>
-    <alias field="was:ref" index="539" name=""/>
-    <alias field="was:segregated" index="540" name=""/>
-    <alias field="watch:80n" index="541" name=""/>
-    <alias field="water" index="542" name=""/>
-    <alias field="website" index="543" name=""/>
-    <alias field="wheelchair" index="544" name=""/>
-    <alias field="width" index="545" name=""/>
-    <alias field="wikidata" index="546" name=""/>
-    <alias field="wikipedia" index="547" name=""/>
+    <alias index="0" name="" field="FIXME"/>
+    <alias index="1" name="" field="HE_ref"/>
+    <alias index="2" name="" field="WARNING"/>
+    <alias index="3" name="" field="access"/>
+    <alias index="4" name="" field="access:conditional"/>
+    <alias index="5" name="" field="access:lanes:backward"/>
+    <alias index="6" name="" field="access:note"/>
+    <alias index="7" name="" field="access:source"/>
+    <alias index="8" name="" field="access:survey:date"/>
+    <alias index="9" name="" field="active_traffic_management"/>
+    <alias index="10" name="" field="addr:city"/>
+    <alias index="11" name="" field="addr:housename"/>
+    <alias index="12" name="" field="addr:housenumber"/>
+    <alias index="13" name="" field="addr:interpolation"/>
+    <alias index="14" name="" field="addr:postcode"/>
+    <alias index="15" name="" field="addr:street"/>
+    <alias index="16" name="" field="aeroway"/>
+    <alias index="17" name="" field="agricultural"/>
+    <alias index="18" name="" field="airside"/>
+    <alias index="19" name="" field="alt_name"/>
+    <alias index="20" name="" field="alt_name:en"/>
+    <alias index="21" name="" field="amenity"/>
+    <alias index="22" name="" field="area"/>
+    <alias index="23" name="" field="barrier"/>
+    <alias index="24" name="" field="bench"/>
+    <alias index="25" name="" field="bicycle"/>
+    <alias index="26" name="" field="bicycle:conditional"/>
+    <alias index="27" name="" field="bicycle:lanes"/>
+    <alias index="28" name="" field="bicycle:lanes:forward"/>
+    <alias index="29" name="" field="bin"/>
+    <alias index="30" name="" field="bing"/>
+    <alias index="31" name="" field="bollard"/>
+    <alias index="32" name="" field="borough"/>
+    <alias index="33" name="" field="bridge"/>
+    <alias index="34" name="" field="bridge:alt_name"/>
+    <alias index="35" name="" field="bridge:alt_name:wikidata"/>
+    <alias index="36" name="" field="bridge:movable"/>
+    <alias index="37" name="" field="bridge:name"/>
+    <alias index="38" name="" field="bridge:name:wikidata"/>
+    <alias index="39" name="" field="bridge:ref"/>
+    <alias index="40" name="" field="bridge:structure"/>
+    <alias index="41" name="" field="bridge_ref"/>
+    <alias index="42" name="" field="building"/>
+    <alias index="43" name="" field="building:levels"/>
+    <alias index="44" name="" field="bus"/>
+    <alias index="45" name="" field="bus:lanes"/>
+    <alias index="46" name="" field="bus:lanes:backward"/>
+    <alias index="47" name="" field="bus:lanes:forward"/>
+    <alias index="48" name="" field="bus_bay"/>
+    <alias index="49" name="" field="busway"/>
+    <alias index="50" name="" field="busway:both"/>
+    <alias index="51" name="" field="busway:conditional"/>
+    <alias index="52" name="" field="busway:left"/>
+    <alias index="53" name="" field="busway:right"/>
+    <alias index="54" name="" field="button_operated"/>
+    <alias index="55" name="" field="car"/>
+    <alias index="56" name="" field="carriageway_ref"/>
+    <alias index="57" name="" field="caution"/>
+    <alias index="58" name="" field="cesspit"/>
+    <alias index="59" name="" field="change"/>
+    <alias index="60" name="" field="change:lanes"/>
+    <alias index="61" name="" field="changing_table"/>
+    <alias index="62" name="" field="charge"/>
+    <alias index="63" name="" field="check_date"/>
+    <alias index="64" name="" field="check_date:cycleway"/>
+    <alias index="65" name="" field="check_date:cycleway:surface"/>
+    <alias index="66" name="" field="check_date:handrail"/>
+    <alias index="67" name="" field="check_date:lit"/>
+    <alias index="68" name="" field="check_date:ramp"/>
+    <alias index="69" name="" field="check_date:sidewalk"/>
+    <alias index="70" name="" field="check_date:sidewalk:surface"/>
+    <alias index="71" name="" field="check_date:smoothness"/>
+    <alias index="72" name="" field="check_date:surface"/>
+    <alias index="73" name="" field="check_date:tactile_paving"/>
+    <alias index="74" name="" field="coach"/>
+    <alias index="75" name="" field="colour"/>
+    <alias index="76" name="" field="complete"/>
+    <alias index="77" name="" field="construction"/>
+    <alias index="78" name="" field="construction_contract_name"/>
+    <alias index="79" name="" field="construction_method"/>
+    <alias index="80" name="" field="contact:phone"/>
+    <alias index="81" name="" field="conveying"/>
+    <alias index="82" name="" field="cover"/>
+    <alias index="83" name="" field="covered"/>
+    <alias index="84" name="" field="created_by"/>
+    <alias index="85" name="" field="crossing"/>
+    <alias index="86" name="" field="crossing:continuous"/>
+    <alias index="87" name="" field="crossing:island"/>
+    <alias index="88" name="" field="crossing:markings"/>
+    <alias index="89" name="" field="crossing:signals"/>
+    <alias index="90" name="" field="crossing_ref"/>
+    <alias index="91" name="" field="cutline"/>
+    <alias index="92" name="" field="cutting"/>
+    <alias index="93" name="" field="cycle_network"/>
+    <alias index="94" name="" field="cyclestreets_id"/>
+    <alias index="95" name="" field="cycleway"/>
+    <alias index="96" name="" field="cycleway:both"/>
+    <alias index="97" name="" field="cycleway:both:lane"/>
+    <alias index="98" name="" field="cycleway:both:oneway"/>
+    <alias index="99" name="" field="cycleway:conditional"/>
+    <alias index="100" name="" field="cycleway:lane"/>
+    <alias index="101" name="" field="cycleway:lanes"/>
+    <alias index="102" name="" field="cycleway:left"/>
+    <alias index="103" name="" field="cycleway:left:doorzone"/>
+    <alias index="104" name="" field="cycleway:left:lane"/>
+    <alias index="105" name="" field="cycleway:left:oneway"/>
+    <alias index="106" name="" field="cycleway:left:segregated"/>
+    <alias index="107" name="" field="cycleway:left:track"/>
+    <alias index="108" name="" field="cycleway:left:width"/>
+    <alias index="109" name="" field="cycleway:note"/>
+    <alias index="110" name="" field="cycleway:right"/>
+    <alias index="111" name="" field="cycleway:right:buffer"/>
+    <alias index="112" name="" field="cycleway:right:lane"/>
+    <alias index="113" name="" field="cycleway:right:oneway"/>
+    <alias index="114" name="" field="cycleway:right:separation:left"/>
+    <alias index="115" name="" field="cycleway:right:separation:right"/>
+    <alias index="116" name="" field="cycleway:right:track"/>
+    <alias index="117" name="" field="cycleway:right:width"/>
+    <alias index="118" name="" field="cycleway:segregated"/>
+    <alias index="119" name="" field="cycleway:surface"/>
+    <alias index="120" name="" field="cycleway:width"/>
+    <alias index="121" name="" field="delivery"/>
+    <alias index="122" name="" field="departures_board"/>
+    <alias index="123" name="" field="description"/>
+    <alias index="124" name="" field="designation"/>
+    <alias index="125" name="" field="destination"/>
+    <alias index="126" name="" field="destination:backward"/>
+    <alias index="127" name="" field="destination:forward"/>
+    <alias index="128" name="" field="destination:lanes"/>
+    <alias index="129" name="" field="destination:lanes:forward"/>
+    <alias index="130" name="" field="destination:ref"/>
+    <alias index="131" name="" field="destination:ref:forward"/>
+    <alias index="132" name="" field="destination:ref:lanes"/>
+    <alias index="133" name="" field="destination:ref:lanes:forward"/>
+    <alias index="134" name="" field="destination:ref:to"/>
+    <alias index="135" name="" field="destination:ref:to:lanes"/>
+    <alias index="136" name="" field="destination:symbol"/>
+    <alias index="137" name="" field="destination:symbol:lanes"/>
+    <alias index="138" name="" field="diameter"/>
+    <alias index="139" name="" field="direction"/>
+    <alias index="140" name="" field="disabled"/>
+    <alias index="141" name="" field="disused"/>
+    <alias index="142" name="" field="disused:bicycle"/>
+    <alias index="143" name="" field="disused:bus"/>
+    <alias index="144" name="" field="disused:dual_carriageway"/>
+    <alias index="145" name="" field="disused:foot"/>
+    <alias index="146" name="" field="disused:highway"/>
+    <alias index="147" name="" field="disused:lanes"/>
+    <alias index="148" name="" field="disused:oneway"/>
+    <alias index="149" name="" field="disused:ref"/>
+    <alias index="150" name="" field="disused:tunnel"/>
+    <alias index="151" name="" field="dog"/>
+    <alias index="152" name="" field="driving_side"/>
+    <alias index="153" name="" field="dual_carriageway"/>
+    <alias index="154" name="" field="ele"/>
+    <alias index="155" name="" field="electrified"/>
+    <alias index="156" name="" field="embankment"/>
+    <alias index="157" name="" field="emergency"/>
+    <alias index="158" name="" field="entrance"/>
+    <alias index="159" name="" field="est_width"/>
+    <alias index="160" name="" field="expressway"/>
+    <alias index="161" name="" field="fee"/>
+    <alias index="162" name="" field="fence_type"/>
+    <alias index="163" name="" field="fixme"/>
+    <alias index="164" name="" field="flood_prone"/>
+    <alias index="165" name="" field="foot"/>
+    <alias index="166" name="" field="footway"/>
+    <alias index="167" name="" field="footway:surface"/>
+    <alias index="168" name="" field="ford"/>
+    <alias index="169" name="" field="funeral_vehicles"/>
+    <alias index="170" name="" field="gated"/>
+    <alias index="171" name="" field="golf"/>
+    <alias index="172" name="" field="golf_cart"/>
+    <alias index="173" name="" field="goods"/>
+    <alias index="174" name="" field="handrail"/>
+    <alias index="175" name="" field="handrail:center"/>
+    <alias index="176" name="" field="handrail:left"/>
+    <alias index="177" name="" field="handrail:right"/>
+    <alias index="178" name="" field="hazard"/>
+    <alias index="179" name="" field="he:inscription_date"/>
+    <alias index="180" name="" field="height"/>
+    <alias index="181" name="" field="heritage"/>
+    <alias index="182" name="" field="heritage:operator"/>
+    <alias index="183" name="" field="heritage:operator:wikidata"/>
+    <alias index="184" name="" field="heritage:website"/>
+    <alias index="185" name="" field="hgv"/>
+    <alias index="186" name="" field="hgv:note"/>
+    <alias index="187" name="" field="highway"/>
+    <alias index="188" name="" field="highway_1"/>
+    <alias index="189" name="" field="highway_authority_ref"/>
+    <alias index="190" name="" field="highways_england:area"/>
+    <alias index="191" name="" field="historic"/>
+    <alias index="192" name="" field="historic:highway"/>
+    <alias index="193" name="" field="horse"/>
+    <alias index="194" name="" field="horse_scale"/>
+    <alias index="195" name="" field="hour_off"/>
+    <alias index="196" name="" field="hour_on"/>
+    <alias index="197" name="" field="hov"/>
+    <alias index="198" name="" field="image"/>
+    <alias index="199" name="" field="incline"/>
+    <alias index="200" name="" field="incorrect_name"/>
+    <alias index="201" name="" field="indoor"/>
+    <alias index="202" name="" field="informal"/>
+    <alias index="203" name="" field="int_name"/>
+    <alias index="204" name="" field="internal_diameter"/>
+    <alias index="205" name="" field="internet_access"/>
+    <alias index="206" name="" field="is_in"/>
+    <alias index="207" name="" field="is_in:borough"/>
+    <alias index="208" name="" field="is_in:district"/>
+    <alias index="209" name="" field="is_in:suburb"/>
+    <alias index="210" name="" field="is_sidepath"/>
+    <alias index="211" name="" field="is_sidepath:of:name"/>
+    <alias index="212" name="" field="junction"/>
+    <alias index="213" name="" field="junction:ref"/>
+    <alias index="214" name="" field="kerb"/>
+    <alias index="215" name="" field="landuse"/>
+    <alias index="216" name="" field="lane_markings"/>
+    <alias index="217" name="" field="lane_markings:backward"/>
+    <alias index="218" name="" field="lane_markings:forward"/>
+    <alias index="219" name="" field="lanes"/>
+    <alias index="220" name="" field="lanes:backward"/>
+    <alias index="221" name="" field="lanes:bus"/>
+    <alias index="222" name="" field="lanes:bus:forward"/>
+    <alias index="223" name="" field="lanes:forward"/>
+    <alias index="224" name="" field="lanes:left"/>
+    <alias index="225" name="" field="lanes:psv"/>
+    <alias index="226" name="" field="lanes:psv:backward"/>
+    <alias index="227" name="" field="lanes:psv:backward:right"/>
+    <alias index="228" name="" field="lanes:psv:forward"/>
+    <alias index="229" name="" field="layer"/>
+    <alias index="230" name="" field="lcn"/>
+    <alias index="231" name="" field="leisure"/>
+    <alias index="232" name="" field="length"/>
+    <alias index="233" name="" field="level"/>
+    <alias index="234" name="" field="level:ref"/>
+    <alias index="235" name="" field="listed_status"/>
+    <alias index="236" name="" field="lit"/>
+    <alias index="237" name="" field="lit:note"/>
+    <alias index="238" name="" field="loc_name"/>
+    <alias index="239" name="" field="loc_ref"/>
+    <alias index="240" name="" field="locals"/>
+    <alias index="241" name="" field="location"/>
+    <alias index="242" name="" field="long_vehicles"/>
+    <alias index="243" name="" field="man_made"/>
+    <alias index="244" name="" field="marked"/>
+    <alias index="245" name="" field="material"/>
+    <alias index="246" name="" field="maxaxleload"/>
+    <alias index="247" name="" field="maxgcweightrating:goods"/>
+    <alias index="248" name="" field="maxgcweightrating:hgv"/>
+    <alias index="249" name="" field="maxgcweightrating:hgv:conditional"/>
+    <alias index="250" name="" field="maxgcwrating:hgv"/>
+    <alias index="251" name="" field="maxheight"/>
+    <alias index="252" name="" field="maxheight:imperial"/>
+    <alias index="253" name="" field="maxheight:note"/>
+    <alias index="254" name="" field="maxheight:physical"/>
+    <alias index="255" name="" field="maxheight:signed"/>
+    <alias index="256" name="" field="maxspeed"/>
+    <alias index="257" name="" field="maxspeed:advisory"/>
+    <alias index="258" name="" field="maxspeed:backward"/>
+    <alias index="259" name="" field="maxspeed:bicycle"/>
+    <alias index="260" name="" field="maxspeed:enforcement"/>
+    <alias index="261" name="" field="maxspeed:forward"/>
+    <alias index="262" name="" field="maxspeed:lanes"/>
+    <alias index="263" name="" field="maxspeed:proposed"/>
+    <alias index="264" name="" field="maxspeed:type"/>
+    <alias index="265" name="" field="maxspeed:variable"/>
+    <alias index="266" name="" field="maxweight"/>
+    <alias index="267" name="" field="maxweight:conditional"/>
+    <alias index="268" name="" field="maxweight:hgv"/>
+    <alias index="269" name="" field="maxweight:hgv:conditional"/>
+    <alias index="270" name="" field="maxweight:signed"/>
+    <alias index="271" name="" field="maxweightrating"/>
+    <alias index="272" name="" field="maxweightrating:hgv"/>
+    <alias index="273" name="" field="maxweightrating:hgv:conditional"/>
+    <alias index="274" name="" field="maxwidth"/>
+    <alias index="275" name="" field="mkgmap:flare-check"/>
+    <alias index="276" name="" field="mooring"/>
+    <alias index="277" name="" field="motor_vehicle"/>
+    <alias index="278" name="" field="motor_vehicle:backward"/>
+    <alias index="279" name="" field="motor_vehicle:conditional"/>
+    <alias index="280" name="" field="motor_vehicle:lanes"/>
+    <alias index="281" name="" field="motorcar"/>
+    <alias index="282" name="" field="motorcycle"/>
+    <alias index="283" name="" field="motorroad"/>
+    <alias index="284" name="" field="motorway"/>
+    <alias index="285" name="" field="mtb:scale"/>
+    <alias index="286" name="" field="mtb:scale:imba"/>
+    <alias index="287" name="" field="name"/>
+    <alias index="288" name="" field="name:cy"/>
+    <alias index="289" name="" field="name:en"/>
+    <alias index="290" name="" field="name:left"/>
+    <alias index="291" name="" field="name:note"/>
+    <alias index="292" name="" field="name:right"/>
+    <alias index="293" name="" field="name:ru"/>
+    <alias index="294" name="" field="name:signed"/>
+    <alias index="295" name="" field="name:source"/>
+    <alias index="296" name="" field="name:survey:date"/>
+    <alias index="297" name="" field="narrow"/>
+    <alias index="298" name="" field="national_highways:area"/>
+    <alias index="299" name="" field="natural"/>
+    <alias index="300" name="" field="noexit"/>
+    <alias index="301" name="" field="noname"/>
+    <alias index="302" name="" field="not:junction"/>
+    <alias index="303" name="" field="not:name"/>
+    <alias index="304" name="" field="note"/>
+    <alias index="305" name="" field="note:access"/>
+    <alias index="306" name="" field="note:alt_name"/>
+    <alias index="307" name="" field="note:covid19"/>
+    <alias index="308" name="" field="note:cycle"/>
+    <alias index="309" name="" field="note:cycleway"/>
+    <alias index="310" name="" field="note:designation"/>
+    <alias index="311" name="" field="note:lcn"/>
+    <alias index="312" name="" field="note:lit"/>
+    <alias index="313" name="" field="note:name"/>
+    <alias index="314" name="" field="obstacle"/>
+    <alias index="315" name="" field="office"/>
+    <alias index="316" name="" field="official_ref"/>
+    <alias index="317" name="" field="old_name"/>
+    <alias index="318" name="" field="old_ref"/>
+    <alias index="319" name="" field="oneway"/>
+    <alias index="320" name="" field="oneway:bicycle"/>
+    <alias index="321" name="" field="oneway:bus"/>
+    <alias index="322" name="" field="oneway:emergency"/>
+    <alias index="323" name="" field="oneway:foot"/>
+    <alias index="324" name="" field="oneway:horse"/>
+    <alias index="325" name="" field="oneway:psv"/>
+    <alias index="326" name="" field="oneway_type"/>
+    <alias index="327" name="" field="opening_date"/>
+    <alias index="328" name="" field="opening_hours"/>
+    <alias index="329" name="" field="operator"/>
+    <alias index="330" name="" field="operator:type"/>
+    <alias index="331" name="" field="operator:wikidata"/>
+    <alias index="332" name="" field="osmc:symbol"/>
+    <alias index="333" name="" field="overtaking"/>
+    <alias index="334" name="" field="overtaking:motor_vehicle"/>
+    <alias index="335" name="" field="ownership"/>
+    <alias index="336" name="" field="parking"/>
+    <alias index="337" name="" field="parking:both"/>
+    <alias index="338" name="" field="parking:both:access"/>
+    <alias index="339" name="" field="parking:both:authentication:ticket:conditional"/>
+    <alias index="340" name="" field="parking:both:markings"/>
+    <alias index="341" name="" field="parking:both:orientation"/>
+    <alias index="342" name="" field="parking:both:restriction"/>
+    <alias index="343" name="" field="parking:both:restriction:conditional"/>
+    <alias index="344" name="" field="parking:both:restriction:reason"/>
+    <alias index="345" name="" field="parking:both:zone"/>
+    <alias index="346" name="" field="parking:both:zone:residents"/>
+    <alias index="347" name="" field="parking:condition:both"/>
+    <alias index="348" name="" field="parking:lane"/>
+    <alias index="349" name="" field="parking:lane:both"/>
+    <alias index="350" name="" field="parking:lane:both:parallel"/>
+    <alias index="351" name="" field="parking:lane:left"/>
+    <alias index="352" name="" field="parking:lane:right"/>
+    <alias index="353" name="" field="parking:lane:right:parallel"/>
+    <alias index="354" name="" field="parking:left"/>
+    <alias index="355" name="" field="parking:left:access"/>
+    <alias index="356" name="" field="parking:left:bus"/>
+    <alias index="357" name="" field="parking:left:markings"/>
+    <alias index="358" name="" field="parking:left:orientation"/>
+    <alias index="359" name="" field="parking:left:restriction"/>
+    <alias index="360" name="" field="parking:left:restriction:reason"/>
+    <alias index="361" name="" field="parking:left:zone"/>
+    <alias index="362" name="" field="parking:right"/>
+    <alias index="363" name="" field="parking:right:access"/>
+    <alias index="364" name="" field="parking:right:capacity"/>
+    <alias index="365" name="" field="parking:right:fee"/>
+    <alias index="366" name="" field="parking:right:fee:conditional"/>
+    <alias index="367" name="" field="parking:right:markings"/>
+    <alias index="368" name="" field="parking:right:orientation"/>
+    <alias index="369" name="" field="parking:right:restriction"/>
+    <alias index="370" name="" field="parking:right:restriction:reason"/>
+    <alias index="371" name="" field="parking:right:zone"/>
+    <alias index="372" name="" field="passing_places"/>
+    <alias index="373" name="" field="path"/>
+    <alias index="374" name="" field="paved"/>
+    <alias index="375" name="" field="paving_stones:material"/>
+    <alias index="376" name="" field="place"/>
+    <alias index="377" name="" field="placement"/>
+    <alias index="378" name="" field="placement:backward"/>
+    <alias index="379" name="" field="platform_lift"/>
+    <alias index="380" name="" field="police"/>
+    <alias index="381" name="" field="postal_code"/>
+    <alias index="382" name="" field="presumed_designation"/>
+    <alias index="383" name="" field="priority"/>
+    <alias index="384" name="" field="proposed"/>
+    <alias index="385" name="" field="proposed:bicycle"/>
+    <alias index="386" name="" field="proposed:cycleway"/>
+    <alias index="387" name="" field="proposed:cycleway:left"/>
+    <alias index="388" name="" field="proposed:cycleway:left:oneway"/>
+    <alias index="389" name="" field="proposed:cycleway:right"/>
+    <alias index="390" name="" field="proposed:cycleway:right:oneway"/>
+    <alias index="391" name="" field="proposed:foot"/>
+    <alias index="392" name="" field="proposed:footway"/>
+    <alias index="393" name="" field="proposed:highway"/>
+    <alias index="394" name="" field="proposed:maxspeed"/>
+    <alias index="395" name="" field="proposed:oneway"/>
+    <alias index="396" name="" field="proposed:oneway:bicycle"/>
+    <alias index="397" name="" field="proposed:segregated"/>
+    <alias index="398" name="" field="proposed:traffic_intervention"/>
+    <alias index="399" name="" field="prow_ref"/>
+    <alias index="400" name="" field="psv"/>
+    <alias index="401" name="" field="psv:lanes"/>
+    <alias index="402" name="" field="psv:lanes:backward"/>
+    <alias index="403" name="" field="psv:lanes:forward"/>
+    <alias index="404" name="" field="psv:right"/>
+    <alias index="405" name="" field="public_transport"/>
+    <alias index="406" name="" field="railing"/>
+    <alias index="407" name="" field="ramp"/>
+    <alias index="408" name="" field="ramp:bicycle"/>
+    <alias index="409" name="" field="ramp:wheelchair"/>
+    <alias index="410" name="" field="rcn"/>
+    <alias index="411" name="" field="ref"/>
+    <alias index="412" name="" field="ref:22406366"/>
+    <alias index="413" name="" field="ref:GB:nhle"/>
+    <alias index="414" name="" field="ref:GB:tflcid"/>
+    <alias index="415" name="" field="ref:GB:uprn"/>
+    <alias index="416" name="" field="ref:GB:usrn"/>
+    <alias index="417" name="" field="ref:he"/>
+    <alias index="418" name="" field="ref:source"/>
+    <alias index="419" name="" field="ref:tfl"/>
+    <alias index="420" name="" field="repair"/>
+    <alias index="421" name="" field="roof:colour"/>
+    <alias index="422" name="" field="roof:shape"/>
+    <alias index="423" name="" field="roundabout"/>
+    <alias index="424" name="" field="route"/>
+    <alias index="425" name="" field="segregated"/>
+    <alias index="426" name="" field="separation:left"/>
+    <alias index="427" name="" field="separation:right"/>
+    <alias index="428" name="" field="service"/>
+    <alias index="429" name="" field="service_1"/>
+    <alias index="430" name="" field="shelter"/>
+    <alias index="431" name="" field="shelter_type"/>
+    <alias index="432" name="" field="shop"/>
+    <alias index="433" name="" field="short_name"/>
+    <alias index="434" name="" field="shoulder"/>
+    <alias index="435" name="" field="shower"/>
+    <alias index="436" name="" field="sidewalk"/>
+    <alias index="437" name="" field="sidewalk:both"/>
+    <alias index="438" name="" field="sidewalk:both:surface"/>
+    <alias index="439" name="" field="sidewalk:left"/>
+    <alias index="440" name="" field="sidewalk:left:surface"/>
+    <alias index="441" name="" field="sidewalk:left:wheelchair"/>
+    <alias index="442" name="" field="sidewalk:note"/>
+    <alias index="443" name="" field="sidewalk:right"/>
+    <alias index="444" name="" field="sidewalk:right:surface"/>
+    <alias index="445" name="" field="sign_information"/>
+    <alias index="446" name="" field="signed:ref"/>
+    <alias index="447" name="" field="sloped_curb"/>
+    <alias index="448" name="" field="smoothness"/>
+    <alias index="449" name="" field="smoothness:date"/>
+    <alias index="450" name="" field="source"/>
+    <alias index="451" name="" field="source:access"/>
+    <alias index="452" name="" field="source:alt_name"/>
+    <alias index="453" name="" field="source:bicycle"/>
+    <alias index="454" name="" field="source:bing"/>
+    <alias index="455" name="" field="source:cycleway"/>
+    <alias index="456" name="" field="source:designation"/>
+    <alias index="457" name="" field="source:destination"/>
+    <alias index="458" name="" field="source:geometry"/>
+    <alias index="459" name="" field="source:hgv"/>
+    <alias index="460" name="" field="source:highway"/>
+    <alias index="461" name="" field="source:lanes"/>
+    <alias index="462" name="" field="source:lcn"/>
+    <alias index="463" name="" field="source:lit"/>
+    <alias index="464" name="" field="source:maxheight"/>
+    <alias index="465" name="" field="source:maxspeed"/>
+    <alias index="466" name="" field="source:maxweight"/>
+    <alias index="467" name="" field="source:maxweightrating"/>
+    <alias index="468" name="" field="source:maxweightrating:hgv"/>
+    <alias index="469" name="" field="source:maxwidth"/>
+    <alias index="470" name="" field="source:name"/>
+    <alias index="471" name="" field="source:not:name"/>
+    <alias index="472" name="" field="source:old_name"/>
+    <alias index="473" name="" field="source:oneway"/>
+    <alias index="474" name="" field="source:oneway:bicycle"/>
+    <alias index="475" name="" field="source:postal_code"/>
+    <alias index="476" name="" field="source:proposed:oneway"/>
+    <alias index="477" name="" field="source:prow_ref"/>
+    <alias index="478" name="" field="source:rcn"/>
+    <alias index="479" name="" field="source:ref"/>
+    <alias index="480" name="" field="source:track"/>
+    <alias index="481" name="" field="source:traffic_intervention"/>
+    <alias index="482" name="" field="source:width"/>
+    <alias index="483" name="" field="source_ref"/>
+    <alias index="484" name="" field="source_ref:name"/>
+    <alias index="485" name="" field="source_ref:ref"/>
+    <alias index="486" name="" field="stairs:endline"/>
+    <alias index="487" name="" field="stairs:startline"/>
+    <alias index="488" name="" field="start_date"/>
+    <alias index="489" name="" field="state"/>
+    <alias index="490" name="" field="step_count"/>
+    <alias index="491" name="" field="steps"/>
+    <alias index="492" name="" field="stile"/>
+    <alias index="493" name="" field="surface"/>
+    <alias index="494" name="" field="surface:colour"/>
+    <alias index="495" name="" field="surface:note"/>
+    <alias index="496" name="" field="survey:date"/>
+    <alias index="497" name="" field="surveying_authority"/>
+    <alias index="498" name="" field="tactile_paving"/>
+    <alias index="499" name="" field="taxi"/>
+    <alias index="500" name="" field="temporary:highway"/>
+    <alias index="501" name="" field="toilets"/>
+    <alias index="502" name="" field="toilets:wheelchair"/>
+    <alias index="503" name="" field="toll"/>
+    <alias index="504" name="" field="tourism"/>
+    <alias index="505" name="" field="towpath"/>
+    <alias index="506" name="" field="tracktype"/>
+    <alias index="507" name="" field="traffic_calming"/>
+    <alias index="508" name="" field="traffic_calming:check_date"/>
+    <alias index="509" name="" field="traffic_intervention"/>
+    <alias index="510" name="" field="traffic_signals"/>
+    <alias index="511" name="" field="traffic_signals:direction"/>
+    <alias index="512" name="" field="traffic_signals:sound"/>
+    <alias index="513" name="" field="traffic_signals:vibration"/>
+    <alias index="514" name="" field="trail_visibility"/>
+    <alias index="515" name="" field="tree_lined"/>
+    <alias index="516" name="" field="tunnel"/>
+    <alias index="517" name="" field="tunnel:name"/>
+    <alias index="518" name="" field="tunnel:short_name"/>
+    <alias index="519" name="" field="turn"/>
+    <alias index="520" name="" field="turn:lanes"/>
+    <alias index="521" name="" field="turn:lanes:backward"/>
+    <alias index="522" name="" field="turn:lanes:forward"/>
+    <alias index="523" name="" field="unsigned"/>
+    <alias index="524" name="" field="validate"/>
+    <alias index="525" name="" field="vehicle"/>
+    <alias index="526" name="" field="vehicle:lanes"/>
+    <alias index="527" name="" field="vehicle:lanes:forward"/>
+    <alias index="528" name="" field="verge"/>
+    <alias index="529" name="" field="verge:left"/>
+    <alias index="530" name="" field="verge:right"/>
+    <alias index="531" name="" field="virtual"/>
+    <alias index="532" name="" field="was:bicycle"/>
+    <alias index="533" name="" field="was:covered"/>
+    <alias index="534" name="" field="was:cycleway:left"/>
+    <alias index="535" name="" field="was:cycleway:right"/>
+    <alias index="536" name="" field="was:highway"/>
+    <alias index="537" name="" field="was:lanes"/>
+    <alias index="538" name="" field="was:oneway"/>
+    <alias index="539" name="" field="was:ref"/>
+    <alias index="540" name="" field="was:segregated"/>
+    <alias index="541" name="" field="watch:80n"/>
+    <alias index="542" name="" field="water"/>
+    <alias index="543" name="" field="website"/>
+    <alias index="544" name="" field="wheelchair"/>
+    <alias index="545" name="" field="width"/>
+    <alias index="546" name="" field="wikidata"/>
+    <alias index="547" name="" field="wikipedia"/>
   </aliases>
   <splitPolicies>
-    <policy field="FIXME" policy="Duplicate"/>
-    <policy field="HE_ref" policy="Duplicate"/>
-    <policy field="WARNING" policy="Duplicate"/>
-    <policy field="access" policy="Duplicate"/>
-    <policy field="access:conditional" policy="Duplicate"/>
-    <policy field="access:lanes:backward" policy="Duplicate"/>
-    <policy field="access:note" policy="Duplicate"/>
-    <policy field="access:source" policy="Duplicate"/>
-    <policy field="access:survey:date" policy="Duplicate"/>
-    <policy field="active_traffic_management" policy="Duplicate"/>
-    <policy field="addr:city" policy="Duplicate"/>
-    <policy field="addr:housename" policy="Duplicate"/>
-    <policy field="addr:housenumber" policy="Duplicate"/>
-    <policy field="addr:interpolation" policy="Duplicate"/>
-    <policy field="addr:postcode" policy="Duplicate"/>
-    <policy field="addr:street" policy="Duplicate"/>
-    <policy field="aeroway" policy="Duplicate"/>
-    <policy field="agricultural" policy="Duplicate"/>
-    <policy field="airside" policy="Duplicate"/>
-    <policy field="alt_name" policy="Duplicate"/>
-    <policy field="alt_name:en" policy="Duplicate"/>
-    <policy field="amenity" policy="Duplicate"/>
-    <policy field="area" policy="Duplicate"/>
-    <policy field="barrier" policy="Duplicate"/>
-    <policy field="bench" policy="Duplicate"/>
-    <policy field="bicycle" policy="Duplicate"/>
-    <policy field="bicycle:conditional" policy="Duplicate"/>
-    <policy field="bicycle:lanes" policy="Duplicate"/>
-    <policy field="bicycle:lanes:forward" policy="Duplicate"/>
-    <policy field="bin" policy="Duplicate"/>
-    <policy field="bing" policy="Duplicate"/>
-    <policy field="bollard" policy="Duplicate"/>
-    <policy field="borough" policy="Duplicate"/>
-    <policy field="bridge" policy="Duplicate"/>
-    <policy field="bridge:alt_name" policy="Duplicate"/>
-    <policy field="bridge:alt_name:wikidata" policy="Duplicate"/>
-    <policy field="bridge:movable" policy="Duplicate"/>
-    <policy field="bridge:name" policy="Duplicate"/>
-    <policy field="bridge:name:wikidata" policy="Duplicate"/>
-    <policy field="bridge:ref" policy="Duplicate"/>
-    <policy field="bridge:structure" policy="Duplicate"/>
-    <policy field="bridge_ref" policy="Duplicate"/>
-    <policy field="building" policy="Duplicate"/>
-    <policy field="building:levels" policy="Duplicate"/>
-    <policy field="bus" policy="Duplicate"/>
-    <policy field="bus:lanes" policy="Duplicate"/>
-    <policy field="bus:lanes:backward" policy="Duplicate"/>
-    <policy field="bus:lanes:forward" policy="Duplicate"/>
-    <policy field="bus_bay" policy="Duplicate"/>
-    <policy field="busway" policy="Duplicate"/>
-    <policy field="busway:both" policy="Duplicate"/>
-    <policy field="busway:conditional" policy="Duplicate"/>
-    <policy field="busway:left" policy="Duplicate"/>
-    <policy field="busway:right" policy="Duplicate"/>
-    <policy field="button_operated" policy="Duplicate"/>
-    <policy field="car" policy="Duplicate"/>
-    <policy field="carriageway_ref" policy="Duplicate"/>
-    <policy field="caution" policy="Duplicate"/>
-    <policy field="cesspit" policy="Duplicate"/>
-    <policy field="change" policy="Duplicate"/>
-    <policy field="change:lanes" policy="Duplicate"/>
-    <policy field="changing_table" policy="Duplicate"/>
-    <policy field="charge" policy="Duplicate"/>
-    <policy field="check_date" policy="Duplicate"/>
-    <policy field="check_date:cycleway" policy="Duplicate"/>
-    <policy field="check_date:cycleway:surface" policy="Duplicate"/>
-    <policy field="check_date:handrail" policy="Duplicate"/>
-    <policy field="check_date:lit" policy="Duplicate"/>
-    <policy field="check_date:ramp" policy="Duplicate"/>
-    <policy field="check_date:sidewalk" policy="Duplicate"/>
-    <policy field="check_date:sidewalk:surface" policy="Duplicate"/>
-    <policy field="check_date:smoothness" policy="Duplicate"/>
-    <policy field="check_date:surface" policy="Duplicate"/>
-    <policy field="check_date:tactile_paving" policy="Duplicate"/>
-    <policy field="coach" policy="Duplicate"/>
-    <policy field="colour" policy="Duplicate"/>
-    <policy field="complete" policy="Duplicate"/>
-    <policy field="construction" policy="Duplicate"/>
-    <policy field="construction_contract_name" policy="Duplicate"/>
-    <policy field="construction_method" policy="Duplicate"/>
-    <policy field="contact:phone" policy="Duplicate"/>
-    <policy field="conveying" policy="Duplicate"/>
-    <policy field="cover" policy="Duplicate"/>
-    <policy field="covered" policy="Duplicate"/>
-    <policy field="created_by" policy="Duplicate"/>
-    <policy field="crossing" policy="Duplicate"/>
-    <policy field="crossing:continuous" policy="Duplicate"/>
-    <policy field="crossing:island" policy="Duplicate"/>
-    <policy field="crossing:markings" policy="Duplicate"/>
-    <policy field="crossing:signals" policy="Duplicate"/>
-    <policy field="crossing_ref" policy="Duplicate"/>
-    <policy field="cutline" policy="Duplicate"/>
-    <policy field="cutting" policy="Duplicate"/>
-    <policy field="cycle_network" policy="Duplicate"/>
-    <policy field="cyclestreets_id" policy="Duplicate"/>
-    <policy field="cycleway" policy="Duplicate"/>
-    <policy field="cycleway:both" policy="Duplicate"/>
-    <policy field="cycleway:both:lane" policy="Duplicate"/>
-    <policy field="cycleway:both:oneway" policy="Duplicate"/>
-    <policy field="cycleway:conditional" policy="Duplicate"/>
-    <policy field="cycleway:lane" policy="Duplicate"/>
-    <policy field="cycleway:lanes" policy="Duplicate"/>
-    <policy field="cycleway:left" policy="Duplicate"/>
-    <policy field="cycleway:left:doorzone" policy="Duplicate"/>
-    <policy field="cycleway:left:lane" policy="Duplicate"/>
-    <policy field="cycleway:left:oneway" policy="Duplicate"/>
-    <policy field="cycleway:left:segregated" policy="Duplicate"/>
-    <policy field="cycleway:left:track" policy="Duplicate"/>
-    <policy field="cycleway:left:width" policy="Duplicate"/>
-    <policy field="cycleway:note" policy="Duplicate"/>
-    <policy field="cycleway:right" policy="Duplicate"/>
-    <policy field="cycleway:right:buffer" policy="Duplicate"/>
-    <policy field="cycleway:right:lane" policy="Duplicate"/>
-    <policy field="cycleway:right:oneway" policy="Duplicate"/>
-    <policy field="cycleway:right:separation:left" policy="Duplicate"/>
-    <policy field="cycleway:right:separation:right" policy="Duplicate"/>
-    <policy field="cycleway:right:track" policy="Duplicate"/>
-    <policy field="cycleway:right:width" policy="Duplicate"/>
-    <policy field="cycleway:segregated" policy="Duplicate"/>
-    <policy field="cycleway:surface" policy="Duplicate"/>
-    <policy field="cycleway:width" policy="Duplicate"/>
-    <policy field="delivery" policy="Duplicate"/>
-    <policy field="departures_board" policy="Duplicate"/>
-    <policy field="description" policy="Duplicate"/>
-    <policy field="designation" policy="Duplicate"/>
-    <policy field="destination" policy="Duplicate"/>
-    <policy field="destination:backward" policy="Duplicate"/>
-    <policy field="destination:forward" policy="Duplicate"/>
-    <policy field="destination:lanes" policy="Duplicate"/>
-    <policy field="destination:lanes:forward" policy="Duplicate"/>
-    <policy field="destination:ref" policy="Duplicate"/>
-    <policy field="destination:ref:forward" policy="Duplicate"/>
-    <policy field="destination:ref:lanes" policy="Duplicate"/>
-    <policy field="destination:ref:lanes:forward" policy="Duplicate"/>
-    <policy field="destination:ref:to" policy="Duplicate"/>
-    <policy field="destination:ref:to:lanes" policy="Duplicate"/>
-    <policy field="destination:symbol" policy="Duplicate"/>
-    <policy field="destination:symbol:lanes" policy="Duplicate"/>
-    <policy field="diameter" policy="Duplicate"/>
-    <policy field="direction" policy="Duplicate"/>
-    <policy field="disabled" policy="Duplicate"/>
-    <policy field="disused" policy="Duplicate"/>
-    <policy field="disused:bicycle" policy="Duplicate"/>
-    <policy field="disused:bus" policy="Duplicate"/>
-    <policy field="disused:dual_carriageway" policy="Duplicate"/>
-    <policy field="disused:foot" policy="Duplicate"/>
-    <policy field="disused:highway" policy="Duplicate"/>
-    <policy field="disused:lanes" policy="Duplicate"/>
-    <policy field="disused:oneway" policy="Duplicate"/>
-    <policy field="disused:ref" policy="Duplicate"/>
-    <policy field="disused:tunnel" policy="Duplicate"/>
-    <policy field="dog" policy="Duplicate"/>
-    <policy field="driving_side" policy="Duplicate"/>
-    <policy field="dual_carriageway" policy="Duplicate"/>
-    <policy field="ele" policy="Duplicate"/>
-    <policy field="electrified" policy="Duplicate"/>
-    <policy field="embankment" policy="Duplicate"/>
-    <policy field="emergency" policy="Duplicate"/>
-    <policy field="entrance" policy="Duplicate"/>
-    <policy field="est_width" policy="Duplicate"/>
-    <policy field="expressway" policy="Duplicate"/>
-    <policy field="fee" policy="Duplicate"/>
-    <policy field="fence_type" policy="Duplicate"/>
-    <policy field="fixme" policy="Duplicate"/>
-    <policy field="flood_prone" policy="Duplicate"/>
-    <policy field="foot" policy="Duplicate"/>
-    <policy field="footway" policy="Duplicate"/>
-    <policy field="footway:surface" policy="Duplicate"/>
-    <policy field="ford" policy="Duplicate"/>
-    <policy field="funeral_vehicles" policy="Duplicate"/>
-    <policy field="gated" policy="Duplicate"/>
-    <policy field="golf" policy="Duplicate"/>
-    <policy field="golf_cart" policy="Duplicate"/>
-    <policy field="goods" policy="Duplicate"/>
-    <policy field="handrail" policy="Duplicate"/>
-    <policy field="handrail:center" policy="Duplicate"/>
-    <policy field="handrail:left" policy="Duplicate"/>
-    <policy field="handrail:right" policy="Duplicate"/>
-    <policy field="hazard" policy="Duplicate"/>
-    <policy field="he:inscription_date" policy="Duplicate"/>
-    <policy field="height" policy="Duplicate"/>
-    <policy field="heritage" policy="Duplicate"/>
-    <policy field="heritage:operator" policy="Duplicate"/>
-    <policy field="heritage:operator:wikidata" policy="Duplicate"/>
-    <policy field="heritage:website" policy="Duplicate"/>
-    <policy field="hgv" policy="Duplicate"/>
-    <policy field="hgv:note" policy="Duplicate"/>
-    <policy field="highway" policy="Duplicate"/>
-    <policy field="highway_1" policy="Duplicate"/>
-    <policy field="highway_authority_ref" policy="Duplicate"/>
-    <policy field="highways_england:area" policy="Duplicate"/>
-    <policy field="historic" policy="Duplicate"/>
-    <policy field="historic:highway" policy="Duplicate"/>
-    <policy field="horse" policy="Duplicate"/>
-    <policy field="horse_scale" policy="Duplicate"/>
-    <policy field="hour_off" policy="Duplicate"/>
-    <policy field="hour_on" policy="Duplicate"/>
-    <policy field="hov" policy="Duplicate"/>
-    <policy field="image" policy="Duplicate"/>
-    <policy field="incline" policy="Duplicate"/>
-    <policy field="incorrect_name" policy="Duplicate"/>
-    <policy field="indoor" policy="Duplicate"/>
-    <policy field="informal" policy="Duplicate"/>
-    <policy field="int_name" policy="Duplicate"/>
-    <policy field="internal_diameter" policy="Duplicate"/>
-    <policy field="internet_access" policy="Duplicate"/>
-    <policy field="is_in" policy="Duplicate"/>
-    <policy field="is_in:borough" policy="Duplicate"/>
-    <policy field="is_in:district" policy="Duplicate"/>
-    <policy field="is_in:suburb" policy="Duplicate"/>
-    <policy field="is_sidepath" policy="Duplicate"/>
-    <policy field="is_sidepath:of:name" policy="Duplicate"/>
-    <policy field="junction" policy="Duplicate"/>
-    <policy field="junction:ref" policy="Duplicate"/>
-    <policy field="kerb" policy="Duplicate"/>
-    <policy field="landuse" policy="Duplicate"/>
-    <policy field="lane_markings" policy="Duplicate"/>
-    <policy field="lane_markings:backward" policy="Duplicate"/>
-    <policy field="lane_markings:forward" policy="Duplicate"/>
-    <policy field="lanes" policy="Duplicate"/>
-    <policy field="lanes:backward" policy="Duplicate"/>
-    <policy field="lanes:bus" policy="Duplicate"/>
-    <policy field="lanes:bus:forward" policy="Duplicate"/>
-    <policy field="lanes:forward" policy="Duplicate"/>
-    <policy field="lanes:left" policy="Duplicate"/>
-    <policy field="lanes:psv" policy="Duplicate"/>
-    <policy field="lanes:psv:backward" policy="Duplicate"/>
-    <policy field="lanes:psv:backward:right" policy="Duplicate"/>
-    <policy field="lanes:psv:forward" policy="Duplicate"/>
-    <policy field="layer" policy="Duplicate"/>
-    <policy field="lcn" policy="Duplicate"/>
-    <policy field="leisure" policy="Duplicate"/>
-    <policy field="length" policy="Duplicate"/>
-    <policy field="level" policy="Duplicate"/>
-    <policy field="level:ref" policy="Duplicate"/>
-    <policy field="listed_status" policy="Duplicate"/>
-    <policy field="lit" policy="Duplicate"/>
-    <policy field="lit:note" policy="Duplicate"/>
-    <policy field="loc_name" policy="Duplicate"/>
-    <policy field="loc_ref" policy="Duplicate"/>
-    <policy field="locals" policy="Duplicate"/>
-    <policy field="location" policy="Duplicate"/>
-    <policy field="long_vehicles" policy="Duplicate"/>
-    <policy field="man_made" policy="Duplicate"/>
-    <policy field="marked" policy="Duplicate"/>
-    <policy field="material" policy="Duplicate"/>
-    <policy field="maxaxleload" policy="Duplicate"/>
-    <policy field="maxgcweightrating:goods" policy="Duplicate"/>
-    <policy field="maxgcweightrating:hgv" policy="Duplicate"/>
-    <policy field="maxgcweightrating:hgv:conditional" policy="Duplicate"/>
-    <policy field="maxgcwrating:hgv" policy="Duplicate"/>
-    <policy field="maxheight" policy="Duplicate"/>
-    <policy field="maxheight:imperial" policy="Duplicate"/>
-    <policy field="maxheight:note" policy="Duplicate"/>
-    <policy field="maxheight:physical" policy="Duplicate"/>
-    <policy field="maxheight:signed" policy="Duplicate"/>
-    <policy field="maxspeed" policy="Duplicate"/>
-    <policy field="maxspeed:advisory" policy="Duplicate"/>
-    <policy field="maxspeed:backward" policy="Duplicate"/>
-    <policy field="maxspeed:bicycle" policy="Duplicate"/>
-    <policy field="maxspeed:enforcement" policy="Duplicate"/>
-    <policy field="maxspeed:forward" policy="Duplicate"/>
-    <policy field="maxspeed:lanes" policy="Duplicate"/>
-    <policy field="maxspeed:proposed" policy="Duplicate"/>
-    <policy field="maxspeed:type" policy="Duplicate"/>
-    <policy field="maxspeed:variable" policy="Duplicate"/>
-    <policy field="maxweight" policy="Duplicate"/>
-    <policy field="maxweight:conditional" policy="Duplicate"/>
-    <policy field="maxweight:hgv" policy="Duplicate"/>
-    <policy field="maxweight:hgv:conditional" policy="Duplicate"/>
-    <policy field="maxweight:signed" policy="Duplicate"/>
-    <policy field="maxweightrating" policy="Duplicate"/>
-    <policy field="maxweightrating:hgv" policy="Duplicate"/>
-    <policy field="maxweightrating:hgv:conditional" policy="Duplicate"/>
-    <policy field="maxwidth" policy="Duplicate"/>
-    <policy field="mkgmap:flare-check" policy="Duplicate"/>
-    <policy field="mooring" policy="Duplicate"/>
-    <policy field="motor_vehicle" policy="Duplicate"/>
-    <policy field="motor_vehicle:backward" policy="Duplicate"/>
-    <policy field="motor_vehicle:conditional" policy="Duplicate"/>
-    <policy field="motor_vehicle:lanes" policy="Duplicate"/>
-    <policy field="motorcar" policy="Duplicate"/>
-    <policy field="motorcycle" policy="Duplicate"/>
-    <policy field="motorroad" policy="Duplicate"/>
-    <policy field="motorway" policy="Duplicate"/>
-    <policy field="mtb:scale" policy="Duplicate"/>
-    <policy field="mtb:scale:imba" policy="Duplicate"/>
-    <policy field="name" policy="Duplicate"/>
-    <policy field="name:cy" policy="Duplicate"/>
-    <policy field="name:en" policy="Duplicate"/>
-    <policy field="name:left" policy="Duplicate"/>
-    <policy field="name:note" policy="Duplicate"/>
-    <policy field="name:right" policy="Duplicate"/>
-    <policy field="name:ru" policy="Duplicate"/>
-    <policy field="name:signed" policy="Duplicate"/>
-    <policy field="name:source" policy="Duplicate"/>
-    <policy field="name:survey:date" policy="Duplicate"/>
-    <policy field="narrow" policy="Duplicate"/>
-    <policy field="national_highways:area" policy="Duplicate"/>
-    <policy field="natural" policy="Duplicate"/>
-    <policy field="noexit" policy="Duplicate"/>
-    <policy field="noname" policy="Duplicate"/>
-    <policy field="not:junction" policy="Duplicate"/>
-    <policy field="not:name" policy="Duplicate"/>
-    <policy field="note" policy="Duplicate"/>
-    <policy field="note:access" policy="Duplicate"/>
-    <policy field="note:alt_name" policy="Duplicate"/>
-    <policy field="note:covid19" policy="Duplicate"/>
-    <policy field="note:cycle" policy="Duplicate"/>
-    <policy field="note:cycleway" policy="Duplicate"/>
-    <policy field="note:designation" policy="Duplicate"/>
-    <policy field="note:lcn" policy="Duplicate"/>
-    <policy field="note:lit" policy="Duplicate"/>
-    <policy field="note:name" policy="Duplicate"/>
-    <policy field="obstacle" policy="Duplicate"/>
-    <policy field="office" policy="Duplicate"/>
-    <policy field="official_ref" policy="Duplicate"/>
-    <policy field="old_name" policy="Duplicate"/>
-    <policy field="old_ref" policy="Duplicate"/>
-    <policy field="oneway" policy="Duplicate"/>
-    <policy field="oneway:bicycle" policy="Duplicate"/>
-    <policy field="oneway:bus" policy="Duplicate"/>
-    <policy field="oneway:emergency" policy="Duplicate"/>
-    <policy field="oneway:foot" policy="Duplicate"/>
-    <policy field="oneway:horse" policy="Duplicate"/>
-    <policy field="oneway:psv" policy="Duplicate"/>
-    <policy field="oneway_type" policy="Duplicate"/>
-    <policy field="opening_date" policy="Duplicate"/>
-    <policy field="opening_hours" policy="Duplicate"/>
-    <policy field="operator" policy="Duplicate"/>
-    <policy field="operator:type" policy="Duplicate"/>
-    <policy field="operator:wikidata" policy="Duplicate"/>
-    <policy field="osmc:symbol" policy="Duplicate"/>
-    <policy field="overtaking" policy="Duplicate"/>
-    <policy field="overtaking:motor_vehicle" policy="Duplicate"/>
-    <policy field="ownership" policy="Duplicate"/>
-    <policy field="parking" policy="Duplicate"/>
-    <policy field="parking:both" policy="Duplicate"/>
-    <policy field="parking:both:access" policy="Duplicate"/>
-    <policy field="parking:both:authentication:ticket:conditional" policy="Duplicate"/>
-    <policy field="parking:both:markings" policy="Duplicate"/>
-    <policy field="parking:both:orientation" policy="Duplicate"/>
-    <policy field="parking:both:restriction" policy="Duplicate"/>
-    <policy field="parking:both:restriction:conditional" policy="Duplicate"/>
-    <policy field="parking:both:restriction:reason" policy="Duplicate"/>
-    <policy field="parking:both:zone" policy="Duplicate"/>
-    <policy field="parking:both:zone:residents" policy="Duplicate"/>
-    <policy field="parking:condition:both" policy="Duplicate"/>
-    <policy field="parking:lane" policy="Duplicate"/>
-    <policy field="parking:lane:both" policy="Duplicate"/>
-    <policy field="parking:lane:both:parallel" policy="Duplicate"/>
-    <policy field="parking:lane:left" policy="Duplicate"/>
-    <policy field="parking:lane:right" policy="Duplicate"/>
-    <policy field="parking:lane:right:parallel" policy="Duplicate"/>
-    <policy field="parking:left" policy="Duplicate"/>
-    <policy field="parking:left:access" policy="Duplicate"/>
-    <policy field="parking:left:bus" policy="Duplicate"/>
-    <policy field="parking:left:markings" policy="Duplicate"/>
-    <policy field="parking:left:orientation" policy="Duplicate"/>
-    <policy field="parking:left:restriction" policy="Duplicate"/>
-    <policy field="parking:left:restriction:reason" policy="Duplicate"/>
-    <policy field="parking:left:zone" policy="Duplicate"/>
-    <policy field="parking:right" policy="Duplicate"/>
-    <policy field="parking:right:access" policy="Duplicate"/>
-    <policy field="parking:right:capacity" policy="Duplicate"/>
-    <policy field="parking:right:fee" policy="Duplicate"/>
-    <policy field="parking:right:fee:conditional" policy="Duplicate"/>
-    <policy field="parking:right:markings" policy="Duplicate"/>
-    <policy field="parking:right:orientation" policy="Duplicate"/>
-    <policy field="parking:right:restriction" policy="Duplicate"/>
-    <policy field="parking:right:restriction:reason" policy="Duplicate"/>
-    <policy field="parking:right:zone" policy="Duplicate"/>
-    <policy field="passing_places" policy="Duplicate"/>
-    <policy field="path" policy="Duplicate"/>
-    <policy field="paved" policy="Duplicate"/>
-    <policy field="paving_stones:material" policy="Duplicate"/>
-    <policy field="place" policy="Duplicate"/>
-    <policy field="placement" policy="Duplicate"/>
-    <policy field="placement:backward" policy="Duplicate"/>
-    <policy field="platform_lift" policy="Duplicate"/>
-    <policy field="police" policy="Duplicate"/>
-    <policy field="postal_code" policy="Duplicate"/>
-    <policy field="presumed_designation" policy="Duplicate"/>
-    <policy field="priority" policy="Duplicate"/>
-    <policy field="proposed" policy="Duplicate"/>
-    <policy field="proposed:bicycle" policy="Duplicate"/>
-    <policy field="proposed:cycleway" policy="Duplicate"/>
-    <policy field="proposed:cycleway:left" policy="Duplicate"/>
-    <policy field="proposed:cycleway:left:oneway" policy="Duplicate"/>
-    <policy field="proposed:cycleway:right" policy="Duplicate"/>
-    <policy field="proposed:cycleway:right:oneway" policy="Duplicate"/>
-    <policy field="proposed:foot" policy="Duplicate"/>
-    <policy field="proposed:footway" policy="Duplicate"/>
-    <policy field="proposed:highway" policy="Duplicate"/>
-    <policy field="proposed:maxspeed" policy="Duplicate"/>
-    <policy field="proposed:oneway" policy="Duplicate"/>
-    <policy field="proposed:oneway:bicycle" policy="Duplicate"/>
-    <policy field="proposed:segregated" policy="Duplicate"/>
-    <policy field="proposed:traffic_intervention" policy="Duplicate"/>
-    <policy field="prow_ref" policy="Duplicate"/>
-    <policy field="psv" policy="Duplicate"/>
-    <policy field="psv:lanes" policy="Duplicate"/>
-    <policy field="psv:lanes:backward" policy="Duplicate"/>
-    <policy field="psv:lanes:forward" policy="Duplicate"/>
-    <policy field="psv:right" policy="Duplicate"/>
-    <policy field="public_transport" policy="Duplicate"/>
-    <policy field="railing" policy="Duplicate"/>
-    <policy field="ramp" policy="Duplicate"/>
-    <policy field="ramp:bicycle" policy="Duplicate"/>
-    <policy field="ramp:wheelchair" policy="Duplicate"/>
-    <policy field="rcn" policy="Duplicate"/>
-    <policy field="ref" policy="Duplicate"/>
-    <policy field="ref:22406366" policy="Duplicate"/>
-    <policy field="ref:GB:nhle" policy="Duplicate"/>
-    <policy field="ref:GB:tflcid" policy="Duplicate"/>
-    <policy field="ref:GB:uprn" policy="Duplicate"/>
-    <policy field="ref:GB:usrn" policy="Duplicate"/>
-    <policy field="ref:he" policy="Duplicate"/>
-    <policy field="ref:source" policy="Duplicate"/>
-    <policy field="ref:tfl" policy="Duplicate"/>
-    <policy field="repair" policy="Duplicate"/>
-    <policy field="roof:colour" policy="Duplicate"/>
-    <policy field="roof:shape" policy="Duplicate"/>
-    <policy field="roundabout" policy="Duplicate"/>
-    <policy field="route" policy="Duplicate"/>
-    <policy field="segregated" policy="Duplicate"/>
-    <policy field="separation:left" policy="Duplicate"/>
-    <policy field="separation:right" policy="Duplicate"/>
-    <policy field="service" policy="Duplicate"/>
-    <policy field="service_1" policy="Duplicate"/>
-    <policy field="shelter" policy="Duplicate"/>
-    <policy field="shelter_type" policy="Duplicate"/>
-    <policy field="shop" policy="Duplicate"/>
-    <policy field="short_name" policy="Duplicate"/>
-    <policy field="shoulder" policy="Duplicate"/>
-    <policy field="shower" policy="Duplicate"/>
-    <policy field="sidewalk" policy="Duplicate"/>
-    <policy field="sidewalk:both" policy="Duplicate"/>
-    <policy field="sidewalk:both:surface" policy="Duplicate"/>
-    <policy field="sidewalk:left" policy="Duplicate"/>
-    <policy field="sidewalk:left:surface" policy="Duplicate"/>
-    <policy field="sidewalk:left:wheelchair" policy="Duplicate"/>
-    <policy field="sidewalk:note" policy="Duplicate"/>
-    <policy field="sidewalk:right" policy="Duplicate"/>
-    <policy field="sidewalk:right:surface" policy="Duplicate"/>
-    <policy field="sign_information" policy="Duplicate"/>
-    <policy field="signed:ref" policy="Duplicate"/>
-    <policy field="sloped_curb" policy="Duplicate"/>
-    <policy field="smoothness" policy="Duplicate"/>
-    <policy field="smoothness:date" policy="Duplicate"/>
-    <policy field="source" policy="Duplicate"/>
-    <policy field="source:access" policy="Duplicate"/>
-    <policy field="source:alt_name" policy="Duplicate"/>
-    <policy field="source:bicycle" policy="Duplicate"/>
-    <policy field="source:bing" policy="Duplicate"/>
-    <policy field="source:cycleway" policy="Duplicate"/>
-    <policy field="source:designation" policy="Duplicate"/>
-    <policy field="source:destination" policy="Duplicate"/>
-    <policy field="source:geometry" policy="Duplicate"/>
-    <policy field="source:hgv" policy="Duplicate"/>
-    <policy field="source:highway" policy="Duplicate"/>
-    <policy field="source:lanes" policy="Duplicate"/>
-    <policy field="source:lcn" policy="Duplicate"/>
-    <policy field="source:lit" policy="Duplicate"/>
-    <policy field="source:maxheight" policy="Duplicate"/>
-    <policy field="source:maxspeed" policy="Duplicate"/>
-    <policy field="source:maxweight" policy="Duplicate"/>
-    <policy field="source:maxweightrating" policy="Duplicate"/>
-    <policy field="source:maxweightrating:hgv" policy="Duplicate"/>
-    <policy field="source:maxwidth" policy="Duplicate"/>
-    <policy field="source:name" policy="Duplicate"/>
-    <policy field="source:not:name" policy="Duplicate"/>
-    <policy field="source:old_name" policy="Duplicate"/>
-    <policy field="source:oneway" policy="Duplicate"/>
-    <policy field="source:oneway:bicycle" policy="Duplicate"/>
-    <policy field="source:postal_code" policy="Duplicate"/>
-    <policy field="source:proposed:oneway" policy="Duplicate"/>
-    <policy field="source:prow_ref" policy="Duplicate"/>
-    <policy field="source:rcn" policy="Duplicate"/>
-    <policy field="source:ref" policy="Duplicate"/>
-    <policy field="source:track" policy="Duplicate"/>
-    <policy field="source:traffic_intervention" policy="Duplicate"/>
-    <policy field="source:width" policy="Duplicate"/>
-    <policy field="source_ref" policy="Duplicate"/>
-    <policy field="source_ref:name" policy="Duplicate"/>
-    <policy field="source_ref:ref" policy="Duplicate"/>
-    <policy field="stairs:endline" policy="Duplicate"/>
-    <policy field="stairs:startline" policy="Duplicate"/>
-    <policy field="start_date" policy="Duplicate"/>
-    <policy field="state" policy="Duplicate"/>
-    <policy field="step_count" policy="Duplicate"/>
-    <policy field="steps" policy="Duplicate"/>
-    <policy field="stile" policy="Duplicate"/>
-    <policy field="surface" policy="Duplicate"/>
-    <policy field="surface:colour" policy="Duplicate"/>
-    <policy field="surface:note" policy="Duplicate"/>
-    <policy field="survey:date" policy="Duplicate"/>
-    <policy field="surveying_authority" policy="Duplicate"/>
-    <policy field="tactile_paving" policy="Duplicate"/>
-    <policy field="taxi" policy="Duplicate"/>
-    <policy field="temporary:highway" policy="Duplicate"/>
-    <policy field="toilets" policy="Duplicate"/>
-    <policy field="toilets:wheelchair" policy="Duplicate"/>
-    <policy field="toll" policy="Duplicate"/>
-    <policy field="tourism" policy="Duplicate"/>
-    <policy field="towpath" policy="Duplicate"/>
-    <policy field="tracktype" policy="Duplicate"/>
-    <policy field="traffic_calming" policy="Duplicate"/>
-    <policy field="traffic_calming:check_date" policy="Duplicate"/>
-    <policy field="traffic_intervention" policy="Duplicate"/>
-    <policy field="traffic_signals" policy="Duplicate"/>
-    <policy field="traffic_signals:direction" policy="Duplicate"/>
-    <policy field="traffic_signals:sound" policy="Duplicate"/>
-    <policy field="traffic_signals:vibration" policy="Duplicate"/>
-    <policy field="trail_visibility" policy="Duplicate"/>
-    <policy field="tree_lined" policy="Duplicate"/>
-    <policy field="tunnel" policy="Duplicate"/>
-    <policy field="tunnel:name" policy="Duplicate"/>
-    <policy field="tunnel:short_name" policy="Duplicate"/>
-    <policy field="turn" policy="Duplicate"/>
-    <policy field="turn:lanes" policy="Duplicate"/>
-    <policy field="turn:lanes:backward" policy="Duplicate"/>
-    <policy field="turn:lanes:forward" policy="Duplicate"/>
-    <policy field="unsigned" policy="Duplicate"/>
-    <policy field="validate" policy="Duplicate"/>
-    <policy field="vehicle" policy="Duplicate"/>
-    <policy field="vehicle:lanes" policy="Duplicate"/>
-    <policy field="vehicle:lanes:forward" policy="Duplicate"/>
-    <policy field="verge" policy="Duplicate"/>
-    <policy field="verge:left" policy="Duplicate"/>
-    <policy field="verge:right" policy="Duplicate"/>
-    <policy field="virtual" policy="Duplicate"/>
-    <policy field="was:bicycle" policy="Duplicate"/>
-    <policy field="was:covered" policy="Duplicate"/>
-    <policy field="was:cycleway:left" policy="Duplicate"/>
-    <policy field="was:cycleway:right" policy="Duplicate"/>
-    <policy field="was:highway" policy="Duplicate"/>
-    <policy field="was:lanes" policy="Duplicate"/>
-    <policy field="was:oneway" policy="Duplicate"/>
-    <policy field="was:ref" policy="Duplicate"/>
-    <policy field="was:segregated" policy="Duplicate"/>
-    <policy field="watch:80n" policy="Duplicate"/>
-    <policy field="water" policy="Duplicate"/>
-    <policy field="website" policy="Duplicate"/>
-    <policy field="wheelchair" policy="Duplicate"/>
-    <policy field="width" policy="Duplicate"/>
-    <policy field="wikidata" policy="Duplicate"/>
-    <policy field="wikipedia" policy="Duplicate"/>
+    <policy policy="Duplicate" field="FIXME"/>
+    <policy policy="Duplicate" field="HE_ref"/>
+    <policy policy="Duplicate" field="WARNING"/>
+    <policy policy="Duplicate" field="access"/>
+    <policy policy="Duplicate" field="access:conditional"/>
+    <policy policy="Duplicate" field="access:lanes:backward"/>
+    <policy policy="Duplicate" field="access:note"/>
+    <policy policy="Duplicate" field="access:source"/>
+    <policy policy="Duplicate" field="access:survey:date"/>
+    <policy policy="Duplicate" field="active_traffic_management"/>
+    <policy policy="Duplicate" field="addr:city"/>
+    <policy policy="Duplicate" field="addr:housename"/>
+    <policy policy="Duplicate" field="addr:housenumber"/>
+    <policy policy="Duplicate" field="addr:interpolation"/>
+    <policy policy="Duplicate" field="addr:postcode"/>
+    <policy policy="Duplicate" field="addr:street"/>
+    <policy policy="Duplicate" field="aeroway"/>
+    <policy policy="Duplicate" field="agricultural"/>
+    <policy policy="Duplicate" field="airside"/>
+    <policy policy="Duplicate" field="alt_name"/>
+    <policy policy="Duplicate" field="alt_name:en"/>
+    <policy policy="Duplicate" field="amenity"/>
+    <policy policy="Duplicate" field="area"/>
+    <policy policy="Duplicate" field="barrier"/>
+    <policy policy="Duplicate" field="bench"/>
+    <policy policy="Duplicate" field="bicycle"/>
+    <policy policy="Duplicate" field="bicycle:conditional"/>
+    <policy policy="Duplicate" field="bicycle:lanes"/>
+    <policy policy="Duplicate" field="bicycle:lanes:forward"/>
+    <policy policy="Duplicate" field="bin"/>
+    <policy policy="Duplicate" field="bing"/>
+    <policy policy="Duplicate" field="bollard"/>
+    <policy policy="Duplicate" field="borough"/>
+    <policy policy="Duplicate" field="bridge"/>
+    <policy policy="Duplicate" field="bridge:alt_name"/>
+    <policy policy="Duplicate" field="bridge:alt_name:wikidata"/>
+    <policy policy="Duplicate" field="bridge:movable"/>
+    <policy policy="Duplicate" field="bridge:name"/>
+    <policy policy="Duplicate" field="bridge:name:wikidata"/>
+    <policy policy="Duplicate" field="bridge:ref"/>
+    <policy policy="Duplicate" field="bridge:structure"/>
+    <policy policy="Duplicate" field="bridge_ref"/>
+    <policy policy="Duplicate" field="building"/>
+    <policy policy="Duplicate" field="building:levels"/>
+    <policy policy="Duplicate" field="bus"/>
+    <policy policy="Duplicate" field="bus:lanes"/>
+    <policy policy="Duplicate" field="bus:lanes:backward"/>
+    <policy policy="Duplicate" field="bus:lanes:forward"/>
+    <policy policy="Duplicate" field="bus_bay"/>
+    <policy policy="Duplicate" field="busway"/>
+    <policy policy="Duplicate" field="busway:both"/>
+    <policy policy="Duplicate" field="busway:conditional"/>
+    <policy policy="Duplicate" field="busway:left"/>
+    <policy policy="Duplicate" field="busway:right"/>
+    <policy policy="Duplicate" field="button_operated"/>
+    <policy policy="Duplicate" field="car"/>
+    <policy policy="Duplicate" field="carriageway_ref"/>
+    <policy policy="Duplicate" field="caution"/>
+    <policy policy="Duplicate" field="cesspit"/>
+    <policy policy="Duplicate" field="change"/>
+    <policy policy="Duplicate" field="change:lanes"/>
+    <policy policy="Duplicate" field="changing_table"/>
+    <policy policy="Duplicate" field="charge"/>
+    <policy policy="Duplicate" field="check_date"/>
+    <policy policy="Duplicate" field="check_date:cycleway"/>
+    <policy policy="Duplicate" field="check_date:cycleway:surface"/>
+    <policy policy="Duplicate" field="check_date:handrail"/>
+    <policy policy="Duplicate" field="check_date:lit"/>
+    <policy policy="Duplicate" field="check_date:ramp"/>
+    <policy policy="Duplicate" field="check_date:sidewalk"/>
+    <policy policy="Duplicate" field="check_date:sidewalk:surface"/>
+    <policy policy="Duplicate" field="check_date:smoothness"/>
+    <policy policy="Duplicate" field="check_date:surface"/>
+    <policy policy="Duplicate" field="check_date:tactile_paving"/>
+    <policy policy="Duplicate" field="coach"/>
+    <policy policy="Duplicate" field="colour"/>
+    <policy policy="Duplicate" field="complete"/>
+    <policy policy="Duplicate" field="construction"/>
+    <policy policy="Duplicate" field="construction_contract_name"/>
+    <policy policy="Duplicate" field="construction_method"/>
+    <policy policy="Duplicate" field="contact:phone"/>
+    <policy policy="Duplicate" field="conveying"/>
+    <policy policy="Duplicate" field="cover"/>
+    <policy policy="Duplicate" field="covered"/>
+    <policy policy="Duplicate" field="created_by"/>
+    <policy policy="Duplicate" field="crossing"/>
+    <policy policy="Duplicate" field="crossing:continuous"/>
+    <policy policy="Duplicate" field="crossing:island"/>
+    <policy policy="Duplicate" field="crossing:markings"/>
+    <policy policy="Duplicate" field="crossing:signals"/>
+    <policy policy="Duplicate" field="crossing_ref"/>
+    <policy policy="Duplicate" field="cutline"/>
+    <policy policy="Duplicate" field="cutting"/>
+    <policy policy="Duplicate" field="cycle_network"/>
+    <policy policy="Duplicate" field="cyclestreets_id"/>
+    <policy policy="Duplicate" field="cycleway"/>
+    <policy policy="Duplicate" field="cycleway:both"/>
+    <policy policy="Duplicate" field="cycleway:both:lane"/>
+    <policy policy="Duplicate" field="cycleway:both:oneway"/>
+    <policy policy="Duplicate" field="cycleway:conditional"/>
+    <policy policy="Duplicate" field="cycleway:lane"/>
+    <policy policy="Duplicate" field="cycleway:lanes"/>
+    <policy policy="Duplicate" field="cycleway:left"/>
+    <policy policy="Duplicate" field="cycleway:left:doorzone"/>
+    <policy policy="Duplicate" field="cycleway:left:lane"/>
+    <policy policy="Duplicate" field="cycleway:left:oneway"/>
+    <policy policy="Duplicate" field="cycleway:left:segregated"/>
+    <policy policy="Duplicate" field="cycleway:left:track"/>
+    <policy policy="Duplicate" field="cycleway:left:width"/>
+    <policy policy="Duplicate" field="cycleway:note"/>
+    <policy policy="Duplicate" field="cycleway:right"/>
+    <policy policy="Duplicate" field="cycleway:right:buffer"/>
+    <policy policy="Duplicate" field="cycleway:right:lane"/>
+    <policy policy="Duplicate" field="cycleway:right:oneway"/>
+    <policy policy="Duplicate" field="cycleway:right:separation:left"/>
+    <policy policy="Duplicate" field="cycleway:right:separation:right"/>
+    <policy policy="Duplicate" field="cycleway:right:track"/>
+    <policy policy="Duplicate" field="cycleway:right:width"/>
+    <policy policy="Duplicate" field="cycleway:segregated"/>
+    <policy policy="Duplicate" field="cycleway:surface"/>
+    <policy policy="Duplicate" field="cycleway:width"/>
+    <policy policy="Duplicate" field="delivery"/>
+    <policy policy="Duplicate" field="departures_board"/>
+    <policy policy="Duplicate" field="description"/>
+    <policy policy="Duplicate" field="designation"/>
+    <policy policy="Duplicate" field="destination"/>
+    <policy policy="Duplicate" field="destination:backward"/>
+    <policy policy="Duplicate" field="destination:forward"/>
+    <policy policy="Duplicate" field="destination:lanes"/>
+    <policy policy="Duplicate" field="destination:lanes:forward"/>
+    <policy policy="Duplicate" field="destination:ref"/>
+    <policy policy="Duplicate" field="destination:ref:forward"/>
+    <policy policy="Duplicate" field="destination:ref:lanes"/>
+    <policy policy="Duplicate" field="destination:ref:lanes:forward"/>
+    <policy policy="Duplicate" field="destination:ref:to"/>
+    <policy policy="Duplicate" field="destination:ref:to:lanes"/>
+    <policy policy="Duplicate" field="destination:symbol"/>
+    <policy policy="Duplicate" field="destination:symbol:lanes"/>
+    <policy policy="Duplicate" field="diameter"/>
+    <policy policy="Duplicate" field="direction"/>
+    <policy policy="Duplicate" field="disabled"/>
+    <policy policy="Duplicate" field="disused"/>
+    <policy policy="Duplicate" field="disused:bicycle"/>
+    <policy policy="Duplicate" field="disused:bus"/>
+    <policy policy="Duplicate" field="disused:dual_carriageway"/>
+    <policy policy="Duplicate" field="disused:foot"/>
+    <policy policy="Duplicate" field="disused:highway"/>
+    <policy policy="Duplicate" field="disused:lanes"/>
+    <policy policy="Duplicate" field="disused:oneway"/>
+    <policy policy="Duplicate" field="disused:ref"/>
+    <policy policy="Duplicate" field="disused:tunnel"/>
+    <policy policy="Duplicate" field="dog"/>
+    <policy policy="Duplicate" field="driving_side"/>
+    <policy policy="Duplicate" field="dual_carriageway"/>
+    <policy policy="Duplicate" field="ele"/>
+    <policy policy="Duplicate" field="electrified"/>
+    <policy policy="Duplicate" field="embankment"/>
+    <policy policy="Duplicate" field="emergency"/>
+    <policy policy="Duplicate" field="entrance"/>
+    <policy policy="Duplicate" field="est_width"/>
+    <policy policy="Duplicate" field="expressway"/>
+    <policy policy="Duplicate" field="fee"/>
+    <policy policy="Duplicate" field="fence_type"/>
+    <policy policy="Duplicate" field="fixme"/>
+    <policy policy="Duplicate" field="flood_prone"/>
+    <policy policy="Duplicate" field="foot"/>
+    <policy policy="Duplicate" field="footway"/>
+    <policy policy="Duplicate" field="footway:surface"/>
+    <policy policy="Duplicate" field="ford"/>
+    <policy policy="Duplicate" field="funeral_vehicles"/>
+    <policy policy="Duplicate" field="gated"/>
+    <policy policy="Duplicate" field="golf"/>
+    <policy policy="Duplicate" field="golf_cart"/>
+    <policy policy="Duplicate" field="goods"/>
+    <policy policy="Duplicate" field="handrail"/>
+    <policy policy="Duplicate" field="handrail:center"/>
+    <policy policy="Duplicate" field="handrail:left"/>
+    <policy policy="Duplicate" field="handrail:right"/>
+    <policy policy="Duplicate" field="hazard"/>
+    <policy policy="Duplicate" field="he:inscription_date"/>
+    <policy policy="Duplicate" field="height"/>
+    <policy policy="Duplicate" field="heritage"/>
+    <policy policy="Duplicate" field="heritage:operator"/>
+    <policy policy="Duplicate" field="heritage:operator:wikidata"/>
+    <policy policy="Duplicate" field="heritage:website"/>
+    <policy policy="Duplicate" field="hgv"/>
+    <policy policy="Duplicate" field="hgv:note"/>
+    <policy policy="Duplicate" field="highway"/>
+    <policy policy="Duplicate" field="highway_1"/>
+    <policy policy="Duplicate" field="highway_authority_ref"/>
+    <policy policy="Duplicate" field="highways_england:area"/>
+    <policy policy="Duplicate" field="historic"/>
+    <policy policy="Duplicate" field="historic:highway"/>
+    <policy policy="Duplicate" field="horse"/>
+    <policy policy="Duplicate" field="horse_scale"/>
+    <policy policy="Duplicate" field="hour_off"/>
+    <policy policy="Duplicate" field="hour_on"/>
+    <policy policy="Duplicate" field="hov"/>
+    <policy policy="Duplicate" field="image"/>
+    <policy policy="Duplicate" field="incline"/>
+    <policy policy="Duplicate" field="incorrect_name"/>
+    <policy policy="Duplicate" field="indoor"/>
+    <policy policy="Duplicate" field="informal"/>
+    <policy policy="Duplicate" field="int_name"/>
+    <policy policy="Duplicate" field="internal_diameter"/>
+    <policy policy="Duplicate" field="internet_access"/>
+    <policy policy="Duplicate" field="is_in"/>
+    <policy policy="Duplicate" field="is_in:borough"/>
+    <policy policy="Duplicate" field="is_in:district"/>
+    <policy policy="Duplicate" field="is_in:suburb"/>
+    <policy policy="Duplicate" field="is_sidepath"/>
+    <policy policy="Duplicate" field="is_sidepath:of:name"/>
+    <policy policy="Duplicate" field="junction"/>
+    <policy policy="Duplicate" field="junction:ref"/>
+    <policy policy="Duplicate" field="kerb"/>
+    <policy policy="Duplicate" field="landuse"/>
+    <policy policy="Duplicate" field="lane_markings"/>
+    <policy policy="Duplicate" field="lane_markings:backward"/>
+    <policy policy="Duplicate" field="lane_markings:forward"/>
+    <policy policy="Duplicate" field="lanes"/>
+    <policy policy="Duplicate" field="lanes:backward"/>
+    <policy policy="Duplicate" field="lanes:bus"/>
+    <policy policy="Duplicate" field="lanes:bus:forward"/>
+    <policy policy="Duplicate" field="lanes:forward"/>
+    <policy policy="Duplicate" field="lanes:left"/>
+    <policy policy="Duplicate" field="lanes:psv"/>
+    <policy policy="Duplicate" field="lanes:psv:backward"/>
+    <policy policy="Duplicate" field="lanes:psv:backward:right"/>
+    <policy policy="Duplicate" field="lanes:psv:forward"/>
+    <policy policy="Duplicate" field="layer"/>
+    <policy policy="Duplicate" field="lcn"/>
+    <policy policy="Duplicate" field="leisure"/>
+    <policy policy="Duplicate" field="length"/>
+    <policy policy="Duplicate" field="level"/>
+    <policy policy="Duplicate" field="level:ref"/>
+    <policy policy="Duplicate" field="listed_status"/>
+    <policy policy="Duplicate" field="lit"/>
+    <policy policy="Duplicate" field="lit:note"/>
+    <policy policy="Duplicate" field="loc_name"/>
+    <policy policy="Duplicate" field="loc_ref"/>
+    <policy policy="Duplicate" field="locals"/>
+    <policy policy="Duplicate" field="location"/>
+    <policy policy="Duplicate" field="long_vehicles"/>
+    <policy policy="Duplicate" field="man_made"/>
+    <policy policy="Duplicate" field="marked"/>
+    <policy policy="Duplicate" field="material"/>
+    <policy policy="Duplicate" field="maxaxleload"/>
+    <policy policy="Duplicate" field="maxgcweightrating:goods"/>
+    <policy policy="Duplicate" field="maxgcweightrating:hgv"/>
+    <policy policy="Duplicate" field="maxgcweightrating:hgv:conditional"/>
+    <policy policy="Duplicate" field="maxgcwrating:hgv"/>
+    <policy policy="Duplicate" field="maxheight"/>
+    <policy policy="Duplicate" field="maxheight:imperial"/>
+    <policy policy="Duplicate" field="maxheight:note"/>
+    <policy policy="Duplicate" field="maxheight:physical"/>
+    <policy policy="Duplicate" field="maxheight:signed"/>
+    <policy policy="Duplicate" field="maxspeed"/>
+    <policy policy="Duplicate" field="maxspeed:advisory"/>
+    <policy policy="Duplicate" field="maxspeed:backward"/>
+    <policy policy="Duplicate" field="maxspeed:bicycle"/>
+    <policy policy="Duplicate" field="maxspeed:enforcement"/>
+    <policy policy="Duplicate" field="maxspeed:forward"/>
+    <policy policy="Duplicate" field="maxspeed:lanes"/>
+    <policy policy="Duplicate" field="maxspeed:proposed"/>
+    <policy policy="Duplicate" field="maxspeed:type"/>
+    <policy policy="Duplicate" field="maxspeed:variable"/>
+    <policy policy="Duplicate" field="maxweight"/>
+    <policy policy="Duplicate" field="maxweight:conditional"/>
+    <policy policy="Duplicate" field="maxweight:hgv"/>
+    <policy policy="Duplicate" field="maxweight:hgv:conditional"/>
+    <policy policy="Duplicate" field="maxweight:signed"/>
+    <policy policy="Duplicate" field="maxweightrating"/>
+    <policy policy="Duplicate" field="maxweightrating:hgv"/>
+    <policy policy="Duplicate" field="maxweightrating:hgv:conditional"/>
+    <policy policy="Duplicate" field="maxwidth"/>
+    <policy policy="Duplicate" field="mkgmap:flare-check"/>
+    <policy policy="Duplicate" field="mooring"/>
+    <policy policy="Duplicate" field="motor_vehicle"/>
+    <policy policy="Duplicate" field="motor_vehicle:backward"/>
+    <policy policy="Duplicate" field="motor_vehicle:conditional"/>
+    <policy policy="Duplicate" field="motor_vehicle:lanes"/>
+    <policy policy="Duplicate" field="motorcar"/>
+    <policy policy="Duplicate" field="motorcycle"/>
+    <policy policy="Duplicate" field="motorroad"/>
+    <policy policy="Duplicate" field="motorway"/>
+    <policy policy="Duplicate" field="mtb:scale"/>
+    <policy policy="Duplicate" field="mtb:scale:imba"/>
+    <policy policy="Duplicate" field="name"/>
+    <policy policy="Duplicate" field="name:cy"/>
+    <policy policy="Duplicate" field="name:en"/>
+    <policy policy="Duplicate" field="name:left"/>
+    <policy policy="Duplicate" field="name:note"/>
+    <policy policy="Duplicate" field="name:right"/>
+    <policy policy="Duplicate" field="name:ru"/>
+    <policy policy="Duplicate" field="name:signed"/>
+    <policy policy="Duplicate" field="name:source"/>
+    <policy policy="Duplicate" field="name:survey:date"/>
+    <policy policy="Duplicate" field="narrow"/>
+    <policy policy="Duplicate" field="national_highways:area"/>
+    <policy policy="Duplicate" field="natural"/>
+    <policy policy="Duplicate" field="noexit"/>
+    <policy policy="Duplicate" field="noname"/>
+    <policy policy="Duplicate" field="not:junction"/>
+    <policy policy="Duplicate" field="not:name"/>
+    <policy policy="Duplicate" field="note"/>
+    <policy policy="Duplicate" field="note:access"/>
+    <policy policy="Duplicate" field="note:alt_name"/>
+    <policy policy="Duplicate" field="note:covid19"/>
+    <policy policy="Duplicate" field="note:cycle"/>
+    <policy policy="Duplicate" field="note:cycleway"/>
+    <policy policy="Duplicate" field="note:designation"/>
+    <policy policy="Duplicate" field="note:lcn"/>
+    <policy policy="Duplicate" field="note:lit"/>
+    <policy policy="Duplicate" field="note:name"/>
+    <policy policy="Duplicate" field="obstacle"/>
+    <policy policy="Duplicate" field="office"/>
+    <policy policy="Duplicate" field="official_ref"/>
+    <policy policy="Duplicate" field="old_name"/>
+    <policy policy="Duplicate" field="old_ref"/>
+    <policy policy="Duplicate" field="oneway"/>
+    <policy policy="Duplicate" field="oneway:bicycle"/>
+    <policy policy="Duplicate" field="oneway:bus"/>
+    <policy policy="Duplicate" field="oneway:emergency"/>
+    <policy policy="Duplicate" field="oneway:foot"/>
+    <policy policy="Duplicate" field="oneway:horse"/>
+    <policy policy="Duplicate" field="oneway:psv"/>
+    <policy policy="Duplicate" field="oneway_type"/>
+    <policy policy="Duplicate" field="opening_date"/>
+    <policy policy="Duplicate" field="opening_hours"/>
+    <policy policy="Duplicate" field="operator"/>
+    <policy policy="Duplicate" field="operator:type"/>
+    <policy policy="Duplicate" field="operator:wikidata"/>
+    <policy policy="Duplicate" field="osmc:symbol"/>
+    <policy policy="Duplicate" field="overtaking"/>
+    <policy policy="Duplicate" field="overtaking:motor_vehicle"/>
+    <policy policy="Duplicate" field="ownership"/>
+    <policy policy="Duplicate" field="parking"/>
+    <policy policy="Duplicate" field="parking:both"/>
+    <policy policy="Duplicate" field="parking:both:access"/>
+    <policy policy="Duplicate" field="parking:both:authentication:ticket:conditional"/>
+    <policy policy="Duplicate" field="parking:both:markings"/>
+    <policy policy="Duplicate" field="parking:both:orientation"/>
+    <policy policy="Duplicate" field="parking:both:restriction"/>
+    <policy policy="Duplicate" field="parking:both:restriction:conditional"/>
+    <policy policy="Duplicate" field="parking:both:restriction:reason"/>
+    <policy policy="Duplicate" field="parking:both:zone"/>
+    <policy policy="Duplicate" field="parking:both:zone:residents"/>
+    <policy policy="Duplicate" field="parking:condition:both"/>
+    <policy policy="Duplicate" field="parking:lane"/>
+    <policy policy="Duplicate" field="parking:lane:both"/>
+    <policy policy="Duplicate" field="parking:lane:both:parallel"/>
+    <policy policy="Duplicate" field="parking:lane:left"/>
+    <policy policy="Duplicate" field="parking:lane:right"/>
+    <policy policy="Duplicate" field="parking:lane:right:parallel"/>
+    <policy policy="Duplicate" field="parking:left"/>
+    <policy policy="Duplicate" field="parking:left:access"/>
+    <policy policy="Duplicate" field="parking:left:bus"/>
+    <policy policy="Duplicate" field="parking:left:markings"/>
+    <policy policy="Duplicate" field="parking:left:orientation"/>
+    <policy policy="Duplicate" field="parking:left:restriction"/>
+    <policy policy="Duplicate" field="parking:left:restriction:reason"/>
+    <policy policy="Duplicate" field="parking:left:zone"/>
+    <policy policy="Duplicate" field="parking:right"/>
+    <policy policy="Duplicate" field="parking:right:access"/>
+    <policy policy="Duplicate" field="parking:right:capacity"/>
+    <policy policy="Duplicate" field="parking:right:fee"/>
+    <policy policy="Duplicate" field="parking:right:fee:conditional"/>
+    <policy policy="Duplicate" field="parking:right:markings"/>
+    <policy policy="Duplicate" field="parking:right:orientation"/>
+    <policy policy="Duplicate" field="parking:right:restriction"/>
+    <policy policy="Duplicate" field="parking:right:restriction:reason"/>
+    <policy policy="Duplicate" field="parking:right:zone"/>
+    <policy policy="Duplicate" field="passing_places"/>
+    <policy policy="Duplicate" field="path"/>
+    <policy policy="Duplicate" field="paved"/>
+    <policy policy="Duplicate" field="paving_stones:material"/>
+    <policy policy="Duplicate" field="place"/>
+    <policy policy="Duplicate" field="placement"/>
+    <policy policy="Duplicate" field="placement:backward"/>
+    <policy policy="Duplicate" field="platform_lift"/>
+    <policy policy="Duplicate" field="police"/>
+    <policy policy="Duplicate" field="postal_code"/>
+    <policy policy="Duplicate" field="presumed_designation"/>
+    <policy policy="Duplicate" field="priority"/>
+    <policy policy="Duplicate" field="proposed"/>
+    <policy policy="Duplicate" field="proposed:bicycle"/>
+    <policy policy="Duplicate" field="proposed:cycleway"/>
+    <policy policy="Duplicate" field="proposed:cycleway:left"/>
+    <policy policy="Duplicate" field="proposed:cycleway:left:oneway"/>
+    <policy policy="Duplicate" field="proposed:cycleway:right"/>
+    <policy policy="Duplicate" field="proposed:cycleway:right:oneway"/>
+    <policy policy="Duplicate" field="proposed:foot"/>
+    <policy policy="Duplicate" field="proposed:footway"/>
+    <policy policy="Duplicate" field="proposed:highway"/>
+    <policy policy="Duplicate" field="proposed:maxspeed"/>
+    <policy policy="Duplicate" field="proposed:oneway"/>
+    <policy policy="Duplicate" field="proposed:oneway:bicycle"/>
+    <policy policy="Duplicate" field="proposed:segregated"/>
+    <policy policy="Duplicate" field="proposed:traffic_intervention"/>
+    <policy policy="Duplicate" field="prow_ref"/>
+    <policy policy="Duplicate" field="psv"/>
+    <policy policy="Duplicate" field="psv:lanes"/>
+    <policy policy="Duplicate" field="psv:lanes:backward"/>
+    <policy policy="Duplicate" field="psv:lanes:forward"/>
+    <policy policy="Duplicate" field="psv:right"/>
+    <policy policy="Duplicate" field="public_transport"/>
+    <policy policy="Duplicate" field="railing"/>
+    <policy policy="Duplicate" field="ramp"/>
+    <policy policy="Duplicate" field="ramp:bicycle"/>
+    <policy policy="Duplicate" field="ramp:wheelchair"/>
+    <policy policy="Duplicate" field="rcn"/>
+    <policy policy="Duplicate" field="ref"/>
+    <policy policy="Duplicate" field="ref:22406366"/>
+    <policy policy="Duplicate" field="ref:GB:nhle"/>
+    <policy policy="Duplicate" field="ref:GB:tflcid"/>
+    <policy policy="Duplicate" field="ref:GB:uprn"/>
+    <policy policy="Duplicate" field="ref:GB:usrn"/>
+    <policy policy="Duplicate" field="ref:he"/>
+    <policy policy="Duplicate" field="ref:source"/>
+    <policy policy="Duplicate" field="ref:tfl"/>
+    <policy policy="Duplicate" field="repair"/>
+    <policy policy="Duplicate" field="roof:colour"/>
+    <policy policy="Duplicate" field="roof:shape"/>
+    <policy policy="Duplicate" field="roundabout"/>
+    <policy policy="Duplicate" field="route"/>
+    <policy policy="Duplicate" field="segregated"/>
+    <policy policy="Duplicate" field="separation:left"/>
+    <policy policy="Duplicate" field="separation:right"/>
+    <policy policy="Duplicate" field="service"/>
+    <policy policy="Duplicate" field="service_1"/>
+    <policy policy="Duplicate" field="shelter"/>
+    <policy policy="Duplicate" field="shelter_type"/>
+    <policy policy="Duplicate" field="shop"/>
+    <policy policy="Duplicate" field="short_name"/>
+    <policy policy="Duplicate" field="shoulder"/>
+    <policy policy="Duplicate" field="shower"/>
+    <policy policy="Duplicate" field="sidewalk"/>
+    <policy policy="Duplicate" field="sidewalk:both"/>
+    <policy policy="Duplicate" field="sidewalk:both:surface"/>
+    <policy policy="Duplicate" field="sidewalk:left"/>
+    <policy policy="Duplicate" field="sidewalk:left:surface"/>
+    <policy policy="Duplicate" field="sidewalk:left:wheelchair"/>
+    <policy policy="Duplicate" field="sidewalk:note"/>
+    <policy policy="Duplicate" field="sidewalk:right"/>
+    <policy policy="Duplicate" field="sidewalk:right:surface"/>
+    <policy policy="Duplicate" field="sign_information"/>
+    <policy policy="Duplicate" field="signed:ref"/>
+    <policy policy="Duplicate" field="sloped_curb"/>
+    <policy policy="Duplicate" field="smoothness"/>
+    <policy policy="Duplicate" field="smoothness:date"/>
+    <policy policy="Duplicate" field="source"/>
+    <policy policy="Duplicate" field="source:access"/>
+    <policy policy="Duplicate" field="source:alt_name"/>
+    <policy policy="Duplicate" field="source:bicycle"/>
+    <policy policy="Duplicate" field="source:bing"/>
+    <policy policy="Duplicate" field="source:cycleway"/>
+    <policy policy="Duplicate" field="source:designation"/>
+    <policy policy="Duplicate" field="source:destination"/>
+    <policy policy="Duplicate" field="source:geometry"/>
+    <policy policy="Duplicate" field="source:hgv"/>
+    <policy policy="Duplicate" field="source:highway"/>
+    <policy policy="Duplicate" field="source:lanes"/>
+    <policy policy="Duplicate" field="source:lcn"/>
+    <policy policy="Duplicate" field="source:lit"/>
+    <policy policy="Duplicate" field="source:maxheight"/>
+    <policy policy="Duplicate" field="source:maxspeed"/>
+    <policy policy="Duplicate" field="source:maxweight"/>
+    <policy policy="Duplicate" field="source:maxweightrating"/>
+    <policy policy="Duplicate" field="source:maxweightrating:hgv"/>
+    <policy policy="Duplicate" field="source:maxwidth"/>
+    <policy policy="Duplicate" field="source:name"/>
+    <policy policy="Duplicate" field="source:not:name"/>
+    <policy policy="Duplicate" field="source:old_name"/>
+    <policy policy="Duplicate" field="source:oneway"/>
+    <policy policy="Duplicate" field="source:oneway:bicycle"/>
+    <policy policy="Duplicate" field="source:postal_code"/>
+    <policy policy="Duplicate" field="source:proposed:oneway"/>
+    <policy policy="Duplicate" field="source:prow_ref"/>
+    <policy policy="Duplicate" field="source:rcn"/>
+    <policy policy="Duplicate" field="source:ref"/>
+    <policy policy="Duplicate" field="source:track"/>
+    <policy policy="Duplicate" field="source:traffic_intervention"/>
+    <policy policy="Duplicate" field="source:width"/>
+    <policy policy="Duplicate" field="source_ref"/>
+    <policy policy="Duplicate" field="source_ref:name"/>
+    <policy policy="Duplicate" field="source_ref:ref"/>
+    <policy policy="Duplicate" field="stairs:endline"/>
+    <policy policy="Duplicate" field="stairs:startline"/>
+    <policy policy="Duplicate" field="start_date"/>
+    <policy policy="Duplicate" field="state"/>
+    <policy policy="Duplicate" field="step_count"/>
+    <policy policy="Duplicate" field="steps"/>
+    <policy policy="Duplicate" field="stile"/>
+    <policy policy="Duplicate" field="surface"/>
+    <policy policy="Duplicate" field="surface:colour"/>
+    <policy policy="Duplicate" field="surface:note"/>
+    <policy policy="Duplicate" field="survey:date"/>
+    <policy policy="Duplicate" field="surveying_authority"/>
+    <policy policy="Duplicate" field="tactile_paving"/>
+    <policy policy="Duplicate" field="taxi"/>
+    <policy policy="Duplicate" field="temporary:highway"/>
+    <policy policy="Duplicate" field="toilets"/>
+    <policy policy="Duplicate" field="toilets:wheelchair"/>
+    <policy policy="Duplicate" field="toll"/>
+    <policy policy="Duplicate" field="tourism"/>
+    <policy policy="Duplicate" field="towpath"/>
+    <policy policy="Duplicate" field="tracktype"/>
+    <policy policy="Duplicate" field="traffic_calming"/>
+    <policy policy="Duplicate" field="traffic_calming:check_date"/>
+    <policy policy="Duplicate" field="traffic_intervention"/>
+    <policy policy="Duplicate" field="traffic_signals"/>
+    <policy policy="Duplicate" field="traffic_signals:direction"/>
+    <policy policy="Duplicate" field="traffic_signals:sound"/>
+    <policy policy="Duplicate" field="traffic_signals:vibration"/>
+    <policy policy="Duplicate" field="trail_visibility"/>
+    <policy policy="Duplicate" field="tree_lined"/>
+    <policy policy="Duplicate" field="tunnel"/>
+    <policy policy="Duplicate" field="tunnel:name"/>
+    <policy policy="Duplicate" field="tunnel:short_name"/>
+    <policy policy="Duplicate" field="turn"/>
+    <policy policy="Duplicate" field="turn:lanes"/>
+    <policy policy="Duplicate" field="turn:lanes:backward"/>
+    <policy policy="Duplicate" field="turn:lanes:forward"/>
+    <policy policy="Duplicate" field="unsigned"/>
+    <policy policy="Duplicate" field="validate"/>
+    <policy policy="Duplicate" field="vehicle"/>
+    <policy policy="Duplicate" field="vehicle:lanes"/>
+    <policy policy="Duplicate" field="vehicle:lanes:forward"/>
+    <policy policy="Duplicate" field="verge"/>
+    <policy policy="Duplicate" field="verge:left"/>
+    <policy policy="Duplicate" field="verge:right"/>
+    <policy policy="Duplicate" field="virtual"/>
+    <policy policy="Duplicate" field="was:bicycle"/>
+    <policy policy="Duplicate" field="was:covered"/>
+    <policy policy="Duplicate" field="was:cycleway:left"/>
+    <policy policy="Duplicate" field="was:cycleway:right"/>
+    <policy policy="Duplicate" field="was:highway"/>
+    <policy policy="Duplicate" field="was:lanes"/>
+    <policy policy="Duplicate" field="was:oneway"/>
+    <policy policy="Duplicate" field="was:ref"/>
+    <policy policy="Duplicate" field="was:segregated"/>
+    <policy policy="Duplicate" field="watch:80n"/>
+    <policy policy="Duplicate" field="water"/>
+    <policy policy="Duplicate" field="website"/>
+    <policy policy="Duplicate" field="wheelchair"/>
+    <policy policy="Duplicate" field="width"/>
+    <policy policy="Duplicate" field="wikidata"/>
+    <policy policy="Duplicate" field="wikipedia"/>
   </splitPolicies>
   <defaults>
-    <default applyOnUpdate="0" field="FIXME" expression=""/>
-    <default applyOnUpdate="0" field="HE_ref" expression=""/>
-    <default applyOnUpdate="0" field="WARNING" expression=""/>
-    <default applyOnUpdate="0" field="access" expression=""/>
-    <default applyOnUpdate="0" field="access:conditional" expression=""/>
-    <default applyOnUpdate="0" field="access:lanes:backward" expression=""/>
-    <default applyOnUpdate="0" field="access:note" expression=""/>
-    <default applyOnUpdate="0" field="access:source" expression=""/>
-    <default applyOnUpdate="0" field="access:survey:date" expression=""/>
-    <default applyOnUpdate="0" field="active_traffic_management" expression=""/>
-    <default applyOnUpdate="0" field="addr:city" expression=""/>
-    <default applyOnUpdate="0" field="addr:housename" expression=""/>
-    <default applyOnUpdate="0" field="addr:housenumber" expression=""/>
-    <default applyOnUpdate="0" field="addr:interpolation" expression=""/>
-    <default applyOnUpdate="0" field="addr:postcode" expression=""/>
-    <default applyOnUpdate="0" field="addr:street" expression=""/>
-    <default applyOnUpdate="0" field="aeroway" expression=""/>
-    <default applyOnUpdate="0" field="agricultural" expression=""/>
-    <default applyOnUpdate="0" field="airside" expression=""/>
-    <default applyOnUpdate="0" field="alt_name" expression=""/>
-    <default applyOnUpdate="0" field="alt_name:en" expression=""/>
-    <default applyOnUpdate="0" field="amenity" expression=""/>
-    <default applyOnUpdate="0" field="area" expression=""/>
-    <default applyOnUpdate="0" field="barrier" expression=""/>
-    <default applyOnUpdate="0" field="bench" expression=""/>
-    <default applyOnUpdate="0" field="bicycle" expression=""/>
-    <default applyOnUpdate="0" field="bicycle:conditional" expression=""/>
-    <default applyOnUpdate="0" field="bicycle:lanes" expression=""/>
-    <default applyOnUpdate="0" field="bicycle:lanes:forward" expression=""/>
-    <default applyOnUpdate="0" field="bin" expression=""/>
-    <default applyOnUpdate="0" field="bing" expression=""/>
-    <default applyOnUpdate="0" field="bollard" expression=""/>
-    <default applyOnUpdate="0" field="borough" expression=""/>
-    <default applyOnUpdate="0" field="bridge" expression=""/>
-    <default applyOnUpdate="0" field="bridge:alt_name" expression=""/>
-    <default applyOnUpdate="0" field="bridge:alt_name:wikidata" expression=""/>
-    <default applyOnUpdate="0" field="bridge:movable" expression=""/>
-    <default applyOnUpdate="0" field="bridge:name" expression=""/>
-    <default applyOnUpdate="0" field="bridge:name:wikidata" expression=""/>
-    <default applyOnUpdate="0" field="bridge:ref" expression=""/>
-    <default applyOnUpdate="0" field="bridge:structure" expression=""/>
-    <default applyOnUpdate="0" field="bridge_ref" expression=""/>
-    <default applyOnUpdate="0" field="building" expression=""/>
-    <default applyOnUpdate="0" field="building:levels" expression=""/>
-    <default applyOnUpdate="0" field="bus" expression=""/>
-    <default applyOnUpdate="0" field="bus:lanes" expression=""/>
-    <default applyOnUpdate="0" field="bus:lanes:backward" expression=""/>
-    <default applyOnUpdate="0" field="bus:lanes:forward" expression=""/>
-    <default applyOnUpdate="0" field="bus_bay" expression=""/>
-    <default applyOnUpdate="0" field="busway" expression=""/>
-    <default applyOnUpdate="0" field="busway:both" expression=""/>
-    <default applyOnUpdate="0" field="busway:conditional" expression=""/>
-    <default applyOnUpdate="0" field="busway:left" expression=""/>
-    <default applyOnUpdate="0" field="busway:right" expression=""/>
-    <default applyOnUpdate="0" field="button_operated" expression=""/>
-    <default applyOnUpdate="0" field="car" expression=""/>
-    <default applyOnUpdate="0" field="carriageway_ref" expression=""/>
-    <default applyOnUpdate="0" field="caution" expression=""/>
-    <default applyOnUpdate="0" field="cesspit" expression=""/>
-    <default applyOnUpdate="0" field="change" expression=""/>
-    <default applyOnUpdate="0" field="change:lanes" expression=""/>
-    <default applyOnUpdate="0" field="changing_table" expression=""/>
-    <default applyOnUpdate="0" field="charge" expression=""/>
-    <default applyOnUpdate="0" field="check_date" expression=""/>
-    <default applyOnUpdate="0" field="check_date:cycleway" expression=""/>
-    <default applyOnUpdate="0" field="check_date:cycleway:surface" expression=""/>
-    <default applyOnUpdate="0" field="check_date:handrail" expression=""/>
-    <default applyOnUpdate="0" field="check_date:lit" expression=""/>
-    <default applyOnUpdate="0" field="check_date:ramp" expression=""/>
-    <default applyOnUpdate="0" field="check_date:sidewalk" expression=""/>
-    <default applyOnUpdate="0" field="check_date:sidewalk:surface" expression=""/>
-    <default applyOnUpdate="0" field="check_date:smoothness" expression=""/>
-    <default applyOnUpdate="0" field="check_date:surface" expression=""/>
-    <default applyOnUpdate="0" field="check_date:tactile_paving" expression=""/>
-    <default applyOnUpdate="0" field="coach" expression=""/>
-    <default applyOnUpdate="0" field="colour" expression=""/>
-    <default applyOnUpdate="0" field="complete" expression=""/>
-    <default applyOnUpdate="0" field="construction" expression=""/>
-    <default applyOnUpdate="0" field="construction_contract_name" expression=""/>
-    <default applyOnUpdate="0" field="construction_method" expression=""/>
-    <default applyOnUpdate="0" field="contact:phone" expression=""/>
-    <default applyOnUpdate="0" field="conveying" expression=""/>
-    <default applyOnUpdate="0" field="cover" expression=""/>
-    <default applyOnUpdate="0" field="covered" expression=""/>
-    <default applyOnUpdate="0" field="created_by" expression=""/>
-    <default applyOnUpdate="0" field="crossing" expression=""/>
-    <default applyOnUpdate="0" field="crossing:continuous" expression=""/>
-    <default applyOnUpdate="0" field="crossing:island" expression=""/>
-    <default applyOnUpdate="0" field="crossing:markings" expression=""/>
-    <default applyOnUpdate="0" field="crossing:signals" expression=""/>
-    <default applyOnUpdate="0" field="crossing_ref" expression=""/>
-    <default applyOnUpdate="0" field="cutline" expression=""/>
-    <default applyOnUpdate="0" field="cutting" expression=""/>
-    <default applyOnUpdate="0" field="cycle_network" expression=""/>
-    <default applyOnUpdate="0" field="cyclestreets_id" expression=""/>
-    <default applyOnUpdate="0" field="cycleway" expression=""/>
-    <default applyOnUpdate="0" field="cycleway:both" expression=""/>
-    <default applyOnUpdate="0" field="cycleway:both:lane" expression=""/>
-    <default applyOnUpdate="0" field="cycleway:both:oneway" expression=""/>
-    <default applyOnUpdate="0" field="cycleway:conditional" expression=""/>
-    <default applyOnUpdate="0" field="cycleway:lane" expression=""/>
-    <default applyOnUpdate="0" field="cycleway:lanes" expression=""/>
-    <default applyOnUpdate="0" field="cycleway:left" expression=""/>
-    <default applyOnUpdate="0" field="cycleway:left:doorzone" expression=""/>
-    <default applyOnUpdate="0" field="cycleway:left:lane" expression=""/>
-    <default applyOnUpdate="0" field="cycleway:left:oneway" expression=""/>
-    <default applyOnUpdate="0" field="cycleway:left:segregated" expression=""/>
-    <default applyOnUpdate="0" field="cycleway:left:track" expression=""/>
-    <default applyOnUpdate="0" field="cycleway:left:width" expression=""/>
-    <default applyOnUpdate="0" field="cycleway:note" expression=""/>
-    <default applyOnUpdate="0" field="cycleway:right" expression=""/>
-    <default applyOnUpdate="0" field="cycleway:right:buffer" expression=""/>
-    <default applyOnUpdate="0" field="cycleway:right:lane" expression=""/>
-    <default applyOnUpdate="0" field="cycleway:right:oneway" expression=""/>
-    <default applyOnUpdate="0" field="cycleway:right:separation:left" expression=""/>
-    <default applyOnUpdate="0" field="cycleway:right:separation:right" expression=""/>
-    <default applyOnUpdate="0" field="cycleway:right:track" expression=""/>
-    <default applyOnUpdate="0" field="cycleway:right:width" expression=""/>
-    <default applyOnUpdate="0" field="cycleway:segregated" expression=""/>
-    <default applyOnUpdate="0" field="cycleway:surface" expression=""/>
-    <default applyOnUpdate="0" field="cycleway:width" expression=""/>
-    <default applyOnUpdate="0" field="delivery" expression=""/>
-    <default applyOnUpdate="0" field="departures_board" expression=""/>
-    <default applyOnUpdate="0" field="description" expression=""/>
-    <default applyOnUpdate="0" field="designation" expression=""/>
-    <default applyOnUpdate="0" field="destination" expression=""/>
-    <default applyOnUpdate="0" field="destination:backward" expression=""/>
-    <default applyOnUpdate="0" field="destination:forward" expression=""/>
-    <default applyOnUpdate="0" field="destination:lanes" expression=""/>
-    <default applyOnUpdate="0" field="destination:lanes:forward" expression=""/>
-    <default applyOnUpdate="0" field="destination:ref" expression=""/>
-    <default applyOnUpdate="0" field="destination:ref:forward" expression=""/>
-    <default applyOnUpdate="0" field="destination:ref:lanes" expression=""/>
-    <default applyOnUpdate="0" field="destination:ref:lanes:forward" expression=""/>
-    <default applyOnUpdate="0" field="destination:ref:to" expression=""/>
-    <default applyOnUpdate="0" field="destination:ref:to:lanes" expression=""/>
-    <default applyOnUpdate="0" field="destination:symbol" expression=""/>
-    <default applyOnUpdate="0" field="destination:symbol:lanes" expression=""/>
-    <default applyOnUpdate="0" field="diameter" expression=""/>
-    <default applyOnUpdate="0" field="direction" expression=""/>
-    <default applyOnUpdate="0" field="disabled" expression=""/>
-    <default applyOnUpdate="0" field="disused" expression=""/>
-    <default applyOnUpdate="0" field="disused:bicycle" expression=""/>
-    <default applyOnUpdate="0" field="disused:bus" expression=""/>
-    <default applyOnUpdate="0" field="disused:dual_carriageway" expression=""/>
-    <default applyOnUpdate="0" field="disused:foot" expression=""/>
-    <default applyOnUpdate="0" field="disused:highway" expression=""/>
-    <default applyOnUpdate="0" field="disused:lanes" expression=""/>
-    <default applyOnUpdate="0" field="disused:oneway" expression=""/>
-    <default applyOnUpdate="0" field="disused:ref" expression=""/>
-    <default applyOnUpdate="0" field="disused:tunnel" expression=""/>
-    <default applyOnUpdate="0" field="dog" expression=""/>
-    <default applyOnUpdate="0" field="driving_side" expression=""/>
-    <default applyOnUpdate="0" field="dual_carriageway" expression=""/>
-    <default applyOnUpdate="0" field="ele" expression=""/>
-    <default applyOnUpdate="0" field="electrified" expression=""/>
-    <default applyOnUpdate="0" field="embankment" expression=""/>
-    <default applyOnUpdate="0" field="emergency" expression=""/>
-    <default applyOnUpdate="0" field="entrance" expression=""/>
-    <default applyOnUpdate="0" field="est_width" expression=""/>
-    <default applyOnUpdate="0" field="expressway" expression=""/>
-    <default applyOnUpdate="0" field="fee" expression=""/>
-    <default applyOnUpdate="0" field="fence_type" expression=""/>
-    <default applyOnUpdate="0" field="fixme" expression=""/>
-    <default applyOnUpdate="0" field="flood_prone" expression=""/>
-    <default applyOnUpdate="0" field="foot" expression=""/>
-    <default applyOnUpdate="0" field="footway" expression=""/>
-    <default applyOnUpdate="0" field="footway:surface" expression=""/>
-    <default applyOnUpdate="0" field="ford" expression=""/>
-    <default applyOnUpdate="0" field="funeral_vehicles" expression=""/>
-    <default applyOnUpdate="0" field="gated" expression=""/>
-    <default applyOnUpdate="0" field="golf" expression=""/>
-    <default applyOnUpdate="0" field="golf_cart" expression=""/>
-    <default applyOnUpdate="0" field="goods" expression=""/>
-    <default applyOnUpdate="0" field="handrail" expression=""/>
-    <default applyOnUpdate="0" field="handrail:center" expression=""/>
-    <default applyOnUpdate="0" field="handrail:left" expression=""/>
-    <default applyOnUpdate="0" field="handrail:right" expression=""/>
-    <default applyOnUpdate="0" field="hazard" expression=""/>
-    <default applyOnUpdate="0" field="he:inscription_date" expression=""/>
-    <default applyOnUpdate="0" field="height" expression=""/>
-    <default applyOnUpdate="0" field="heritage" expression=""/>
-    <default applyOnUpdate="0" field="heritage:operator" expression=""/>
-    <default applyOnUpdate="0" field="heritage:operator:wikidata" expression=""/>
-    <default applyOnUpdate="0" field="heritage:website" expression=""/>
-    <default applyOnUpdate="0" field="hgv" expression=""/>
-    <default applyOnUpdate="0" field="hgv:note" expression=""/>
-    <default applyOnUpdate="0" field="highway" expression=""/>
-    <default applyOnUpdate="0" field="highway_1" expression=""/>
-    <default applyOnUpdate="0" field="highway_authority_ref" expression=""/>
-    <default applyOnUpdate="0" field="highways_england:area" expression=""/>
-    <default applyOnUpdate="0" field="historic" expression=""/>
-    <default applyOnUpdate="0" field="historic:highway" expression=""/>
-    <default applyOnUpdate="0" field="horse" expression=""/>
-    <default applyOnUpdate="0" field="horse_scale" expression=""/>
-    <default applyOnUpdate="0" field="hour_off" expression=""/>
-    <default applyOnUpdate="0" field="hour_on" expression=""/>
-    <default applyOnUpdate="0" field="hov" expression=""/>
-    <default applyOnUpdate="0" field="image" expression=""/>
-    <default applyOnUpdate="0" field="incline" expression=""/>
-    <default applyOnUpdate="0" field="incorrect_name" expression=""/>
-    <default applyOnUpdate="0" field="indoor" expression=""/>
-    <default applyOnUpdate="0" field="informal" expression=""/>
-    <default applyOnUpdate="0" field="int_name" expression=""/>
-    <default applyOnUpdate="0" field="internal_diameter" expression=""/>
-    <default applyOnUpdate="0" field="internet_access" expression=""/>
-    <default applyOnUpdate="0" field="is_in" expression=""/>
-    <default applyOnUpdate="0" field="is_in:borough" expression=""/>
-    <default applyOnUpdate="0" field="is_in:district" expression=""/>
-    <default applyOnUpdate="0" field="is_in:suburb" expression=""/>
-    <default applyOnUpdate="0" field="is_sidepath" expression=""/>
-    <default applyOnUpdate="0" field="is_sidepath:of:name" expression=""/>
-    <default applyOnUpdate="0" field="junction" expression=""/>
-    <default applyOnUpdate="0" field="junction:ref" expression=""/>
-    <default applyOnUpdate="0" field="kerb" expression=""/>
-    <default applyOnUpdate="0" field="landuse" expression=""/>
-    <default applyOnUpdate="0" field="lane_markings" expression=""/>
-    <default applyOnUpdate="0" field="lane_markings:backward" expression=""/>
-    <default applyOnUpdate="0" field="lane_markings:forward" expression=""/>
-    <default applyOnUpdate="0" field="lanes" expression=""/>
-    <default applyOnUpdate="0" field="lanes:backward" expression=""/>
-    <default applyOnUpdate="0" field="lanes:bus" expression=""/>
-    <default applyOnUpdate="0" field="lanes:bus:forward" expression=""/>
-    <default applyOnUpdate="0" field="lanes:forward" expression=""/>
-    <default applyOnUpdate="0" field="lanes:left" expression=""/>
-    <default applyOnUpdate="0" field="lanes:psv" expression=""/>
-    <default applyOnUpdate="0" field="lanes:psv:backward" expression=""/>
-    <default applyOnUpdate="0" field="lanes:psv:backward:right" expression=""/>
-    <default applyOnUpdate="0" field="lanes:psv:forward" expression=""/>
-    <default applyOnUpdate="0" field="layer" expression=""/>
-    <default applyOnUpdate="0" field="lcn" expression=""/>
-    <default applyOnUpdate="0" field="leisure" expression=""/>
-    <default applyOnUpdate="0" field="length" expression=""/>
-    <default applyOnUpdate="0" field="level" expression=""/>
-    <default applyOnUpdate="0" field="level:ref" expression=""/>
-    <default applyOnUpdate="0" field="listed_status" expression=""/>
-    <default applyOnUpdate="0" field="lit" expression=""/>
-    <default applyOnUpdate="0" field="lit:note" expression=""/>
-    <default applyOnUpdate="0" field="loc_name" expression=""/>
-    <default applyOnUpdate="0" field="loc_ref" expression=""/>
-    <default applyOnUpdate="0" field="locals" expression=""/>
-    <default applyOnUpdate="0" field="location" expression=""/>
-    <default applyOnUpdate="0" field="long_vehicles" expression=""/>
-    <default applyOnUpdate="0" field="man_made" expression=""/>
-    <default applyOnUpdate="0" field="marked" expression=""/>
-    <default applyOnUpdate="0" field="material" expression=""/>
-    <default applyOnUpdate="0" field="maxaxleload" expression=""/>
-    <default applyOnUpdate="0" field="maxgcweightrating:goods" expression=""/>
-    <default applyOnUpdate="0" field="maxgcweightrating:hgv" expression=""/>
-    <default applyOnUpdate="0" field="maxgcweightrating:hgv:conditional" expression=""/>
-    <default applyOnUpdate="0" field="maxgcwrating:hgv" expression=""/>
-    <default applyOnUpdate="0" field="maxheight" expression=""/>
-    <default applyOnUpdate="0" field="maxheight:imperial" expression=""/>
-    <default applyOnUpdate="0" field="maxheight:note" expression=""/>
-    <default applyOnUpdate="0" field="maxheight:physical" expression=""/>
-    <default applyOnUpdate="0" field="maxheight:signed" expression=""/>
-    <default applyOnUpdate="0" field="maxspeed" expression=""/>
-    <default applyOnUpdate="0" field="maxspeed:advisory" expression=""/>
-    <default applyOnUpdate="0" field="maxspeed:backward" expression=""/>
-    <default applyOnUpdate="0" field="maxspeed:bicycle" expression=""/>
-    <default applyOnUpdate="0" field="maxspeed:enforcement" expression=""/>
-    <default applyOnUpdate="0" field="maxspeed:forward" expression=""/>
-    <default applyOnUpdate="0" field="maxspeed:lanes" expression=""/>
-    <default applyOnUpdate="0" field="maxspeed:proposed" expression=""/>
-    <default applyOnUpdate="0" field="maxspeed:type" expression=""/>
-    <default applyOnUpdate="0" field="maxspeed:variable" expression=""/>
-    <default applyOnUpdate="0" field="maxweight" expression=""/>
-    <default applyOnUpdate="0" field="maxweight:conditional" expression=""/>
-    <default applyOnUpdate="0" field="maxweight:hgv" expression=""/>
-    <default applyOnUpdate="0" field="maxweight:hgv:conditional" expression=""/>
-    <default applyOnUpdate="0" field="maxweight:signed" expression=""/>
-    <default applyOnUpdate="0" field="maxweightrating" expression=""/>
-    <default applyOnUpdate="0" field="maxweightrating:hgv" expression=""/>
-    <default applyOnUpdate="0" field="maxweightrating:hgv:conditional" expression=""/>
-    <default applyOnUpdate="0" field="maxwidth" expression=""/>
-    <default applyOnUpdate="0" field="mkgmap:flare-check" expression=""/>
-    <default applyOnUpdate="0" field="mooring" expression=""/>
-    <default applyOnUpdate="0" field="motor_vehicle" expression=""/>
-    <default applyOnUpdate="0" field="motor_vehicle:backward" expression=""/>
-    <default applyOnUpdate="0" field="motor_vehicle:conditional" expression=""/>
-    <default applyOnUpdate="0" field="motor_vehicle:lanes" expression=""/>
-    <default applyOnUpdate="0" field="motorcar" expression=""/>
-    <default applyOnUpdate="0" field="motorcycle" expression=""/>
-    <default applyOnUpdate="0" field="motorroad" expression=""/>
-    <default applyOnUpdate="0" field="motorway" expression=""/>
-    <default applyOnUpdate="0" field="mtb:scale" expression=""/>
-    <default applyOnUpdate="0" field="mtb:scale:imba" expression=""/>
-    <default applyOnUpdate="0" field="name" expression=""/>
-    <default applyOnUpdate="0" field="name:cy" expression=""/>
-    <default applyOnUpdate="0" field="name:en" expression=""/>
-    <default applyOnUpdate="0" field="name:left" expression=""/>
-    <default applyOnUpdate="0" field="name:note" expression=""/>
-    <default applyOnUpdate="0" field="name:right" expression=""/>
-    <default applyOnUpdate="0" field="name:ru" expression=""/>
-    <default applyOnUpdate="0" field="name:signed" expression=""/>
-    <default applyOnUpdate="0" field="name:source" expression=""/>
-    <default applyOnUpdate="0" field="name:survey:date" expression=""/>
-    <default applyOnUpdate="0" field="narrow" expression=""/>
-    <default applyOnUpdate="0" field="national_highways:area" expression=""/>
-    <default applyOnUpdate="0" field="natural" expression=""/>
-    <default applyOnUpdate="0" field="noexit" expression=""/>
-    <default applyOnUpdate="0" field="noname" expression=""/>
-    <default applyOnUpdate="0" field="not:junction" expression=""/>
-    <default applyOnUpdate="0" field="not:name" expression=""/>
-    <default applyOnUpdate="0" field="note" expression=""/>
-    <default applyOnUpdate="0" field="note:access" expression=""/>
-    <default applyOnUpdate="0" field="note:alt_name" expression=""/>
-    <default applyOnUpdate="0" field="note:covid19" expression=""/>
-    <default applyOnUpdate="0" field="note:cycle" expression=""/>
-    <default applyOnUpdate="0" field="note:cycleway" expression=""/>
-    <default applyOnUpdate="0" field="note:designation" expression=""/>
-    <default applyOnUpdate="0" field="note:lcn" expression=""/>
-    <default applyOnUpdate="0" field="note:lit" expression=""/>
-    <default applyOnUpdate="0" field="note:name" expression=""/>
-    <default applyOnUpdate="0" field="obstacle" expression=""/>
-    <default applyOnUpdate="0" field="office" expression=""/>
-    <default applyOnUpdate="0" field="official_ref" expression=""/>
-    <default applyOnUpdate="0" field="old_name" expression=""/>
-    <default applyOnUpdate="0" field="old_ref" expression=""/>
-    <default applyOnUpdate="0" field="oneway" expression=""/>
-    <default applyOnUpdate="0" field="oneway:bicycle" expression=""/>
-    <default applyOnUpdate="0" field="oneway:bus" expression=""/>
-    <default applyOnUpdate="0" field="oneway:emergency" expression=""/>
-    <default applyOnUpdate="0" field="oneway:foot" expression=""/>
-    <default applyOnUpdate="0" field="oneway:horse" expression=""/>
-    <default applyOnUpdate="0" field="oneway:psv" expression=""/>
-    <default applyOnUpdate="0" field="oneway_type" expression=""/>
-    <default applyOnUpdate="0" field="opening_date" expression=""/>
-    <default applyOnUpdate="0" field="opening_hours" expression=""/>
-    <default applyOnUpdate="0" field="operator" expression=""/>
-    <default applyOnUpdate="0" field="operator:type" expression=""/>
-    <default applyOnUpdate="0" field="operator:wikidata" expression=""/>
-    <default applyOnUpdate="0" field="osmc:symbol" expression=""/>
-    <default applyOnUpdate="0" field="overtaking" expression=""/>
-    <default applyOnUpdate="0" field="overtaking:motor_vehicle" expression=""/>
-    <default applyOnUpdate="0" field="ownership" expression=""/>
-    <default applyOnUpdate="0" field="parking" expression=""/>
-    <default applyOnUpdate="0" field="parking:both" expression=""/>
-    <default applyOnUpdate="0" field="parking:both:access" expression=""/>
-    <default applyOnUpdate="0" field="parking:both:authentication:ticket:conditional" expression=""/>
-    <default applyOnUpdate="0" field="parking:both:markings" expression=""/>
-    <default applyOnUpdate="0" field="parking:both:orientation" expression=""/>
-    <default applyOnUpdate="0" field="parking:both:restriction" expression=""/>
-    <default applyOnUpdate="0" field="parking:both:restriction:conditional" expression=""/>
-    <default applyOnUpdate="0" field="parking:both:restriction:reason" expression=""/>
-    <default applyOnUpdate="0" field="parking:both:zone" expression=""/>
-    <default applyOnUpdate="0" field="parking:both:zone:residents" expression=""/>
-    <default applyOnUpdate="0" field="parking:condition:both" expression=""/>
-    <default applyOnUpdate="0" field="parking:lane" expression=""/>
-    <default applyOnUpdate="0" field="parking:lane:both" expression=""/>
-    <default applyOnUpdate="0" field="parking:lane:both:parallel" expression=""/>
-    <default applyOnUpdate="0" field="parking:lane:left" expression=""/>
-    <default applyOnUpdate="0" field="parking:lane:right" expression=""/>
-    <default applyOnUpdate="0" field="parking:lane:right:parallel" expression=""/>
-    <default applyOnUpdate="0" field="parking:left" expression=""/>
-    <default applyOnUpdate="0" field="parking:left:access" expression=""/>
-    <default applyOnUpdate="0" field="parking:left:bus" expression=""/>
-    <default applyOnUpdate="0" field="parking:left:markings" expression=""/>
-    <default applyOnUpdate="0" field="parking:left:orientation" expression=""/>
-    <default applyOnUpdate="0" field="parking:left:restriction" expression=""/>
-    <default applyOnUpdate="0" field="parking:left:restriction:reason" expression=""/>
-    <default applyOnUpdate="0" field="parking:left:zone" expression=""/>
-    <default applyOnUpdate="0" field="parking:right" expression=""/>
-    <default applyOnUpdate="0" field="parking:right:access" expression=""/>
-    <default applyOnUpdate="0" field="parking:right:capacity" expression=""/>
-    <default applyOnUpdate="0" field="parking:right:fee" expression=""/>
-    <default applyOnUpdate="0" field="parking:right:fee:conditional" expression=""/>
-    <default applyOnUpdate="0" field="parking:right:markings" expression=""/>
-    <default applyOnUpdate="0" field="parking:right:orientation" expression=""/>
-    <default applyOnUpdate="0" field="parking:right:restriction" expression=""/>
-    <default applyOnUpdate="0" field="parking:right:restriction:reason" expression=""/>
-    <default applyOnUpdate="0" field="parking:right:zone" expression=""/>
-    <default applyOnUpdate="0" field="passing_places" expression=""/>
-    <default applyOnUpdate="0" field="path" expression=""/>
-    <default applyOnUpdate="0" field="paved" expression=""/>
-    <default applyOnUpdate="0" field="paving_stones:material" expression=""/>
-    <default applyOnUpdate="0" field="place" expression=""/>
-    <default applyOnUpdate="0" field="placement" expression=""/>
-    <default applyOnUpdate="0" field="placement:backward" expression=""/>
-    <default applyOnUpdate="0" field="platform_lift" expression=""/>
-    <default applyOnUpdate="0" field="police" expression=""/>
-    <default applyOnUpdate="0" field="postal_code" expression=""/>
-    <default applyOnUpdate="0" field="presumed_designation" expression=""/>
-    <default applyOnUpdate="0" field="priority" expression=""/>
-    <default applyOnUpdate="0" field="proposed" expression=""/>
-    <default applyOnUpdate="0" field="proposed:bicycle" expression=""/>
-    <default applyOnUpdate="0" field="proposed:cycleway" expression=""/>
-    <default applyOnUpdate="0" field="proposed:cycleway:left" expression=""/>
-    <default applyOnUpdate="0" field="proposed:cycleway:left:oneway" expression=""/>
-    <default applyOnUpdate="0" field="proposed:cycleway:right" expression=""/>
-    <default applyOnUpdate="0" field="proposed:cycleway:right:oneway" expression=""/>
-    <default applyOnUpdate="0" field="proposed:foot" expression=""/>
-    <default applyOnUpdate="0" field="proposed:footway" expression=""/>
-    <default applyOnUpdate="0" field="proposed:highway" expression=""/>
-    <default applyOnUpdate="0" field="proposed:maxspeed" expression=""/>
-    <default applyOnUpdate="0" field="proposed:oneway" expression=""/>
-    <default applyOnUpdate="0" field="proposed:oneway:bicycle" expression=""/>
-    <default applyOnUpdate="0" field="proposed:segregated" expression=""/>
-    <default applyOnUpdate="0" field="proposed:traffic_intervention" expression=""/>
-    <default applyOnUpdate="0" field="prow_ref" expression=""/>
-    <default applyOnUpdate="0" field="psv" expression=""/>
-    <default applyOnUpdate="0" field="psv:lanes" expression=""/>
-    <default applyOnUpdate="0" field="psv:lanes:backward" expression=""/>
-    <default applyOnUpdate="0" field="psv:lanes:forward" expression=""/>
-    <default applyOnUpdate="0" field="psv:right" expression=""/>
-    <default applyOnUpdate="0" field="public_transport" expression=""/>
-    <default applyOnUpdate="0" field="railing" expression=""/>
-    <default applyOnUpdate="0" field="ramp" expression=""/>
-    <default applyOnUpdate="0" field="ramp:bicycle" expression=""/>
-    <default applyOnUpdate="0" field="ramp:wheelchair" expression=""/>
-    <default applyOnUpdate="0" field="rcn" expression=""/>
-    <default applyOnUpdate="0" field="ref" expression=""/>
-    <default applyOnUpdate="0" field="ref:22406366" expression=""/>
-    <default applyOnUpdate="0" field="ref:GB:nhle" expression=""/>
-    <default applyOnUpdate="0" field="ref:GB:tflcid" expression=""/>
-    <default applyOnUpdate="0" field="ref:GB:uprn" expression=""/>
-    <default applyOnUpdate="0" field="ref:GB:usrn" expression=""/>
-    <default applyOnUpdate="0" field="ref:he" expression=""/>
-    <default applyOnUpdate="0" field="ref:source" expression=""/>
-    <default applyOnUpdate="0" field="ref:tfl" expression=""/>
-    <default applyOnUpdate="0" field="repair" expression=""/>
-    <default applyOnUpdate="0" field="roof:colour" expression=""/>
-    <default applyOnUpdate="0" field="roof:shape" expression=""/>
-    <default applyOnUpdate="0" field="roundabout" expression=""/>
-    <default applyOnUpdate="0" field="route" expression=""/>
-    <default applyOnUpdate="0" field="segregated" expression=""/>
-    <default applyOnUpdate="0" field="separation:left" expression=""/>
-    <default applyOnUpdate="0" field="separation:right" expression=""/>
-    <default applyOnUpdate="0" field="service" expression=""/>
-    <default applyOnUpdate="0" field="service_1" expression=""/>
-    <default applyOnUpdate="0" field="shelter" expression=""/>
-    <default applyOnUpdate="0" field="shelter_type" expression=""/>
-    <default applyOnUpdate="0" field="shop" expression=""/>
-    <default applyOnUpdate="0" field="short_name" expression=""/>
-    <default applyOnUpdate="0" field="shoulder" expression=""/>
-    <default applyOnUpdate="0" field="shower" expression=""/>
-    <default applyOnUpdate="0" field="sidewalk" expression=""/>
-    <default applyOnUpdate="0" field="sidewalk:both" expression=""/>
-    <default applyOnUpdate="0" field="sidewalk:both:surface" expression=""/>
-    <default applyOnUpdate="0" field="sidewalk:left" expression=""/>
-    <default applyOnUpdate="0" field="sidewalk:left:surface" expression=""/>
-    <default applyOnUpdate="0" field="sidewalk:left:wheelchair" expression=""/>
-    <default applyOnUpdate="0" field="sidewalk:note" expression=""/>
-    <default applyOnUpdate="0" field="sidewalk:right" expression=""/>
-    <default applyOnUpdate="0" field="sidewalk:right:surface" expression=""/>
-    <default applyOnUpdate="0" field="sign_information" expression=""/>
-    <default applyOnUpdate="0" field="signed:ref" expression=""/>
-    <default applyOnUpdate="0" field="sloped_curb" expression=""/>
-    <default applyOnUpdate="0" field="smoothness" expression=""/>
-    <default applyOnUpdate="0" field="smoothness:date" expression=""/>
-    <default applyOnUpdate="0" field="source" expression=""/>
-    <default applyOnUpdate="0" field="source:access" expression=""/>
-    <default applyOnUpdate="0" field="source:alt_name" expression=""/>
-    <default applyOnUpdate="0" field="source:bicycle" expression=""/>
-    <default applyOnUpdate="0" field="source:bing" expression=""/>
-    <default applyOnUpdate="0" field="source:cycleway" expression=""/>
-    <default applyOnUpdate="0" field="source:designation" expression=""/>
-    <default applyOnUpdate="0" field="source:destination" expression=""/>
-    <default applyOnUpdate="0" field="source:geometry" expression=""/>
-    <default applyOnUpdate="0" field="source:hgv" expression=""/>
-    <default applyOnUpdate="0" field="source:highway" expression=""/>
-    <default applyOnUpdate="0" field="source:lanes" expression=""/>
-    <default applyOnUpdate="0" field="source:lcn" expression=""/>
-    <default applyOnUpdate="0" field="source:lit" expression=""/>
-    <default applyOnUpdate="0" field="source:maxheight" expression=""/>
-    <default applyOnUpdate="0" field="source:maxspeed" expression=""/>
-    <default applyOnUpdate="0" field="source:maxweight" expression=""/>
-    <default applyOnUpdate="0" field="source:maxweightrating" expression=""/>
-    <default applyOnUpdate="0" field="source:maxweightrating:hgv" expression=""/>
-    <default applyOnUpdate="0" field="source:maxwidth" expression=""/>
-    <default applyOnUpdate="0" field="source:name" expression=""/>
-    <default applyOnUpdate="0" field="source:not:name" expression=""/>
-    <default applyOnUpdate="0" field="source:old_name" expression=""/>
-    <default applyOnUpdate="0" field="source:oneway" expression=""/>
-    <default applyOnUpdate="0" field="source:oneway:bicycle" expression=""/>
-    <default applyOnUpdate="0" field="source:postal_code" expression=""/>
-    <default applyOnUpdate="0" field="source:proposed:oneway" expression=""/>
-    <default applyOnUpdate="0" field="source:prow_ref" expression=""/>
-    <default applyOnUpdate="0" field="source:rcn" expression=""/>
-    <default applyOnUpdate="0" field="source:ref" expression=""/>
-    <default applyOnUpdate="0" field="source:track" expression=""/>
-    <default applyOnUpdate="0" field="source:traffic_intervention" expression=""/>
-    <default applyOnUpdate="0" field="source:width" expression=""/>
-    <default applyOnUpdate="0" field="source_ref" expression=""/>
-    <default applyOnUpdate="0" field="source_ref:name" expression=""/>
-    <default applyOnUpdate="0" field="source_ref:ref" expression=""/>
-    <default applyOnUpdate="0" field="stairs:endline" expression=""/>
-    <default applyOnUpdate="0" field="stairs:startline" expression=""/>
-    <default applyOnUpdate="0" field="start_date" expression=""/>
-    <default applyOnUpdate="0" field="state" expression=""/>
-    <default applyOnUpdate="0" field="step_count" expression=""/>
-    <default applyOnUpdate="0" field="steps" expression=""/>
-    <default applyOnUpdate="0" field="stile" expression=""/>
-    <default applyOnUpdate="0" field="surface" expression=""/>
-    <default applyOnUpdate="0" field="surface:colour" expression=""/>
-    <default applyOnUpdate="0" field="surface:note" expression=""/>
-    <default applyOnUpdate="0" field="survey:date" expression=""/>
-    <default applyOnUpdate="0" field="surveying_authority" expression=""/>
-    <default applyOnUpdate="0" field="tactile_paving" expression=""/>
-    <default applyOnUpdate="0" field="taxi" expression=""/>
-    <default applyOnUpdate="0" field="temporary:highway" expression=""/>
-    <default applyOnUpdate="0" field="toilets" expression=""/>
-    <default applyOnUpdate="0" field="toilets:wheelchair" expression=""/>
-    <default applyOnUpdate="0" field="toll" expression=""/>
-    <default applyOnUpdate="0" field="tourism" expression=""/>
-    <default applyOnUpdate="0" field="towpath" expression=""/>
-    <default applyOnUpdate="0" field="tracktype" expression=""/>
-    <default applyOnUpdate="0" field="traffic_calming" expression=""/>
-    <default applyOnUpdate="0" field="traffic_calming:check_date" expression=""/>
-    <default applyOnUpdate="0" field="traffic_intervention" expression=""/>
-    <default applyOnUpdate="0" field="traffic_signals" expression=""/>
-    <default applyOnUpdate="0" field="traffic_signals:direction" expression=""/>
-    <default applyOnUpdate="0" field="traffic_signals:sound" expression=""/>
-    <default applyOnUpdate="0" field="traffic_signals:vibration" expression=""/>
-    <default applyOnUpdate="0" field="trail_visibility" expression=""/>
-    <default applyOnUpdate="0" field="tree_lined" expression=""/>
-    <default applyOnUpdate="0" field="tunnel" expression=""/>
-    <default applyOnUpdate="0" field="tunnel:name" expression=""/>
-    <default applyOnUpdate="0" field="tunnel:short_name" expression=""/>
-    <default applyOnUpdate="0" field="turn" expression=""/>
-    <default applyOnUpdate="0" field="turn:lanes" expression=""/>
-    <default applyOnUpdate="0" field="turn:lanes:backward" expression=""/>
-    <default applyOnUpdate="0" field="turn:lanes:forward" expression=""/>
-    <default applyOnUpdate="0" field="unsigned" expression=""/>
-    <default applyOnUpdate="0" field="validate" expression=""/>
-    <default applyOnUpdate="0" field="vehicle" expression=""/>
-    <default applyOnUpdate="0" field="vehicle:lanes" expression=""/>
-    <default applyOnUpdate="0" field="vehicle:lanes:forward" expression=""/>
-    <default applyOnUpdate="0" field="verge" expression=""/>
-    <default applyOnUpdate="0" field="verge:left" expression=""/>
-    <default applyOnUpdate="0" field="verge:right" expression=""/>
-    <default applyOnUpdate="0" field="virtual" expression=""/>
-    <default applyOnUpdate="0" field="was:bicycle" expression=""/>
-    <default applyOnUpdate="0" field="was:covered" expression=""/>
-    <default applyOnUpdate="0" field="was:cycleway:left" expression=""/>
-    <default applyOnUpdate="0" field="was:cycleway:right" expression=""/>
-    <default applyOnUpdate="0" field="was:highway" expression=""/>
-    <default applyOnUpdate="0" field="was:lanes" expression=""/>
-    <default applyOnUpdate="0" field="was:oneway" expression=""/>
-    <default applyOnUpdate="0" field="was:ref" expression=""/>
-    <default applyOnUpdate="0" field="was:segregated" expression=""/>
-    <default applyOnUpdate="0" field="watch:80n" expression=""/>
-    <default applyOnUpdate="0" field="water" expression=""/>
-    <default applyOnUpdate="0" field="website" expression=""/>
-    <default applyOnUpdate="0" field="wheelchair" expression=""/>
-    <default applyOnUpdate="0" field="width" expression=""/>
-    <default applyOnUpdate="0" field="wikidata" expression=""/>
-    <default applyOnUpdate="0" field="wikipedia" expression=""/>
+    <default expression="" field="FIXME" applyOnUpdate="0"/>
+    <default expression="" field="HE_ref" applyOnUpdate="0"/>
+    <default expression="" field="WARNING" applyOnUpdate="0"/>
+    <default expression="" field="access" applyOnUpdate="0"/>
+    <default expression="" field="access:conditional" applyOnUpdate="0"/>
+    <default expression="" field="access:lanes:backward" applyOnUpdate="0"/>
+    <default expression="" field="access:note" applyOnUpdate="0"/>
+    <default expression="" field="access:source" applyOnUpdate="0"/>
+    <default expression="" field="access:survey:date" applyOnUpdate="0"/>
+    <default expression="" field="active_traffic_management" applyOnUpdate="0"/>
+    <default expression="" field="addr:city" applyOnUpdate="0"/>
+    <default expression="" field="addr:housename" applyOnUpdate="0"/>
+    <default expression="" field="addr:housenumber" applyOnUpdate="0"/>
+    <default expression="" field="addr:interpolation" applyOnUpdate="0"/>
+    <default expression="" field="addr:postcode" applyOnUpdate="0"/>
+    <default expression="" field="addr:street" applyOnUpdate="0"/>
+    <default expression="" field="aeroway" applyOnUpdate="0"/>
+    <default expression="" field="agricultural" applyOnUpdate="0"/>
+    <default expression="" field="airside" applyOnUpdate="0"/>
+    <default expression="" field="alt_name" applyOnUpdate="0"/>
+    <default expression="" field="alt_name:en" applyOnUpdate="0"/>
+    <default expression="" field="amenity" applyOnUpdate="0"/>
+    <default expression="" field="area" applyOnUpdate="0"/>
+    <default expression="" field="barrier" applyOnUpdate="0"/>
+    <default expression="" field="bench" applyOnUpdate="0"/>
+    <default expression="" field="bicycle" applyOnUpdate="0"/>
+    <default expression="" field="bicycle:conditional" applyOnUpdate="0"/>
+    <default expression="" field="bicycle:lanes" applyOnUpdate="0"/>
+    <default expression="" field="bicycle:lanes:forward" applyOnUpdate="0"/>
+    <default expression="" field="bin" applyOnUpdate="0"/>
+    <default expression="" field="bing" applyOnUpdate="0"/>
+    <default expression="" field="bollard" applyOnUpdate="0"/>
+    <default expression="" field="borough" applyOnUpdate="0"/>
+    <default expression="" field="bridge" applyOnUpdate="0"/>
+    <default expression="" field="bridge:alt_name" applyOnUpdate="0"/>
+    <default expression="" field="bridge:alt_name:wikidata" applyOnUpdate="0"/>
+    <default expression="" field="bridge:movable" applyOnUpdate="0"/>
+    <default expression="" field="bridge:name" applyOnUpdate="0"/>
+    <default expression="" field="bridge:name:wikidata" applyOnUpdate="0"/>
+    <default expression="" field="bridge:ref" applyOnUpdate="0"/>
+    <default expression="" field="bridge:structure" applyOnUpdate="0"/>
+    <default expression="" field="bridge_ref" applyOnUpdate="0"/>
+    <default expression="" field="building" applyOnUpdate="0"/>
+    <default expression="" field="building:levels" applyOnUpdate="0"/>
+    <default expression="" field="bus" applyOnUpdate="0"/>
+    <default expression="" field="bus:lanes" applyOnUpdate="0"/>
+    <default expression="" field="bus:lanes:backward" applyOnUpdate="0"/>
+    <default expression="" field="bus:lanes:forward" applyOnUpdate="0"/>
+    <default expression="" field="bus_bay" applyOnUpdate="0"/>
+    <default expression="" field="busway" applyOnUpdate="0"/>
+    <default expression="" field="busway:both" applyOnUpdate="0"/>
+    <default expression="" field="busway:conditional" applyOnUpdate="0"/>
+    <default expression="" field="busway:left" applyOnUpdate="0"/>
+    <default expression="" field="busway:right" applyOnUpdate="0"/>
+    <default expression="" field="button_operated" applyOnUpdate="0"/>
+    <default expression="" field="car" applyOnUpdate="0"/>
+    <default expression="" field="carriageway_ref" applyOnUpdate="0"/>
+    <default expression="" field="caution" applyOnUpdate="0"/>
+    <default expression="" field="cesspit" applyOnUpdate="0"/>
+    <default expression="" field="change" applyOnUpdate="0"/>
+    <default expression="" field="change:lanes" applyOnUpdate="0"/>
+    <default expression="" field="changing_table" applyOnUpdate="0"/>
+    <default expression="" field="charge" applyOnUpdate="0"/>
+    <default expression="" field="check_date" applyOnUpdate="0"/>
+    <default expression="" field="check_date:cycleway" applyOnUpdate="0"/>
+    <default expression="" field="check_date:cycleway:surface" applyOnUpdate="0"/>
+    <default expression="" field="check_date:handrail" applyOnUpdate="0"/>
+    <default expression="" field="check_date:lit" applyOnUpdate="0"/>
+    <default expression="" field="check_date:ramp" applyOnUpdate="0"/>
+    <default expression="" field="check_date:sidewalk" applyOnUpdate="0"/>
+    <default expression="" field="check_date:sidewalk:surface" applyOnUpdate="0"/>
+    <default expression="" field="check_date:smoothness" applyOnUpdate="0"/>
+    <default expression="" field="check_date:surface" applyOnUpdate="0"/>
+    <default expression="" field="check_date:tactile_paving" applyOnUpdate="0"/>
+    <default expression="" field="coach" applyOnUpdate="0"/>
+    <default expression="" field="colour" applyOnUpdate="0"/>
+    <default expression="" field="complete" applyOnUpdate="0"/>
+    <default expression="" field="construction" applyOnUpdate="0"/>
+    <default expression="" field="construction_contract_name" applyOnUpdate="0"/>
+    <default expression="" field="construction_method" applyOnUpdate="0"/>
+    <default expression="" field="contact:phone" applyOnUpdate="0"/>
+    <default expression="" field="conveying" applyOnUpdate="0"/>
+    <default expression="" field="cover" applyOnUpdate="0"/>
+    <default expression="" field="covered" applyOnUpdate="0"/>
+    <default expression="" field="created_by" applyOnUpdate="0"/>
+    <default expression="" field="crossing" applyOnUpdate="0"/>
+    <default expression="" field="crossing:continuous" applyOnUpdate="0"/>
+    <default expression="" field="crossing:island" applyOnUpdate="0"/>
+    <default expression="" field="crossing:markings" applyOnUpdate="0"/>
+    <default expression="" field="crossing:signals" applyOnUpdate="0"/>
+    <default expression="" field="crossing_ref" applyOnUpdate="0"/>
+    <default expression="" field="cutline" applyOnUpdate="0"/>
+    <default expression="" field="cutting" applyOnUpdate="0"/>
+    <default expression="" field="cycle_network" applyOnUpdate="0"/>
+    <default expression="" field="cyclestreets_id" applyOnUpdate="0"/>
+    <default expression="" field="cycleway" applyOnUpdate="0"/>
+    <default expression="" field="cycleway:both" applyOnUpdate="0"/>
+    <default expression="" field="cycleway:both:lane" applyOnUpdate="0"/>
+    <default expression="" field="cycleway:both:oneway" applyOnUpdate="0"/>
+    <default expression="" field="cycleway:conditional" applyOnUpdate="0"/>
+    <default expression="" field="cycleway:lane" applyOnUpdate="0"/>
+    <default expression="" field="cycleway:lanes" applyOnUpdate="0"/>
+    <default expression="" field="cycleway:left" applyOnUpdate="0"/>
+    <default expression="" field="cycleway:left:doorzone" applyOnUpdate="0"/>
+    <default expression="" field="cycleway:left:lane" applyOnUpdate="0"/>
+    <default expression="" field="cycleway:left:oneway" applyOnUpdate="0"/>
+    <default expression="" field="cycleway:left:segregated" applyOnUpdate="0"/>
+    <default expression="" field="cycleway:left:track" applyOnUpdate="0"/>
+    <default expression="" field="cycleway:left:width" applyOnUpdate="0"/>
+    <default expression="" field="cycleway:note" applyOnUpdate="0"/>
+    <default expression="" field="cycleway:right" applyOnUpdate="0"/>
+    <default expression="" field="cycleway:right:buffer" applyOnUpdate="0"/>
+    <default expression="" field="cycleway:right:lane" applyOnUpdate="0"/>
+    <default expression="" field="cycleway:right:oneway" applyOnUpdate="0"/>
+    <default expression="" field="cycleway:right:separation:left" applyOnUpdate="0"/>
+    <default expression="" field="cycleway:right:separation:right" applyOnUpdate="0"/>
+    <default expression="" field="cycleway:right:track" applyOnUpdate="0"/>
+    <default expression="" field="cycleway:right:width" applyOnUpdate="0"/>
+    <default expression="" field="cycleway:segregated" applyOnUpdate="0"/>
+    <default expression="" field="cycleway:surface" applyOnUpdate="0"/>
+    <default expression="" field="cycleway:width" applyOnUpdate="0"/>
+    <default expression="" field="delivery" applyOnUpdate="0"/>
+    <default expression="" field="departures_board" applyOnUpdate="0"/>
+    <default expression="" field="description" applyOnUpdate="0"/>
+    <default expression="" field="designation" applyOnUpdate="0"/>
+    <default expression="" field="destination" applyOnUpdate="0"/>
+    <default expression="" field="destination:backward" applyOnUpdate="0"/>
+    <default expression="" field="destination:forward" applyOnUpdate="0"/>
+    <default expression="" field="destination:lanes" applyOnUpdate="0"/>
+    <default expression="" field="destination:lanes:forward" applyOnUpdate="0"/>
+    <default expression="" field="destination:ref" applyOnUpdate="0"/>
+    <default expression="" field="destination:ref:forward" applyOnUpdate="0"/>
+    <default expression="" field="destination:ref:lanes" applyOnUpdate="0"/>
+    <default expression="" field="destination:ref:lanes:forward" applyOnUpdate="0"/>
+    <default expression="" field="destination:ref:to" applyOnUpdate="0"/>
+    <default expression="" field="destination:ref:to:lanes" applyOnUpdate="0"/>
+    <default expression="" field="destination:symbol" applyOnUpdate="0"/>
+    <default expression="" field="destination:symbol:lanes" applyOnUpdate="0"/>
+    <default expression="" field="diameter" applyOnUpdate="0"/>
+    <default expression="" field="direction" applyOnUpdate="0"/>
+    <default expression="" field="disabled" applyOnUpdate="0"/>
+    <default expression="" field="disused" applyOnUpdate="0"/>
+    <default expression="" field="disused:bicycle" applyOnUpdate="0"/>
+    <default expression="" field="disused:bus" applyOnUpdate="0"/>
+    <default expression="" field="disused:dual_carriageway" applyOnUpdate="0"/>
+    <default expression="" field="disused:foot" applyOnUpdate="0"/>
+    <default expression="" field="disused:highway" applyOnUpdate="0"/>
+    <default expression="" field="disused:lanes" applyOnUpdate="0"/>
+    <default expression="" field="disused:oneway" applyOnUpdate="0"/>
+    <default expression="" field="disused:ref" applyOnUpdate="0"/>
+    <default expression="" field="disused:tunnel" applyOnUpdate="0"/>
+    <default expression="" field="dog" applyOnUpdate="0"/>
+    <default expression="" field="driving_side" applyOnUpdate="0"/>
+    <default expression="" field="dual_carriageway" applyOnUpdate="0"/>
+    <default expression="" field="ele" applyOnUpdate="0"/>
+    <default expression="" field="electrified" applyOnUpdate="0"/>
+    <default expression="" field="embankment" applyOnUpdate="0"/>
+    <default expression="" field="emergency" applyOnUpdate="0"/>
+    <default expression="" field="entrance" applyOnUpdate="0"/>
+    <default expression="" field="est_width" applyOnUpdate="0"/>
+    <default expression="" field="expressway" applyOnUpdate="0"/>
+    <default expression="" field="fee" applyOnUpdate="0"/>
+    <default expression="" field="fence_type" applyOnUpdate="0"/>
+    <default expression="" field="fixme" applyOnUpdate="0"/>
+    <default expression="" field="flood_prone" applyOnUpdate="0"/>
+    <default expression="" field="foot" applyOnUpdate="0"/>
+    <default expression="" field="footway" applyOnUpdate="0"/>
+    <default expression="" field="footway:surface" applyOnUpdate="0"/>
+    <default expression="" field="ford" applyOnUpdate="0"/>
+    <default expression="" field="funeral_vehicles" applyOnUpdate="0"/>
+    <default expression="" field="gated" applyOnUpdate="0"/>
+    <default expression="" field="golf" applyOnUpdate="0"/>
+    <default expression="" field="golf_cart" applyOnUpdate="0"/>
+    <default expression="" field="goods" applyOnUpdate="0"/>
+    <default expression="" field="handrail" applyOnUpdate="0"/>
+    <default expression="" field="handrail:center" applyOnUpdate="0"/>
+    <default expression="" field="handrail:left" applyOnUpdate="0"/>
+    <default expression="" field="handrail:right" applyOnUpdate="0"/>
+    <default expression="" field="hazard" applyOnUpdate="0"/>
+    <default expression="" field="he:inscription_date" applyOnUpdate="0"/>
+    <default expression="" field="height" applyOnUpdate="0"/>
+    <default expression="" field="heritage" applyOnUpdate="0"/>
+    <default expression="" field="heritage:operator" applyOnUpdate="0"/>
+    <default expression="" field="heritage:operator:wikidata" applyOnUpdate="0"/>
+    <default expression="" field="heritage:website" applyOnUpdate="0"/>
+    <default expression="" field="hgv" applyOnUpdate="0"/>
+    <default expression="" field="hgv:note" applyOnUpdate="0"/>
+    <default expression="" field="highway" applyOnUpdate="0"/>
+    <default expression="" field="highway_1" applyOnUpdate="0"/>
+    <default expression="" field="highway_authority_ref" applyOnUpdate="0"/>
+    <default expression="" field="highways_england:area" applyOnUpdate="0"/>
+    <default expression="" field="historic" applyOnUpdate="0"/>
+    <default expression="" field="historic:highway" applyOnUpdate="0"/>
+    <default expression="" field="horse" applyOnUpdate="0"/>
+    <default expression="" field="horse_scale" applyOnUpdate="0"/>
+    <default expression="" field="hour_off" applyOnUpdate="0"/>
+    <default expression="" field="hour_on" applyOnUpdate="0"/>
+    <default expression="" field="hov" applyOnUpdate="0"/>
+    <default expression="" field="image" applyOnUpdate="0"/>
+    <default expression="" field="incline" applyOnUpdate="0"/>
+    <default expression="" field="incorrect_name" applyOnUpdate="0"/>
+    <default expression="" field="indoor" applyOnUpdate="0"/>
+    <default expression="" field="informal" applyOnUpdate="0"/>
+    <default expression="" field="int_name" applyOnUpdate="0"/>
+    <default expression="" field="internal_diameter" applyOnUpdate="0"/>
+    <default expression="" field="internet_access" applyOnUpdate="0"/>
+    <default expression="" field="is_in" applyOnUpdate="0"/>
+    <default expression="" field="is_in:borough" applyOnUpdate="0"/>
+    <default expression="" field="is_in:district" applyOnUpdate="0"/>
+    <default expression="" field="is_in:suburb" applyOnUpdate="0"/>
+    <default expression="" field="is_sidepath" applyOnUpdate="0"/>
+    <default expression="" field="is_sidepath:of:name" applyOnUpdate="0"/>
+    <default expression="" field="junction" applyOnUpdate="0"/>
+    <default expression="" field="junction:ref" applyOnUpdate="0"/>
+    <default expression="" field="kerb" applyOnUpdate="0"/>
+    <default expression="" field="landuse" applyOnUpdate="0"/>
+    <default expression="" field="lane_markings" applyOnUpdate="0"/>
+    <default expression="" field="lane_markings:backward" applyOnUpdate="0"/>
+    <default expression="" field="lane_markings:forward" applyOnUpdate="0"/>
+    <default expression="" field="lanes" applyOnUpdate="0"/>
+    <default expression="" field="lanes:backward" applyOnUpdate="0"/>
+    <default expression="" field="lanes:bus" applyOnUpdate="0"/>
+    <default expression="" field="lanes:bus:forward" applyOnUpdate="0"/>
+    <default expression="" field="lanes:forward" applyOnUpdate="0"/>
+    <default expression="" field="lanes:left" applyOnUpdate="0"/>
+    <default expression="" field="lanes:psv" applyOnUpdate="0"/>
+    <default expression="" field="lanes:psv:backward" applyOnUpdate="0"/>
+    <default expression="" field="lanes:psv:backward:right" applyOnUpdate="0"/>
+    <default expression="" field="lanes:psv:forward" applyOnUpdate="0"/>
+    <default expression="" field="layer" applyOnUpdate="0"/>
+    <default expression="" field="lcn" applyOnUpdate="0"/>
+    <default expression="" field="leisure" applyOnUpdate="0"/>
+    <default expression="" field="length" applyOnUpdate="0"/>
+    <default expression="" field="level" applyOnUpdate="0"/>
+    <default expression="" field="level:ref" applyOnUpdate="0"/>
+    <default expression="" field="listed_status" applyOnUpdate="0"/>
+    <default expression="" field="lit" applyOnUpdate="0"/>
+    <default expression="" field="lit:note" applyOnUpdate="0"/>
+    <default expression="" field="loc_name" applyOnUpdate="0"/>
+    <default expression="" field="loc_ref" applyOnUpdate="0"/>
+    <default expression="" field="locals" applyOnUpdate="0"/>
+    <default expression="" field="location" applyOnUpdate="0"/>
+    <default expression="" field="long_vehicles" applyOnUpdate="0"/>
+    <default expression="" field="man_made" applyOnUpdate="0"/>
+    <default expression="" field="marked" applyOnUpdate="0"/>
+    <default expression="" field="material" applyOnUpdate="0"/>
+    <default expression="" field="maxaxleload" applyOnUpdate="0"/>
+    <default expression="" field="maxgcweightrating:goods" applyOnUpdate="0"/>
+    <default expression="" field="maxgcweightrating:hgv" applyOnUpdate="0"/>
+    <default expression="" field="maxgcweightrating:hgv:conditional" applyOnUpdate="0"/>
+    <default expression="" field="maxgcwrating:hgv" applyOnUpdate="0"/>
+    <default expression="" field="maxheight" applyOnUpdate="0"/>
+    <default expression="" field="maxheight:imperial" applyOnUpdate="0"/>
+    <default expression="" field="maxheight:note" applyOnUpdate="0"/>
+    <default expression="" field="maxheight:physical" applyOnUpdate="0"/>
+    <default expression="" field="maxheight:signed" applyOnUpdate="0"/>
+    <default expression="" field="maxspeed" applyOnUpdate="0"/>
+    <default expression="" field="maxspeed:advisory" applyOnUpdate="0"/>
+    <default expression="" field="maxspeed:backward" applyOnUpdate="0"/>
+    <default expression="" field="maxspeed:bicycle" applyOnUpdate="0"/>
+    <default expression="" field="maxspeed:enforcement" applyOnUpdate="0"/>
+    <default expression="" field="maxspeed:forward" applyOnUpdate="0"/>
+    <default expression="" field="maxspeed:lanes" applyOnUpdate="0"/>
+    <default expression="" field="maxspeed:proposed" applyOnUpdate="0"/>
+    <default expression="" field="maxspeed:type" applyOnUpdate="0"/>
+    <default expression="" field="maxspeed:variable" applyOnUpdate="0"/>
+    <default expression="" field="maxweight" applyOnUpdate="0"/>
+    <default expression="" field="maxweight:conditional" applyOnUpdate="0"/>
+    <default expression="" field="maxweight:hgv" applyOnUpdate="0"/>
+    <default expression="" field="maxweight:hgv:conditional" applyOnUpdate="0"/>
+    <default expression="" field="maxweight:signed" applyOnUpdate="0"/>
+    <default expression="" field="maxweightrating" applyOnUpdate="0"/>
+    <default expression="" field="maxweightrating:hgv" applyOnUpdate="0"/>
+    <default expression="" field="maxweightrating:hgv:conditional" applyOnUpdate="0"/>
+    <default expression="" field="maxwidth" applyOnUpdate="0"/>
+    <default expression="" field="mkgmap:flare-check" applyOnUpdate="0"/>
+    <default expression="" field="mooring" applyOnUpdate="0"/>
+    <default expression="" field="motor_vehicle" applyOnUpdate="0"/>
+    <default expression="" field="motor_vehicle:backward" applyOnUpdate="0"/>
+    <default expression="" field="motor_vehicle:conditional" applyOnUpdate="0"/>
+    <default expression="" field="motor_vehicle:lanes" applyOnUpdate="0"/>
+    <default expression="" field="motorcar" applyOnUpdate="0"/>
+    <default expression="" field="motorcycle" applyOnUpdate="0"/>
+    <default expression="" field="motorroad" applyOnUpdate="0"/>
+    <default expression="" field="motorway" applyOnUpdate="0"/>
+    <default expression="" field="mtb:scale" applyOnUpdate="0"/>
+    <default expression="" field="mtb:scale:imba" applyOnUpdate="0"/>
+    <default expression="" field="name" applyOnUpdate="0"/>
+    <default expression="" field="name:cy" applyOnUpdate="0"/>
+    <default expression="" field="name:en" applyOnUpdate="0"/>
+    <default expression="" field="name:left" applyOnUpdate="0"/>
+    <default expression="" field="name:note" applyOnUpdate="0"/>
+    <default expression="" field="name:right" applyOnUpdate="0"/>
+    <default expression="" field="name:ru" applyOnUpdate="0"/>
+    <default expression="" field="name:signed" applyOnUpdate="0"/>
+    <default expression="" field="name:source" applyOnUpdate="0"/>
+    <default expression="" field="name:survey:date" applyOnUpdate="0"/>
+    <default expression="" field="narrow" applyOnUpdate="0"/>
+    <default expression="" field="national_highways:area" applyOnUpdate="0"/>
+    <default expression="" field="natural" applyOnUpdate="0"/>
+    <default expression="" field="noexit" applyOnUpdate="0"/>
+    <default expression="" field="noname" applyOnUpdate="0"/>
+    <default expression="" field="not:junction" applyOnUpdate="0"/>
+    <default expression="" field="not:name" applyOnUpdate="0"/>
+    <default expression="" field="note" applyOnUpdate="0"/>
+    <default expression="" field="note:access" applyOnUpdate="0"/>
+    <default expression="" field="note:alt_name" applyOnUpdate="0"/>
+    <default expression="" field="note:covid19" applyOnUpdate="0"/>
+    <default expression="" field="note:cycle" applyOnUpdate="0"/>
+    <default expression="" field="note:cycleway" applyOnUpdate="0"/>
+    <default expression="" field="note:designation" applyOnUpdate="0"/>
+    <default expression="" field="note:lcn" applyOnUpdate="0"/>
+    <default expression="" field="note:lit" applyOnUpdate="0"/>
+    <default expression="" field="note:name" applyOnUpdate="0"/>
+    <default expression="" field="obstacle" applyOnUpdate="0"/>
+    <default expression="" field="office" applyOnUpdate="0"/>
+    <default expression="" field="official_ref" applyOnUpdate="0"/>
+    <default expression="" field="old_name" applyOnUpdate="0"/>
+    <default expression="" field="old_ref" applyOnUpdate="0"/>
+    <default expression="" field="oneway" applyOnUpdate="0"/>
+    <default expression="" field="oneway:bicycle" applyOnUpdate="0"/>
+    <default expression="" field="oneway:bus" applyOnUpdate="0"/>
+    <default expression="" field="oneway:emergency" applyOnUpdate="0"/>
+    <default expression="" field="oneway:foot" applyOnUpdate="0"/>
+    <default expression="" field="oneway:horse" applyOnUpdate="0"/>
+    <default expression="" field="oneway:psv" applyOnUpdate="0"/>
+    <default expression="" field="oneway_type" applyOnUpdate="0"/>
+    <default expression="" field="opening_date" applyOnUpdate="0"/>
+    <default expression="" field="opening_hours" applyOnUpdate="0"/>
+    <default expression="" field="operator" applyOnUpdate="0"/>
+    <default expression="" field="operator:type" applyOnUpdate="0"/>
+    <default expression="" field="operator:wikidata" applyOnUpdate="0"/>
+    <default expression="" field="osmc:symbol" applyOnUpdate="0"/>
+    <default expression="" field="overtaking" applyOnUpdate="0"/>
+    <default expression="" field="overtaking:motor_vehicle" applyOnUpdate="0"/>
+    <default expression="" field="ownership" applyOnUpdate="0"/>
+    <default expression="" field="parking" applyOnUpdate="0"/>
+    <default expression="" field="parking:both" applyOnUpdate="0"/>
+    <default expression="" field="parking:both:access" applyOnUpdate="0"/>
+    <default expression="" field="parking:both:authentication:ticket:conditional" applyOnUpdate="0"/>
+    <default expression="" field="parking:both:markings" applyOnUpdate="0"/>
+    <default expression="" field="parking:both:orientation" applyOnUpdate="0"/>
+    <default expression="" field="parking:both:restriction" applyOnUpdate="0"/>
+    <default expression="" field="parking:both:restriction:conditional" applyOnUpdate="0"/>
+    <default expression="" field="parking:both:restriction:reason" applyOnUpdate="0"/>
+    <default expression="" field="parking:both:zone" applyOnUpdate="0"/>
+    <default expression="" field="parking:both:zone:residents" applyOnUpdate="0"/>
+    <default expression="" field="parking:condition:both" applyOnUpdate="0"/>
+    <default expression="" field="parking:lane" applyOnUpdate="0"/>
+    <default expression="" field="parking:lane:both" applyOnUpdate="0"/>
+    <default expression="" field="parking:lane:both:parallel" applyOnUpdate="0"/>
+    <default expression="" field="parking:lane:left" applyOnUpdate="0"/>
+    <default expression="" field="parking:lane:right" applyOnUpdate="0"/>
+    <default expression="" field="parking:lane:right:parallel" applyOnUpdate="0"/>
+    <default expression="" field="parking:left" applyOnUpdate="0"/>
+    <default expression="" field="parking:left:access" applyOnUpdate="0"/>
+    <default expression="" field="parking:left:bus" applyOnUpdate="0"/>
+    <default expression="" field="parking:left:markings" applyOnUpdate="0"/>
+    <default expression="" field="parking:left:orientation" applyOnUpdate="0"/>
+    <default expression="" field="parking:left:restriction" applyOnUpdate="0"/>
+    <default expression="" field="parking:left:restriction:reason" applyOnUpdate="0"/>
+    <default expression="" field="parking:left:zone" applyOnUpdate="0"/>
+    <default expression="" field="parking:right" applyOnUpdate="0"/>
+    <default expression="" field="parking:right:access" applyOnUpdate="0"/>
+    <default expression="" field="parking:right:capacity" applyOnUpdate="0"/>
+    <default expression="" field="parking:right:fee" applyOnUpdate="0"/>
+    <default expression="" field="parking:right:fee:conditional" applyOnUpdate="0"/>
+    <default expression="" field="parking:right:markings" applyOnUpdate="0"/>
+    <default expression="" field="parking:right:orientation" applyOnUpdate="0"/>
+    <default expression="" field="parking:right:restriction" applyOnUpdate="0"/>
+    <default expression="" field="parking:right:restriction:reason" applyOnUpdate="0"/>
+    <default expression="" field="parking:right:zone" applyOnUpdate="0"/>
+    <default expression="" field="passing_places" applyOnUpdate="0"/>
+    <default expression="" field="path" applyOnUpdate="0"/>
+    <default expression="" field="paved" applyOnUpdate="0"/>
+    <default expression="" field="paving_stones:material" applyOnUpdate="0"/>
+    <default expression="" field="place" applyOnUpdate="0"/>
+    <default expression="" field="placement" applyOnUpdate="0"/>
+    <default expression="" field="placement:backward" applyOnUpdate="0"/>
+    <default expression="" field="platform_lift" applyOnUpdate="0"/>
+    <default expression="" field="police" applyOnUpdate="0"/>
+    <default expression="" field="postal_code" applyOnUpdate="0"/>
+    <default expression="" field="presumed_designation" applyOnUpdate="0"/>
+    <default expression="" field="priority" applyOnUpdate="0"/>
+    <default expression="" field="proposed" applyOnUpdate="0"/>
+    <default expression="" field="proposed:bicycle" applyOnUpdate="0"/>
+    <default expression="" field="proposed:cycleway" applyOnUpdate="0"/>
+    <default expression="" field="proposed:cycleway:left" applyOnUpdate="0"/>
+    <default expression="" field="proposed:cycleway:left:oneway" applyOnUpdate="0"/>
+    <default expression="" field="proposed:cycleway:right" applyOnUpdate="0"/>
+    <default expression="" field="proposed:cycleway:right:oneway" applyOnUpdate="0"/>
+    <default expression="" field="proposed:foot" applyOnUpdate="0"/>
+    <default expression="" field="proposed:footway" applyOnUpdate="0"/>
+    <default expression="" field="proposed:highway" applyOnUpdate="0"/>
+    <default expression="" field="proposed:maxspeed" applyOnUpdate="0"/>
+    <default expression="" field="proposed:oneway" applyOnUpdate="0"/>
+    <default expression="" field="proposed:oneway:bicycle" applyOnUpdate="0"/>
+    <default expression="" field="proposed:segregated" applyOnUpdate="0"/>
+    <default expression="" field="proposed:traffic_intervention" applyOnUpdate="0"/>
+    <default expression="" field="prow_ref" applyOnUpdate="0"/>
+    <default expression="" field="psv" applyOnUpdate="0"/>
+    <default expression="" field="psv:lanes" applyOnUpdate="0"/>
+    <default expression="" field="psv:lanes:backward" applyOnUpdate="0"/>
+    <default expression="" field="psv:lanes:forward" applyOnUpdate="0"/>
+    <default expression="" field="psv:right" applyOnUpdate="0"/>
+    <default expression="" field="public_transport" applyOnUpdate="0"/>
+    <default expression="" field="railing" applyOnUpdate="0"/>
+    <default expression="" field="ramp" applyOnUpdate="0"/>
+    <default expression="" field="ramp:bicycle" applyOnUpdate="0"/>
+    <default expression="" field="ramp:wheelchair" applyOnUpdate="0"/>
+    <default expression="" field="rcn" applyOnUpdate="0"/>
+    <default expression="" field="ref" applyOnUpdate="0"/>
+    <default expression="" field="ref:22406366" applyOnUpdate="0"/>
+    <default expression="" field="ref:GB:nhle" applyOnUpdate="0"/>
+    <default expression="" field="ref:GB:tflcid" applyOnUpdate="0"/>
+    <default expression="" field="ref:GB:uprn" applyOnUpdate="0"/>
+    <default expression="" field="ref:GB:usrn" applyOnUpdate="0"/>
+    <default expression="" field="ref:he" applyOnUpdate="0"/>
+    <default expression="" field="ref:source" applyOnUpdate="0"/>
+    <default expression="" field="ref:tfl" applyOnUpdate="0"/>
+    <default expression="" field="repair" applyOnUpdate="0"/>
+    <default expression="" field="roof:colour" applyOnUpdate="0"/>
+    <default expression="" field="roof:shape" applyOnUpdate="0"/>
+    <default expression="" field="roundabout" applyOnUpdate="0"/>
+    <default expression="" field="route" applyOnUpdate="0"/>
+    <default expression="" field="segregated" applyOnUpdate="0"/>
+    <default expression="" field="separation:left" applyOnUpdate="0"/>
+    <default expression="" field="separation:right" applyOnUpdate="0"/>
+    <default expression="" field="service" applyOnUpdate="0"/>
+    <default expression="" field="service_1" applyOnUpdate="0"/>
+    <default expression="" field="shelter" applyOnUpdate="0"/>
+    <default expression="" field="shelter_type" applyOnUpdate="0"/>
+    <default expression="" field="shop" applyOnUpdate="0"/>
+    <default expression="" field="short_name" applyOnUpdate="0"/>
+    <default expression="" field="shoulder" applyOnUpdate="0"/>
+    <default expression="" field="shower" applyOnUpdate="0"/>
+    <default expression="" field="sidewalk" applyOnUpdate="0"/>
+    <default expression="" field="sidewalk:both" applyOnUpdate="0"/>
+    <default expression="" field="sidewalk:both:surface" applyOnUpdate="0"/>
+    <default expression="" field="sidewalk:left" applyOnUpdate="0"/>
+    <default expression="" field="sidewalk:left:surface" applyOnUpdate="0"/>
+    <default expression="" field="sidewalk:left:wheelchair" applyOnUpdate="0"/>
+    <default expression="" field="sidewalk:note" applyOnUpdate="0"/>
+    <default expression="" field="sidewalk:right" applyOnUpdate="0"/>
+    <default expression="" field="sidewalk:right:surface" applyOnUpdate="0"/>
+    <default expression="" field="sign_information" applyOnUpdate="0"/>
+    <default expression="" field="signed:ref" applyOnUpdate="0"/>
+    <default expression="" field="sloped_curb" applyOnUpdate="0"/>
+    <default expression="" field="smoothness" applyOnUpdate="0"/>
+    <default expression="" field="smoothness:date" applyOnUpdate="0"/>
+    <default expression="" field="source" applyOnUpdate="0"/>
+    <default expression="" field="source:access" applyOnUpdate="0"/>
+    <default expression="" field="source:alt_name" applyOnUpdate="0"/>
+    <default expression="" field="source:bicycle" applyOnUpdate="0"/>
+    <default expression="" field="source:bing" applyOnUpdate="0"/>
+    <default expression="" field="source:cycleway" applyOnUpdate="0"/>
+    <default expression="" field="source:designation" applyOnUpdate="0"/>
+    <default expression="" field="source:destination" applyOnUpdate="0"/>
+    <default expression="" field="source:geometry" applyOnUpdate="0"/>
+    <default expression="" field="source:hgv" applyOnUpdate="0"/>
+    <default expression="" field="source:highway" applyOnUpdate="0"/>
+    <default expression="" field="source:lanes" applyOnUpdate="0"/>
+    <default expression="" field="source:lcn" applyOnUpdate="0"/>
+    <default expression="" field="source:lit" applyOnUpdate="0"/>
+    <default expression="" field="source:maxheight" applyOnUpdate="0"/>
+    <default expression="" field="source:maxspeed" applyOnUpdate="0"/>
+    <default expression="" field="source:maxweight" applyOnUpdate="0"/>
+    <default expression="" field="source:maxweightrating" applyOnUpdate="0"/>
+    <default expression="" field="source:maxweightrating:hgv" applyOnUpdate="0"/>
+    <default expression="" field="source:maxwidth" applyOnUpdate="0"/>
+    <default expression="" field="source:name" applyOnUpdate="0"/>
+    <default expression="" field="source:not:name" applyOnUpdate="0"/>
+    <default expression="" field="source:old_name" applyOnUpdate="0"/>
+    <default expression="" field="source:oneway" applyOnUpdate="0"/>
+    <default expression="" field="source:oneway:bicycle" applyOnUpdate="0"/>
+    <default expression="" field="source:postal_code" applyOnUpdate="0"/>
+    <default expression="" field="source:proposed:oneway" applyOnUpdate="0"/>
+    <default expression="" field="source:prow_ref" applyOnUpdate="0"/>
+    <default expression="" field="source:rcn" applyOnUpdate="0"/>
+    <default expression="" field="source:ref" applyOnUpdate="0"/>
+    <default expression="" field="source:track" applyOnUpdate="0"/>
+    <default expression="" field="source:traffic_intervention" applyOnUpdate="0"/>
+    <default expression="" field="source:width" applyOnUpdate="0"/>
+    <default expression="" field="source_ref" applyOnUpdate="0"/>
+    <default expression="" field="source_ref:name" applyOnUpdate="0"/>
+    <default expression="" field="source_ref:ref" applyOnUpdate="0"/>
+    <default expression="" field="stairs:endline" applyOnUpdate="0"/>
+    <default expression="" field="stairs:startline" applyOnUpdate="0"/>
+    <default expression="" field="start_date" applyOnUpdate="0"/>
+    <default expression="" field="state" applyOnUpdate="0"/>
+    <default expression="" field="step_count" applyOnUpdate="0"/>
+    <default expression="" field="steps" applyOnUpdate="0"/>
+    <default expression="" field="stile" applyOnUpdate="0"/>
+    <default expression="" field="surface" applyOnUpdate="0"/>
+    <default expression="" field="surface:colour" applyOnUpdate="0"/>
+    <default expression="" field="surface:note" applyOnUpdate="0"/>
+    <default expression="" field="survey:date" applyOnUpdate="0"/>
+    <default expression="" field="surveying_authority" applyOnUpdate="0"/>
+    <default expression="" field="tactile_paving" applyOnUpdate="0"/>
+    <default expression="" field="taxi" applyOnUpdate="0"/>
+    <default expression="" field="temporary:highway" applyOnUpdate="0"/>
+    <default expression="" field="toilets" applyOnUpdate="0"/>
+    <default expression="" field="toilets:wheelchair" applyOnUpdate="0"/>
+    <default expression="" field="toll" applyOnUpdate="0"/>
+    <default expression="" field="tourism" applyOnUpdate="0"/>
+    <default expression="" field="towpath" applyOnUpdate="0"/>
+    <default expression="" field="tracktype" applyOnUpdate="0"/>
+    <default expression="" field="traffic_calming" applyOnUpdate="0"/>
+    <default expression="" field="traffic_calming:check_date" applyOnUpdate="0"/>
+    <default expression="" field="traffic_intervention" applyOnUpdate="0"/>
+    <default expression="" field="traffic_signals" applyOnUpdate="0"/>
+    <default expression="" field="traffic_signals:direction" applyOnUpdate="0"/>
+    <default expression="" field="traffic_signals:sound" applyOnUpdate="0"/>
+    <default expression="" field="traffic_signals:vibration" applyOnUpdate="0"/>
+    <default expression="" field="trail_visibility" applyOnUpdate="0"/>
+    <default expression="" field="tree_lined" applyOnUpdate="0"/>
+    <default expression="" field="tunnel" applyOnUpdate="0"/>
+    <default expression="" field="tunnel:name" applyOnUpdate="0"/>
+    <default expression="" field="tunnel:short_name" applyOnUpdate="0"/>
+    <default expression="" field="turn" applyOnUpdate="0"/>
+    <default expression="" field="turn:lanes" applyOnUpdate="0"/>
+    <default expression="" field="turn:lanes:backward" applyOnUpdate="0"/>
+    <default expression="" field="turn:lanes:forward" applyOnUpdate="0"/>
+    <default expression="" field="unsigned" applyOnUpdate="0"/>
+    <default expression="" field="validate" applyOnUpdate="0"/>
+    <default expression="" field="vehicle" applyOnUpdate="0"/>
+    <default expression="" field="vehicle:lanes" applyOnUpdate="0"/>
+    <default expression="" field="vehicle:lanes:forward" applyOnUpdate="0"/>
+    <default expression="" field="verge" applyOnUpdate="0"/>
+    <default expression="" field="verge:left" applyOnUpdate="0"/>
+    <default expression="" field="verge:right" applyOnUpdate="0"/>
+    <default expression="" field="virtual" applyOnUpdate="0"/>
+    <default expression="" field="was:bicycle" applyOnUpdate="0"/>
+    <default expression="" field="was:covered" applyOnUpdate="0"/>
+    <default expression="" field="was:cycleway:left" applyOnUpdate="0"/>
+    <default expression="" field="was:cycleway:right" applyOnUpdate="0"/>
+    <default expression="" field="was:highway" applyOnUpdate="0"/>
+    <default expression="" field="was:lanes" applyOnUpdate="0"/>
+    <default expression="" field="was:oneway" applyOnUpdate="0"/>
+    <default expression="" field="was:ref" applyOnUpdate="0"/>
+    <default expression="" field="was:segregated" applyOnUpdate="0"/>
+    <default expression="" field="watch:80n" applyOnUpdate="0"/>
+    <default expression="" field="water" applyOnUpdate="0"/>
+    <default expression="" field="website" applyOnUpdate="0"/>
+    <default expression="" field="wheelchair" applyOnUpdate="0"/>
+    <default expression="" field="width" applyOnUpdate="0"/>
+    <default expression="" field="wikidata" applyOnUpdate="0"/>
+    <default expression="" field="wikipedia" applyOnUpdate="0"/>
   </defaults>
   <constraints>
-    <constraint field="FIXME" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="HE_ref" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="WARNING" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="access" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="access:conditional" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="access:lanes:backward" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="access:note" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="access:source" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="access:survey:date" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="active_traffic_management" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="addr:city" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="addr:housename" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="addr:housenumber" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="addr:interpolation" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="addr:postcode" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="addr:street" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="aeroway" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="agricultural" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="airside" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="alt_name" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="alt_name:en" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="amenity" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="area" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="barrier" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="bench" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="bicycle" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="bicycle:conditional" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="bicycle:lanes" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="bicycle:lanes:forward" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="bin" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="bing" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="bollard" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="borough" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="bridge" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="bridge:alt_name" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="bridge:alt_name:wikidata" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="bridge:movable" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="bridge:name" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="bridge:name:wikidata" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="bridge:ref" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="bridge:structure" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="bridge_ref" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="building" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="building:levels" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="bus" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="bus:lanes" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="bus:lanes:backward" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="bus:lanes:forward" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="bus_bay" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="busway" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="busway:both" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="busway:conditional" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="busway:left" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="busway:right" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="button_operated" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="car" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="carriageway_ref" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="caution" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="cesspit" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="change" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="change:lanes" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="changing_table" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="charge" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="check_date" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="check_date:cycleway" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="check_date:cycleway:surface" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="check_date:handrail" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="check_date:lit" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="check_date:ramp" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="check_date:sidewalk" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="check_date:sidewalk:surface" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="check_date:smoothness" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="check_date:surface" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="check_date:tactile_paving" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="coach" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="colour" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="complete" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="construction" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="construction_contract_name" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="construction_method" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="contact:phone" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="conveying" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="cover" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="covered" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="created_by" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="crossing" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="crossing:continuous" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="crossing:island" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="crossing:markings" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="crossing:signals" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="crossing_ref" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="cutline" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="cutting" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="cycle_network" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="cyclestreets_id" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="cycleway" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="cycleway:both" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="cycleway:both:lane" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="cycleway:both:oneway" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="cycleway:conditional" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="cycleway:lane" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="cycleway:lanes" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="cycleway:left" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="cycleway:left:doorzone" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="cycleway:left:lane" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="cycleway:left:oneway" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="cycleway:left:segregated" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="cycleway:left:track" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="cycleway:left:width" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="cycleway:note" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="cycleway:right" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="cycleway:right:buffer" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="cycleway:right:lane" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="cycleway:right:oneway" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="cycleway:right:separation:left" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="cycleway:right:separation:right" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="cycleway:right:track" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="cycleway:right:width" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="cycleway:segregated" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="cycleway:surface" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="cycleway:width" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="delivery" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="departures_board" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="description" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="designation" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="destination" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="destination:backward" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="destination:forward" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="destination:lanes" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="destination:lanes:forward" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="destination:ref" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="destination:ref:forward" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="destination:ref:lanes" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="destination:ref:lanes:forward" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="destination:ref:to" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="destination:ref:to:lanes" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="destination:symbol" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="destination:symbol:lanes" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="diameter" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="direction" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="disabled" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="disused" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="disused:bicycle" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="disused:bus" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="disused:dual_carriageway" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="disused:foot" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="disused:highway" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="disused:lanes" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="disused:oneway" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="disused:ref" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="disused:tunnel" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="dog" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="driving_side" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="dual_carriageway" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="ele" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="electrified" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="embankment" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="emergency" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="entrance" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="est_width" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="expressway" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="fee" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="fence_type" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="fixme" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="flood_prone" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="foot" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="footway" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="footway:surface" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="ford" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="funeral_vehicles" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="gated" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="golf" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="golf_cart" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="goods" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="handrail" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="handrail:center" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="handrail:left" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="handrail:right" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="hazard" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="he:inscription_date" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="height" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="heritage" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="heritage:operator" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="heritage:operator:wikidata" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="heritage:website" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="hgv" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="hgv:note" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="highway" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="highway_1" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="highway_authority_ref" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="highways_england:area" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="historic" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="historic:highway" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="horse" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="horse_scale" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="hour_off" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="hour_on" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="hov" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="image" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="incline" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="incorrect_name" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="indoor" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="informal" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="int_name" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="internal_diameter" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="internet_access" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="is_in" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="is_in:borough" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="is_in:district" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="is_in:suburb" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="is_sidepath" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="is_sidepath:of:name" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="junction" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="junction:ref" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="kerb" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="landuse" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="lane_markings" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="lane_markings:backward" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="lane_markings:forward" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="lanes" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="lanes:backward" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="lanes:bus" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="lanes:bus:forward" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="lanes:forward" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="lanes:left" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="lanes:psv" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="lanes:psv:backward" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="lanes:psv:backward:right" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="lanes:psv:forward" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="layer" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="lcn" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="leisure" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="length" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="level" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="level:ref" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="listed_status" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="lit" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="lit:note" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="loc_name" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="loc_ref" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="locals" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="location" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="long_vehicles" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="man_made" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="marked" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="material" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="maxaxleload" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="maxgcweightrating:goods" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="maxgcweightrating:hgv" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="maxgcweightrating:hgv:conditional" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="maxgcwrating:hgv" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="maxheight" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="maxheight:imperial" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="maxheight:note" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="maxheight:physical" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="maxheight:signed" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="maxspeed" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="maxspeed:advisory" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="maxspeed:backward" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="maxspeed:bicycle" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="maxspeed:enforcement" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="maxspeed:forward" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="maxspeed:lanes" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="maxspeed:proposed" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="maxspeed:type" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="maxspeed:variable" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="maxweight" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="maxweight:conditional" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="maxweight:hgv" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="maxweight:hgv:conditional" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="maxweight:signed" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="maxweightrating" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="maxweightrating:hgv" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="maxweightrating:hgv:conditional" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="maxwidth" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="mkgmap:flare-check" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="mooring" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="motor_vehicle" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="motor_vehicle:backward" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="motor_vehicle:conditional" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="motor_vehicle:lanes" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="motorcar" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="motorcycle" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="motorroad" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="motorway" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="mtb:scale" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="mtb:scale:imba" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="name" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="name:cy" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="name:en" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="name:left" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="name:note" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="name:right" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="name:ru" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="name:signed" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="name:source" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="name:survey:date" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="narrow" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="national_highways:area" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="natural" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="noexit" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="noname" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="not:junction" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="not:name" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="note" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="note:access" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="note:alt_name" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="note:covid19" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="note:cycle" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="note:cycleway" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="note:designation" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="note:lcn" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="note:lit" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="note:name" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="obstacle" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="office" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="official_ref" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="old_name" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="old_ref" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="oneway" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="oneway:bicycle" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="oneway:bus" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="oneway:emergency" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="oneway:foot" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="oneway:horse" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="oneway:psv" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="oneway_type" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="opening_date" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="opening_hours" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="operator" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="operator:type" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="operator:wikidata" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="osmc:symbol" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="overtaking" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="overtaking:motor_vehicle" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="ownership" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="parking" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="parking:both" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="parking:both:access" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="parking:both:authentication:ticket:conditional" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="parking:both:markings" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="parking:both:orientation" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="parking:both:restriction" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="parking:both:restriction:conditional" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="parking:both:restriction:reason" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="parking:both:zone" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="parking:both:zone:residents" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="parking:condition:both" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="parking:lane" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="parking:lane:both" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="parking:lane:both:parallel" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="parking:lane:left" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="parking:lane:right" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="parking:lane:right:parallel" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="parking:left" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="parking:left:access" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="parking:left:bus" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="parking:left:markings" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="parking:left:orientation" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="parking:left:restriction" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="parking:left:restriction:reason" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="parking:left:zone" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="parking:right" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="parking:right:access" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="parking:right:capacity" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="parking:right:fee" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="parking:right:fee:conditional" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="parking:right:markings" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="parking:right:orientation" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="parking:right:restriction" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="parking:right:restriction:reason" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="parking:right:zone" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="passing_places" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="path" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="paved" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="paving_stones:material" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="place" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="placement" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="placement:backward" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="platform_lift" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="police" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="postal_code" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="presumed_designation" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="priority" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="proposed" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="proposed:bicycle" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="proposed:cycleway" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="proposed:cycleway:left" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="proposed:cycleway:left:oneway" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="proposed:cycleway:right" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="proposed:cycleway:right:oneway" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="proposed:foot" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="proposed:footway" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="proposed:highway" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="proposed:maxspeed" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="proposed:oneway" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="proposed:oneway:bicycle" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="proposed:segregated" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="proposed:traffic_intervention" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="prow_ref" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="psv" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="psv:lanes" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="psv:lanes:backward" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="psv:lanes:forward" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="psv:right" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="public_transport" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="railing" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="ramp" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="ramp:bicycle" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="ramp:wheelchair" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="rcn" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="ref" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="ref:22406366" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="ref:GB:nhle" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="ref:GB:tflcid" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="ref:GB:uprn" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="ref:GB:usrn" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="ref:he" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="ref:source" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="ref:tfl" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="repair" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="roof:colour" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="roof:shape" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="roundabout" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="route" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="segregated" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="separation:left" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="separation:right" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="service" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="service_1" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="shelter" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="shelter_type" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="shop" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="short_name" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="shoulder" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="shower" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="sidewalk" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="sidewalk:both" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="sidewalk:both:surface" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="sidewalk:left" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="sidewalk:left:surface" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="sidewalk:left:wheelchair" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="sidewalk:note" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="sidewalk:right" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="sidewalk:right:surface" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="sign_information" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="signed:ref" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="sloped_curb" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="smoothness" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="smoothness:date" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="source" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="source:access" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="source:alt_name" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="source:bicycle" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="source:bing" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="source:cycleway" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="source:designation" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="source:destination" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="source:geometry" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="source:hgv" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="source:highway" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="source:lanes" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="source:lcn" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="source:lit" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="source:maxheight" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="source:maxspeed" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="source:maxweight" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="source:maxweightrating" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="source:maxweightrating:hgv" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="source:maxwidth" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="source:name" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="source:not:name" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="source:old_name" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="source:oneway" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="source:oneway:bicycle" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="source:postal_code" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="source:proposed:oneway" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="source:prow_ref" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="source:rcn" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="source:ref" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="source:track" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="source:traffic_intervention" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="source:width" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="source_ref" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="source_ref:name" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="source_ref:ref" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="stairs:endline" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="stairs:startline" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="start_date" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="state" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="step_count" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="steps" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="stile" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="surface" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="surface:colour" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="surface:note" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="survey:date" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="surveying_authority" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="tactile_paving" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="taxi" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="temporary:highway" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="toilets" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="toilets:wheelchair" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="toll" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="tourism" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="towpath" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="tracktype" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="traffic_calming" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="traffic_calming:check_date" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="traffic_intervention" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="traffic_signals" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="traffic_signals:direction" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="traffic_signals:sound" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="traffic_signals:vibration" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="trail_visibility" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="tree_lined" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="tunnel" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="tunnel:name" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="tunnel:short_name" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="turn" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="turn:lanes" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="turn:lanes:backward" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="turn:lanes:forward" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="unsigned" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="validate" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="vehicle" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="vehicle:lanes" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="vehicle:lanes:forward" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="verge" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="verge:left" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="verge:right" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="virtual" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="was:bicycle" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="was:covered" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="was:cycleway:left" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="was:cycleway:right" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="was:highway" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="was:lanes" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="was:oneway" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="was:ref" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="was:segregated" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="watch:80n" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="water" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="website" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="wheelchair" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="width" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="wikidata" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
-    <constraint field="wikipedia" notnull_strength="0" exp_strength="0" unique_strength="0" constraints="0"/>
+    <constraint constraints="0" field="FIXME" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="HE_ref" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="WARNING" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="access" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="access:conditional" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="access:lanes:backward" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="access:note" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="access:source" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="access:survey:date" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="active_traffic_management" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="addr:city" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="addr:housename" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="addr:housenumber" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="addr:interpolation" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="addr:postcode" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="addr:street" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="aeroway" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="agricultural" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="airside" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="alt_name" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="alt_name:en" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="amenity" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="area" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="barrier" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="bench" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="bicycle" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="bicycle:conditional" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="bicycle:lanes" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="bicycle:lanes:forward" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="bin" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="bing" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="bollard" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="borough" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="bridge" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="bridge:alt_name" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="bridge:alt_name:wikidata" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="bridge:movable" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="bridge:name" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="bridge:name:wikidata" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="bridge:ref" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="bridge:structure" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="bridge_ref" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="building" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="building:levels" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="bus" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="bus:lanes" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="bus:lanes:backward" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="bus:lanes:forward" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="bus_bay" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="busway" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="busway:both" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="busway:conditional" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="busway:left" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="busway:right" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="button_operated" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="car" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="carriageway_ref" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="caution" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="cesspit" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="change" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="change:lanes" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="changing_table" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="charge" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="check_date" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="check_date:cycleway" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="check_date:cycleway:surface" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="check_date:handrail" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="check_date:lit" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="check_date:ramp" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="check_date:sidewalk" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="check_date:sidewalk:surface" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="check_date:smoothness" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="check_date:surface" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="check_date:tactile_paving" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="coach" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="colour" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="complete" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="construction" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="construction_contract_name" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="construction_method" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="contact:phone" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="conveying" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="cover" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="covered" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="created_by" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="crossing" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="crossing:continuous" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="crossing:island" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="crossing:markings" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="crossing:signals" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="crossing_ref" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="cutline" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="cutting" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="cycle_network" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="cyclestreets_id" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="cycleway" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="cycleway:both" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="cycleway:both:lane" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="cycleway:both:oneway" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="cycleway:conditional" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="cycleway:lane" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="cycleway:lanes" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="cycleway:left" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="cycleway:left:doorzone" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="cycleway:left:lane" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="cycleway:left:oneway" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="cycleway:left:segregated" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="cycleway:left:track" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="cycleway:left:width" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="cycleway:note" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="cycleway:right" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="cycleway:right:buffer" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="cycleway:right:lane" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="cycleway:right:oneway" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="cycleway:right:separation:left" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="cycleway:right:separation:right" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="cycleway:right:track" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="cycleway:right:width" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="cycleway:segregated" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="cycleway:surface" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="cycleway:width" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="delivery" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="departures_board" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="description" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="designation" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="destination" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="destination:backward" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="destination:forward" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="destination:lanes" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="destination:lanes:forward" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="destination:ref" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="destination:ref:forward" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="destination:ref:lanes" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="destination:ref:lanes:forward" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="destination:ref:to" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="destination:ref:to:lanes" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="destination:symbol" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="destination:symbol:lanes" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="diameter" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="direction" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="disabled" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="disused" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="disused:bicycle" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="disused:bus" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="disused:dual_carriageway" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="disused:foot" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="disused:highway" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="disused:lanes" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="disused:oneway" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="disused:ref" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="disused:tunnel" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="dog" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="driving_side" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="dual_carriageway" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="ele" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="electrified" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="embankment" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="emergency" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="entrance" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="est_width" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="expressway" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="fee" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="fence_type" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="fixme" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="flood_prone" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="foot" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="footway" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="footway:surface" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="ford" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="funeral_vehicles" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="gated" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="golf" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="golf_cart" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="goods" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="handrail" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="handrail:center" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="handrail:left" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="handrail:right" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="hazard" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="he:inscription_date" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="height" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="heritage" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="heritage:operator" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="heritage:operator:wikidata" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="heritage:website" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="hgv" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="hgv:note" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="highway" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="highway_1" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="highway_authority_ref" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="highways_england:area" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="historic" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="historic:highway" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="horse" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="horse_scale" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="hour_off" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="hour_on" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="hov" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="image" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="incline" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="incorrect_name" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="indoor" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="informal" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="int_name" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="internal_diameter" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="internet_access" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="is_in" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="is_in:borough" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="is_in:district" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="is_in:suburb" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="is_sidepath" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="is_sidepath:of:name" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="junction" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="junction:ref" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="kerb" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="landuse" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="lane_markings" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="lane_markings:backward" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="lane_markings:forward" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="lanes" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="lanes:backward" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="lanes:bus" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="lanes:bus:forward" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="lanes:forward" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="lanes:left" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="lanes:psv" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="lanes:psv:backward" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="lanes:psv:backward:right" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="lanes:psv:forward" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="layer" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="lcn" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="leisure" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="length" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="level" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="level:ref" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="listed_status" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="lit" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="lit:note" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="loc_name" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="loc_ref" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="locals" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="location" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="long_vehicles" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="man_made" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="marked" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="material" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="maxaxleload" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="maxgcweightrating:goods" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="maxgcweightrating:hgv" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="maxgcweightrating:hgv:conditional" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="maxgcwrating:hgv" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="maxheight" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="maxheight:imperial" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="maxheight:note" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="maxheight:physical" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="maxheight:signed" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="maxspeed" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="maxspeed:advisory" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="maxspeed:backward" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="maxspeed:bicycle" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="maxspeed:enforcement" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="maxspeed:forward" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="maxspeed:lanes" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="maxspeed:proposed" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="maxspeed:type" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="maxspeed:variable" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="maxweight" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="maxweight:conditional" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="maxweight:hgv" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="maxweight:hgv:conditional" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="maxweight:signed" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="maxweightrating" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="maxweightrating:hgv" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="maxweightrating:hgv:conditional" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="maxwidth" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="mkgmap:flare-check" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="mooring" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="motor_vehicle" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="motor_vehicle:backward" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="motor_vehicle:conditional" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="motor_vehicle:lanes" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="motorcar" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="motorcycle" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="motorroad" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="motorway" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="mtb:scale" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="mtb:scale:imba" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="name" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="name:cy" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="name:en" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="name:left" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="name:note" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="name:right" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="name:ru" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="name:signed" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="name:source" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="name:survey:date" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="narrow" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="national_highways:area" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="natural" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="noexit" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="noname" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="not:junction" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="not:name" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="note" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="note:access" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="note:alt_name" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="note:covid19" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="note:cycle" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="note:cycleway" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="note:designation" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="note:lcn" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="note:lit" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="note:name" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="obstacle" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="office" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="official_ref" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="old_name" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="old_ref" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="oneway" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="oneway:bicycle" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="oneway:bus" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="oneway:emergency" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="oneway:foot" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="oneway:horse" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="oneway:psv" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="oneway_type" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="opening_date" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="opening_hours" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="operator" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="operator:type" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="operator:wikidata" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="osmc:symbol" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="overtaking" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="overtaking:motor_vehicle" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="ownership" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="parking" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="parking:both" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="parking:both:access" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="parking:both:authentication:ticket:conditional" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="parking:both:markings" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="parking:both:orientation" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="parking:both:restriction" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="parking:both:restriction:conditional" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="parking:both:restriction:reason" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="parking:both:zone" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="parking:both:zone:residents" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="parking:condition:both" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="parking:lane" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="parking:lane:both" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="parking:lane:both:parallel" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="parking:lane:left" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="parking:lane:right" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="parking:lane:right:parallel" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="parking:left" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="parking:left:access" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="parking:left:bus" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="parking:left:markings" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="parking:left:orientation" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="parking:left:restriction" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="parking:left:restriction:reason" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="parking:left:zone" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="parking:right" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="parking:right:access" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="parking:right:capacity" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="parking:right:fee" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="parking:right:fee:conditional" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="parking:right:markings" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="parking:right:orientation" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="parking:right:restriction" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="parking:right:restriction:reason" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="parking:right:zone" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="passing_places" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="path" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="paved" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="paving_stones:material" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="place" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="placement" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="placement:backward" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="platform_lift" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="police" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="postal_code" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="presumed_designation" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="priority" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="proposed" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="proposed:bicycle" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="proposed:cycleway" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="proposed:cycleway:left" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="proposed:cycleway:left:oneway" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="proposed:cycleway:right" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="proposed:cycleway:right:oneway" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="proposed:foot" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="proposed:footway" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="proposed:highway" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="proposed:maxspeed" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="proposed:oneway" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="proposed:oneway:bicycle" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="proposed:segregated" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="proposed:traffic_intervention" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="prow_ref" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="psv" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="psv:lanes" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="psv:lanes:backward" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="psv:lanes:forward" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="psv:right" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="public_transport" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="railing" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="ramp" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="ramp:bicycle" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="ramp:wheelchair" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="rcn" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="ref" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="ref:22406366" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="ref:GB:nhle" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="ref:GB:tflcid" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="ref:GB:uprn" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="ref:GB:usrn" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="ref:he" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="ref:source" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="ref:tfl" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="repair" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="roof:colour" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="roof:shape" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="roundabout" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="route" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="segregated" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="separation:left" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="separation:right" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="service" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="service_1" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="shelter" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="shelter_type" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="shop" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="short_name" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="shoulder" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="shower" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="sidewalk" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="sidewalk:both" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="sidewalk:both:surface" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="sidewalk:left" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="sidewalk:left:surface" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="sidewalk:left:wheelchair" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="sidewalk:note" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="sidewalk:right" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="sidewalk:right:surface" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="sign_information" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="signed:ref" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="sloped_curb" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="smoothness" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="smoothness:date" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="source" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="source:access" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="source:alt_name" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="source:bicycle" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="source:bing" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="source:cycleway" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="source:designation" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="source:destination" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="source:geometry" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="source:hgv" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="source:highway" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="source:lanes" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="source:lcn" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="source:lit" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="source:maxheight" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="source:maxspeed" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="source:maxweight" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="source:maxweightrating" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="source:maxweightrating:hgv" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="source:maxwidth" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="source:name" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="source:not:name" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="source:old_name" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="source:oneway" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="source:oneway:bicycle" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="source:postal_code" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="source:proposed:oneway" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="source:prow_ref" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="source:rcn" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="source:ref" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="source:track" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="source:traffic_intervention" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="source:width" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="source_ref" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="source_ref:name" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="source_ref:ref" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="stairs:endline" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="stairs:startline" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="start_date" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="state" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="step_count" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="steps" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="stile" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="surface" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="surface:colour" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="surface:note" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="survey:date" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="surveying_authority" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="tactile_paving" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="taxi" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="temporary:highway" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="toilets" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="toilets:wheelchair" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="toll" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="tourism" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="towpath" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="tracktype" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="traffic_calming" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="traffic_calming:check_date" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="traffic_intervention" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="traffic_signals" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="traffic_signals:direction" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="traffic_signals:sound" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="traffic_signals:vibration" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="trail_visibility" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="tree_lined" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="tunnel" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="tunnel:name" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="tunnel:short_name" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="turn" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="turn:lanes" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="turn:lanes:backward" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="turn:lanes:forward" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="unsigned" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="validate" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="vehicle" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="vehicle:lanes" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="vehicle:lanes:forward" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="verge" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="verge:left" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="verge:right" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="virtual" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="was:bicycle" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="was:covered" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="was:cycleway:left" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="was:cycleway:right" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="was:highway" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="was:lanes" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="was:oneway" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="was:ref" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="was:segregated" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="watch:80n" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="water" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="website" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="wheelchair" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="width" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="wikidata" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" field="wikipedia" unique_strength="0" notnull_strength="0" exp_strength="0"/>
   </constraints>
   <constraintExpressions>
-    <constraint field="FIXME" desc="" exp=""/>
-    <constraint field="HE_ref" desc="" exp=""/>
-    <constraint field="WARNING" desc="" exp=""/>
-    <constraint field="access" desc="" exp=""/>
-    <constraint field="access:conditional" desc="" exp=""/>
-    <constraint field="access:lanes:backward" desc="" exp=""/>
-    <constraint field="access:note" desc="" exp=""/>
-    <constraint field="access:source" desc="" exp=""/>
-    <constraint field="access:survey:date" desc="" exp=""/>
-    <constraint field="active_traffic_management" desc="" exp=""/>
-    <constraint field="addr:city" desc="" exp=""/>
-    <constraint field="addr:housename" desc="" exp=""/>
-    <constraint field="addr:housenumber" desc="" exp=""/>
-    <constraint field="addr:interpolation" desc="" exp=""/>
-    <constraint field="addr:postcode" desc="" exp=""/>
-    <constraint field="addr:street" desc="" exp=""/>
-    <constraint field="aeroway" desc="" exp=""/>
-    <constraint field="agricultural" desc="" exp=""/>
-    <constraint field="airside" desc="" exp=""/>
-    <constraint field="alt_name" desc="" exp=""/>
-    <constraint field="alt_name:en" desc="" exp=""/>
-    <constraint field="amenity" desc="" exp=""/>
-    <constraint field="area" desc="" exp=""/>
-    <constraint field="barrier" desc="" exp=""/>
-    <constraint field="bench" desc="" exp=""/>
-    <constraint field="bicycle" desc="" exp=""/>
-    <constraint field="bicycle:conditional" desc="" exp=""/>
-    <constraint field="bicycle:lanes" desc="" exp=""/>
-    <constraint field="bicycle:lanes:forward" desc="" exp=""/>
-    <constraint field="bin" desc="" exp=""/>
-    <constraint field="bing" desc="" exp=""/>
-    <constraint field="bollard" desc="" exp=""/>
-    <constraint field="borough" desc="" exp=""/>
-    <constraint field="bridge" desc="" exp=""/>
-    <constraint field="bridge:alt_name" desc="" exp=""/>
-    <constraint field="bridge:alt_name:wikidata" desc="" exp=""/>
-    <constraint field="bridge:movable" desc="" exp=""/>
-    <constraint field="bridge:name" desc="" exp=""/>
-    <constraint field="bridge:name:wikidata" desc="" exp=""/>
-    <constraint field="bridge:ref" desc="" exp=""/>
-    <constraint field="bridge:structure" desc="" exp=""/>
-    <constraint field="bridge_ref" desc="" exp=""/>
-    <constraint field="building" desc="" exp=""/>
-    <constraint field="building:levels" desc="" exp=""/>
-    <constraint field="bus" desc="" exp=""/>
-    <constraint field="bus:lanes" desc="" exp=""/>
-    <constraint field="bus:lanes:backward" desc="" exp=""/>
-    <constraint field="bus:lanes:forward" desc="" exp=""/>
-    <constraint field="bus_bay" desc="" exp=""/>
-    <constraint field="busway" desc="" exp=""/>
-    <constraint field="busway:both" desc="" exp=""/>
-    <constraint field="busway:conditional" desc="" exp=""/>
-    <constraint field="busway:left" desc="" exp=""/>
-    <constraint field="busway:right" desc="" exp=""/>
-    <constraint field="button_operated" desc="" exp=""/>
-    <constraint field="car" desc="" exp=""/>
-    <constraint field="carriageway_ref" desc="" exp=""/>
-    <constraint field="caution" desc="" exp=""/>
-    <constraint field="cesspit" desc="" exp=""/>
-    <constraint field="change" desc="" exp=""/>
-    <constraint field="change:lanes" desc="" exp=""/>
-    <constraint field="changing_table" desc="" exp=""/>
-    <constraint field="charge" desc="" exp=""/>
-    <constraint field="check_date" desc="" exp=""/>
-    <constraint field="check_date:cycleway" desc="" exp=""/>
-    <constraint field="check_date:cycleway:surface" desc="" exp=""/>
-    <constraint field="check_date:handrail" desc="" exp=""/>
-    <constraint field="check_date:lit" desc="" exp=""/>
-    <constraint field="check_date:ramp" desc="" exp=""/>
-    <constraint field="check_date:sidewalk" desc="" exp=""/>
-    <constraint field="check_date:sidewalk:surface" desc="" exp=""/>
-    <constraint field="check_date:smoothness" desc="" exp=""/>
-    <constraint field="check_date:surface" desc="" exp=""/>
-    <constraint field="check_date:tactile_paving" desc="" exp=""/>
-    <constraint field="coach" desc="" exp=""/>
-    <constraint field="colour" desc="" exp=""/>
-    <constraint field="complete" desc="" exp=""/>
-    <constraint field="construction" desc="" exp=""/>
-    <constraint field="construction_contract_name" desc="" exp=""/>
-    <constraint field="construction_method" desc="" exp=""/>
-    <constraint field="contact:phone" desc="" exp=""/>
-    <constraint field="conveying" desc="" exp=""/>
-    <constraint field="cover" desc="" exp=""/>
-    <constraint field="covered" desc="" exp=""/>
-    <constraint field="created_by" desc="" exp=""/>
-    <constraint field="crossing" desc="" exp=""/>
-    <constraint field="crossing:continuous" desc="" exp=""/>
-    <constraint field="crossing:island" desc="" exp=""/>
-    <constraint field="crossing:markings" desc="" exp=""/>
-    <constraint field="crossing:signals" desc="" exp=""/>
-    <constraint field="crossing_ref" desc="" exp=""/>
-    <constraint field="cutline" desc="" exp=""/>
-    <constraint field="cutting" desc="" exp=""/>
-    <constraint field="cycle_network" desc="" exp=""/>
-    <constraint field="cyclestreets_id" desc="" exp=""/>
-    <constraint field="cycleway" desc="" exp=""/>
-    <constraint field="cycleway:both" desc="" exp=""/>
-    <constraint field="cycleway:both:lane" desc="" exp=""/>
-    <constraint field="cycleway:both:oneway" desc="" exp=""/>
-    <constraint field="cycleway:conditional" desc="" exp=""/>
-    <constraint field="cycleway:lane" desc="" exp=""/>
-    <constraint field="cycleway:lanes" desc="" exp=""/>
-    <constraint field="cycleway:left" desc="" exp=""/>
-    <constraint field="cycleway:left:doorzone" desc="" exp=""/>
-    <constraint field="cycleway:left:lane" desc="" exp=""/>
-    <constraint field="cycleway:left:oneway" desc="" exp=""/>
-    <constraint field="cycleway:left:segregated" desc="" exp=""/>
-    <constraint field="cycleway:left:track" desc="" exp=""/>
-    <constraint field="cycleway:left:width" desc="" exp=""/>
-    <constraint field="cycleway:note" desc="" exp=""/>
-    <constraint field="cycleway:right" desc="" exp=""/>
-    <constraint field="cycleway:right:buffer" desc="" exp=""/>
-    <constraint field="cycleway:right:lane" desc="" exp=""/>
-    <constraint field="cycleway:right:oneway" desc="" exp=""/>
-    <constraint field="cycleway:right:separation:left" desc="" exp=""/>
-    <constraint field="cycleway:right:separation:right" desc="" exp=""/>
-    <constraint field="cycleway:right:track" desc="" exp=""/>
-    <constraint field="cycleway:right:width" desc="" exp=""/>
-    <constraint field="cycleway:segregated" desc="" exp=""/>
-    <constraint field="cycleway:surface" desc="" exp=""/>
-    <constraint field="cycleway:width" desc="" exp=""/>
-    <constraint field="delivery" desc="" exp=""/>
-    <constraint field="departures_board" desc="" exp=""/>
-    <constraint field="description" desc="" exp=""/>
-    <constraint field="designation" desc="" exp=""/>
-    <constraint field="destination" desc="" exp=""/>
-    <constraint field="destination:backward" desc="" exp=""/>
-    <constraint field="destination:forward" desc="" exp=""/>
-    <constraint field="destination:lanes" desc="" exp=""/>
-    <constraint field="destination:lanes:forward" desc="" exp=""/>
-    <constraint field="destination:ref" desc="" exp=""/>
-    <constraint field="destination:ref:forward" desc="" exp=""/>
-    <constraint field="destination:ref:lanes" desc="" exp=""/>
-    <constraint field="destination:ref:lanes:forward" desc="" exp=""/>
-    <constraint field="destination:ref:to" desc="" exp=""/>
-    <constraint field="destination:ref:to:lanes" desc="" exp=""/>
-    <constraint field="destination:symbol" desc="" exp=""/>
-    <constraint field="destination:symbol:lanes" desc="" exp=""/>
-    <constraint field="diameter" desc="" exp=""/>
-    <constraint field="direction" desc="" exp=""/>
-    <constraint field="disabled" desc="" exp=""/>
-    <constraint field="disused" desc="" exp=""/>
-    <constraint field="disused:bicycle" desc="" exp=""/>
-    <constraint field="disused:bus" desc="" exp=""/>
-    <constraint field="disused:dual_carriageway" desc="" exp=""/>
-    <constraint field="disused:foot" desc="" exp=""/>
-    <constraint field="disused:highway" desc="" exp=""/>
-    <constraint field="disused:lanes" desc="" exp=""/>
-    <constraint field="disused:oneway" desc="" exp=""/>
-    <constraint field="disused:ref" desc="" exp=""/>
-    <constraint field="disused:tunnel" desc="" exp=""/>
-    <constraint field="dog" desc="" exp=""/>
-    <constraint field="driving_side" desc="" exp=""/>
-    <constraint field="dual_carriageway" desc="" exp=""/>
-    <constraint field="ele" desc="" exp=""/>
-    <constraint field="electrified" desc="" exp=""/>
-    <constraint field="embankment" desc="" exp=""/>
-    <constraint field="emergency" desc="" exp=""/>
-    <constraint field="entrance" desc="" exp=""/>
-    <constraint field="est_width" desc="" exp=""/>
-    <constraint field="expressway" desc="" exp=""/>
-    <constraint field="fee" desc="" exp=""/>
-    <constraint field="fence_type" desc="" exp=""/>
-    <constraint field="fixme" desc="" exp=""/>
-    <constraint field="flood_prone" desc="" exp=""/>
-    <constraint field="foot" desc="" exp=""/>
-    <constraint field="footway" desc="" exp=""/>
-    <constraint field="footway:surface" desc="" exp=""/>
-    <constraint field="ford" desc="" exp=""/>
-    <constraint field="funeral_vehicles" desc="" exp=""/>
-    <constraint field="gated" desc="" exp=""/>
-    <constraint field="golf" desc="" exp=""/>
-    <constraint field="golf_cart" desc="" exp=""/>
-    <constraint field="goods" desc="" exp=""/>
-    <constraint field="handrail" desc="" exp=""/>
-    <constraint field="handrail:center" desc="" exp=""/>
-    <constraint field="handrail:left" desc="" exp=""/>
-    <constraint field="handrail:right" desc="" exp=""/>
-    <constraint field="hazard" desc="" exp=""/>
-    <constraint field="he:inscription_date" desc="" exp=""/>
-    <constraint field="height" desc="" exp=""/>
-    <constraint field="heritage" desc="" exp=""/>
-    <constraint field="heritage:operator" desc="" exp=""/>
-    <constraint field="heritage:operator:wikidata" desc="" exp=""/>
-    <constraint field="heritage:website" desc="" exp=""/>
-    <constraint field="hgv" desc="" exp=""/>
-    <constraint field="hgv:note" desc="" exp=""/>
-    <constraint field="highway" desc="" exp=""/>
-    <constraint field="highway_1" desc="" exp=""/>
-    <constraint field="highway_authority_ref" desc="" exp=""/>
-    <constraint field="highways_england:area" desc="" exp=""/>
-    <constraint field="historic" desc="" exp=""/>
-    <constraint field="historic:highway" desc="" exp=""/>
-    <constraint field="horse" desc="" exp=""/>
-    <constraint field="horse_scale" desc="" exp=""/>
-    <constraint field="hour_off" desc="" exp=""/>
-    <constraint field="hour_on" desc="" exp=""/>
-    <constraint field="hov" desc="" exp=""/>
-    <constraint field="image" desc="" exp=""/>
-    <constraint field="incline" desc="" exp=""/>
-    <constraint field="incorrect_name" desc="" exp=""/>
-    <constraint field="indoor" desc="" exp=""/>
-    <constraint field="informal" desc="" exp=""/>
-    <constraint field="int_name" desc="" exp=""/>
-    <constraint field="internal_diameter" desc="" exp=""/>
-    <constraint field="internet_access" desc="" exp=""/>
-    <constraint field="is_in" desc="" exp=""/>
-    <constraint field="is_in:borough" desc="" exp=""/>
-    <constraint field="is_in:district" desc="" exp=""/>
-    <constraint field="is_in:suburb" desc="" exp=""/>
-    <constraint field="is_sidepath" desc="" exp=""/>
-    <constraint field="is_sidepath:of:name" desc="" exp=""/>
-    <constraint field="junction" desc="" exp=""/>
-    <constraint field="junction:ref" desc="" exp=""/>
-    <constraint field="kerb" desc="" exp=""/>
-    <constraint field="landuse" desc="" exp=""/>
-    <constraint field="lane_markings" desc="" exp=""/>
-    <constraint field="lane_markings:backward" desc="" exp=""/>
-    <constraint field="lane_markings:forward" desc="" exp=""/>
-    <constraint field="lanes" desc="" exp=""/>
-    <constraint field="lanes:backward" desc="" exp=""/>
-    <constraint field="lanes:bus" desc="" exp=""/>
-    <constraint field="lanes:bus:forward" desc="" exp=""/>
-    <constraint field="lanes:forward" desc="" exp=""/>
-    <constraint field="lanes:left" desc="" exp=""/>
-    <constraint field="lanes:psv" desc="" exp=""/>
-    <constraint field="lanes:psv:backward" desc="" exp=""/>
-    <constraint field="lanes:psv:backward:right" desc="" exp=""/>
-    <constraint field="lanes:psv:forward" desc="" exp=""/>
-    <constraint field="layer" desc="" exp=""/>
-    <constraint field="lcn" desc="" exp=""/>
-    <constraint field="leisure" desc="" exp=""/>
-    <constraint field="length" desc="" exp=""/>
-    <constraint field="level" desc="" exp=""/>
-    <constraint field="level:ref" desc="" exp=""/>
-    <constraint field="listed_status" desc="" exp=""/>
-    <constraint field="lit" desc="" exp=""/>
-    <constraint field="lit:note" desc="" exp=""/>
-    <constraint field="loc_name" desc="" exp=""/>
-    <constraint field="loc_ref" desc="" exp=""/>
-    <constraint field="locals" desc="" exp=""/>
-    <constraint field="location" desc="" exp=""/>
-    <constraint field="long_vehicles" desc="" exp=""/>
-    <constraint field="man_made" desc="" exp=""/>
-    <constraint field="marked" desc="" exp=""/>
-    <constraint field="material" desc="" exp=""/>
-    <constraint field="maxaxleload" desc="" exp=""/>
-    <constraint field="maxgcweightrating:goods" desc="" exp=""/>
-    <constraint field="maxgcweightrating:hgv" desc="" exp=""/>
-    <constraint field="maxgcweightrating:hgv:conditional" desc="" exp=""/>
-    <constraint field="maxgcwrating:hgv" desc="" exp=""/>
-    <constraint field="maxheight" desc="" exp=""/>
-    <constraint field="maxheight:imperial" desc="" exp=""/>
-    <constraint field="maxheight:note" desc="" exp=""/>
-    <constraint field="maxheight:physical" desc="" exp=""/>
-    <constraint field="maxheight:signed" desc="" exp=""/>
-    <constraint field="maxspeed" desc="" exp=""/>
-    <constraint field="maxspeed:advisory" desc="" exp=""/>
-    <constraint field="maxspeed:backward" desc="" exp=""/>
-    <constraint field="maxspeed:bicycle" desc="" exp=""/>
-    <constraint field="maxspeed:enforcement" desc="" exp=""/>
-    <constraint field="maxspeed:forward" desc="" exp=""/>
-    <constraint field="maxspeed:lanes" desc="" exp=""/>
-    <constraint field="maxspeed:proposed" desc="" exp=""/>
-    <constraint field="maxspeed:type" desc="" exp=""/>
-    <constraint field="maxspeed:variable" desc="" exp=""/>
-    <constraint field="maxweight" desc="" exp=""/>
-    <constraint field="maxweight:conditional" desc="" exp=""/>
-    <constraint field="maxweight:hgv" desc="" exp=""/>
-    <constraint field="maxweight:hgv:conditional" desc="" exp=""/>
-    <constraint field="maxweight:signed" desc="" exp=""/>
-    <constraint field="maxweightrating" desc="" exp=""/>
-    <constraint field="maxweightrating:hgv" desc="" exp=""/>
-    <constraint field="maxweightrating:hgv:conditional" desc="" exp=""/>
-    <constraint field="maxwidth" desc="" exp=""/>
-    <constraint field="mkgmap:flare-check" desc="" exp=""/>
-    <constraint field="mooring" desc="" exp=""/>
-    <constraint field="motor_vehicle" desc="" exp=""/>
-    <constraint field="motor_vehicle:backward" desc="" exp=""/>
-    <constraint field="motor_vehicle:conditional" desc="" exp=""/>
-    <constraint field="motor_vehicle:lanes" desc="" exp=""/>
-    <constraint field="motorcar" desc="" exp=""/>
-    <constraint field="motorcycle" desc="" exp=""/>
-    <constraint field="motorroad" desc="" exp=""/>
-    <constraint field="motorway" desc="" exp=""/>
-    <constraint field="mtb:scale" desc="" exp=""/>
-    <constraint field="mtb:scale:imba" desc="" exp=""/>
-    <constraint field="name" desc="" exp=""/>
-    <constraint field="name:cy" desc="" exp=""/>
-    <constraint field="name:en" desc="" exp=""/>
-    <constraint field="name:left" desc="" exp=""/>
-    <constraint field="name:note" desc="" exp=""/>
-    <constraint field="name:right" desc="" exp=""/>
-    <constraint field="name:ru" desc="" exp=""/>
-    <constraint field="name:signed" desc="" exp=""/>
-    <constraint field="name:source" desc="" exp=""/>
-    <constraint field="name:survey:date" desc="" exp=""/>
-    <constraint field="narrow" desc="" exp=""/>
-    <constraint field="national_highways:area" desc="" exp=""/>
-    <constraint field="natural" desc="" exp=""/>
-    <constraint field="noexit" desc="" exp=""/>
-    <constraint field="noname" desc="" exp=""/>
-    <constraint field="not:junction" desc="" exp=""/>
-    <constraint field="not:name" desc="" exp=""/>
-    <constraint field="note" desc="" exp=""/>
-    <constraint field="note:access" desc="" exp=""/>
-    <constraint field="note:alt_name" desc="" exp=""/>
-    <constraint field="note:covid19" desc="" exp=""/>
-    <constraint field="note:cycle" desc="" exp=""/>
-    <constraint field="note:cycleway" desc="" exp=""/>
-    <constraint field="note:designation" desc="" exp=""/>
-    <constraint field="note:lcn" desc="" exp=""/>
-    <constraint field="note:lit" desc="" exp=""/>
-    <constraint field="note:name" desc="" exp=""/>
-    <constraint field="obstacle" desc="" exp=""/>
-    <constraint field="office" desc="" exp=""/>
-    <constraint field="official_ref" desc="" exp=""/>
-    <constraint field="old_name" desc="" exp=""/>
-    <constraint field="old_ref" desc="" exp=""/>
-    <constraint field="oneway" desc="" exp=""/>
-    <constraint field="oneway:bicycle" desc="" exp=""/>
-    <constraint field="oneway:bus" desc="" exp=""/>
-    <constraint field="oneway:emergency" desc="" exp=""/>
-    <constraint field="oneway:foot" desc="" exp=""/>
-    <constraint field="oneway:horse" desc="" exp=""/>
-    <constraint field="oneway:psv" desc="" exp=""/>
-    <constraint field="oneway_type" desc="" exp=""/>
-    <constraint field="opening_date" desc="" exp=""/>
-    <constraint field="opening_hours" desc="" exp=""/>
-    <constraint field="operator" desc="" exp=""/>
-    <constraint field="operator:type" desc="" exp=""/>
-    <constraint field="operator:wikidata" desc="" exp=""/>
-    <constraint field="osmc:symbol" desc="" exp=""/>
-    <constraint field="overtaking" desc="" exp=""/>
-    <constraint field="overtaking:motor_vehicle" desc="" exp=""/>
-    <constraint field="ownership" desc="" exp=""/>
-    <constraint field="parking" desc="" exp=""/>
-    <constraint field="parking:both" desc="" exp=""/>
-    <constraint field="parking:both:access" desc="" exp=""/>
-    <constraint field="parking:both:authentication:ticket:conditional" desc="" exp=""/>
-    <constraint field="parking:both:markings" desc="" exp=""/>
-    <constraint field="parking:both:orientation" desc="" exp=""/>
-    <constraint field="parking:both:restriction" desc="" exp=""/>
-    <constraint field="parking:both:restriction:conditional" desc="" exp=""/>
-    <constraint field="parking:both:restriction:reason" desc="" exp=""/>
-    <constraint field="parking:both:zone" desc="" exp=""/>
-    <constraint field="parking:both:zone:residents" desc="" exp=""/>
-    <constraint field="parking:condition:both" desc="" exp=""/>
-    <constraint field="parking:lane" desc="" exp=""/>
-    <constraint field="parking:lane:both" desc="" exp=""/>
-    <constraint field="parking:lane:both:parallel" desc="" exp=""/>
-    <constraint field="parking:lane:left" desc="" exp=""/>
-    <constraint field="parking:lane:right" desc="" exp=""/>
-    <constraint field="parking:lane:right:parallel" desc="" exp=""/>
-    <constraint field="parking:left" desc="" exp=""/>
-    <constraint field="parking:left:access" desc="" exp=""/>
-    <constraint field="parking:left:bus" desc="" exp=""/>
-    <constraint field="parking:left:markings" desc="" exp=""/>
-    <constraint field="parking:left:orientation" desc="" exp=""/>
-    <constraint field="parking:left:restriction" desc="" exp=""/>
-    <constraint field="parking:left:restriction:reason" desc="" exp=""/>
-    <constraint field="parking:left:zone" desc="" exp=""/>
-    <constraint field="parking:right" desc="" exp=""/>
-    <constraint field="parking:right:access" desc="" exp=""/>
-    <constraint field="parking:right:capacity" desc="" exp=""/>
-    <constraint field="parking:right:fee" desc="" exp=""/>
-    <constraint field="parking:right:fee:conditional" desc="" exp=""/>
-    <constraint field="parking:right:markings" desc="" exp=""/>
-    <constraint field="parking:right:orientation" desc="" exp=""/>
-    <constraint field="parking:right:restriction" desc="" exp=""/>
-    <constraint field="parking:right:restriction:reason" desc="" exp=""/>
-    <constraint field="parking:right:zone" desc="" exp=""/>
-    <constraint field="passing_places" desc="" exp=""/>
-    <constraint field="path" desc="" exp=""/>
-    <constraint field="paved" desc="" exp=""/>
-    <constraint field="paving_stones:material" desc="" exp=""/>
-    <constraint field="place" desc="" exp=""/>
-    <constraint field="placement" desc="" exp=""/>
-    <constraint field="placement:backward" desc="" exp=""/>
-    <constraint field="platform_lift" desc="" exp=""/>
-    <constraint field="police" desc="" exp=""/>
-    <constraint field="postal_code" desc="" exp=""/>
-    <constraint field="presumed_designation" desc="" exp=""/>
-    <constraint field="priority" desc="" exp=""/>
-    <constraint field="proposed" desc="" exp=""/>
-    <constraint field="proposed:bicycle" desc="" exp=""/>
-    <constraint field="proposed:cycleway" desc="" exp=""/>
-    <constraint field="proposed:cycleway:left" desc="" exp=""/>
-    <constraint field="proposed:cycleway:left:oneway" desc="" exp=""/>
-    <constraint field="proposed:cycleway:right" desc="" exp=""/>
-    <constraint field="proposed:cycleway:right:oneway" desc="" exp=""/>
-    <constraint field="proposed:foot" desc="" exp=""/>
-    <constraint field="proposed:footway" desc="" exp=""/>
-    <constraint field="proposed:highway" desc="" exp=""/>
-    <constraint field="proposed:maxspeed" desc="" exp=""/>
-    <constraint field="proposed:oneway" desc="" exp=""/>
-    <constraint field="proposed:oneway:bicycle" desc="" exp=""/>
-    <constraint field="proposed:segregated" desc="" exp=""/>
-    <constraint field="proposed:traffic_intervention" desc="" exp=""/>
-    <constraint field="prow_ref" desc="" exp=""/>
-    <constraint field="psv" desc="" exp=""/>
-    <constraint field="psv:lanes" desc="" exp=""/>
-    <constraint field="psv:lanes:backward" desc="" exp=""/>
-    <constraint field="psv:lanes:forward" desc="" exp=""/>
-    <constraint field="psv:right" desc="" exp=""/>
-    <constraint field="public_transport" desc="" exp=""/>
-    <constraint field="railing" desc="" exp=""/>
-    <constraint field="ramp" desc="" exp=""/>
-    <constraint field="ramp:bicycle" desc="" exp=""/>
-    <constraint field="ramp:wheelchair" desc="" exp=""/>
-    <constraint field="rcn" desc="" exp=""/>
-    <constraint field="ref" desc="" exp=""/>
-    <constraint field="ref:22406366" desc="" exp=""/>
-    <constraint field="ref:GB:nhle" desc="" exp=""/>
-    <constraint field="ref:GB:tflcid" desc="" exp=""/>
-    <constraint field="ref:GB:uprn" desc="" exp=""/>
-    <constraint field="ref:GB:usrn" desc="" exp=""/>
-    <constraint field="ref:he" desc="" exp=""/>
-    <constraint field="ref:source" desc="" exp=""/>
-    <constraint field="ref:tfl" desc="" exp=""/>
-    <constraint field="repair" desc="" exp=""/>
-    <constraint field="roof:colour" desc="" exp=""/>
-    <constraint field="roof:shape" desc="" exp=""/>
-    <constraint field="roundabout" desc="" exp=""/>
-    <constraint field="route" desc="" exp=""/>
-    <constraint field="segregated" desc="" exp=""/>
-    <constraint field="separation:left" desc="" exp=""/>
-    <constraint field="separation:right" desc="" exp=""/>
-    <constraint field="service" desc="" exp=""/>
-    <constraint field="service_1" desc="" exp=""/>
-    <constraint field="shelter" desc="" exp=""/>
-    <constraint field="shelter_type" desc="" exp=""/>
-    <constraint field="shop" desc="" exp=""/>
-    <constraint field="short_name" desc="" exp=""/>
-    <constraint field="shoulder" desc="" exp=""/>
-    <constraint field="shower" desc="" exp=""/>
-    <constraint field="sidewalk" desc="" exp=""/>
-    <constraint field="sidewalk:both" desc="" exp=""/>
-    <constraint field="sidewalk:both:surface" desc="" exp=""/>
-    <constraint field="sidewalk:left" desc="" exp=""/>
-    <constraint field="sidewalk:left:surface" desc="" exp=""/>
-    <constraint field="sidewalk:left:wheelchair" desc="" exp=""/>
-    <constraint field="sidewalk:note" desc="" exp=""/>
-    <constraint field="sidewalk:right" desc="" exp=""/>
-    <constraint field="sidewalk:right:surface" desc="" exp=""/>
-    <constraint field="sign_information" desc="" exp=""/>
-    <constraint field="signed:ref" desc="" exp=""/>
-    <constraint field="sloped_curb" desc="" exp=""/>
-    <constraint field="smoothness" desc="" exp=""/>
-    <constraint field="smoothness:date" desc="" exp=""/>
-    <constraint field="source" desc="" exp=""/>
-    <constraint field="source:access" desc="" exp=""/>
-    <constraint field="source:alt_name" desc="" exp=""/>
-    <constraint field="source:bicycle" desc="" exp=""/>
-    <constraint field="source:bing" desc="" exp=""/>
-    <constraint field="source:cycleway" desc="" exp=""/>
-    <constraint field="source:designation" desc="" exp=""/>
-    <constraint field="source:destination" desc="" exp=""/>
-    <constraint field="source:geometry" desc="" exp=""/>
-    <constraint field="source:hgv" desc="" exp=""/>
-    <constraint field="source:highway" desc="" exp=""/>
-    <constraint field="source:lanes" desc="" exp=""/>
-    <constraint field="source:lcn" desc="" exp=""/>
-    <constraint field="source:lit" desc="" exp=""/>
-    <constraint field="source:maxheight" desc="" exp=""/>
-    <constraint field="source:maxspeed" desc="" exp=""/>
-    <constraint field="source:maxweight" desc="" exp=""/>
-    <constraint field="source:maxweightrating" desc="" exp=""/>
-    <constraint field="source:maxweightrating:hgv" desc="" exp=""/>
-    <constraint field="source:maxwidth" desc="" exp=""/>
-    <constraint field="source:name" desc="" exp=""/>
-    <constraint field="source:not:name" desc="" exp=""/>
-    <constraint field="source:old_name" desc="" exp=""/>
-    <constraint field="source:oneway" desc="" exp=""/>
-    <constraint field="source:oneway:bicycle" desc="" exp=""/>
-    <constraint field="source:postal_code" desc="" exp=""/>
-    <constraint field="source:proposed:oneway" desc="" exp=""/>
-    <constraint field="source:prow_ref" desc="" exp=""/>
-    <constraint field="source:rcn" desc="" exp=""/>
-    <constraint field="source:ref" desc="" exp=""/>
-    <constraint field="source:track" desc="" exp=""/>
-    <constraint field="source:traffic_intervention" desc="" exp=""/>
-    <constraint field="source:width" desc="" exp=""/>
-    <constraint field="source_ref" desc="" exp=""/>
-    <constraint field="source_ref:name" desc="" exp=""/>
-    <constraint field="source_ref:ref" desc="" exp=""/>
-    <constraint field="stairs:endline" desc="" exp=""/>
-    <constraint field="stairs:startline" desc="" exp=""/>
-    <constraint field="start_date" desc="" exp=""/>
-    <constraint field="state" desc="" exp=""/>
-    <constraint field="step_count" desc="" exp=""/>
-    <constraint field="steps" desc="" exp=""/>
-    <constraint field="stile" desc="" exp=""/>
-    <constraint field="surface" desc="" exp=""/>
-    <constraint field="surface:colour" desc="" exp=""/>
-    <constraint field="surface:note" desc="" exp=""/>
-    <constraint field="survey:date" desc="" exp=""/>
-    <constraint field="surveying_authority" desc="" exp=""/>
-    <constraint field="tactile_paving" desc="" exp=""/>
-    <constraint field="taxi" desc="" exp=""/>
-    <constraint field="temporary:highway" desc="" exp=""/>
-    <constraint field="toilets" desc="" exp=""/>
-    <constraint field="toilets:wheelchair" desc="" exp=""/>
-    <constraint field="toll" desc="" exp=""/>
-    <constraint field="tourism" desc="" exp=""/>
-    <constraint field="towpath" desc="" exp=""/>
-    <constraint field="tracktype" desc="" exp=""/>
-    <constraint field="traffic_calming" desc="" exp=""/>
-    <constraint field="traffic_calming:check_date" desc="" exp=""/>
-    <constraint field="traffic_intervention" desc="" exp=""/>
-    <constraint field="traffic_signals" desc="" exp=""/>
-    <constraint field="traffic_signals:direction" desc="" exp=""/>
-    <constraint field="traffic_signals:sound" desc="" exp=""/>
-    <constraint field="traffic_signals:vibration" desc="" exp=""/>
-    <constraint field="trail_visibility" desc="" exp=""/>
-    <constraint field="tree_lined" desc="" exp=""/>
-    <constraint field="tunnel" desc="" exp=""/>
-    <constraint field="tunnel:name" desc="" exp=""/>
-    <constraint field="tunnel:short_name" desc="" exp=""/>
-    <constraint field="turn" desc="" exp=""/>
-    <constraint field="turn:lanes" desc="" exp=""/>
-    <constraint field="turn:lanes:backward" desc="" exp=""/>
-    <constraint field="turn:lanes:forward" desc="" exp=""/>
-    <constraint field="unsigned" desc="" exp=""/>
-    <constraint field="validate" desc="" exp=""/>
-    <constraint field="vehicle" desc="" exp=""/>
-    <constraint field="vehicle:lanes" desc="" exp=""/>
-    <constraint field="vehicle:lanes:forward" desc="" exp=""/>
-    <constraint field="verge" desc="" exp=""/>
-    <constraint field="verge:left" desc="" exp=""/>
-    <constraint field="verge:right" desc="" exp=""/>
-    <constraint field="virtual" desc="" exp=""/>
-    <constraint field="was:bicycle" desc="" exp=""/>
-    <constraint field="was:covered" desc="" exp=""/>
-    <constraint field="was:cycleway:left" desc="" exp=""/>
-    <constraint field="was:cycleway:right" desc="" exp=""/>
-    <constraint field="was:highway" desc="" exp=""/>
-    <constraint field="was:lanes" desc="" exp=""/>
-    <constraint field="was:oneway" desc="" exp=""/>
-    <constraint field="was:ref" desc="" exp=""/>
-    <constraint field="was:segregated" desc="" exp=""/>
-    <constraint field="watch:80n" desc="" exp=""/>
-    <constraint field="water" desc="" exp=""/>
-    <constraint field="website" desc="" exp=""/>
-    <constraint field="wheelchair" desc="" exp=""/>
-    <constraint field="width" desc="" exp=""/>
-    <constraint field="wikidata" desc="" exp=""/>
-    <constraint field="wikipedia" desc="" exp=""/>
+    <constraint exp="" desc="" field="FIXME"/>
+    <constraint exp="" desc="" field="HE_ref"/>
+    <constraint exp="" desc="" field="WARNING"/>
+    <constraint exp="" desc="" field="access"/>
+    <constraint exp="" desc="" field="access:conditional"/>
+    <constraint exp="" desc="" field="access:lanes:backward"/>
+    <constraint exp="" desc="" field="access:note"/>
+    <constraint exp="" desc="" field="access:source"/>
+    <constraint exp="" desc="" field="access:survey:date"/>
+    <constraint exp="" desc="" field="active_traffic_management"/>
+    <constraint exp="" desc="" field="addr:city"/>
+    <constraint exp="" desc="" field="addr:housename"/>
+    <constraint exp="" desc="" field="addr:housenumber"/>
+    <constraint exp="" desc="" field="addr:interpolation"/>
+    <constraint exp="" desc="" field="addr:postcode"/>
+    <constraint exp="" desc="" field="addr:street"/>
+    <constraint exp="" desc="" field="aeroway"/>
+    <constraint exp="" desc="" field="agricultural"/>
+    <constraint exp="" desc="" field="airside"/>
+    <constraint exp="" desc="" field="alt_name"/>
+    <constraint exp="" desc="" field="alt_name:en"/>
+    <constraint exp="" desc="" field="amenity"/>
+    <constraint exp="" desc="" field="area"/>
+    <constraint exp="" desc="" field="barrier"/>
+    <constraint exp="" desc="" field="bench"/>
+    <constraint exp="" desc="" field="bicycle"/>
+    <constraint exp="" desc="" field="bicycle:conditional"/>
+    <constraint exp="" desc="" field="bicycle:lanes"/>
+    <constraint exp="" desc="" field="bicycle:lanes:forward"/>
+    <constraint exp="" desc="" field="bin"/>
+    <constraint exp="" desc="" field="bing"/>
+    <constraint exp="" desc="" field="bollard"/>
+    <constraint exp="" desc="" field="borough"/>
+    <constraint exp="" desc="" field="bridge"/>
+    <constraint exp="" desc="" field="bridge:alt_name"/>
+    <constraint exp="" desc="" field="bridge:alt_name:wikidata"/>
+    <constraint exp="" desc="" field="bridge:movable"/>
+    <constraint exp="" desc="" field="bridge:name"/>
+    <constraint exp="" desc="" field="bridge:name:wikidata"/>
+    <constraint exp="" desc="" field="bridge:ref"/>
+    <constraint exp="" desc="" field="bridge:structure"/>
+    <constraint exp="" desc="" field="bridge_ref"/>
+    <constraint exp="" desc="" field="building"/>
+    <constraint exp="" desc="" field="building:levels"/>
+    <constraint exp="" desc="" field="bus"/>
+    <constraint exp="" desc="" field="bus:lanes"/>
+    <constraint exp="" desc="" field="bus:lanes:backward"/>
+    <constraint exp="" desc="" field="bus:lanes:forward"/>
+    <constraint exp="" desc="" field="bus_bay"/>
+    <constraint exp="" desc="" field="busway"/>
+    <constraint exp="" desc="" field="busway:both"/>
+    <constraint exp="" desc="" field="busway:conditional"/>
+    <constraint exp="" desc="" field="busway:left"/>
+    <constraint exp="" desc="" field="busway:right"/>
+    <constraint exp="" desc="" field="button_operated"/>
+    <constraint exp="" desc="" field="car"/>
+    <constraint exp="" desc="" field="carriageway_ref"/>
+    <constraint exp="" desc="" field="caution"/>
+    <constraint exp="" desc="" field="cesspit"/>
+    <constraint exp="" desc="" field="change"/>
+    <constraint exp="" desc="" field="change:lanes"/>
+    <constraint exp="" desc="" field="changing_table"/>
+    <constraint exp="" desc="" field="charge"/>
+    <constraint exp="" desc="" field="check_date"/>
+    <constraint exp="" desc="" field="check_date:cycleway"/>
+    <constraint exp="" desc="" field="check_date:cycleway:surface"/>
+    <constraint exp="" desc="" field="check_date:handrail"/>
+    <constraint exp="" desc="" field="check_date:lit"/>
+    <constraint exp="" desc="" field="check_date:ramp"/>
+    <constraint exp="" desc="" field="check_date:sidewalk"/>
+    <constraint exp="" desc="" field="check_date:sidewalk:surface"/>
+    <constraint exp="" desc="" field="check_date:smoothness"/>
+    <constraint exp="" desc="" field="check_date:surface"/>
+    <constraint exp="" desc="" field="check_date:tactile_paving"/>
+    <constraint exp="" desc="" field="coach"/>
+    <constraint exp="" desc="" field="colour"/>
+    <constraint exp="" desc="" field="complete"/>
+    <constraint exp="" desc="" field="construction"/>
+    <constraint exp="" desc="" field="construction_contract_name"/>
+    <constraint exp="" desc="" field="construction_method"/>
+    <constraint exp="" desc="" field="contact:phone"/>
+    <constraint exp="" desc="" field="conveying"/>
+    <constraint exp="" desc="" field="cover"/>
+    <constraint exp="" desc="" field="covered"/>
+    <constraint exp="" desc="" field="created_by"/>
+    <constraint exp="" desc="" field="crossing"/>
+    <constraint exp="" desc="" field="crossing:continuous"/>
+    <constraint exp="" desc="" field="crossing:island"/>
+    <constraint exp="" desc="" field="crossing:markings"/>
+    <constraint exp="" desc="" field="crossing:signals"/>
+    <constraint exp="" desc="" field="crossing_ref"/>
+    <constraint exp="" desc="" field="cutline"/>
+    <constraint exp="" desc="" field="cutting"/>
+    <constraint exp="" desc="" field="cycle_network"/>
+    <constraint exp="" desc="" field="cyclestreets_id"/>
+    <constraint exp="" desc="" field="cycleway"/>
+    <constraint exp="" desc="" field="cycleway:both"/>
+    <constraint exp="" desc="" field="cycleway:both:lane"/>
+    <constraint exp="" desc="" field="cycleway:both:oneway"/>
+    <constraint exp="" desc="" field="cycleway:conditional"/>
+    <constraint exp="" desc="" field="cycleway:lane"/>
+    <constraint exp="" desc="" field="cycleway:lanes"/>
+    <constraint exp="" desc="" field="cycleway:left"/>
+    <constraint exp="" desc="" field="cycleway:left:doorzone"/>
+    <constraint exp="" desc="" field="cycleway:left:lane"/>
+    <constraint exp="" desc="" field="cycleway:left:oneway"/>
+    <constraint exp="" desc="" field="cycleway:left:segregated"/>
+    <constraint exp="" desc="" field="cycleway:left:track"/>
+    <constraint exp="" desc="" field="cycleway:left:width"/>
+    <constraint exp="" desc="" field="cycleway:note"/>
+    <constraint exp="" desc="" field="cycleway:right"/>
+    <constraint exp="" desc="" field="cycleway:right:buffer"/>
+    <constraint exp="" desc="" field="cycleway:right:lane"/>
+    <constraint exp="" desc="" field="cycleway:right:oneway"/>
+    <constraint exp="" desc="" field="cycleway:right:separation:left"/>
+    <constraint exp="" desc="" field="cycleway:right:separation:right"/>
+    <constraint exp="" desc="" field="cycleway:right:track"/>
+    <constraint exp="" desc="" field="cycleway:right:width"/>
+    <constraint exp="" desc="" field="cycleway:segregated"/>
+    <constraint exp="" desc="" field="cycleway:surface"/>
+    <constraint exp="" desc="" field="cycleway:width"/>
+    <constraint exp="" desc="" field="delivery"/>
+    <constraint exp="" desc="" field="departures_board"/>
+    <constraint exp="" desc="" field="description"/>
+    <constraint exp="" desc="" field="designation"/>
+    <constraint exp="" desc="" field="destination"/>
+    <constraint exp="" desc="" field="destination:backward"/>
+    <constraint exp="" desc="" field="destination:forward"/>
+    <constraint exp="" desc="" field="destination:lanes"/>
+    <constraint exp="" desc="" field="destination:lanes:forward"/>
+    <constraint exp="" desc="" field="destination:ref"/>
+    <constraint exp="" desc="" field="destination:ref:forward"/>
+    <constraint exp="" desc="" field="destination:ref:lanes"/>
+    <constraint exp="" desc="" field="destination:ref:lanes:forward"/>
+    <constraint exp="" desc="" field="destination:ref:to"/>
+    <constraint exp="" desc="" field="destination:ref:to:lanes"/>
+    <constraint exp="" desc="" field="destination:symbol"/>
+    <constraint exp="" desc="" field="destination:symbol:lanes"/>
+    <constraint exp="" desc="" field="diameter"/>
+    <constraint exp="" desc="" field="direction"/>
+    <constraint exp="" desc="" field="disabled"/>
+    <constraint exp="" desc="" field="disused"/>
+    <constraint exp="" desc="" field="disused:bicycle"/>
+    <constraint exp="" desc="" field="disused:bus"/>
+    <constraint exp="" desc="" field="disused:dual_carriageway"/>
+    <constraint exp="" desc="" field="disused:foot"/>
+    <constraint exp="" desc="" field="disused:highway"/>
+    <constraint exp="" desc="" field="disused:lanes"/>
+    <constraint exp="" desc="" field="disused:oneway"/>
+    <constraint exp="" desc="" field="disused:ref"/>
+    <constraint exp="" desc="" field="disused:tunnel"/>
+    <constraint exp="" desc="" field="dog"/>
+    <constraint exp="" desc="" field="driving_side"/>
+    <constraint exp="" desc="" field="dual_carriageway"/>
+    <constraint exp="" desc="" field="ele"/>
+    <constraint exp="" desc="" field="electrified"/>
+    <constraint exp="" desc="" field="embankment"/>
+    <constraint exp="" desc="" field="emergency"/>
+    <constraint exp="" desc="" field="entrance"/>
+    <constraint exp="" desc="" field="est_width"/>
+    <constraint exp="" desc="" field="expressway"/>
+    <constraint exp="" desc="" field="fee"/>
+    <constraint exp="" desc="" field="fence_type"/>
+    <constraint exp="" desc="" field="fixme"/>
+    <constraint exp="" desc="" field="flood_prone"/>
+    <constraint exp="" desc="" field="foot"/>
+    <constraint exp="" desc="" field="footway"/>
+    <constraint exp="" desc="" field="footway:surface"/>
+    <constraint exp="" desc="" field="ford"/>
+    <constraint exp="" desc="" field="funeral_vehicles"/>
+    <constraint exp="" desc="" field="gated"/>
+    <constraint exp="" desc="" field="golf"/>
+    <constraint exp="" desc="" field="golf_cart"/>
+    <constraint exp="" desc="" field="goods"/>
+    <constraint exp="" desc="" field="handrail"/>
+    <constraint exp="" desc="" field="handrail:center"/>
+    <constraint exp="" desc="" field="handrail:left"/>
+    <constraint exp="" desc="" field="handrail:right"/>
+    <constraint exp="" desc="" field="hazard"/>
+    <constraint exp="" desc="" field="he:inscription_date"/>
+    <constraint exp="" desc="" field="height"/>
+    <constraint exp="" desc="" field="heritage"/>
+    <constraint exp="" desc="" field="heritage:operator"/>
+    <constraint exp="" desc="" field="heritage:operator:wikidata"/>
+    <constraint exp="" desc="" field="heritage:website"/>
+    <constraint exp="" desc="" field="hgv"/>
+    <constraint exp="" desc="" field="hgv:note"/>
+    <constraint exp="" desc="" field="highway"/>
+    <constraint exp="" desc="" field="highway_1"/>
+    <constraint exp="" desc="" field="highway_authority_ref"/>
+    <constraint exp="" desc="" field="highways_england:area"/>
+    <constraint exp="" desc="" field="historic"/>
+    <constraint exp="" desc="" field="historic:highway"/>
+    <constraint exp="" desc="" field="horse"/>
+    <constraint exp="" desc="" field="horse_scale"/>
+    <constraint exp="" desc="" field="hour_off"/>
+    <constraint exp="" desc="" field="hour_on"/>
+    <constraint exp="" desc="" field="hov"/>
+    <constraint exp="" desc="" field="image"/>
+    <constraint exp="" desc="" field="incline"/>
+    <constraint exp="" desc="" field="incorrect_name"/>
+    <constraint exp="" desc="" field="indoor"/>
+    <constraint exp="" desc="" field="informal"/>
+    <constraint exp="" desc="" field="int_name"/>
+    <constraint exp="" desc="" field="internal_diameter"/>
+    <constraint exp="" desc="" field="internet_access"/>
+    <constraint exp="" desc="" field="is_in"/>
+    <constraint exp="" desc="" field="is_in:borough"/>
+    <constraint exp="" desc="" field="is_in:district"/>
+    <constraint exp="" desc="" field="is_in:suburb"/>
+    <constraint exp="" desc="" field="is_sidepath"/>
+    <constraint exp="" desc="" field="is_sidepath:of:name"/>
+    <constraint exp="" desc="" field="junction"/>
+    <constraint exp="" desc="" field="junction:ref"/>
+    <constraint exp="" desc="" field="kerb"/>
+    <constraint exp="" desc="" field="landuse"/>
+    <constraint exp="" desc="" field="lane_markings"/>
+    <constraint exp="" desc="" field="lane_markings:backward"/>
+    <constraint exp="" desc="" field="lane_markings:forward"/>
+    <constraint exp="" desc="" field="lanes"/>
+    <constraint exp="" desc="" field="lanes:backward"/>
+    <constraint exp="" desc="" field="lanes:bus"/>
+    <constraint exp="" desc="" field="lanes:bus:forward"/>
+    <constraint exp="" desc="" field="lanes:forward"/>
+    <constraint exp="" desc="" field="lanes:left"/>
+    <constraint exp="" desc="" field="lanes:psv"/>
+    <constraint exp="" desc="" field="lanes:psv:backward"/>
+    <constraint exp="" desc="" field="lanes:psv:backward:right"/>
+    <constraint exp="" desc="" field="lanes:psv:forward"/>
+    <constraint exp="" desc="" field="layer"/>
+    <constraint exp="" desc="" field="lcn"/>
+    <constraint exp="" desc="" field="leisure"/>
+    <constraint exp="" desc="" field="length"/>
+    <constraint exp="" desc="" field="level"/>
+    <constraint exp="" desc="" field="level:ref"/>
+    <constraint exp="" desc="" field="listed_status"/>
+    <constraint exp="" desc="" field="lit"/>
+    <constraint exp="" desc="" field="lit:note"/>
+    <constraint exp="" desc="" field="loc_name"/>
+    <constraint exp="" desc="" field="loc_ref"/>
+    <constraint exp="" desc="" field="locals"/>
+    <constraint exp="" desc="" field="location"/>
+    <constraint exp="" desc="" field="long_vehicles"/>
+    <constraint exp="" desc="" field="man_made"/>
+    <constraint exp="" desc="" field="marked"/>
+    <constraint exp="" desc="" field="material"/>
+    <constraint exp="" desc="" field="maxaxleload"/>
+    <constraint exp="" desc="" field="maxgcweightrating:goods"/>
+    <constraint exp="" desc="" field="maxgcweightrating:hgv"/>
+    <constraint exp="" desc="" field="maxgcweightrating:hgv:conditional"/>
+    <constraint exp="" desc="" field="maxgcwrating:hgv"/>
+    <constraint exp="" desc="" field="maxheight"/>
+    <constraint exp="" desc="" field="maxheight:imperial"/>
+    <constraint exp="" desc="" field="maxheight:note"/>
+    <constraint exp="" desc="" field="maxheight:physical"/>
+    <constraint exp="" desc="" field="maxheight:signed"/>
+    <constraint exp="" desc="" field="maxspeed"/>
+    <constraint exp="" desc="" field="maxspeed:advisory"/>
+    <constraint exp="" desc="" field="maxspeed:backward"/>
+    <constraint exp="" desc="" field="maxspeed:bicycle"/>
+    <constraint exp="" desc="" field="maxspeed:enforcement"/>
+    <constraint exp="" desc="" field="maxspeed:forward"/>
+    <constraint exp="" desc="" field="maxspeed:lanes"/>
+    <constraint exp="" desc="" field="maxspeed:proposed"/>
+    <constraint exp="" desc="" field="maxspeed:type"/>
+    <constraint exp="" desc="" field="maxspeed:variable"/>
+    <constraint exp="" desc="" field="maxweight"/>
+    <constraint exp="" desc="" field="maxweight:conditional"/>
+    <constraint exp="" desc="" field="maxweight:hgv"/>
+    <constraint exp="" desc="" field="maxweight:hgv:conditional"/>
+    <constraint exp="" desc="" field="maxweight:signed"/>
+    <constraint exp="" desc="" field="maxweightrating"/>
+    <constraint exp="" desc="" field="maxweightrating:hgv"/>
+    <constraint exp="" desc="" field="maxweightrating:hgv:conditional"/>
+    <constraint exp="" desc="" field="maxwidth"/>
+    <constraint exp="" desc="" field="mkgmap:flare-check"/>
+    <constraint exp="" desc="" field="mooring"/>
+    <constraint exp="" desc="" field="motor_vehicle"/>
+    <constraint exp="" desc="" field="motor_vehicle:backward"/>
+    <constraint exp="" desc="" field="motor_vehicle:conditional"/>
+    <constraint exp="" desc="" field="motor_vehicle:lanes"/>
+    <constraint exp="" desc="" field="motorcar"/>
+    <constraint exp="" desc="" field="motorcycle"/>
+    <constraint exp="" desc="" field="motorroad"/>
+    <constraint exp="" desc="" field="motorway"/>
+    <constraint exp="" desc="" field="mtb:scale"/>
+    <constraint exp="" desc="" field="mtb:scale:imba"/>
+    <constraint exp="" desc="" field="name"/>
+    <constraint exp="" desc="" field="name:cy"/>
+    <constraint exp="" desc="" field="name:en"/>
+    <constraint exp="" desc="" field="name:left"/>
+    <constraint exp="" desc="" field="name:note"/>
+    <constraint exp="" desc="" field="name:right"/>
+    <constraint exp="" desc="" field="name:ru"/>
+    <constraint exp="" desc="" field="name:signed"/>
+    <constraint exp="" desc="" field="name:source"/>
+    <constraint exp="" desc="" field="name:survey:date"/>
+    <constraint exp="" desc="" field="narrow"/>
+    <constraint exp="" desc="" field="national_highways:area"/>
+    <constraint exp="" desc="" field="natural"/>
+    <constraint exp="" desc="" field="noexit"/>
+    <constraint exp="" desc="" field="noname"/>
+    <constraint exp="" desc="" field="not:junction"/>
+    <constraint exp="" desc="" field="not:name"/>
+    <constraint exp="" desc="" field="note"/>
+    <constraint exp="" desc="" field="note:access"/>
+    <constraint exp="" desc="" field="note:alt_name"/>
+    <constraint exp="" desc="" field="note:covid19"/>
+    <constraint exp="" desc="" field="note:cycle"/>
+    <constraint exp="" desc="" field="note:cycleway"/>
+    <constraint exp="" desc="" field="note:designation"/>
+    <constraint exp="" desc="" field="note:lcn"/>
+    <constraint exp="" desc="" field="note:lit"/>
+    <constraint exp="" desc="" field="note:name"/>
+    <constraint exp="" desc="" field="obstacle"/>
+    <constraint exp="" desc="" field="office"/>
+    <constraint exp="" desc="" field="official_ref"/>
+    <constraint exp="" desc="" field="old_name"/>
+    <constraint exp="" desc="" field="old_ref"/>
+    <constraint exp="" desc="" field="oneway"/>
+    <constraint exp="" desc="" field="oneway:bicycle"/>
+    <constraint exp="" desc="" field="oneway:bus"/>
+    <constraint exp="" desc="" field="oneway:emergency"/>
+    <constraint exp="" desc="" field="oneway:foot"/>
+    <constraint exp="" desc="" field="oneway:horse"/>
+    <constraint exp="" desc="" field="oneway:psv"/>
+    <constraint exp="" desc="" field="oneway_type"/>
+    <constraint exp="" desc="" field="opening_date"/>
+    <constraint exp="" desc="" field="opening_hours"/>
+    <constraint exp="" desc="" field="operator"/>
+    <constraint exp="" desc="" field="operator:type"/>
+    <constraint exp="" desc="" field="operator:wikidata"/>
+    <constraint exp="" desc="" field="osmc:symbol"/>
+    <constraint exp="" desc="" field="overtaking"/>
+    <constraint exp="" desc="" field="overtaking:motor_vehicle"/>
+    <constraint exp="" desc="" field="ownership"/>
+    <constraint exp="" desc="" field="parking"/>
+    <constraint exp="" desc="" field="parking:both"/>
+    <constraint exp="" desc="" field="parking:both:access"/>
+    <constraint exp="" desc="" field="parking:both:authentication:ticket:conditional"/>
+    <constraint exp="" desc="" field="parking:both:markings"/>
+    <constraint exp="" desc="" field="parking:both:orientation"/>
+    <constraint exp="" desc="" field="parking:both:restriction"/>
+    <constraint exp="" desc="" field="parking:both:restriction:conditional"/>
+    <constraint exp="" desc="" field="parking:both:restriction:reason"/>
+    <constraint exp="" desc="" field="parking:both:zone"/>
+    <constraint exp="" desc="" field="parking:both:zone:residents"/>
+    <constraint exp="" desc="" field="parking:condition:both"/>
+    <constraint exp="" desc="" field="parking:lane"/>
+    <constraint exp="" desc="" field="parking:lane:both"/>
+    <constraint exp="" desc="" field="parking:lane:both:parallel"/>
+    <constraint exp="" desc="" field="parking:lane:left"/>
+    <constraint exp="" desc="" field="parking:lane:right"/>
+    <constraint exp="" desc="" field="parking:lane:right:parallel"/>
+    <constraint exp="" desc="" field="parking:left"/>
+    <constraint exp="" desc="" field="parking:left:access"/>
+    <constraint exp="" desc="" field="parking:left:bus"/>
+    <constraint exp="" desc="" field="parking:left:markings"/>
+    <constraint exp="" desc="" field="parking:left:orientation"/>
+    <constraint exp="" desc="" field="parking:left:restriction"/>
+    <constraint exp="" desc="" field="parking:left:restriction:reason"/>
+    <constraint exp="" desc="" field="parking:left:zone"/>
+    <constraint exp="" desc="" field="parking:right"/>
+    <constraint exp="" desc="" field="parking:right:access"/>
+    <constraint exp="" desc="" field="parking:right:capacity"/>
+    <constraint exp="" desc="" field="parking:right:fee"/>
+    <constraint exp="" desc="" field="parking:right:fee:conditional"/>
+    <constraint exp="" desc="" field="parking:right:markings"/>
+    <constraint exp="" desc="" field="parking:right:orientation"/>
+    <constraint exp="" desc="" field="parking:right:restriction"/>
+    <constraint exp="" desc="" field="parking:right:restriction:reason"/>
+    <constraint exp="" desc="" field="parking:right:zone"/>
+    <constraint exp="" desc="" field="passing_places"/>
+    <constraint exp="" desc="" field="path"/>
+    <constraint exp="" desc="" field="paved"/>
+    <constraint exp="" desc="" field="paving_stones:material"/>
+    <constraint exp="" desc="" field="place"/>
+    <constraint exp="" desc="" field="placement"/>
+    <constraint exp="" desc="" field="placement:backward"/>
+    <constraint exp="" desc="" field="platform_lift"/>
+    <constraint exp="" desc="" field="police"/>
+    <constraint exp="" desc="" field="postal_code"/>
+    <constraint exp="" desc="" field="presumed_designation"/>
+    <constraint exp="" desc="" field="priority"/>
+    <constraint exp="" desc="" field="proposed"/>
+    <constraint exp="" desc="" field="proposed:bicycle"/>
+    <constraint exp="" desc="" field="proposed:cycleway"/>
+    <constraint exp="" desc="" field="proposed:cycleway:left"/>
+    <constraint exp="" desc="" field="proposed:cycleway:left:oneway"/>
+    <constraint exp="" desc="" field="proposed:cycleway:right"/>
+    <constraint exp="" desc="" field="proposed:cycleway:right:oneway"/>
+    <constraint exp="" desc="" field="proposed:foot"/>
+    <constraint exp="" desc="" field="proposed:footway"/>
+    <constraint exp="" desc="" field="proposed:highway"/>
+    <constraint exp="" desc="" field="proposed:maxspeed"/>
+    <constraint exp="" desc="" field="proposed:oneway"/>
+    <constraint exp="" desc="" field="proposed:oneway:bicycle"/>
+    <constraint exp="" desc="" field="proposed:segregated"/>
+    <constraint exp="" desc="" field="proposed:traffic_intervention"/>
+    <constraint exp="" desc="" field="prow_ref"/>
+    <constraint exp="" desc="" field="psv"/>
+    <constraint exp="" desc="" field="psv:lanes"/>
+    <constraint exp="" desc="" field="psv:lanes:backward"/>
+    <constraint exp="" desc="" field="psv:lanes:forward"/>
+    <constraint exp="" desc="" field="psv:right"/>
+    <constraint exp="" desc="" field="public_transport"/>
+    <constraint exp="" desc="" field="railing"/>
+    <constraint exp="" desc="" field="ramp"/>
+    <constraint exp="" desc="" field="ramp:bicycle"/>
+    <constraint exp="" desc="" field="ramp:wheelchair"/>
+    <constraint exp="" desc="" field="rcn"/>
+    <constraint exp="" desc="" field="ref"/>
+    <constraint exp="" desc="" field="ref:22406366"/>
+    <constraint exp="" desc="" field="ref:GB:nhle"/>
+    <constraint exp="" desc="" field="ref:GB:tflcid"/>
+    <constraint exp="" desc="" field="ref:GB:uprn"/>
+    <constraint exp="" desc="" field="ref:GB:usrn"/>
+    <constraint exp="" desc="" field="ref:he"/>
+    <constraint exp="" desc="" field="ref:source"/>
+    <constraint exp="" desc="" field="ref:tfl"/>
+    <constraint exp="" desc="" field="repair"/>
+    <constraint exp="" desc="" field="roof:colour"/>
+    <constraint exp="" desc="" field="roof:shape"/>
+    <constraint exp="" desc="" field="roundabout"/>
+    <constraint exp="" desc="" field="route"/>
+    <constraint exp="" desc="" field="segregated"/>
+    <constraint exp="" desc="" field="separation:left"/>
+    <constraint exp="" desc="" field="separation:right"/>
+    <constraint exp="" desc="" field="service"/>
+    <constraint exp="" desc="" field="service_1"/>
+    <constraint exp="" desc="" field="shelter"/>
+    <constraint exp="" desc="" field="shelter_type"/>
+    <constraint exp="" desc="" field="shop"/>
+    <constraint exp="" desc="" field="short_name"/>
+    <constraint exp="" desc="" field="shoulder"/>
+    <constraint exp="" desc="" field="shower"/>
+    <constraint exp="" desc="" field="sidewalk"/>
+    <constraint exp="" desc="" field="sidewalk:both"/>
+    <constraint exp="" desc="" field="sidewalk:both:surface"/>
+    <constraint exp="" desc="" field="sidewalk:left"/>
+    <constraint exp="" desc="" field="sidewalk:left:surface"/>
+    <constraint exp="" desc="" field="sidewalk:left:wheelchair"/>
+    <constraint exp="" desc="" field="sidewalk:note"/>
+    <constraint exp="" desc="" field="sidewalk:right"/>
+    <constraint exp="" desc="" field="sidewalk:right:surface"/>
+    <constraint exp="" desc="" field="sign_information"/>
+    <constraint exp="" desc="" field="signed:ref"/>
+    <constraint exp="" desc="" field="sloped_curb"/>
+    <constraint exp="" desc="" field="smoothness"/>
+    <constraint exp="" desc="" field="smoothness:date"/>
+    <constraint exp="" desc="" field="source"/>
+    <constraint exp="" desc="" field="source:access"/>
+    <constraint exp="" desc="" field="source:alt_name"/>
+    <constraint exp="" desc="" field="source:bicycle"/>
+    <constraint exp="" desc="" field="source:bing"/>
+    <constraint exp="" desc="" field="source:cycleway"/>
+    <constraint exp="" desc="" field="source:designation"/>
+    <constraint exp="" desc="" field="source:destination"/>
+    <constraint exp="" desc="" field="source:geometry"/>
+    <constraint exp="" desc="" field="source:hgv"/>
+    <constraint exp="" desc="" field="source:highway"/>
+    <constraint exp="" desc="" field="source:lanes"/>
+    <constraint exp="" desc="" field="source:lcn"/>
+    <constraint exp="" desc="" field="source:lit"/>
+    <constraint exp="" desc="" field="source:maxheight"/>
+    <constraint exp="" desc="" field="source:maxspeed"/>
+    <constraint exp="" desc="" field="source:maxweight"/>
+    <constraint exp="" desc="" field="source:maxweightrating"/>
+    <constraint exp="" desc="" field="source:maxweightrating:hgv"/>
+    <constraint exp="" desc="" field="source:maxwidth"/>
+    <constraint exp="" desc="" field="source:name"/>
+    <constraint exp="" desc="" field="source:not:name"/>
+    <constraint exp="" desc="" field="source:old_name"/>
+    <constraint exp="" desc="" field="source:oneway"/>
+    <constraint exp="" desc="" field="source:oneway:bicycle"/>
+    <constraint exp="" desc="" field="source:postal_code"/>
+    <constraint exp="" desc="" field="source:proposed:oneway"/>
+    <constraint exp="" desc="" field="source:prow_ref"/>
+    <constraint exp="" desc="" field="source:rcn"/>
+    <constraint exp="" desc="" field="source:ref"/>
+    <constraint exp="" desc="" field="source:track"/>
+    <constraint exp="" desc="" field="source:traffic_intervention"/>
+    <constraint exp="" desc="" field="source:width"/>
+    <constraint exp="" desc="" field="source_ref"/>
+    <constraint exp="" desc="" field="source_ref:name"/>
+    <constraint exp="" desc="" field="source_ref:ref"/>
+    <constraint exp="" desc="" field="stairs:endline"/>
+    <constraint exp="" desc="" field="stairs:startline"/>
+    <constraint exp="" desc="" field="start_date"/>
+    <constraint exp="" desc="" field="state"/>
+    <constraint exp="" desc="" field="step_count"/>
+    <constraint exp="" desc="" field="steps"/>
+    <constraint exp="" desc="" field="stile"/>
+    <constraint exp="" desc="" field="surface"/>
+    <constraint exp="" desc="" field="surface:colour"/>
+    <constraint exp="" desc="" field="surface:note"/>
+    <constraint exp="" desc="" field="survey:date"/>
+    <constraint exp="" desc="" field="surveying_authority"/>
+    <constraint exp="" desc="" field="tactile_paving"/>
+    <constraint exp="" desc="" field="taxi"/>
+    <constraint exp="" desc="" field="temporary:highway"/>
+    <constraint exp="" desc="" field="toilets"/>
+    <constraint exp="" desc="" field="toilets:wheelchair"/>
+    <constraint exp="" desc="" field="toll"/>
+    <constraint exp="" desc="" field="tourism"/>
+    <constraint exp="" desc="" field="towpath"/>
+    <constraint exp="" desc="" field="tracktype"/>
+    <constraint exp="" desc="" field="traffic_calming"/>
+    <constraint exp="" desc="" field="traffic_calming:check_date"/>
+    <constraint exp="" desc="" field="traffic_intervention"/>
+    <constraint exp="" desc="" field="traffic_signals"/>
+    <constraint exp="" desc="" field="traffic_signals:direction"/>
+    <constraint exp="" desc="" field="traffic_signals:sound"/>
+    <constraint exp="" desc="" field="traffic_signals:vibration"/>
+    <constraint exp="" desc="" field="trail_visibility"/>
+    <constraint exp="" desc="" field="tree_lined"/>
+    <constraint exp="" desc="" field="tunnel"/>
+    <constraint exp="" desc="" field="tunnel:name"/>
+    <constraint exp="" desc="" field="tunnel:short_name"/>
+    <constraint exp="" desc="" field="turn"/>
+    <constraint exp="" desc="" field="turn:lanes"/>
+    <constraint exp="" desc="" field="turn:lanes:backward"/>
+    <constraint exp="" desc="" field="turn:lanes:forward"/>
+    <constraint exp="" desc="" field="unsigned"/>
+    <constraint exp="" desc="" field="validate"/>
+    <constraint exp="" desc="" field="vehicle"/>
+    <constraint exp="" desc="" field="vehicle:lanes"/>
+    <constraint exp="" desc="" field="vehicle:lanes:forward"/>
+    <constraint exp="" desc="" field="verge"/>
+    <constraint exp="" desc="" field="verge:left"/>
+    <constraint exp="" desc="" field="verge:right"/>
+    <constraint exp="" desc="" field="virtual"/>
+    <constraint exp="" desc="" field="was:bicycle"/>
+    <constraint exp="" desc="" field="was:covered"/>
+    <constraint exp="" desc="" field="was:cycleway:left"/>
+    <constraint exp="" desc="" field="was:cycleway:right"/>
+    <constraint exp="" desc="" field="was:highway"/>
+    <constraint exp="" desc="" field="was:lanes"/>
+    <constraint exp="" desc="" field="was:oneway"/>
+    <constraint exp="" desc="" field="was:ref"/>
+    <constraint exp="" desc="" field="was:segregated"/>
+    <constraint exp="" desc="" field="watch:80n"/>
+    <constraint exp="" desc="" field="water"/>
+    <constraint exp="" desc="" field="website"/>
+    <constraint exp="" desc="" field="wheelchair"/>
+    <constraint exp="" desc="" field="width"/>
+    <constraint exp="" desc="" field="wikidata"/>
+    <constraint exp="" desc="" field="wikipedia"/>
   </constraintExpressions>
   <expressionfields/>
   <layerGeometryType>1</layerGeometryType>
